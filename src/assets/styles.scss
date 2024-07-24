@@ -1,0 +1,10 @@
+/* Prime Icons */
+@import "primeicons/primeicons.css";
+
+/* tailwind */
+:root {
+  --primary-rgb: 92 38 255;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
