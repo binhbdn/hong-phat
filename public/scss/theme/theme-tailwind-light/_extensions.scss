@@ -39,11 +39,11 @@
     .p-paginator {
         .p-paginator-pages {
             .p-paginator-page {
-                margin-left: -1px;
+                // margin-left: -1px;
     
                 &.p-highlight {
                     border-color: $primaryColor;
-                    margin-right: 1px;
+                    // margin-right: 1px;
                 }
             }
         }
@@ -55,7 +55,7 @@
     
     .p-button {
         &:focus {
-            @include focused-ring($focusOutlineColor);
+            @include focused-ring(var(--primary-color));
         }
     
         &.p-button-secondary:enabled:focus {

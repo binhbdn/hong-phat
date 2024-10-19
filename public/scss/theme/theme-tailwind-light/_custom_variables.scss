@@ -1,4 +1,4 @@
-$primaryColor: #4F46E5 !default;
+$primaryColor: #FF3130 !default;
 $primaryDarkColor: #4338CA !default;
 $primaryDarkerColor: #3730A3 !default;
 $primaryTextColor: #ffffff !default;
@@ -36,13 +36,15 @@ $shade900:#18181B !default;    //unused                 gray-900
 
 //global
 $fontFamily:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
-$fontSize:1rem !default;
+// $fontSize:1rem !default;
+$fontSize:14px !default;
 $fontWeight:normal !default;
 $textColor:$shade700 !default;
 $textSecondaryColor:$shade600 !default;
 $borderRadius:.375rem !default;
 $transitionDuration:.2s !default;
-$formElementTransition:none !default;
+// $formElementTransition:none !default;
+$formElementTransition:all 0.3s !default;
 $actionIconTransition:none !default;
 $listItemTransition:none !default;
 $primeIconFontSize:1rem !default;
@@ -62,7 +64,8 @@ $focusOutlineColor:#6366F1 !default;
 $focusOutline:0 none !default;
 $focusOutlineOffset:0 !default;
 $inputFocusOutlineOffset:$focusOutlineOffset !default;
-$focusShadow:0 0 0 1px $focusOutlineColor !default;
+// $focusShadow:0 0 0 1px $focusOutlineColor !default;
+$focusShadow:0 0 0 2px var(--primary-color) !default;
 
 //action icons
 $actionIconWidth:2rem !default;
@@ -77,7 +80,8 @@ $actionIconBorderRadius:50% !default;
 
 //input field (e.g. inputtext, spinner, inputmask)
 $inputPadding:.75rem .75rem !default;
-$inputTextFontSize:1rem !default;
+// $inputTextFontSize:1rem !default;
+$inputTextFontSize:14px !default;
 $inputBg:$shade000 !default;
 $inputTextColor:$shade700 !default;
 $inputIconColor:$shade600 !default;
@@ -604,7 +608,8 @@ $errorMessageIconColor:#DC2626 !default;
 //overlays
 $overlayContentBorder:0 none !default;
 $overlayContentBg:$panelContentBg !default;
-$overlayContainerShadow:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
+// $overlayContainerShadow:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
+$overlayContainerShadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
 
 //dialog
 $dialogHeaderBg:$shade000 !default;

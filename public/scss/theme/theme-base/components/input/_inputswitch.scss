@@ -64,7 +64,8 @@
 
     &.p-highlight {
         .p-inputswitch-slider {
-            background: $inputSwitchSliderOnBg;
+            // background: $inputSwitchSliderOnBg;
+            background: var(--primary-color);
 
             &:before {
                 background: $inputSwitchHandleOnBg;
@@ -76,12 +77,14 @@
     &:not(.p-disabled) {
         &:has(.p-inputswitch-input:hover) {
             .p-inputswitch-slider {
-                background: $inputSwitchSliderOffHoverBg;
+                // background: $inputSwitchSliderOffHoverBg;
+                filter: brightness(0.9);
             }
 
             &.p-highlight {
                 .p-inputswitch-slider {
-                    background: $inputSwitchSliderOnHoverBg;
+                    // background: $inputSwitchSliderOnHoverBg;
+                    filter: brightness(0.9);
                 }
             }
         }

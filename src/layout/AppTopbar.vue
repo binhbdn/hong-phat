@@ -1,9 +1,13 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
+import { useI18n } from "vue-i18n-lite";
 import { useLayout } from "@/composable/layout";
-import AppBreadcrumb from "./AppBreadcrumb.vue";
+import AppTitle from "./AppTitle.vue";
 
-const { onMenuToggle, onProfileSidebarToggle } = useLayout();
+const { current, changeLocale } = useI18n();
+const { onMenuToggle, isSidebarActive } = useLayout();
+
+const op = ref(null);
 const outsideClickListener = ref(null);
 const topbarMenuActive = ref(false);
 
@@ -14,6 +18,15 @@ onMounted(() => {
 onBeforeUnmount(() => {
   unbindOutsideClickListener();
 });
+
+const toggle = (event) => {
+  op.value.toggle(event);
+};
+
+const onChangeLocale = (locale) => {
+  changeLocale(locale);
+  op.value.hide();
+};
 
 const bindOutsideClickListener = () => {
   if (!outsideClickListener.value) {
@@ -42,23 +55,35 @@ const isOutsideClicked = (event) => {
 </script>
 
 <template>
-  <div class="layout-topbar shadow-md p-6">
+  <div class="layout-topbar bg-white shadow-md px-3 sm:px-6 py-2 sm:py-4 mb-2 sm:mb-4 md:mb-6">
     <div class="topbar-start">
       <button class="topbar-menubutton p-link p-trigger" @click="onMenuToggle()">
         <i class="pi pi-bars" />
       </button>
 
-      <AppBreadcrumb class="topbar-breadcrumb" />
+      <AppTitle class="topbar-page-title" />
     </div>
 
-    <div class="topbar-end">
-      <ul class="topbar-menu">
-        <li class="topbar-profile">
-          <button class="p-link" @click="onProfileSidebarToggle()">
-            <img src="/favicon.svg" />
-          </button>
-        </li>
-      </ul>
+    <RouterLink v-show="!isSidebarActive" :to="{ name: 'pageHome' }" class="topbar-logo flex-shrink-0">
+      <img src="/img/logo.png" class="h-10" />
+    </RouterLink>
+
+    <div class="topbar-end gap-x-2 sm:gap-x-4">
+      <i class="pi pi-search hover:text-primary cursor-pointer" />
+      <div class="w-6 h-6 flex justify-center items-center text-gray-500 cursor-pointer" @click="toggle">
+        <img :src="`/svg/locale/${current}.svg`" class="h-4" />
+      </div>
+
+      <OverlayPanel ref="op">
+        <div class="flex items-center gap-x-2 cursor-pointer" :class="{ 'text-primary': current === 'vi' }" @click="onChangeLocale('vi')">
+          <img src="/svg/locale/vi.svg" class="h-4" />
+          {{ $t("language.vi", "vi") }}
+        </div>
+        <div class="flex items-center gap-x-2 cursor-pointer mt-2" :class="{ 'text-primary': current === 'en' }" @click="onChangeLocale('en')">
+          <img src="/svg/locale/en.svg" class="h-4" />
+          {{ $t("language.en", "en") }}
+        </div>
+      </OverlayPanel>
     </div>
   </div>
 </template>

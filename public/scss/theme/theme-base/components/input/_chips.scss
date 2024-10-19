@@ -68,7 +68,9 @@
         .p-chips-token {
             padding: math.div(nth($inputPadding, 1), 2) nth($inputPadding, 2);
             margin-right: $inlineSpacing;
-            background: $chipBg;
+            // background: $chipBg;
+            --tw-bg-opacity: 0.2;
+            background-color: rgb(var(--primary-rgb) / var(--tw-bg-opacity));
             color: $chipTextColor;
             border-radius: $chipBorderRadius;
 
@@ -79,6 +81,9 @@
 
             .p-chips-token-icon {
                 margin-left: $inlineSpacing;
+                &:hover {
+                    color: #EF4444;
+                }
             }
         }
 

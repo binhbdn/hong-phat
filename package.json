@@ -4,13 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build-css:preloader": "sass --style=compressed public/scss/preloader/preloader.scss public/css/preloader.min.css",
-    "build-css:custom-layout": "sass --style=compressed public/scss/layout/custom_layout.scss public/css/custom_layout.min.css",
-    "build-css:custom-theme": "sass --style=compressed public/scss/theme/theme-tailwind-light/custom_theme.scss public/css/custom_theme.min.css",
+    "build-css:preloader": "sass public/scss/preloader/preloader.scss public/css/preloader.min.css",
+    "build-css:custom-layout": "sass public/scss/layout/layout.scss public/css/layout.min.css",
+    "build-css:custom-theme": "sass public/scss/theme/theme-tailwind-light/custom_theme.scss public/css/custom_theme.min.css",
     "build-css": "npm run build-css:preloader && npm run build-css:custom-layout && npm run build-css:custom-theme",
-
-    "dev": "vite",
-    "build": "vite build",
+    "build-mincss:preloader": "sass --style=compressed public/scss/preloader/preloader.scss public/css/preloader.min.css",
+    "build-mincss:custom-layout": "sass --style=compressed public/scss/layout/layout.scss public/css/layout.min.css",
+    "build-mincss:custom-theme": "sass --style=compressed public/scss/theme/theme-tailwind-light/custom_theme.scss public/css/custom_theme.min.css",
+    "build-mincss": "npm run build-mincss:preloader && npm run build-mincss:custom-layout && npm run build-mincss:custom-theme",
+    "dev": "npm run build-css && vite",
+    "build": "npm run build-mincss && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.cjs --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .vue,.js,.cjs --fix --ignore-path .gitignore",
@@ -18,12 +21,16 @@
     "format": "npm run lint:fix && npm run prettier"
   },
   "dependencies": {
+    "@vueuse/core": "^11.0.1",
     "axios": "^1.7.2",
+    "chart.js": "^4.4.3",
     "pinia": "^2.1.7",
     "primeicons": "^7.0.0",
     "primevue": "3.52.0",
     "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
+    "vue-i18n-lite": "^1.0.2",
+    "vue-router": "^4.4.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.3",

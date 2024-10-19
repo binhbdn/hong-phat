@@ -19,17 +19,17 @@ import ToastService from "primevue/toastservice";
 // import Calendar from "primevue/calendar";
 // import CascadeSelect from "primevue/cascadeselect";
 // import Checkbox from "primevue/checkbox";
-// import Chips from "primevue/chips";
+import Chips from "primevue/chips";
 // import ColorPicker from "primevue/colorpicker";
 import Dropdown from "primevue/dropdown";
 // import Editor from "primevue/editor"; // required dependency "quill"
 // import FloatLabel from "primevue/floatlabel";
 import IconField from "primevue/iconfield";
 import InputIcon from "primevue/inputicon";
-// import InputGroup from "primevue/inputgroup";
-// import InputGroupAddon from "primevue/inputgroupaddon";
+import InputGroup from "primevue/inputgroup";
+import InputGroupAddon from "primevue/inputgroupaddon";
 // import InputMask from "primevue/inputmask";
-// import InputNumber from "primevue/inputnumber";
+import InputNumber from "primevue/inputnumber";
 // import InputOtp from "primevue/inputotp";
 import InputSwitch from "primevue/inputswitch";
 import InputText from "primevue/inputtext";
@@ -72,7 +72,7 @@ import Paginator from "primevue/paginator";
 // import AccordionTab from "primevue/accordiontab";
 import Card from "primevue/card";
 // import DeferredContent from "primevue/deferredcontent";
-// import Divider from "primevue/divider";
+import Divider from "primevue/divider";
 // import Fieldset from "primevue/fieldset";
 // import Panel from "primevue/panel";
 // import ScrollPanel from "primevue/scrollpanel";
@@ -89,7 +89,7 @@ import Card from "primevue/card";
 // import ConfirmPopup from "primevue/confirmpopup"; // required "primevue/confirmationservice"
 import Dialog from "primevue/dialog";
 // import DynamicDialog from "primevue/dynamicdialog"; // required "primevue/dialogservice"
-// import OverlayPanel from "primevue/overlaypanel";
+import OverlayPanel from "primevue/overlaypanel";
 import Sidebar from "primevue/sidebar";
 import Tooltip from "primevue/tooltip";
 
@@ -105,7 +105,7 @@ import Tooltip from "primevue/tooltip";
 // import MegaMenu from "primevue/megamenu";
 // import PanelMenu from "primevue/panelmenu";
 // import Steps from "primevue/steps";
-// import TabMenu from "primevue/tabmenu";
+import TabMenu from "primevue/tabmenu";
 // import TieredMenu from "primevue/tieredmenu";
 
 /* Chart */
@@ -140,6 +140,7 @@ import Ripple from "primevue/ripple";
 // import StyleClass from "primevue/styleclass";
 // import Tag from "primevue/tag";
 // import Terminal from "primevue/terminal";
+import ConfirmationService from "primevue/confirmationservice";
 
 export const usePrimeVue = (app) => {
   app.use(PrimeVue, { ripple: true });
@@ -158,13 +159,18 @@ export const usePrimeVue = (app) => {
   // app.directive("styleclass", StyleClass);
 
   /* Form */
+  app.component("Chips", Chips);
   app.component("Dropdown", Dropdown);
   app.component("IconField", IconField);
   app.component("InputIcon", InputIcon);
+  app.component("InputGroup", InputGroup);
+  app.component("InputGroupAddon", InputGroupAddon);
+  app.component("InputNumber", InputNumber);
   app.component("InputSwitch", InputSwitch);
   app.component("InputText", InputText);
   app.component("RadioButton", RadioButton);
   app.component("PrimeTextarea", Textarea);
+  app.use(ConfirmationService);
 
   /* Button */
   app.component("PrimeButton", Button);
@@ -176,9 +182,11 @@ export const usePrimeVue = (app) => {
 
   /* Panel */
   app.component("Card", Card);
+  app.component("Divider", Divider);
 
   /* Overlay */
   app.component("Dialog", Dialog);
+  app.component("OverlayPanel", OverlayPanel);
   app.component("Sidebar", Sidebar);
 
   /* File */
@@ -186,6 +194,7 @@ export const usePrimeVue = (app) => {
 
   /* Menu */
   // app.component("Breadcrumb", Breadcrumb);
+  app.component("TabMenu", TabMenu);
 
   /* Chart */
   // app.component("Chart", Chart);

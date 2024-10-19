@@ -138,6 +138,7 @@ input.p-dropdown-label {
 
         &.p-placeholder {
             color: $inputPlaceholderTextColor;
+            box-shadow: none;
         }
 
         &:focus,
@@ -213,18 +214,26 @@ input.p-dropdown-label {
             }
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                font-weight: 700;
+                // color: $highlightTextColor;
+                color: var(--primary-color);
+                // background: $highlightBg;
+                --tw-bg-opacity: 0.2;
+                background-color: rgb(var(--primary-rgb) / var(--tw-bg-opacity));
 
+                /*
                 &.p-focus {
                     background: $highlightFocusBg;
                 }
+                */
             }
 
             &:not(.p-highlight):not(.p-disabled) {
                 &.p-focus {
-                    color: $inputListItemTextHoverColor;
-                    background: $inputListItemHoverBg;
+                    // color: $inputListItemTextHoverColor;
+                    // background: $inputListItemHoverBg;
+                    --tw-bg-opacity: 0.1;
+                    background-color: rgb(var(--primary-rgb) / var(--tw-bg-opacity));
                 }
             }
 

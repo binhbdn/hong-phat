@@ -137,19 +137,25 @@
     .p-dialog-header {
         border-bottom: $dialogHeaderBorder;
         background: $dialogHeaderBg;
-        color: $dialogHeaderTextColor;
-        padding: $dialogHeaderPadding;
+        // color: $dialogHeaderTextColor;
+        // text-gray-900
+        --tw-text-opacity: 1;
+        color: rgb(17 24 39 / var(--tw-text-opacity));
+        // !text-gray-900
+        // padding: $dialogHeaderPadding;
+        padding: 0.5rem;
         border-top-right-radius: $borderRadius;
         border-top-left-radius: $borderRadius;
 
         .p-dialog-title {
             font-weight: $dialogHeaderFontWeight;
-            font-size: $dialogHeaderFontSize;
+            // font-size: $dialogHeaderFontSize;
+            font-size: 1rem;
         }
 
         .p-dialog-header-icon {
-            @include action-icon();
             margin-right: $inlineSpacing;
+            @include action-icon();
             
             &:last-child {
                 margin-right: 0;
@@ -160,7 +166,8 @@
     .p-dialog-content {
         background: $overlayContentBg;
         color: $panelContentTextColor;
-        padding: $dialogContentPadding;
+        // padding: $dialogContentPadding;
+        padding: 0 0.5rem 0.5rem 0.5rem;
 
         &:last-of-type {
             border-bottom-right-radius: $borderRadius;
@@ -172,7 +179,8 @@
         border-top: $dialogFooterBorder;
         background: $overlayContentBg;
         color: $panelFooterTextColor;
-        padding: $dialogFooterPadding;
+        // padding: $dialogFooterPadding;
+        padding: 0 0.5rem 0.5rem 0.5rem;
         display: flex;
         justify-content: flex-end;
         gap: $inlineSpacing;
@@ -187,6 +195,20 @@
 
         .p-confirm-dialog-message:not(:first-child) {
             margin-left: $inlineSpacing * 2;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .p-dialog {
+        .p-dialog-header {
+            padding: $dialogHeaderPadding;
+        }
+        .p-dialog-content {
+            padding: $dialogContentPadding;
+        }
+        .p-dialog-footer {
+            padding: $dialogFooterPadding;
         }
     }
 }

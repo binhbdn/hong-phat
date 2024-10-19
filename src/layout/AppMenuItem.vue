@@ -1,11 +1,8 @@
 <script setup>
 import { ref, onBeforeMount, watch } from "vue";
-import { useRoute } from "vue-router";
 import { useLayout } from "@/composable/layout";
 
-const route = useRoute();
-
-const { layoutConfig, layoutState, setActiveMenuItem, onMenuToggle, isHorizontal, isSlim, isDesktop } = useLayout();
+const { layoutState, setActiveMenuItem, onMenuToggle, isDesktop } = useLayout();
 
 const props = defineProps({
   item: {
@@ -45,29 +42,13 @@ watch(
 );
 
 watch(
-  () => layoutConfig.menuMode.value,
-  () => {
-    isActiveMenu.value = false;
-  }
-);
-
-watch(
-  () => layoutState.overlaySubmenuActive.value,
-  (newValue) => {
-    if (!newValue) {
-      isActiveMenu.value = false;
-    }
-  }
-);
-watch(
-  () => route.path,
+  () => window.$route.path,
   (newPath) => {
-    if (!(isSlim.value || isHorizontal.value) && props.item.to && props.item.to === newPath) {
+    if (props.item.to && props.item.to === newPath) {
       setActiveMenuItem(itemKey);
-    } else if (isSlim.value || isHorizontal.value) {
-      isActiveMenu.value = false;
     }
-  }
+  },
+  { immediate: true }
 );
 const itemClick = async (event, item) => {
   if (item.disabled) {
@@ -75,9 +56,9 @@ const itemClick = async (event, item) => {
     return;
   }
 
-  const { overlayMenuActive, staticMenuMobileActive } = layoutState;
+  const { staticMenuMobileActive } = layoutState;
 
-  if ((item.to || item.url) && (staticMenuMobileActive.value || overlayMenuActive.value)) {
+  if ((item.to || item.url) && staticMenuMobileActive.value) {
     onMenuToggle();
   }
 
@@ -86,87 +67,66 @@ const itemClick = async (event, item) => {
   }
 
   if (item.items) {
-    if (props.root && isActiveMenu.value && (isSlim.value || isHorizontal.value)) {
-      layoutState.overlaySubmenuActive.value = false;
-      layoutState.menuHoverActive.value = false;
-
-      return;
-    }
-
     setActiveMenuItem(isActiveMenu.value ? props.parentItemKey : itemKey);
-
-    if (props.root && !isActiveMenu.value && (isSlim.value || isHorizontal.value)) {
-      layoutState.overlaySubmenuActive.value = true;
-      layoutState.menuHoverActive.value = true;
-      isActiveMenu.value = true;
-
-      removeAllTooltips();
-    }
   } else {
     if (!isDesktop) {
       layoutState.staticMenuMobileActive.value = !layoutState.staticMenuMobileActive.value;
     }
 
-    if (isSlim.value || isHorizontal.value) {
-      layoutState.overlaySubmenuActive.value = false;
-      layoutState.menuHoverActive.value = false;
-
-      return;
-    }
-
     setActiveMenuItem(itemKey);
   }
-};
 
-const onMouseEnter = () => {
-  if (props.root && (isSlim.value || isHorizontal.value) && isDesktop) {
-    if (!isActiveMenu.value && layoutState.menuHoverActive.value) {
-      setActiveMenuItem(itemKey);
-    }
+  if (item?.autoGoTo && !checkActiveItem(item)) {
+    window.$router.push(item.autoGoTo);
   }
 };
-const removeAllTooltips = () => {
-  const tooltips = document.querySelectorAll(".p-tooltip");
-  tooltips.forEach((tooltip) => {
-    tooltip.remove();
-  });
+
+const checkActiveRoute = (item) => (typeof item.to === "object" ? window.$route.name === item.to.name : window.$route.path === item.to);
+const checkActiveItem = (item) => {
+  if (item?.items) return item.items.some((i) => checkActiveItem(i));
+  if (item?.to) {
+    const isActiveRoute = checkActiveRoute(item);
+    if (isActiveRoute) return true;
+    if (item?.hiddenItems) return item.hiddenItems.some((i) => checkActiveRoute(i));
+  }
+  return false;
 };
-const checkActiveRoute = (item) => route.path === item.to;
 </script>
 
 <template>
   <li :class="{ 'layout-root-menuitem': root, 'active-menuitem': isActiveMenu }">
-    <!-- <div v-if="root && item.visible !== false" class="layout-menuitem-root-text">{{ item.label }}</div> -->
     <a
-      v-if="(!item.to || item.items) && item.visible !== false"
-      v-tooltip.hover="isSlim && root && !isActiveMenu ? item.label : null"
+      v-if="!item.to || item.items"
       :href="item.url"
-      :class="item.class"
+      class="rounded-md"
+      :class="[item.class, { 'active-route white-space-nowrap': checkActiveItem(item) }]"
       :target="item.target"
       tabindex="0"
-      @click="itemClick($event, item, index)"
-      @mouseenter="onMouseEnter"
+      @click="itemClick($event, item)"
     >
       <i :class="item.icon" class="layout-menuitem-icon"></i>
-      <span class="layout-menuitem-text white-space-nowrap">{{ item.label }}</span>
+      <span class="white-space-nowrap">
+        {{ $t(`title.${item.label}`) }}
+      </span>
       <i v-if="item.items" class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
     </a>
-    <router-link
-      v-if="item.to && !item.items && item.visible !== false"
-      v-tooltip.hover="isSlim && root && !isActiveMenu ? item.label : null"
-      :class="[item.class, { 'active-route white-space-nowrap': checkActiveRoute(item) }]"
+    <RouterLink
+      v-if="item.to && !item.items"
+      class="rounded-md"
+      :class="[item.class, { 'active-route active-route-bg white-space-nowrap bg-primary bg-opacity-20': checkActiveItem(item) }]"
       tabindex="0"
       :to="item.to"
-      @click="itemClick($event, item, index)"
-      @mouseenter="onMouseEnter"
+      @click="itemClick($event, item)"
     >
       <i :class="item.icon" class="layout-menuitem-icon"></i>
-      <span class="layout-menuitem-text white-space-nowrap pl-1">{{ item.label }}</span>
+      <span class="white-space-nowrap">
+        {{ $t(`title.${item.label}`) }}
+      </span>
       <i v-if="item.items" class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
-    </router-link>
+    </RouterLink>
 
-    <ul v-if="item.items && item.visible !== false">
-      <app-menu-item v-for="(child, i) in item.items" :key="child" :index="i" :item="child" :parentItemKey="itemKey" :root="false"></app-menu-item>
+    <ul v-if="item.items">
+      <AppMenuItem v-for="(child, i) in item.items" :key="child" :index="i" :item="child" :parentItemKey="itemKey" :root="false" />
     </ul>
   </li>
 </template>

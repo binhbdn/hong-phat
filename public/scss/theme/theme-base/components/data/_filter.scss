@@ -18,19 +18,25 @@
     &:hover {
         color: $actionIconHoverColor;
         border-color: $actionIconHoverBorderColor;
-        background: $actionIconHoverBg;
+        // background: $actionIconHoverBg;
+        background-color: rgb(var(--primary-rgb) / 0.3);
     }
 
     &.p-column-filter-menu-button-open,
     &.p-column-filter-menu-button-open:hover {
-        background: $actionIconHoverBg;
+        // background: $actionIconHoverBg;
+        background-color: rgb(var(--primary-rgb) / 0.3);
         color: $actionIconHoverColor;
     }
 
     &.p-column-filter-menu-button-active,
     &.p-column-filter-menu-button-active:hover {
-        background: $highlightBg;
-        color: $highlightTextColor;
+        // background: $highlightBg;
+        // color: $highlightTextColor;
+        color: var(--primary-color);
+    }
+    &.p-column-filter-menu-button-active:hover {
+        background-color: rgb(var(--primary-rgb) / 0.3);
     }
 
     &:focus-visible {

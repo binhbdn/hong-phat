@@ -28,6 +28,7 @@
 
 .p-tabmenu-nav .p-menuitem-text {
     line-height: 1;
+    white-space: nowrap;
 }
 
 .p-tabmenu-ink-bar {
@@ -43,7 +44,8 @@
 .p-tabmenu {
     .p-tabmenu-nav {
         background: $tabviewNavBg;
-        border: $tabviewNavBorder;
+        // border: $tabviewNavBorder;
+        border: 1px solid transparent;
         border-width: $tabviewNavBorderWidth;
 
         .p-tabmenuitem {
@@ -52,10 +54,12 @@
             .p-menuitem-link {
                 border: $tabviewHeaderBorder;
                 border-width: $tabviewHeaderBorderWidth;
-                border-color: $tabviewHeaderBorderColor;
+                // border-color: $tabviewHeaderBorderColor;
+                border-color: transparent;
                 background: $tabviewHeaderBg;
                 color: $tabviewHeaderTextColor;
-                padding: $tabviewHeaderPadding;
+                // padding: $tabviewHeaderPadding;
+                padding: 1rem;
                 font-weight: $tabviewHeaderFontWeight;
                 border-top-right-radius: $borderRadius;
                 border-top-left-radius: $borderRadius;
@@ -83,8 +87,10 @@
             &.p-highlight {
                 .p-menuitem-link {
                     background: $tabviewHeaderActiveBg;
-                    border-color: $tabviewHeaderActiveBorderColor;
-                    color: $tabviewHeaderTextActiveColor;
+                    // border-color: $tabviewHeaderActiveBorderColor;
+                    border-color: var(--primary-color);
+                    // color: $tabviewHeaderTextActiveColor;
+                    color: var(--primary-color);
                 }
             }
         }

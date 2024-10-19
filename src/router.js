@@ -7,41 +7,65 @@ const router = createRouter({
     {
       path: "/",
       component: AppLayout,
-      meta: {
-        requiresAuth: true
-      },
       children: [
         {
-          path: "products",
-          name: "manageProducts",
+          path: "",
+          name: "pageHome",
+          component: () => import("@/views/Home.vue")
+        },
+
+        {
+          path: "san-pham/tim-kiem",
+          name: "pageSPTimKiem",
+          component: () => import("@/views/Home.vue")
+        },
+        {
+          path: "san-pham/dao-phay-cau",
+          name: "pageSPDaoPhayCau",
+          component: () => import("@/views/Home.vue")
+        },
+        {
+          path: "san-pham/dao-phay-ngon",
+          name: "pageSPDaoPhayNgon",
+          component: () => import("@/views/Home.vue")
+        },
+        {
+          path: "san-pham/bau-kep",
+          name: "pageSPBauKep",
+          component: () => import("@/views/Home.vue")
+        },
+
+        {
+          path: "san-pham/dao-phay-cau",
+          name: "pageSanPhamDaoPhayCau",
           meta: {
-            breadcrumb: ["Quản lý sản phẩm"]
+            pageTitle: "Dao phay cầu"
           },
-          component: () => import("@/views/products/index.vue")
-        }
+          component: () => import("@/views/Home.vue")
+        },
+        {
+          path: "san-pham/dao-phay-mui-tron",
+          name: "pageSPDaoPhayMuiTron",
+          meta: {
+            pageTitle: "Dao phay mũi tròn"
+          },
+          component: () => import("@/views/Home.vue")
+        },
+        {
+          path: "san-pham/bau-kep",
+          name: "pageSanPhamBauKep",
+          meta: {
+            pageTitle: "Bầu kẹp"
+          },
+          component: () => import("@/views/Home.vue")
+        },
       ]
-    },
-    {
-      path: "/login",
-      name: "login",
-      component: () => import("@/views/Login.vue")
     },
     {
       path: "/:pathMatch(.*)*",
       component: () => import("@/views/NotFound.vue")
     }
   ]
-});
-router.beforeEach((to, from, next) => {
-  if (to.matched.some((record) => record.meta.requiresAuth)) {
-    if (!window.stores?.user?.id) {
-      router.push({ name: "login" });
-    } else {
-      next();
-    }
-  } else {
-    next();
-  }
 });
 
 export default router;

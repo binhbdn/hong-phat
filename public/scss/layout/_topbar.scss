@@ -1,8 +1,9 @@
 .layout-topbar {
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 16px;
 
   .topbar-start {
     display: flex;
@@ -12,7 +13,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
       border-radius: 50%;
       width: 2.5rem;
       height: 2.5rem;
@@ -35,44 +36,8 @@
     }
   }
 
-  .topbar-menu {
+  .topbar-end {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      &.topbar-profile {
-        margin-left: 1.5rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-          width: 2rem;
-          height: 2rem;
-        }
-
-        button {
-          border-radius: 50%;
-          width: 2rem;
-          height: 2rem;
-          transition: box-shadow var(--transition-duration);
-
-          &:focus {
-            box-shadow: var(--focus-ring);
-          }
-        }
-      }
-
-      &.topbar-search {
-        .p-inputtext {
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
-          border-radius: 2rem;
-        }
-      }
-    }
   }
 }

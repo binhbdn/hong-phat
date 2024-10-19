@@ -13,6 +13,10 @@
     user-select: none;
 }
 
+.p-datatable-thead {
+    text-align: left;
+}
+
 .p-datatable .p-sortable-column .p-column-title,
 .p-datatable .p-sortable-column .p-sortable-column-icon,
 .p-datatable .p-sortable-column .p-sortable-column-badge {
@@ -107,7 +111,8 @@
 }
 
 .p-datatable .p-column-header-content {
-    display: flex;
+    // display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -167,7 +172,8 @@
 
 .p-column-filter-menu {
     display: inline-flex;
-    margin-left: auto;
+    // margin-left: auto;
+    margin-left: 0.25rem;
 }
 
 .p-column-filter-row .p-column-filter-element {
@@ -247,31 +253,38 @@
     }
 
     .p-datatable-header {
-        background: $tableHeaderBg;
+        // background: $tableHeaderBg;
         color: $tableHeaderTextColor;
-        border: $tableHeaderBorder;
-        border-width: $tableHeaderBorderWidth;
-        padding: $tableHeaderPadding;
+        // border: $tableHeaderBorder;
+        // border-width: $tableHeaderBorderWidth;
+        // padding: $tableHeaderPadding;
         font-weight: $tableHeaderFontWeight;
     }
 
     .p-datatable-footer {
-        background: $tableFooterBg;
+        // background: $tableFooterBg;
         color: $tableFooterTextColor;
-        border: $tableFooterBorder;
-        border-width: $tableFooterBorderWidth;
-        padding: $tableFooterPadding;
+        // border: $tableFooterBorder;
+        // border-width: $tableFooterBorderWidth;
+        // padding: $tableFooterPadding;
         font-weight: $tableFooterFontWeight;
     }
 
     .p-datatable-thead > tr > th {
-        text-align: $tableCellContentAlignment;
-        padding: $tableHeaderCellPadding;
+        // text-align: $tableCellContentAlignment;
+        // padding: $tableHeaderCellPadding;
+        padding: 0.75rem;
         border: $tableHeaderCellBorder;
         border-width: $tableHeaderCellBorderWidth;
-        font-weight: $tableHeaderCellFontWeight;
-        color: $tableHeaderCellTextColor;
-        background: $tableHeaderCellBg;
+        // font-weight: $tableHeaderCellFontWeight;
+        font-weight: 600;
+        // color: $tableHeaderCellTextColor;
+        // text-gray-600
+        --tw-text-opacity: 1;
+        color: rgb(75 85 99 / var(--tw-text-opacity));
+        // !text-gray-600
+        // background: $tableHeaderCellBg;
+        background-color: rgb(var(--primary-rgb) / 0.2);
         transition: $listItemTransition;
     }
 
@@ -302,7 +315,8 @@
         }
 
         &:not(.p-highlight):hover {
-            background: $tableHeaderCellHoverBg;
+            // background: $tableHeaderCellHoverBg;
+            background-color: rgb(var(--primary-rgb) / 0.3);
             color: $tableHeaderCellTextHoverColor;
 
             .p-sortable-column-icon {
@@ -311,19 +325,27 @@
         }
 
         &.p-highlight {
-            background: $tableHeaderCellHighlightBg;
-            color: $tableHeaderCellHighlightTextColor;
+            font-weight: 700;
+            // background: $tableHeaderCellHighlightBg;
+            background-color: rgb(var(--primary-rgb) / 0.2);
+
+            // color: $tableHeaderCellHighlightTextColor;
+            color: var(--primary-color);
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellHighlightTextColor;
+                // color: $tableHeaderCellHighlightTextColor;
+                color: var(--primary-color);
             }
 
             &:hover {
-                background: $tableHeaderCellHighlightHoverBg;
-                color: $tableHeaderCellHighlightTextColor;
+                // background: $tableHeaderCellHighlightHoverBg;
+                background-color: rgb(var(--primary-rgb) / 0.3);
+                // color: $tableHeaderCellHighlightTextColor;
+                color: var(--primary-color);
     
                 .p-sortable-column-icon {
-                    color: $tableHeaderCellHighlightTextColor;
+                    // color: $tableHeaderCellHighlightTextColor;
+                    color: var(--primary-color);
                 }
             }
         }
@@ -337,14 +359,19 @@
     .p-datatable-tbody {
         > tr {
             background: $tableBodyRowBg;
-            color: $tableBodyRowTextColor;
+            // color: $tableBodyRowTextColor;
+            // text-gray-900
+            --tw-text-opacity: 1;
+            color: rgb(17 24 39 / var(--tw-text-opacity));
+            // !text-gray-900
             transition: $listItemTransition;
 
             > td {
                 text-align: $tableCellContentAlignment;
                 border: $tableBodyCellBorder;
                 border-width: $tableBodyCellBorderWidth;
-                padding: $tableBodyCellPadding;
+                // padding: $tableBodyCellPadding;
+                padding: 0.75rem;
 
                 .p-row-toggler,
                 .p-row-editor-init,
