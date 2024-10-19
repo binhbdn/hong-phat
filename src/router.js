@@ -58,7 +58,7 @@ const router = createRouter({
             pageTitle: "Bầu kẹp"
           },
           component: () => import("@/views/Home.vue")
-        },
+        }
       ]
     },
     {
