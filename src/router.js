@@ -11,53 +11,28 @@ const router = createRouter({
         {
           path: "",
           name: "pageHome",
-          component: () => import("@/views/Home.vue")
+          props: (route) => ({ menu: route.query?.menu }),
+          component: () => import("@/views/home/Home.vue")
         },
-
         {
           path: "san-pham/tim-kiem",
           name: "pageSPTimKiem",
-          component: () => import("@/views/Home.vue")
+          component: () => import("@/views/san-pham/tim-kiem/TimKiem.vue")
         },
         {
           path: "san-pham/dao-phay-cau",
           name: "pageSPDaoPhayCau",
-          component: () => import("@/views/Home.vue")
+          component: () => import("@/views/san-pham/dao-phay-cau/DaoPhayCau.vue")
         },
         {
           path: "san-pham/dao-phay-ngon",
           name: "pageSPDaoPhayNgon",
-          component: () => import("@/views/Home.vue")
+          component: () => import("@/views/san-pham/dao-phay-ngon/DaoPhayNgon.vue")
         },
         {
           path: "san-pham/bau-kep",
           name: "pageSPBauKep",
-          component: () => import("@/views/Home.vue")
-        },
-
-        {
-          path: "san-pham/dao-phay-cau",
-          name: "pageSanPhamDaoPhayCau",
-          meta: {
-            pageTitle: "Dao phay cầu"
-          },
-          component: () => import("@/views/Home.vue")
-        },
-        {
-          path: "san-pham/dao-phay-mui-tron",
-          name: "pageSPDaoPhayMuiTron",
-          meta: {
-            pageTitle: "Dao phay mũi tròn"
-          },
-          component: () => import("@/views/Home.vue")
-        },
-        {
-          path: "san-pham/bau-kep",
-          name: "pageSanPhamBauKep",
-          meta: {
-            pageTitle: "Bầu kẹp"
-          },
-          component: () => import("@/views/Home.vue")
+          component: () => import("@/views/san-pham/bau-kep/BauKep.vue")
         }
       ]
     },

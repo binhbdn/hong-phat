@@ -74,33 +74,39 @@
     .p-carousel-content {
         .p-carousel-prev,
         .p-carousel-next {
-            @include action-icon();
             margin: $inlineSpacing;
+            @include action-icon();
+            &:enabled:hover {
+                background-color: rgb(var(--primary-rgb)/0.2);
+            }
         }
     }
 
     .p-carousel-indicators {
-        padding: $carouselIndicatorsPadding;
+        // padding: $carouselIndicatorsPadding;
 
         .p-carousel-indicator {
             margin-right: $inlineSpacing;
-            margin-bottom: $inlineSpacing;
+            // margin-bottom: $inlineSpacing;
            
             button {
-                background-color: $carouselIndicatorBg;
+                // background-color: $carouselIndicatorBg;
+                background-color: var(--gray-300);
                 width: $carouselIndicatorWidth;
                 height: $carouselIndicatorHeight;
                 transition: $actionIconTransition;
                 border-radius: $carouselIndicatorBorderRadius;
 
                 &:hover {
-                    background: $carouselIndicatorHoverBg;
+                    // background: $carouselIndicatorHoverBg;
+                    background-color: rgb(var(--primary-rgb)/0.5);
                 }
             }
 
             &.p-highlight {
                 button {
-                    background: $highlightBg;
+                    // background: $highlightBg;
+                    background-color: var(--primary-color);
                     color: $highlightTextColor;
                 }
             }

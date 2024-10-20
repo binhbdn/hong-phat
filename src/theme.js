@@ -117,7 +117,7 @@ import TabMenu from "primevue/tabmenu";
 import Toast from "primevue/toast"; // required "primevue/toastservice" or useToast function from "primevue/usetoast"
 
 /* Media */
-// import Carousel from "primevue/carousel";
+import Carousel from "primevue/carousel";
 // import Galleria from "primevue/galleria";
 // import Image from "primevue/image";
 
@@ -203,7 +203,7 @@ export const usePrimeVue = (app) => {
   app.component("Toast", Toast);
 
   /* Media */
-  // app.component("Carousel", Carousel);
+  app.component("Carousel", Carousel);
 
   /* Misc */
   // app.component("Avatar", Avatar);

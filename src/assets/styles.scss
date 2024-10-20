@@ -9,21 +9,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.v-button-states {
-  &:disabled {
-    opacity: 0.6;
-  }
-
-  &:not(:disabled):hover {
-    filter: brightness(0.9);
-  }
-
-  &:not(:disabled):active {
-    filter: brightness(0.85);
-  }
-}
-
 .hide-scrollbar {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
+}
+
+.page-has-title .page-body {
+  height: calc(100vh - 160px + 64px - 8px);
+  @media (min-width: 640px) {
+    height: calc(100vh - 196px + 68px - 16px);
+  }
+  @media (min-width: 992px) {
+    height: calc(100vh - 156px + 68px - 16px);
+  }
+}
+
+.page-has-footer > .page-body {
+  height: calc(100vh - 128px);
+  @media (min-width: 640px) {
+    height: calc(100vh - 156px);
+  }
+  @media (min-width: 992px) {
+    height: calc(100vh - 156px);
+  }
+}
+
+.page-has-title.page-has-footer > .page-body {
+  height: calc(100vh - 160px);
+  @media (min-width: 640px) {
+    height: calc(100vh - 196px);
+  }
+  @media (min-width: 992px) {
+    height: calc(100vh - 156px);
+  }
+}
+
+.page-footer-shadow {
+  box-shadow: 0px -2px 4px 2px rgba(0, 0, 0, 0.3);
 }

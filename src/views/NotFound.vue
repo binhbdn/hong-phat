@@ -20,7 +20,13 @@
     <div class="min-h-screen flex justify-center items-center px-8">
       <div class="text-center z-10">
         <p class="text-gray-700 font-medium text-xl mb-8">Không có gì ở đây</p>
-        <PrimeButton label="Tới trang chủ" raised class="h-10" severity="warning" @click="$router.push({ name: 'pageHome' })" />
+        <PrimeButton
+          label="Tới trang chủ"
+          raised
+          class="h-10"
+          severity="warning"
+          @click="$router.push({ name: 'pageHome', query: { menu: 'san-pham-tieu-bieu' } })"
+        />
       </div>
     </div>
   </div>

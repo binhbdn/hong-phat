@@ -10,7 +10,7 @@ const showContactDetails = ref(false);
 
 <template>
   <div class="layout-sidebar shadow-md px-2 sm:px-3">
-    <RouterLink :to="{ name: 'pageHome' }" class="px-2 py-2 sm:py-4">
+    <RouterLink :to="{ name: 'pageHome', query: { menu: 'san-pham-tieu-bieu' } }" class="px-2 py-2 sm:py-4">
       <img src="/img/logo.png" class="h-16" />
       <div class="font-semibold text-xs mt-2">
         {{ $t("menu.shortDescription") }}
@@ -36,7 +36,6 @@ const showContactDetails = ref(false);
                       <i class="pi pi-phone" style="font-size: 14px; margin-right: 2px" />
                       <span class="text-[13px] white-space-nowrap"> {{ phoneNumber }} </span>
                     </div>
-                    <div></div>
                     <i
                       v-tooltip="$t('menu.copyPhoneNumber')"
                       class="pi pi-fw pi-clone hover:text-primary ml-auto"

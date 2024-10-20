@@ -55,7 +55,7 @@ const isOutsideClicked = (event) => {
 </script>
 
 <template>
-  <div class="layout-topbar bg-white shadow-md px-3 sm:px-6 py-2 sm:py-4 mb-2 sm:mb-4 md:mb-6">
+  <div class="layout-topbar bg-white shadow-md px-2 sm:px-4 py-2 sm:py-4 mb-2 sm:mb-4">
     <div class="topbar-start">
       <button class="topbar-menubutton p-link p-trigger" @click="onMenuToggle()">
         <i class="pi pi-bars" />
@@ -64,12 +64,12 @@ const isOutsideClicked = (event) => {
       <AppTitle class="topbar-page-title" />
     </div>
 
-    <RouterLink v-show="!isSidebarActive" :to="{ name: 'pageHome' }" class="topbar-logo flex-shrink-0">
+    <RouterLink v-show="!isSidebarActive" :to="{ name: 'pageHome', query: { menu: 'san-pham-tieu-bieu' } }" class="topbar-logo flex-shrink-0">
       <img src="/img/logo.png" class="h-10" />
     </RouterLink>
 
     <div class="topbar-end gap-x-2 sm:gap-x-4">
-      <i class="pi pi-search hover:text-primary cursor-pointer" />
+      <i class="pi pi-search hover:text-primary cursor-pointer" @click="$router.push({ name: 'pageSPTimKiem' })" />
       <div class="w-6 h-6 flex justify-center items-center text-gray-500 cursor-pointer" @click="toggle">
         <img :src="`/svg/locale/${current}.svg`" class="h-4" />
       </div>
@@ -77,11 +77,15 @@ const isOutsideClicked = (event) => {
       <OverlayPanel ref="op">
         <div class="flex items-center gap-x-2 cursor-pointer" :class="{ 'text-primary': current === 'vi' }" @click="onChangeLocale('vi')">
           <img src="/svg/locale/vi.svg" class="h-4" />
-          {{ $t("language.vi", "vi") }}
+          <span class="whitespace-nowrap">
+            {{ $t("language.vi", "vi") }}
+          </span>
         </div>
         <div class="flex items-center gap-x-2 cursor-pointer mt-2" :class="{ 'text-primary': current === 'en' }" @click="onChangeLocale('en')">
           <img src="/svg/locale/en.svg" class="h-4" />
-          {{ $t("language.en", "en") }}
+          <span class="whitespace-nowrap">
+            {{ $t("language.en", "en") }}
+          </span>
         </div>
       </OverlayPanel>
     </div>

@@ -3,7 +3,6 @@ import { computed, watch, ref, onBeforeUnmount } from "vue";
 import { useLayout } from "@/composable/layout";
 import AppTopbar from "./AppTopbar.vue";
 import AppSidebar from "./AppSidebar.vue";
-import AppTitle from "./AppTitle.vue";
 
 const { layoutState, isSidebarActive } = useLayout();
 
@@ -57,8 +56,7 @@ const isOutsideClicked = (event) => {
 
     <div class="layout-content-wrapper">
       <AppTopbar ref="topbarRef" />
-      <AppTitle class="content-page-title px-3 sm:px-6 pb-2 sm:pb-3" />
-      <div class="layout-content px-3 sm:px-6 pb-3 sm:pb-6">
+      <div class="layout-content">
         <RouterView />
       </div>
     </div>

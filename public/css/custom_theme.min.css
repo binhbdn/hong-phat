@@ -2212,6 +2212,122 @@ input.p-dropdown-label {
   border-color: transparent;
 }
 
+.p-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-carousel-content {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-carousel-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-carousel-items-content {
+  overflow: hidden;
+  width: 100%;
+}
+
+.p-carousel-items-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-carousel-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p-carousel-indicator > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vertical */
+.p-carousel-vertical .p-carousel-container {
+  flex-direction: column;
+}
+
+.p-carousel-vertical .p-carousel-items-container {
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Keyboard Support */
+.p-items-hidden .p-carousel-item {
+  visibility: hidden;
+}
+
+.p-items-hidden .p-carousel-item.p-carousel-item-active {
+  visibility: visible;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev,
+.p-carousel .p-carousel-content .p-carousel-next {
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: #71717A;
+  border: 0 none;
+  background: transparent;
+  border-radius: 50%;
+  transition: none;
+  outline-color: transparent;
+}
+.p-carousel .p-carousel-content .p-carousel-prev:enabled:hover,
+.p-carousel .p-carousel-content .p-carousel-next:enabled:hover {
+  color: #18181B;
+  border-color: transparent;
+  background: #f4f4f5;
+}
+.p-carousel .p-carousel-content .p-carousel-prev:focus-visible,
+.p-carousel .p-carousel-content .p-carousel-next:focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+.p-carousel .p-carousel-content .p-carousel-prev:enabled:hover,
+.p-carousel .p-carousel-content .p-carousel-next:enabled:hover {
+  background-color: rgb(var(--primary-rgb)/0.2);
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator {
+  margin-right: 0.5rem;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  background-color: var(--gray-300);
+  width: 2rem;
+  height: 0.5rem;
+  transition: none;
+  border-radius: 4px;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator button:hover {
+  background-color: rgb(var(--primary-rgb)/0.5);
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: var(--primary-color);
+  color: #312E81;
+}
+
 .p-datatable {
   position: relative;
 }

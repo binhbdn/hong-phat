@@ -1,4 +1,6 @@
 export default {
   copyed: "Đã sao chép",
-  contact: "Liên hệ"
+  typicalProducts: "Sản phẩm tiêu biểu",
+  aboutUs: "Giới thiệu",
+  contact: "Liên hệ",
 };

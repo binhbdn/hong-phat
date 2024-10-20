@@ -1,4 +1,6 @@
 export default {
   copyed: "Copyed",
-  contact: "Contact"
+  typicalProducts: "Typical products",
+  aboutUs: "About us",
+  contact: "Contact",
 };

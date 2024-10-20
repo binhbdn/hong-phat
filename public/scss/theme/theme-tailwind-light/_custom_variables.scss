@@ -725,7 +725,8 @@ $tagPadding:.25rem .4rem !default;
 $carouselIndicatorsPadding:1rem !default;
 $carouselIndicatorBg:$shade200 !default;
 $carouselIndicatorHoverBg:$shade300 !default;
-$carouselIndicatorBorderRadius:0 !default;
+// $carouselIndicatorBorderRadius:0 !default;
+$carouselIndicatorBorderRadius:4px !default;
 $carouselIndicatorWidth:2rem !default;
 $carouselIndicatorHeight:.5rem !default;
 

@@ -31,6 +31,7 @@ a {
 
 .layout-container {
   min-height: 100vh;
+  background-color: rgb(var(--primary-rgb)/0.05);
 }
 
 .layout-sidebar {
@@ -183,7 +184,7 @@ a {
     margin-left: 0;
   }
   .layout-container.layout-static-inactive .topbar-page-title {
-    display: block;
+    display: flex;
   }
   .layout-container .topbar-logo {
     display: none;
@@ -229,7 +230,7 @@ a {
     display: none;
   }
   .layout-container .content-page-title {
-    display: block;
+    display: flex;
   }
 }
 @media screen and (min-width: 1960px) {

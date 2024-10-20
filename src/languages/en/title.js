@@ -3,7 +3,7 @@ export default {
   pageSPTimKiem: "Search for products",
   pageSPDaoPhayCau: "Ball mill",
   pageSPDaoPhayNgon: "End mill",
-  pageSPBauKep: "Holder",
+  pageSPBauKep: "Tool holder",
   menuGroup: "Group",
   menuHome: "Home",
   menuAllProducts: "All products",
