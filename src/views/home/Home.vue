@@ -95,15 +95,14 @@ watch(
       <div class="flex justify-center">
         <div class="flex justify-between gap-x-2 sm:gap-x-4">
           <PrimeButton
-            :label="$t('services')"
-            text
+            icon="pi pi-home"
+            outlined
             :severity="activeMenu0 ? 'primary' : 'secondary'"
             class="flex sm:hidden h-9 whitespace-nowrap px-1"
             @click="onSetViewMode(0)"
           />
           <PrimeButton
-            :label="$t('services')"
-            icon="pi pi-address-book"
+            icon="pi pi-home"
             :outlined="!activeMenu0"
             :severity="activeMenu0 ? 'primary' : 'secondary'"
             class="hidden sm:flex h-9 whitespace-nowrap"

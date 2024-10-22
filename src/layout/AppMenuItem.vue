@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onBeforeMount, watch } from "vue";
-import { layoutState, setActiveMenuItem, onMenuToggle } from "@/composable/layout";
+import { isDesktop, layoutState, setActiveMenuItem, onMenuToggle } from "@/composable/layout";
 
 const props = defineProps({
   item: {
@@ -67,6 +67,9 @@ const itemClick = async (event, item) => {
   if (item.items) {
     setActiveMenuItem(isActiveMenu.value ? props.parentItemKey : itemKey);
   } else {
+    if (!isDesktop.value) {
+      layoutState.staticMenuMobileActive = !layoutState.staticMenuMobileActive;
+    }
     setActiveMenuItem(itemKey);
   }
 
