@@ -1,6 +1,8 @@
 export default {
   copyed: "Copyed",
-  typicalProducts: "Typical products",
+  services: "Services",
+  products: "Products",
+  productCategories: "Product categories",
   aboutUs: "About us",
-  contact: "Contact",
+  contact: "Contact"
 };

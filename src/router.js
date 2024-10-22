@@ -11,7 +11,7 @@ const router = createRouter({
         {
           path: "",
           name: "pageHome",
-          props: (route) => ({ menu: route.query?.menu }),
+          props: (route) => ({ view: route.query?.view }),
           component: () => import("@/views/home/Home.vue")
         },
         {

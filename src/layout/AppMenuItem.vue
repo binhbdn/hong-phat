@@ -1,8 +1,6 @@
 <script setup>
 import { ref, onBeforeMount, watch } from "vue";
-import { useLayout } from "@/composable/layout";
-
-const { layoutState, setActiveMenuItem, onMenuToggle, isDesktop } = useLayout();
+import { layoutState, setActiveMenuItem, onMenuToggle } from "@/composable/layout";
 
 const props = defineProps({
   item: {
@@ -29,13 +27,13 @@ const itemKey = ref(null);
 onBeforeMount(() => {
   itemKey.value = props.parentItemKey ? `${props.parentItemKey}-${props.index}` : String(props.index);
 
-  const activeItem = layoutState.activeMenuItem.value;
+  const activeItem = layoutState.activeMenuItem;
 
   isActiveMenu.value = activeItem === itemKey.value || activeItem ? activeItem.startsWith(`${itemKey.value}-`) : false;
 });
 
 watch(
-  () => layoutState.activeMenuItem.value,
+  () => layoutState.activeMenuItem,
   (newVal) => {
     isActiveMenu.value = newVal === itemKey.value || newVal.startsWith(`${itemKey.value}-`);
   }
@@ -69,10 +67,6 @@ const itemClick = async (event, item) => {
   if (item.items) {
     setActiveMenuItem(isActiveMenu.value ? props.parentItemKey : itemKey);
   } else {
-    if (!isDesktop) {
-      layoutState.staticMenuMobileActive.value = !layoutState.staticMenuMobileActive.value;
-    }
-
     setActiveMenuItem(itemKey);
   }
 

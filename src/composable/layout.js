@@ -1,33 +1,25 @@
 import { toRefs, reactive, computed } from "vue";
+import { useWindowSize } from "@vueuse/core";
 
-const layoutState = reactive({
+const { width } = useWindowSize();
+export const isDesktop = computed(() => width.value > 991);
+
+export const layoutState = reactive({
   staticMenuDesktopInactive: false,
   staticMenuMobileActive: false,
   activeMenuItem: null
 });
 
-export function useLayout() {
-  const setActiveMenuItem = (item) => {
-    layoutState.activeMenuItem = item.value || item;
-  };
+export const isSidebarActive = computed(() => layoutState.staticMenuMobileActive);
 
-  const onMenuToggle = () => {
-    if (window.innerWidth > 991) {
-      layoutState.staticMenuDesktopInactive = !layoutState.staticMenuDesktopInactive;
-    } else {
-      layoutState.staticMenuMobileActive = !layoutState.staticMenuMobileActive;
-    }
-  };
+export const setActiveMenuItem = (item) => {
+  layoutState.activeMenuItem = item.value || item;
+};
 
-  const isSidebarActive = computed(() => layoutState.staticMenuMobileActive);
-
-  const isDesktop = computed(() => window.innerWidth > 991);
-
-  return {
-    layoutState: toRefs(layoutState),
-    onMenuToggle,
-    isSidebarActive,
-    setActiveMenuItem,
-    isDesktop
-  };
-}
+export const onMenuToggle = () => {
+  if (window.innerWidth > 991) {
+    layoutState.staticMenuDesktopInactive = !layoutState.staticMenuDesktopInactive;
+  } else {
+    layoutState.staticMenuMobileActive = !layoutState.staticMenuMobileActive;
+  }
+};

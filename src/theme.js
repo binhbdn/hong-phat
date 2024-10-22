@@ -68,8 +68,8 @@ import Paginator from "primevue/paginator";
 // import VirtualScroller from "primevue/virtualscroller";
 
 /* Panel */
-// import Accordion from "primevue/accordion";
-// import AccordionTab from "primevue/accordiontab";
+import Accordion from "primevue/accordion";
+import AccordionTab from "primevue/accordiontab";
 import Card from "primevue/card";
 // import DeferredContent from "primevue/deferredcontent";
 import Divider from "primevue/divider";
@@ -181,6 +181,8 @@ export const usePrimeVue = (app) => {
   app.component("Paginator", Paginator);
 
   /* Panel */
+  app.component("Accordion", Accordion);
+  app.component("AccordionTab", AccordionTab);
   app.component("Card", Card);
   app.component("Divider", Divider);
 

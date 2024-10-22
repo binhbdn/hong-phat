@@ -7,9 +7,5 @@ export default {
   ...common,
   title,
   menu,
-  banner,
-  language: {
-    en: "Tiếng Anh",
-    vi: "Tiếng Việt"
-  }
+  banner
 };

@@ -3078,6 +3078,483 @@ input.p-dropdown-label {
   color: #3f3f46;
 }
 
+.p-treetable {
+  position: relative;
+}
+
+.p-treetable table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.p-treetable .p-sortable-column {
+  cursor: pointer;
+  user-select: none;
+}
+
+.p-treetable-responsive-scroll > .p-treetable-wrapper {
+  overflow-x: auto;
+}
+
+.p-treetable-responsive-scroll > .p-treetable-wrapper > table,
+.p-treetable-auto-layout > .p-treetable-wrapper > table {
+  table-layout: auto;
+}
+
+.p-treetable-hoverable-rows .p-treetable-tbody > tr {
+  cursor: pointer;
+}
+
+.p-treetable-toggler {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-treetable-toggler + .p-checkbox {
+  vertical-align: middle;
+}
+
+.p-treetable-toggler + .p-checkbox + span {
+  vertical-align: middle;
+}
+
+/* Resizable */
+.p-treetable-resizable > .p-treetable-wrapper {
+  overflow-x: auto;
+}
+
+.p-treetable-resizable .p-treetable-thead > tr > th,
+.p-treetable-resizable .p-treetable-tfoot > tr > td,
+.p-treetable-resizable .p-treetable-tbody > tr > td {
+  overflow: hidden;
+}
+
+.p-treetable-resizable .p-resizable-column:not(.p-frozen-column) {
+  background-clip: padding-box;
+  position: relative;
+}
+
+.p-treetable-resizable-fit .p-resizable-column:last-child .p-column-resizer {
+  display: none;
+}
+
+.p-treetable .p-column-resizer {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 0.5rem;
+  height: 100%;
+  padding: 0px;
+  cursor: col-resize;
+  border: 1px solid transparent;
+}
+
+.p-treetable .p-column-resizer-helper {
+  width: 1px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.p-treetable .p-treetable-loading-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Scrollable */
+.p-treetable-scrollable .p-treetable-wrapper {
+  position: relative;
+  overflow: auto;
+}
+
+.p-treetable-scrollable .p-treetable-table {
+  display: block;
+}
+
+.p-treetable-scrollable .p-treetable-thead,
+.p-treetable-scrollable .p-treetable-tbody,
+.p-treetable-scrollable .p-treetable-tfoot {
+  display: block;
+}
+
+.p-treetable-scrollable .p-treetable-thead > tr,
+.p-treetable-scrollable .p-treetable-tbody > tr,
+.p-treetable-scrollable .p-treetable-tfoot > tr {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.p-treetable-scrollable .p-treetable-thead > tr > th,
+.p-treetable-scrollable .p-treetable-tbody > tr > td,
+.p-treetable-scrollable .p-treetable-tfoot > tr > td {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+}
+
+.p-treetable-scrollable .p-treetable-thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.p-treetable-scrollable .p-treetable-tfoot {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.p-treetable-scrollable .p-frozen-column {
+  position: sticky;
+  background: inherit;
+}
+
+.p-treetable-scrollable th.p-frozen-column {
+  z-index: 1;
+}
+
+.p-treetable-scrollable-both .p-treetable-thead > tr > th,
+.p-treetable-scrollable-both .p-treetable-tbody > tr > td,
+.p-treetable-scrollable-both .p-treetable-tfoot > tr > td,
+.p-treetable-scrollable-horizontal .p-treetable-thead > tr > th .p-treetable-scrollable-horizontal .p-treetable-tbody > tr > td,
+.p-treetable-scrollable-horizontal .p-treetable-tfoot > tr > td {
+  flex: 0 0 auto;
+}
+
+.p-treetable-flex-scrollable {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.p-treetable-flex-scrollable .p-treetable-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.p-treetable .p-paginator-top {
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+.p-treetable .p-paginator-bottom {
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+.p-treetable .p-treetable-header {
+  background: #fafafa;
+  color: #3f3f46;
+  border: 1px solid #f4f4f5;
+  border-width: 1px 0 1px 0;
+  padding: 1.25rem 1.25rem;
+  font-weight: 600;
+}
+.p-treetable .p-treetable-footer {
+  background: #fafafa;
+  color: #3f3f46;
+  border: 1px solid #f4f4f5;
+  border-width: 0 0 1px 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+.p-treetable .p-treetable-thead > tr > th {
+  text-align: left;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #f4f4f5;
+  border-width: 0 0 1px 0;
+  font-weight: 500;
+  color: #6b7280;
+  background: #fafafa;
+  transition: none;
+}
+.p-treetable .p-treetable-tfoot > tr > td {
+  text-align: left;
+  padding: 1rem 1rem;
+  border: 1px solid #f4f4f5;
+  border-width: 0 0 1px 0;
+  font-weight: 600;
+  color: #3f3f46;
+  background: #fafafa;
+}
+.p-treetable .p-sortable-column {
+  outline-color: #6366F1;
+}
+.p-treetable .p-sortable-column .p-sortable-column-icon {
+  color: #71717A;
+  margin-left: 0.5rem;
+}
+.p-treetable .p-sortable-column .p-sortable-column-badge {
+  border-radius: 50%;
+  height: 1.143rem;
+  min-width: 1.143rem;
+  line-height: 1.143rem;
+  color: #312E81;
+  background: #EEF2FF;
+  margin-left: 0.5rem;
+}
+.p-treetable .p-sortable-column:not(.p-highlight):hover {
+  background: #f4f4f5;
+  color: #3f3f46;
+}
+.p-treetable .p-sortable-column:not(.p-highlight):hover .p-sortable-column-icon {
+  color: #71717A;
+}
+.p-treetable .p-sortable-column.p-highlight {
+  background: #fafafa;
+  color: #FF3130;
+}
+.p-treetable .p-sortable-column.p-highlight .p-sortable-column-icon {
+  color: #FF3130;
+}
+.p-treetable .p-treetable-tbody > tr {
+  background: #ffffff;
+  color: #3f3f46;
+  transition: none;
+}
+.p-treetable .p-treetable-tbody > tr > td {
+  text-align: left;
+  border: 1px solid #f4f4f5;
+  border-width: 0 0 1px 0;
+  padding: 1rem 1.5rem;
+}
+.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler {
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: #71717A;
+  border: 0 none;
+  background: transparent;
+  border-radius: 50%;
+  transition: none;
+  outline-color: transparent;
+}
+.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler:enabled:hover {
+  color: #18181B;
+  border-color: transparent;
+  background: #f4f4f5;
+}
+.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler:focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler + .p-checkbox {
+  margin-right: 0.5rem;
+}
+.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler + .p-checkbox.p-indeterminate .p-checkbox-icon {
+  color: #3f3f46;
+}
+.p-treetable .p-treetable-tbody > tr:focus-visible {
+  outline: 0.15rem solid #6366F1;
+  outline-offset: -0.15rem;
+}
+.p-treetable .p-treetable-tbody > tr.p-highlight {
+  background: #EEF2FF;
+  color: #312E81;
+}
+.p-treetable .p-treetable-tbody > tr.p-highlight .p-treetable-toggler {
+  color: #312E81;
+}
+.p-treetable .p-treetable-tbody > tr.p-highlight .p-treetable-toggler:hover {
+  color: #312E81;
+}
+.p-treetable.p-treetable-hoverable-rows .p-treetable-tbody > tr:not(.p-highlight):hover {
+  background: #f4f4f5;
+  color: #3f3f46;
+}
+.p-treetable.p-treetable-hoverable-rows .p-treetable-tbody > tr:not(.p-highlight):hover .p-treetable-toggler {
+  color: #3f3f46;
+}
+.p-treetable .p-column-resizer-helper {
+  background: #FF3130;
+}
+.p-treetable .p-treetable-scrollable-header,
+.p-treetable .p-treetable-scrollable-footer {
+  background: #fafafa;
+}
+.p-treetable .p-treetable-loading-icon {
+  font-size: 2rem;
+}
+.p-treetable .p-treetable-loading-icon.p-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.p-treetable.p-treetable-gridlines .p-datatable-header {
+  border-width: 1px 1px 0 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-footer {
+  border-width: 0 1px 1px 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-top {
+  border-width: 0 1px 0 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-bottom {
+  border-width: 0 1px 1px 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-thead > tr > th {
+  border-width: 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-tbody > tr > td {
+  border-width: 1px;
+}
+.p-treetable.p-treetable-gridlines .p-treetable-tfoot > tr > td {
+  border-width: 1px;
+}
+.p-treetable.p-treetable-sm .p-treetable-header {
+  padding: 1.09375rem 1.09375rem;
+}
+.p-treetable.p-treetable-sm .p-treetable-thead > tr > th {
+  padding: 0.375rem 0.75rem;
+}
+.p-treetable.p-treetable-sm .p-treetable-tbody > tr > td {
+  padding: 0.5rem 0.75rem;
+}
+.p-treetable.p-treetable-sm .p-treetable-tfoot > tr > td {
+  padding: 0.375rem 0.75rem;
+}
+.p-treetable.p-treetable-sm .p-treetable-footer {
+  padding: 0.375rem 0.75rem;
+}
+.p-treetable.p-treetable-lg .p-treetable-header {
+  padding: 1.5625rem 1.5625rem;
+}
+.p-treetable.p-treetable-lg .p-treetable-thead > tr > th {
+  padding: 0.9375rem 1.875rem;
+}
+.p-treetable.p-treetable-lg .p-treetable-tbody > tr > td {
+  padding: 1.25rem 1.875rem;
+}
+.p-treetable.p-treetable-lg .p-treetable-tfoot > tr > td {
+  padding: 0.9375rem 1.875rem;
+}
+.p-treetable.p-treetable-lg .p-treetable-footer {
+  padding: 0.9375rem 1.875rem;
+}
+
+.p-accordion-header-action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.p-accordion-header-action:focus {
+  z-index: 1;
+}
+
+.p-accordion-header-text {
+  line-height: 1;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  padding: 0.375rem 0.5rem;
+  border: 1px solid #e5e7eb;
+  color: #3f3f46;
+  background: #fafafa;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  transition: none;
+  outline-color: transparent;
+}
+@media (min-width: 640px) {
+  .p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: 1rem;
+  }
+}
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}
+@media (min-width: 640px) {
+  .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+  background: #f4f4f5;
+  border-color: #e5e7eb;
+  color: #3f3f46;
+}
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+  background: #fafafa;
+  border-color: #e5e7eb;
+  color: #3f3f46;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+  border-color: #e5e7eb;
+  background: #f4f4f5;
+  color: #3f3f46;
+}
+.p-accordion .p-accordion-content {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #3f3f46;
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+@media (min-width: 640px) {
+  .p-accordion .p-accordion-content {
+    padding: 1rem;
+  }
+}
+.p-accordion .p-accordion-tab {
+  margin-bottom: 0;
+}
+.p-accordion .p-accordion-tab .p-accordion-header .p-accordion-header-link {
+  border-radius: 0;
+}
+.p-accordion .p-accordion-tab .p-accordion-content {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.p-accordion .p-accordion-tab:not(:first-child) .p-accordion-header .p-accordion-header-link {
+  border-top: 0 none;
+}
+.p-accordion .p-accordion-tab:not(:first-child) .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link, .p-accordion .p-accordion-tab:not(:first-child) .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+  border-top: 0 none;
+}
+.p-accordion .p-accordion-tab:first-child .p-accordion-header .p-accordion-header-link {
+  border-top-right-radius: 0.375rem;
+  border-top-left-radius: 0.375rem;
+}
+.p-accordion .p-accordion-tab:last-child .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+.p-accordion .p-accordion-tab:last-child .p-accordion-content {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
 .p-card {
   background: #ffffff;
   color: #3f3f46;

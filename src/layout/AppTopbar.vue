@@ -1,11 +1,10 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useI18n } from "vue-i18n-lite";
-import { useLayout } from "@/composable/layout";
+import { isSidebarActive, onMenuToggle } from "@/composable/layout";
 import AppTitle from "./AppTitle.vue";
 
 const { current, changeLocale } = useI18n();
-const { onMenuToggle, isSidebarActive } = useLayout();
 
 const op = ref(null);
 const outsideClickListener = ref(null);
@@ -64,7 +63,7 @@ const isOutsideClicked = (event) => {
       <AppTitle class="topbar-page-title" />
     </div>
 
-    <RouterLink v-show="!isSidebarActive" :to="{ name: 'pageHome', query: { menu: 'san-pham-tieu-bieu' } }" class="topbar-logo flex-shrink-0">
+    <RouterLink v-show="!isSidebarActive" :to="{ name: 'pageHome' }" class="topbar-logo flex-shrink-0">
       <img src="/img/logo.png" class="h-10" />
     </RouterLink>
 
@@ -77,15 +76,11 @@ const isOutsideClicked = (event) => {
       <OverlayPanel ref="op">
         <div class="flex items-center gap-x-2 cursor-pointer" :class="{ 'text-primary': current === 'vi' }" @click="onChangeLocale('vi')">
           <img src="/svg/locale/vi.svg" class="h-4" />
-          <span class="whitespace-nowrap">
-            {{ $t("language.vi", "vi") }}
-          </span>
+          <span class="whitespace-nowrap"> Tiếng Việt </span>
         </div>
         <div class="flex items-center gap-x-2 cursor-pointer mt-2" :class="{ 'text-primary': current === 'en' }" @click="onChangeLocale('en')">
           <img src="/svg/locale/en.svg" class="h-4" />
-          <span class="whitespace-nowrap">
-            {{ $t("language.en", "en") }}
-          </span>
+          <span class="whitespace-nowrap"> English </span>
         </div>
       </OverlayPanel>
     </div>

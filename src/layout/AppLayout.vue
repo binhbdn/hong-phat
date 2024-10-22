@@ -1,10 +1,8 @@
 <script setup>
 import { computed, watch, ref, onBeforeUnmount } from "vue";
-import { useLayout } from "@/composable/layout";
+import { layoutState, isSidebarActive } from "@/composable/layout";
 import AppTopbar from "./AppTopbar.vue";
 import AppSidebar from "./AppSidebar.vue";
-
-const { layoutState, isSidebarActive } = useLayout();
 
 const outsideClickListener = ref(null);
 const sidebarRef = ref(null);
@@ -23,15 +21,15 @@ onBeforeUnmount(() => {
 });
 
 const containerClass = computed(() => ({
-  "layout-static-inactive": layoutState.staticMenuDesktopInactive.value,
-  "layout-mobile-active": layoutState.staticMenuMobileActive.value
+  "layout-static-inactive": layoutState.staticMenuDesktopInactive,
+  "layout-mobile-active": layoutState.staticMenuMobileActive
 }));
 
 const bindOutsideClickListener = () => {
   if (!outsideClickListener.value) {
     outsideClickListener.value = (event) => {
       if (isOutsideClicked(event)) {
-        layoutState.staticMenuMobileActive.value = false;
+        layoutState.staticMenuMobileActive = false;
       }
     };
     document.addEventListener("click", outsideClickListener.value);

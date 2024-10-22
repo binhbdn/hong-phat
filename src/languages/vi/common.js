@@ -1,6 +1,8 @@
 export default {
   copyed: "Đã sao chép",
-  typicalProducts: "Sản phẩm tiêu biểu",
+  services: "Dịch vụ",
+  products: "Sản phẩm",
+  productCategories: "Danh mục sản phẩm",
   aboutUs: "Giới thiệu",
-  contact: "Liên hệ",
+  contact: "Liên hệ"
 };

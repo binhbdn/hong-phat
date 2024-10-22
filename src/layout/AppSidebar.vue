@@ -10,7 +10,7 @@ const showContactDetails = ref(false);
 
 <template>
   <div class="layout-sidebar shadow-md px-2 sm:px-3">
-    <RouterLink :to="{ name: 'pageHome', query: { menu: 'san-pham-tieu-bieu' } }" class="px-2 py-2 sm:py-4">
+    <RouterLink :to="{ name: 'pageHome' }" class="px-2 py-2 sm:py-4">
       <img src="/img/logo.png" class="h-16" />
       <div class="font-semibold text-xs mt-2">
         {{ $t("menu.shortDescription") }}

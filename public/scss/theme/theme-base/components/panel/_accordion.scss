@@ -20,7 +20,8 @@
 .p-accordion {
     .p-accordion-header {
         .p-accordion-header-link {
-            padding: $accordionHeaderPadding;
+            // padding: $accordionHeaderPadding;
+            padding: 0.375rem 0.5rem;
             border: $accordionHeaderBorder;
             color: $accordionHeaderTextColor;
             background: $accordionHeaderBg;
@@ -29,8 +30,18 @@
             transition: $listItemTransition;
             outline-color: transparent;
 
+            @media (min-width: 640px) {
+                padding: 1rem;
+            }
+
             .p-accordion-toggle-icon {
+                width: 0.75rem;
+                height: 0.75rem;
                 margin-right: $inlineSpacing;
+                @media (min-width: 640px) {
+                    width: 1rem;
+                    height: 1rem;
+                }
             }
         }
 
@@ -70,7 +81,8 @@
     }
 
     .p-accordion-content {
-        padding: $accordionContentPadding;
+        // padding: $accordionContentPadding;
+        padding: 0.5rem;
         border: $accordionContentBorder;
         background: $accordionContentBg;
         color: $accordionContentTextColor;
@@ -79,6 +91,10 @@
         border-top-left-radius: 0;
         border-bottom-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
+
+        @media (min-width: 640px) {
+            padding: 1rem;
+        }
     }
 
     .p-accordion-tab {

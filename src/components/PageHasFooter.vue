@@ -1,6 +1,6 @@
 <template>
   <div class="page-has-footer">
-    <div class="page-body overflow-y-scroll hide-scrollbar px-2 sm:px-4 pb-2 sm:pb-3">
+    <div class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-2 sm:pb-3">
       <slot />
     </div>
 
