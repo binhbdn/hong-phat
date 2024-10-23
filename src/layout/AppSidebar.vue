@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { phoneNumber, emailAddress } from "@/config";
+import { phoneNumber, emailAddress, mapUrl } from "@/config";
 import AppMenu from "./AppMenu.vue";
 
 const { $copy } = window;
@@ -59,7 +59,7 @@ const showContactDetails = ref(false);
                   </a>
                 </li>
                 <li>
-                  <a href="https://maps.app.goo.gl/v4CwwvEsFtDqs1zz5" target="_blank" class="rounded-md white-space-nowrap active-route-bg !mt-0">
+                  <a :href="mapUrl" target="_blank" class="rounded-md white-space-nowrap active-route-bg !mt-0">
                     <div class="flex items-center gap-x-2 hover:text-primary">
                       <i class="pi pi-map-marker" style="font-size: 14px; margin-right: 2px" />
                       <span class="text-[13px] white-space-nowrap"> {{ $t("menu.address") }} </span>

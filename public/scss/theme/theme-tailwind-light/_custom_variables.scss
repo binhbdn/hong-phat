@@ -393,11 +393,13 @@ $accordionHeaderTextHoverColor:$shade700 !default;
 
 $accordionHeaderActiveBg:$panelHeaderBg !default;
 $accordionHeaderActiveBorderColor:$shade300 !default;
-$accordionHeaderTextActiveColor:$shade700 !default;
+// $accordionHeaderTextActiveColor:$shade700 !default;
+$accordionHeaderTextActiveColor:var(--primary-color) !default;
 
 $accordionHeaderActiveHoverBg:$shade200 !default;
 $accordionHeaderActiveHoverBorderColor:$shade300 !default;
-$accordionHeaderTextActiveHoverColor:$shade700 !default;
+// $accordionHeaderTextActiveHoverColor:$shade700 !default;
+$accordionHeaderTextActiveHoverColor:var(--primary-color) !default;
 
 $accordionContentBorder:$panelContentBorder !default;
 $accordionContentBg:$panelContentBg !default;

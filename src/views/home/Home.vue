@@ -26,6 +26,7 @@ const activeMenu2 = computed(() => {
   if (viewMode.value === 0) return activeMenus.value.includes(2);
   return viewMode.value === 2 && activeMenus.value.includes(0);
 });
+const onlyOneMenu = computed(() => !isDesktop.value && viewMode.value !== 0);
 
 const setActiveMenus = (mode) => {
   if (mode === 0) {
@@ -64,7 +65,8 @@ const onSetViewMode = (mode) => {
 };
 
 const onTabOpen = (e) => {
-  onSetViewMode(e.index);
+  if (onlyOneMenu.value) return;
+  if (viewMode.value !== e.index) onSetViewMode(e.index);
 };
 
 watch(
@@ -95,47 +97,33 @@ watch(
       <div class="flex justify-center">
         <div class="flex justify-between gap-x-2 sm:gap-x-4">
           <PrimeButton
+            :label="$t('title.menuHome')"
             icon="pi pi-home"
-            outlined
-            :severity="activeMenu0 ? 'primary' : 'secondary'"
-            class="flex sm:hidden h-9 whitespace-nowrap px-1"
-            @click="onSetViewMode(0)"
-          />
-          <PrimeButton
-            icon="pi pi-home"
-            :outlined="!activeMenu0"
-            :severity="activeMenu0 ? 'primary' : 'secondary'"
-            class="hidden sm:flex h-9 whitespace-nowrap"
-            @click="onSetViewMode(0)"
-          />
-          <PrimeButton
-            :label="$t('productCategories')"
+            iconPos="top"
+            iconClass="!mb-1"
             text
-            :severity="activeMenu1 ? 'primary' : 'secondary'"
-            class="flex sm:hidden h-9 whitespace-nowrap px-1"
-            @click="onSetViewMode(1)"
+            :severity="activeMenu0 ? 'primary' : 'secondary'"
+            class="text-xs/none px-1 py-0.5"
+            @click="onSetViewMode(0)"
           />
           <PrimeButton
             :label="$t('productCategories')"
             icon="pi pi-sparkles"
-            :outlined="!activeMenu1"
+            iconPos="top"
+            iconClass="!mb-1"
+            text
             :severity="activeMenu1 ? 'primary' : 'secondary'"
-            class="hidden sm:flex h-9 whitespace-nowrap"
+            class="text-xs/none px-1 py-0.5"
             @click="onSetViewMode(1)"
           />
           <PrimeButton
             :label="$t('aboutUs')"
+            icon="pi pi-info-circle"
+            iconPos="top"
+            iconClass="!mb-1"
             text
             :severity="activeMenu2 ? 'primary' : 'secondary'"
-            class="flex sm:hidden h-9 whitespace-nowrap px-1"
-            @click="onSetViewMode(2)"
-          />
-          <PrimeButton
-            :label="$t('aboutUs')"
-            icon="pi pi-info-circle"
-            :outlined="!activeMenu2"
-            :severity="activeMenu2 ? 'primary' : 'secondary'"
-            class="hidden sm:flex h-9 whitespace-nowrap"
+            class="text-xs/none px-1 py-0.5"
             @click="onSetViewMode(2)"
           />
         </div>
