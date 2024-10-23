@@ -8,6 +8,7 @@ import AboutUs from "./AboutUs.vue";
 
 const props = defineProps(["view"]);
 
+const scrollToTop = ref(false);
 const viewMode = ref(0);
 const activeMenus = ref([0, 1, 2]);
 
@@ -58,10 +59,19 @@ const updateRoute = (mode) => {
   }
 };
 
+const onScrollToTop = () => {
+  scrollToTop.value = true;
+};
+
 const onSetViewMode = (mode) => {
   viewMode.value = mode;
   setActiveMenus(mode);
   updateRoute(mode);
+};
+
+const onFocusMenu = (mode) => {
+  onSetViewMode(mode);
+  onScrollToTop();
 };
 
 const onTabOpen = (e) => {
@@ -73,14 +83,14 @@ watch(
   () => props.view,
   (view) => {
     const mode = view === "ve-chung-toi" ? 2 : view === "san-pham" ? 1 : 0;
-    onSetViewMode(mode);
+    if (viewMode.value !== mode) onSetViewMode(mode);
   },
   { immediate: true }
 );
 </script>
 
 <template>
-  <PageHasFooter>
+  <PageHasFooter v-model:scrollToTop="scrollToTop">
     <Accordion v-model:activeIndex="activeMenus" multiple @tabOpen="onTabOpen">
       <AccordionTab v-if="isDesktop || viewMode === 0" :header="$t('services')" contentClass="bg-banner">
         <Banner />
@@ -94,7 +104,7 @@ watch(
     </Accordion>
 
     <template #footer>
-      <div class="flex justify-center">
+      <div class="flex sm:justify-center relative">
         <div class="flex justify-between gap-x-2 sm:gap-x-4">
           <PrimeButton
             :label="$t('title.menuHome')"
@@ -104,7 +114,7 @@ watch(
             text
             :severity="activeMenu0 ? 'primary' : 'secondary'"
             class="text-xs/none px-1 py-0.5"
-            @click="onSetViewMode(0)"
+            @click="onFocusMenu(0)"
           />
           <PrimeButton
             :label="$t('productCategories')"
@@ -114,7 +124,7 @@ watch(
             text
             :severity="activeMenu1 ? 'primary' : 'secondary'"
             class="text-xs/none px-1 py-0.5"
-            @click="onSetViewMode(1)"
+            @click="onFocusMenu(1)"
           />
           <PrimeButton
             :label="$t('aboutUs')"
@@ -124,8 +134,12 @@ watch(
             text
             :severity="activeMenu2 ? 'primary' : 'secondary'"
             class="text-xs/none px-1 py-0.5"
-            @click="onSetViewMode(2)"
+            @click="onFocusMenu(2)"
           />
+        </div>
+
+        <div class="absolute top-1 right-1.5 sm:right-2 w-8 h-8 flex justify-center items-center rounded-full bg-primary bg-opacity-20 hover:bg-opacity-40 cursor-pointer" @click="onScrollToTop()">
+          <i class="pi pi-angle-double-up text-primary" />
         </div>
       </div>
     </template>

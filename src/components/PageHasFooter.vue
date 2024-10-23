@@ -1,6 +1,29 @@
+<script setup>
+import { ref, watch } from "vue";
+
+const props = defineProps(["scrollToTop"]);
+const emit = defineEmits(["update:scrollToTop"]);
+
+const refPageBody = ref(null);
+
+const onScrollToTop = () => {
+  refPageBody.value.scrollTop = 0;
+};
+
+watch(
+  () => props.scrollToTop,
+  val => {
+    if (val) {
+      onScrollToTop();
+      emit("update:scrollToTop", false);
+    }
+  }
+);
+</script>
+
 <template>
   <div class="page-has-footer">
-    <div class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-2 sm:pb-3">
+    <div ref="refPageBody" class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-2 sm:pb-3">
       <slot />
     </div>
 
