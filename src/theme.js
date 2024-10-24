@@ -119,7 +119,7 @@ import Toast from "primevue/toast"; // required "primevue/toastservice" or useTo
 /* Media */
 import Carousel from "primevue/carousel";
 // import Galleria from "primevue/galleria";
-// import Image from "primevue/image";
+import Image from "primevue/image";
 
 /* Misc */
 // import Avatar from "primevue/avatar";
@@ -206,6 +206,7 @@ export const usePrimeVue = (app) => {
 
   /* Media */
   app.component("Carousel", Carousel);
+  app.component("Image", Image);
 
   /* Misc */
   // app.component("Avatar", Avatar);

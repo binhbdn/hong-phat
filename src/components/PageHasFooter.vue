@@ -12,7 +12,7 @@ const onScrollToTop = () => {
 
 watch(
   () => props.scrollToTop,
-  val => {
+  (val) => {
     if (val) {
       onScrollToTop();
       emit("update:scrollToTop", false);

@@ -66,6 +66,10 @@ const showContactDetails = ref(false);
                     </div>
                   </a>
                 </li>
+                <li class="flex justify-between pl-6 pr-2">
+                  <Image src="/img/qr/facebook.png" width="80" preview imageClass="border border-gray-400 rounded-md" />
+                  <Image src="/img/qr/zalo.png" width="80" preview imageClass="border border-gray-400 rounded-md" />
+                </li>
               </ul>
             </li>
           </ul>

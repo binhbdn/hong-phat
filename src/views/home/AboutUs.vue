@@ -72,6 +72,11 @@ const { $copy } = window;
           <i class="pi pi-map-marker" style="font-size: 14px" />
           <span> {{ $t("menu.address") }} </span>
         </a>
+
+        <div class="flex justify-between px-5">
+          <Image src="/img/qr/facebook.png" width="80" preview imageClass="border border-gray-400 rounded-md" />
+          <Image src="/img/qr/zalo.png" width="80" preview imageClass="border border-gray-400 rounded-md" />
+        </div>
       </div>
     </div>
   </div>

@@ -138,7 +138,10 @@ watch(
           />
         </div>
 
-        <div class="absolute top-1 right-1.5 sm:right-2 w-8 h-8 flex justify-center items-center rounded-full bg-primary bg-opacity-20 hover:bg-opacity-40 cursor-pointer" @click="onScrollToTop()">
+        <div
+          class="absolute top-1 right-1.5 sm:right-2 w-8 h-8 flex justify-center items-center rounded-full bg-primary bg-opacity-20 hover:bg-opacity-40 cursor-pointer"
+          @click="onScrollToTop()"
+        >
           <i class="pi pi-angle-double-up text-primary" />
         </div>
       </div>
