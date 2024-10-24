@@ -2,5 +2,5 @@ export default {
   shortDescription: "Supply CNC machine accessories",
   copyPhoneNumber: "Copy phone number",
   copyEmailAddress: "Copy email address",
-  address: "Hamlet 10, Nghi Phu Commune, Vinh City, Nghe An"
+  address: "Lane 20, Truong Van Linh Street, Ha Huy Tap Ward, Vinh City, Nghe An Province, Vietnam"
 };

@@ -844,7 +844,8 @@ $dockBorderRadius: .5rem !default;
 //image
 $imageMaskBg:rgba(0,0,0,0.9) !default;
 $imagePreviewToolbarPadding:1rem !default;
-$imagePreviewIndicatorColor:#f8f9fa !default;
+// $imagePreviewIndicatorColor:#f8f9fa !default;
+$imagePreviewIndicatorColor:$primaryColor !default;
 $imagePreviewIndicatorBg:rgba(0,0,0,0.5) !default;
 $imagePreviewActionIconBg:transparent !default;
 $imagePreviewActionIconColor:#f8f9fa !default;
