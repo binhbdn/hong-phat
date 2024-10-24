@@ -1,6 +1,7 @@
 // core
 .p-toast {
     width: 25rem;
+    max-width: calc(100vw - 40px);
     white-space: pre-line;
     word-break: break-word;
 }
