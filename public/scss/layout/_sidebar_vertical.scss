@@ -72,12 +72,12 @@
         color: var(--menuitem-text-color);
         cursor: pointer;
         margin-top: 0.25rem;
-        padding: 0.5rem;
+        padding: 0.375rem;
         font-weight: 700;
         transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
 
         .layout-menuitem-icon {
-          margin-right: 0.5rem;
+          margin-right: 0.375rem;
           //   color: var(--menuitem-icon-color);
         }
 
@@ -106,14 +106,15 @@
 
         li {
           a {
-            padding: 0.375rem 0.5rem 0.375rem 1.5rem;
+            margin-top: 0;
+            padding: 0.25rem 0.5rem 0.25rem 1.5rem;
             font-weight: 500;
           }
 
           li {
             a {
               // padding-left: 3rem;
-              padding: 0.25rem 0.5rem 0.25rem 2rem;
+              padding: 0.125rem 0.5rem 0.125rem 2rem;
               font-weight: 300;
               font-style: italic;
             }

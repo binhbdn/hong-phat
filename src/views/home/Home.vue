@@ -34,7 +34,7 @@ const setActiveMenus = (mode) => {
     activeMenus.value = [0, 1, 2];
   } else if (isDesktop.value) {
     if (mode === 1) {
-      activeMenus.value = [1, 2];
+      activeMenus.value = [1];
     } else {
       activeMenus.value = [2];
     }
@@ -46,15 +46,15 @@ const setActiveMenus = (mode) => {
 const updateRoute = (mode) => {
   if (mode === 0) {
     if (props.view) {
-      window.$router.replace({ name: "pageHome" });
+      window.$router.replace({ name: "pHome" });
     }
   } else if (mode === 1) {
     if (props.view !== "san-pham") {
-      window.$router.replace({ name: "pageHome", query: { view: "san-pham" } });
+      window.$router.replace({ name: "pHome", query: { view: "san-pham" } });
     }
   } else {
     if (props.view !== "ve-chung-toi") {
-      window.$router.replace({ name: "pageHome", query: { view: "ve-chung-toi" } });
+      window.$router.replace({ name: "pHome", query: { view: "ve-chung-toi" } });
     }
   }
 };
@@ -107,7 +107,7 @@ watch(
       <div class="flex sm:justify-center relative">
         <div class="flex justify-between gap-x-2 sm:gap-x-4">
           <PrimeButton
-            :label="$t('title.menuHome')"
+            :label="$t('home')"
             icon="pi pi-home"
             iconPos="top"
             iconClass="!mb-1"

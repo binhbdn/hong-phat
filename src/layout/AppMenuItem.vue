@@ -103,9 +103,9 @@ const checkActiveItem = (item) => {
     >
       <i :class="item.icon" class="layout-menuitem-icon"></i>
       <span class="white-space-nowrap">
-        {{ $t(`title.${item.label}`) }}
+        {{ $t(item.label) }}
       </span>
-      <i v-if="item.items" class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
+      <i v-if="item.items" class="pi pi-angle-down layout-submenu-toggler"></i>
     </a>
     <RouterLink
       v-if="item.to && !item.items"
@@ -117,9 +117,9 @@ const checkActiveItem = (item) => {
     >
       <i :class="item.icon" class="layout-menuitem-icon"></i>
       <span class="white-space-nowrap">
-        {{ $t(`title.${item.label}`) }}
+        {{ $t(item.label) }}
       </span>
-      <i v-if="item.items" class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
+      <i v-if="item.items" class="pi pi-angle-down layout-submenu-toggler"></i>
     </RouterLink>
 
     <ul v-if="item.items">

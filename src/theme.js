@@ -62,7 +62,7 @@ import Column from "primevue/column";
 // import OrganizationChart from "primevue/organizationchart";
 import Paginator from "primevue/paginator";
 // import PickList from "primevue/picklist";
-// import Tree from "primevue/tree";
+import Tree from "primevue/tree";
 // import TreeTable from "primevue/treetable";
 // import Timeline from "primevue/timeline";
 // import VirtualScroller from "primevue/virtualscroller";
@@ -112,7 +112,7 @@ import TabMenu from "primevue/tabmenu";
 // import Chart from "primevue/chart"; // required dependency "chart.js"
 
 /* Messages */
-// import Message from "primevue/message";
+import Message from "primevue/message";
 // import InlineMessage from "primevue/inlinemessage";
 import Toast from "primevue/toast"; // required "primevue/toastservice" or useToast function from "primevue/usetoast"
 
@@ -179,6 +179,7 @@ export const usePrimeVue = (app) => {
   app.component("DataTable", DataTable);
   app.component("Column", Column);
   app.component("Paginator", Paginator);
+  app.component("Tree", Tree);
 
   /* Panel */
   app.component("Accordion", Accordion);
@@ -202,6 +203,7 @@ export const usePrimeVue = (app) => {
   // app.component("Chart", Chart);
 
   /* Messages */
+  app.component("Message", Message);
   app.component("Toast", Toast);
 
   /* Media */

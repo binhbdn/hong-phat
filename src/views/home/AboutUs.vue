@@ -5,16 +5,16 @@ const { $copy } = window;
 </script>
 
 <template>
-  <div class="flex flex-col gap-y-3 text-gray-700">
+  <div class="flex flex-col gap-y-3 text-[13px]/[18px] text-gray-700">
     <div>
-      <div class="font-semibold text-primary">Về chúng tôi</div>
+      <div class="font-semibold text-sm text-primary">Về chúng tôi</div>
       <div class="flex flex-col gap-y-2 ml-4 mt-2">
         <div>
           Công ty <strong class="text-primary">Ngũ Kim Hồng Phát</strong> là một trong những công ty kinh doanh hàng đầu tại Việt Nam trong lĩnh vực cung cấp và
           phân phối:
         </div>
         <ul class="list-disc font-medium ml-8">
-          <li>Dụng cụ cơ khí & Phụ kiện máy cnc</li>
+          <li>Dụng cụ cơ khí & Phụ kiện máy CNC</li>
           <li>Các loại bầu kẹp & Phụ kiện gá kẹp</li>
           <li>Các loại dụng cụ cắt gọt kim loại</li>
           <li>Dao & cán dao gia công kim loại</li>
@@ -23,7 +23,7 @@ const { $copy } = window;
     </div>
 
     <div>
-      <div class="font-semibold text-primary">Chúng tôi CAM KẾT</div>
+      <div class="font-semibold text-sm text-primary">Chúng tôi CAM KẾT</div>
       <div class="flex flex-col gap-y-2 ml-4 mt-2">
         <div>
           <div class="font-medium">➡️ Về chất lượng sản phẩm:</div>
@@ -48,29 +48,29 @@ const { $copy } = window;
     </div>
 
     <div class="w-fit pr-2">
-      <div class="font-semibold text-primary">
+      <div class="font-semibold text-sm text-primary">
         {{ $t("contact") }}
       </div>
-      <div class="flex flex-col gap-y-2 text-[13px] ml-4 mt-2">
+      <div class="flex flex-col gap-y-2 ml-4 mt-2">
         <div class="flex justify-between items-center">
           <a :href="`tel:${phoneNumber}`" class="min-w-44 flex items-center gap-x-2 hover:text-primary">
-            <i class="pi pi-phone" style="font-size: 14px" />
+            <i class="pi pi-phone" />
             <span> {{ phoneNumber }} </span>
           </a>
-          <i v-tooltip="$t('menu.copyPhoneNumber')" class="pi pi-clone hover:text-primary" style="font-size: 14px" @click="$copy(phoneNumber)" />
+          <i v-tooltip="$t('m.copyPhoneNumber')" class="pi pi-clone hover:text-primary" @click="$copy(phoneNumber)" />
         </div>
 
         <div class="flex justify-between items-center">
           <a :href="`mailto:${emailAddress}`" class="min-w-44 flex items-center gap-x-2 hover:text-primary">
-            <i class="pi pi-envelope" style="font-size: 14px" />
+            <i class="pi pi-envelope" />
             <span> {{ emailAddress }} </span>
           </a>
-          <i v-tooltip="$t('menu.copyEmailAddress')" class="pi pi-clone hover:text-primary" style="font-size: 14px" @click="$copy(emailAddress)" />
+          <i v-tooltip="$t('m.copyEmailAddress')" class="pi pi-clone hover:text-primary" @click="$copy(emailAddress)" />
         </div>
 
         <a :href="mapUrl" target="_blank" class="flex items-center gap-x-2 hover:text-primary">
-          <i class="pi pi-map-marker" style="font-size: 14px" />
-          <span> {{ $t("menu.address") }} </span>
+          <i class="pi pi-map-marker" />
+          <span> {{ $t("m.address") }} </span>
         </a>
 
         <div class="flex justify-between px-5">

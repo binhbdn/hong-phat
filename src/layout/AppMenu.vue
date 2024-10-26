@@ -3,47 +3,63 @@ import AppSubMenu from "./AppSubMenu.vue";
 
 const model = [
   {
-    label: "menuGroup",
+    label: "group",
     items: [
       {
-        label: "menuHome",
+        label: "home",
         icon: "pi pi-home",
         to: "/"
       }
     ]
   },
   {
-    label: "menuGroup",
+    label: "group",
     items: [
       {
-        label: "pageSPTimKiem",
+        label: "pTimKiem",
         icon: "pi pi-search",
         to: "/san-pham/tim-kiem"
       }
     ]
   },
   {
-    label: "menuGroup",
+    label: "group",
     items: [
       {
-        label: "menuAllProducts",
+        label: "allProducts",
         icon: "pi pi-box",
         items: [
           {
-            label: "menuMillingCutter",
+            label: "pDaoPhay",
             items: [
               {
-                label: "pageSPDaoPhayCau",
+                label: "pDaoPhayCau",
                 to: "/san-pham/dao-phay-cau"
               },
               {
-                label: "pageSPDaoPhayNgon",
+                label: "pDaoPhayBoGoc",
+                to: "/san-pham/dao-phay-bo-goc"
+              },
+              {
+                label: "pDaoPhayNgon",
                 to: "/san-pham/dao-phay-ngon"
+              },
+              {
+                label: "pDaoPhayPhaTho",
+                to: "/san-pham/dao-phay-pha-tho"
+              },
+              {
+                label: "pDaoPhayRTrong",
+                to: "/san-pham/dao-phay-r-trong"
+              },
+              {
+                label: "pDaoPhayVatMep",
+                to: "/san-pham/dao-phay-vat-mep"
               }
             ]
           },
           {
-            label: "pageSPBauKep",
+            label: "pBauKep",
             to: "/san-pham/bau-kep"
           }
         ]

@@ -47,7 +47,8 @@ $transitionDuration:.2s !default;
 $formElementTransition:all 0.3s !default;
 $actionIconTransition:none !default;
 $listItemTransition:none !default;
-$primeIconFontSize:1rem !default;
+// $primeIconFontSize:1rem !default;
+$primeIconFontSize:0.875rem !default;
 $divider:1px solid #f3f4f6 !default;    //coolgray-100
 $inlineSpacing:.5rem !default;
 $disabledOpacity:.6 !default;
@@ -68,8 +69,10 @@ $inputFocusOutlineOffset:$focusOutlineOffset !default;
 $focusShadow:0 0 0 2px var(--primary-color) !default;
 
 //action icons
-$actionIconWidth:2rem !default;
-$actionIconHeight:2rem !default;
+// $actionIconWidth:2rem !default;
+$actionIconWidth:1.25rem !default;
+// $actionIconHeight:2rem !default;
+$actionIconHeight:1.25rem !default;
 $actionIconBg:transparent !default;
 $actionIconBorder:0 none !default;
 $actionIconColor:$shade600 !default;
@@ -135,8 +138,10 @@ $passwordStrongBg:#22C55E !default;
 
 //button
 $buttonPadding:.75rem 1rem !default;
-$buttonIconOnlyWidth:3rem !default;
-$buttonIconOnlyPadding:.75rem 0 !default;
+// $buttonIconOnlyWidth:3rem !default;
+$buttonIconOnlyWidth:1.5rem !default;
+// $buttonIconOnlyPadding:.75rem 0 !default;
+$buttonIconOnlyPadding:0 !default;
 $buttonBg:$primaryColor !default;
 $buttonTextColor:$primaryTextColor !default;
 $buttonBorder:1px solid $primaryColor !default;
@@ -230,7 +235,8 @@ $linkButtonFocusShadow:0 0 0 0.2rem $focusOutlineColor !default;
 //checkbox
 $checkboxWidth:16px !default;
 $checkboxHeight:16px !default;
-$checkboxBorder:2px solid $shade400 !default;
+// $checkboxBorder:2px solid $shade400 !default;
+$checkboxBorder:1px solid #cbd5e1 !default;
 $checkboxIconFontSize:10px !default;
 $checkboxActiveBorderColor:$primaryColor !default;
 $checkboxActiveBg:$primaryColor !default;
@@ -564,11 +570,15 @@ $timelineEventColor:$shade300 !default;
 $organizationChartConnectorColor:$shade300 !default;
 
 //message
-$messageMargin:1rem 0 !default;
-$messagePadding:1.25rem 1.75rem !default;
+// $messageMargin:1rem 0 !default;
+$messageMargin:0 0 0.25rem 0 !default;
+// $messagePadding:1.25rem 1.75rem !default;
+$messagePadding:0.25rem 0.5rem !default;
 $messageBorderWidth:0 0 0 6px !default;
-$messageIconFontSize:1.5rem !default;
-$messageTextFontSize:1rem !default;
+// $messageIconFontSize:1.5rem !default;
+$messageIconFontSize:0.875rem !default;
+// $messageTextFontSize:1rem !default;
+$messageTextFontSize:13px !default;
 $messageTextFontWeight:500 !default;
 
 //inline message
@@ -843,7 +853,8 @@ $dockBorderRadius: .5rem !default;
 
 //image
 $imageMaskBg:rgba(0,0,0,0.9) !default;
-$imagePreviewToolbarPadding:1rem !default;
+// $imagePreviewToolbarPadding:1rem !default;
+$imagePreviewToolbarPadding:0.75rem !default;
 // $imagePreviewIndicatorColor:#f8f9fa !default;
 $imagePreviewIndicatorColor:$primaryColor !default;
 $imagePreviewIndicatorBg:rgba(0,0,0,0.5) !default;
@@ -851,9 +862,12 @@ $imagePreviewActionIconBg:transparent !default;
 $imagePreviewActionIconColor:#f8f9fa !default;
 $imagePreviewActionIconHoverBg:rgba(255,255,255,0.1) !default;
 $imagePreviewActionIconHoverColor:#f8f9fa !default;
-$imagePreviewActionIconWidth:3rem !default;
-$imagePreviewActionIconHeight:3rem !default;
-$imagePreviewActionIconFontSize:1.5rem !default;
+// $imagePreviewActionIconWidth:3rem !default;
+$imagePreviewActionIconWidth:2.5rem !default;
+// $imagePreviewActionIconHeight:3rem !default;
+$imagePreviewActionIconHeight:2.5rem !default;
+// $imagePreviewActionIconFontSize:1.5rem !default;
+$imagePreviewActionIconFontSize:1.25rem !default;
 $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {

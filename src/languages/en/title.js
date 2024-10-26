@@ -1,11 +1,12 @@
 export default {
-  pageHome: " ",
-  pageSPTimKiem: "Search for products",
-  pageSPDaoPhayCau: "Ball mill",
-  pageSPDaoPhayNgon: "End mill",
-  pageSPBauKep: "Tool holder",
-  menuGroup: "Group",
-  menuHome: "Home",
-  menuAllProducts: "All products",
-  menuMillingCutter: "Milling cutter"
+  pHome: " ",
+  pTimKiem: "Search for products",
+  pDaoPhayCau: "Ball mill",
+  pDaoPhayBoGoc: "Corner radius end mill",
+  pDaoPhayNgon: "End mill",
+  pDaoPhayPhaTho: "Roughing end mill",
+  pDaoPhayRTrong: "Internal R end mill",
+  pDaoPhayVatMep: "Chamfer end mill",
+  pBauKep: "Tool holder",
+  pDaoPhay: "Milling cutter"
 };

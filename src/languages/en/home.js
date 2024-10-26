@@ -7,5 +7,9 @@ export default {
   text31: "Various types of",
   text32: "metal cutting tools",
   text41: "Knives & knife handles",
-  text42: "for metalworking"
+  text42: "for metalworking",
+  msgFilterCategories: "Filter categories to shorten the list",
+  showCategories: "Show categories",
+  hideCategories: "Hide categories",
+  selectCategories: "Select categories"
 };

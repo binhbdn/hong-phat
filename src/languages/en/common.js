@@ -4,5 +4,9 @@ export default {
   products: "Products",
   productCategories: "Product categories",
   aboutUs: "About us",
-  contact: "Contact"
+  contact: "Contact",
+  group: "Group",
+  home: "Home",
+  allProducts: "All products",
+  allCategories: "All categories"
 };

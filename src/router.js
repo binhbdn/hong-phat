@@ -10,28 +10,48 @@ const router = createRouter({
       children: [
         {
           path: "",
-          name: "pageHome",
+          name: "pHome",
           props: (route) => ({ view: route.query?.view }),
           component: () => import("@/views/home/Home.vue")
         },
         {
           path: "san-pham/tim-kiem",
-          name: "pageSPTimKiem",
+          name: "pTimKiem",
           component: () => import("@/views/san-pham/tim-kiem/TimKiem.vue")
         },
         {
           path: "san-pham/dao-phay-cau",
-          name: "pageSPDaoPhayCau",
+          name: "pDaoPhayCau",
           component: () => import("@/views/san-pham/dao-phay-cau/DaoPhayCau.vue")
         },
         {
+          path: "san-pham/dao-phay-bo-goc",
+          name: "pDaoPhayBoGoc",
+          component: () => import("@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGoc.vue")
+        },
+        {
           path: "san-pham/dao-phay-ngon",
-          name: "pageSPDaoPhayNgon",
+          name: "pDaoPhayNgon",
           component: () => import("@/views/san-pham/dao-phay-ngon/DaoPhayNgon.vue")
         },
         {
+          path: "san-pham/dao-phay-pha-tho",
+          name: "pDaoPhayPhaTho",
+          component: () => import("@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaTho.vue")
+        },
+        {
+          path: "san-pham/dao-phay-r-trong",
+          name: "pDaoPhayRTrong",
+          component: () => import("@/views/san-pham/dao-phay-r-trong/DaoPhayRTrong.vue")
+        },
+        {
+          path: "san-pham/dao-phay-vat-mep",
+          name: "pDaoPhayVatMep",
+          component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMep.vue")
+        },
+        {
           path: "san-pham/bau-kep",
-          name: "pageSPBauKep",
+          name: "pBauKep",
           component: () => import("@/views/san-pham/bau-kep/BauKep.vue")
         }
       ]

@@ -4,5 +4,9 @@ export default {
   products: "Sản phẩm",
   productCategories: "Danh mục sản phẩm",
   aboutUs: "Giới thiệu",
-  contact: "Liên hệ"
+  contact: "Liên hệ",
+  group: "Group",
+  home: "Trang chủ",
+  allProducts: "Tất cả sản phẩm",
+  allCategories: "Tất cả danh mục"
 };

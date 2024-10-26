@@ -17,7 +17,7 @@ defineProps({
       <i class="pi pi-angle-left text-lg/5 sm:text-xl/5" />
     </div>
     <div class="text-gray-900 text-base sm:text-lg whitespace-nowrap">
-      {{ $t(`title.${$route.name}`) }}
+      {{ $t($route.name) }}
     </div>
   </div>
 </template>

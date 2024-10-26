@@ -4,23 +4,23 @@ import { isDesktop } from "@/composable/layout";
 const banner = [
   {
     imgSrc: "/img/banner/dao-phay.png",
-    text1: "banner.text11",
-    text2: "banner.text12"
+    text1: "h.text11",
+    text2: "h.text12"
   },
   {
     imgSrc: "/img/banner/bau-kep.png",
-    text1: "banner.text21",
-    text2: "banner.text22"
+    text1: "h.text21",
+    text2: "h.text22"
   },
   {
     imgSrc: "/img/banner/taro-khoan.png",
-    text1: "banner.text31",
-    text2: "banner.text32"
+    text1: "h.text31",
+    text2: "h.text32"
   },
   {
     imgSrc: "/img/banner/can-dao.png",
-    text1: "banner.text41",
-    text2: "banner.text42"
+    text1: "h.text41",
+    text2: "h.text42"
   }
 ];
 </script>
@@ -33,7 +33,7 @@ const banner = [
         <div class="absolute min-w-fit sm:w-1/3 lg:w-5/12 h-full left-2 top-0 flex items-center sm:pl-2 xl:pl-10">
           <div class="uppercase">
             <span class="inline-block bg-gray-300 bg-opacity-50 font-semibold text-xs sm:text-base italic rounded-md px-1 sm:px-4 py-1">
-              {{ $t("banner.supply") }}
+              {{ $t("h.supply") }}
             </span>
             <br />
             <div class="inline-block bg-gray-300 bg-opacity-50 text-primary text-sm sm:text-2xl xl:text-3xl rounded-md px-1 sm:px-4 py-1 sm:py-2 mt-2">

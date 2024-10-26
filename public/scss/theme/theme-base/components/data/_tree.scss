@@ -86,12 +86,17 @@
     border: $panelContentBorder;
     background: $panelContentBg;
     color: $panelContentTextColor;
-    padding: $panelContentPadding;
+    // padding: $panelContentPadding;
     border-radius: $borderRadius;
+
+    padding: 0.25rem;
+    @media (min-width: 640px) {
+        padding: 0.5rem;
+    }
 
     .p-tree-container {
         .p-treenode {
-            padding: $treeNodePadding;
+            // padding: $treeNodePadding;
             outline: 0 none;
 
             &:focus > .p-treenode-content {
@@ -101,20 +106,24 @@
             .p-treenode-content {
                 border-radius: $borderRadius;
                 transition: $listItemTransition;
-                padding: $treeNodeContentPadding;
+                // padding: $treeNodeContentPadding;
+                padding: 0.125rem 0.5rem;
 
                 .p-tree-toggler {
-                    margin-right: $inlineSpacing;
+                    // margin-right: $inlineSpacing;
+                    margin-right: 0.5rem;
                     @include action-icon();
                 }
 
                 .p-treenode-icon {
-                    margin-right: $inlineSpacing;
+                    // margin-right: $inlineSpacing;
+                    margin-right: 0.25rem;
                     color: $treeNodeIconColor;
                 }
 
                 .p-checkbox {
-                    margin-right: $inlineSpacing;
+                    // margin-right: $inlineSpacing;
+                    margin-right: 0.25rem;
 
                     &.p-indeterminate {
                         .p-checkbox-icon {

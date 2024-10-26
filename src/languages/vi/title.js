@@ -1,11 +1,12 @@
 export default {
-  pageHome: " ",
-  pageSPTimKiem: "Tìm kiếm sản phẩm",
-  pageSPDaoPhayCau: "Dao phay cầu",
-  pageSPDaoPhayNgon: "Dao phay ngón",
-  pageSPBauKep: "Bầu kẹp",
-  menuGroup: "Group",
-  menuHome: "Trang chủ",
-  menuAllProducts: "Tất cả sản phẩm",
-  menuMillingCutter: "Dao phay"
+  pHome: " ",
+  pTimKiem: "Tìm kiếm sản phẩm",
+  pDaoPhayCau: "Dao phay cầu",
+  pDaoPhayBoGoc: "Dao phay bo góc",
+  pDaoPhayNgon: "Dao phay ngón",
+  pDaoPhayPhaTho: "Dao phay phá thô",
+  pDaoPhayRTrong: "Dao phay R trong",
+  pDaoPhayVatMep: "Dao phay vát mép",
+  pBauKep: "Bầu kẹp",
+  pDaoPhay: "Dao phay"
 };

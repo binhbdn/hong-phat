@@ -34,7 +34,8 @@
         z-index: 1;
         outline: 0 none;
         border: $checkboxBorder;
-        border-radius: $borderRadius;
+        // border-radius: $borderRadius;
+        border-radius: 0.125rem;
     }
 
     .p-checkbox-box {
