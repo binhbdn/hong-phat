@@ -21,7 +21,7 @@
     .p-accordion-header {
         .p-accordion-header-link {
             // padding: $accordionHeaderPadding;
-            padding: 0.5rem;
+            padding-left: 0.5rem;
             border: $accordionHeaderBorder;
             color: $accordionHeaderTextColor;
             background: $accordionHeaderBg;
@@ -31,7 +31,7 @@
             outline-color: transparent;
 
             @media (min-width: 640px) {
-                padding: 1rem;
+                padding-left: 1rem;
             }
 
             .p-accordion-toggle-icon {

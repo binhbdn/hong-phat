@@ -3504,7 +3504,7 @@ input.p-dropdown-label {
 }
 
 .p-accordion .p-accordion-header .p-accordion-header-link {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   border: 1px solid #e5e7eb;
   color: #3f3f46;
   background: #fafafa;
@@ -3515,7 +3515,7 @@ input.p-dropdown-label {
 }
 @media (min-width: 640px) {
   .p-accordion .p-accordion-header .p-accordion-header-link {
-    padding: 1rem;
+    padding-left: 1rem;
   }
 }
 .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {

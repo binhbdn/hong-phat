@@ -92,13 +92,37 @@ watch(
 <template>
   <PageHasFooter v-model:scrollToTop="scrollToTop">
     <Accordion v-model:activeIndex="activeMenus" multiple @tabOpen="onTabOpen">
-      <AccordionTab v-if="isDesktop || viewMode === 0" :header="$t('services')" contentClass="bg-banner">
+      <AccordionTab v-if="isDesktop || viewMode === 0" contentClass="bg-banner">
+        <template #header>
+          <div class="w-full flex items-stretch">
+            <div class="py-2 sm:py-4 pr-2">
+              {{ $t("services") }}
+            </div>
+            <div class="flex-grow" @click.stop />
+          </div>
+        </template>
         <Banner />
       </AccordionTab>
-      <AccordionTab v-if="isDesktop || viewMode !== 2" :header="$t('productCategories')">
+      <AccordionTab v-if="isDesktop || viewMode !== 2">
+        <template #header>
+          <div class="w-full flex items-stretch">
+            <div class="py-2 sm:py-4 pr-2">
+              {{ $t("productCategories") }}
+            </div>
+            <div class="flex-grow" @click.stop />
+          </div>
+        </template>
         <Categories />
       </AccordionTab>
-      <AccordionTab v-if="isDesktop || viewMode !== 1" :header="$t('aboutUs')">
+      <AccordionTab v-if="isDesktop || viewMode !== 1">
+        <template #header>
+          <div class="w-full flex items-stretch">
+            <div class="py-2 sm:py-4 pr-2">
+              {{ $t("aboutUs") }}
+            </div>
+            <div class="flex-grow" @click.stop />
+          </div>
+        </template>
         <AboutUs />
       </AccordionTab>
     </Accordion>
