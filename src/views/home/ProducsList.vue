@@ -1,7 +1,11 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
-import { categoryKeys, showMsg, showFilter, expandedKeys, selectedKeys } from "@/stores/homeCategory";
+import { ref, watch, onMounted, onBeforeUnmount } from "vue";
+import { categoryKeys, showMsg, showFilter, expandedKeys, selectedKeys, view } from "@/stores/homeCategory";
 import Overlay from "@/components/Overlay.vue";
+import CategoryHeader from "@/views/home/CategoryHeader.vue";
+import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
+import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue";
+import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -42,17 +46,36 @@ const unbindOutsideClickTreeCategoriesListener = () => {
   }
 };
 
+watch(selectedKeys, (val) => {
+  view.allCategories.show = Boolean(val?.allCategories);
+  view.pDaoPhayNgon.show = Boolean(val?.pDaoPhayNgon?.checked);
+  if (view.pDaoPhayNgon.show) view.pDaoPhayNgon.expanded = true;
+  view.pDaoPhayCau.show = Boolean(val?.pDaoPhayCau?.checked);
+  if (view.pDaoPhayCau.show) view.pDaoPhayCau.expanded = true;
+  view.pDaoPhayVatMep.show = Boolean(val?.pDaoPhayVatMep?.checked);
+  if (view.pDaoPhayVatMep.show) view.pDaoPhayVatMep.expanded = true;
+  view.pDaoPhayBoGoc.show = Boolean(val?.pDaoPhayBoGoc?.checked);
+  if (view.pDaoPhayBoGoc.show) view.pDaoPhayBoGoc.expanded = true;
+  view.pDaoPhayRTrong.show = Boolean(val?.pDaoPhayRTrong?.checked);
+  if (view.pDaoPhayRTrong.show) view.pDaoPhayRTrong.expanded = true;
+  view.pDaoPhayPhaTho.show = Boolean(val?.pDaoPhayPhaTho?.checked);
+  if (view.pDaoPhayPhaTho.show) view.pDaoPhayPhaTho.expanded = true;
+  view.pBauKep.show = Boolean(val?.pBauKep?.checked);
+  if (view.pBauKep.show) view.pBauKep.expanded = true;
+});
+
 onMounted(() => {
   treeCategoriesEl = document.querySelector(".home-tree-categories");
   iconFilterEl = document.querySelector(".home-icon-filter");
   bindOutsideClickTreeCategoriesListener();
 });
+
 onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 </script>
 
 <template>
   <div class="flex flex-col text-gray-700 relative">
-    <Message v-if="showMsg" class="home-msg-filter">
+    <Message v-if="showMsg" class="home-msg-filter mb-3">
       {{ $t("h.msgFilterCategories") }}
     </Message>
 
@@ -87,7 +110,22 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
       </Tree>
     </div>
 
-    <div class="min-h-48 bg-primary bg-opacity-20 mt-1 sm:mt-2">TODO: danh sách sản phẩm</div>
+    <div class="min-h-48 flex flex-col gap-y-1">
+      <div v-show="!view.allCategories.show" class="text-primary/70">
+        {{ $t("h.selectNoneCategories") }}
+      </div>
+
+      <div v-show="view.pDaoPhayNgon.show" class="home-category" :class="{ expanded: view.pDaoPhayNgon.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayNgon.expanded" name="pDaoPhayNgon" />
+        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :showAll="view.pDaoPhayNgon.showAll" />
+        <ViewMoreBtn v-show="view.pDaoPhayNgon.expanded" v-model:showAll="view.pDaoPhayNgon.showAll" class="mt-2" />
+      </div>
+
+      <div v-show="view.pDaoPhayCau.show" class="home-category" :class="{ expanded: view.pDaoPhayCau.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
+        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -120,5 +158,11 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
     background-color: transparent;
     border-color: transparent;
   }
+}
+.home-category + .home-category.expanded {
+  margin-top: 0.5rem;
+}
+.home-category.expanded + .home-category {
+  margin-top: 0.5rem;
 }
 </style>

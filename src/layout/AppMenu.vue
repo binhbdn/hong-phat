@@ -33,28 +33,28 @@ const model = [
             label: "pDaoPhay",
             items: [
               {
+                label: "pDaoPhayNgon",
+                to: "/san-pham/dao-phay-ngon"
+              },
+              {
                 label: "pDaoPhayCau",
                 to: "/san-pham/dao-phay-cau"
+              },
+              {
+                label: "pDaoPhayVatMep",
+                to: "/san-pham/dao-phay-vat-mep"
               },
               {
                 label: "pDaoPhayBoGoc",
                 to: "/san-pham/dao-phay-bo-goc"
               },
               {
-                label: "pDaoPhayNgon",
-                to: "/san-pham/dao-phay-ngon"
-              },
-              {
-                label: "pDaoPhayPhaTho",
-                to: "/san-pham/dao-phay-pha-tho"
-              },
-              {
                 label: "pDaoPhayRTrong",
                 to: "/san-pham/dao-phay-r-trong"
               },
               {
-                label: "pDaoPhayVatMep",
-                to: "/san-pham/dao-phay-vat-mep"
+                label: "pDaoPhayPhaTho",
+                to: "/san-pham/dao-phay-pha-tho"
               }
             ]
           },

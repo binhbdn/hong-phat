@@ -8,5 +8,8 @@ export default {
   group: "Group",
   home: "Trang chủ",
   allProducts: "Tất cả sản phẩm",
-  allCategories: "Tất cả danh mục"
+  allCategories: "Tất cả danh mục",
+  cn: "Trung Quốc",
+  viewMore: "Xem thêm",
+  viewMPopularOnly: "Chỉ xem sản phẩm phổ biến"
 };

@@ -3,7 +3,7 @@ import { ref, computed, watch } from "vue";
 import { isDesktop } from "@/composable/layout";
 import PageHasFooter from "@/components/PageHasFooter.vue";
 import Banner from "./Banner.vue";
-import Categories from "./Categories.vue";
+import ProducsList from "./ProducsList.vue";
 import AboutUs from "./AboutUs.vue";
 
 const props = defineProps(["view"]);
@@ -98,7 +98,7 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("services") }}
             </div>
-            <div class="flex-grow" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop />
           </div>
         </template>
         <Banner />
@@ -109,10 +109,10 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("productCategories") }}
             </div>
-            <div class="flex-grow" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop />
           </div>
         </template>
-        <Categories />
+        <ProducsList />
       </AccordionTab>
       <AccordionTab v-if="isDesktop || viewMode !== 1">
         <template #header>
@@ -120,7 +120,7 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("aboutUs") }}
             </div>
-            <div class="flex-grow" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop />
           </div>
         </template>
         <AboutUs />

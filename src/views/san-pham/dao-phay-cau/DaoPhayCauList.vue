@@ -1,0 +1,25 @@
+<script setup>
+import { useI18n } from "vue-i18n-lite";
+import DaoPhayItem from "@/views/san-pham/dao-phay/DaoPhayItem.vue";
+import items from "@/stores/daoPhayCau";
+
+const { current } = useI18n();
+</script>
+
+<template>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+    <DaoPhayItem
+      v-for="item in items"
+      :key="item.code"
+      :name="item.name[current]"
+      :description="item.description[current]"
+      :item="item"
+      @click="
+        $router.push({
+          name: 'pDaoPhayCauCT',
+          params: { code: item.code }
+        })
+      "
+    />
+  </div>
+</template>

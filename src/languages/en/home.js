@@ -11,5 +11,6 @@ export default {
   msgFilterCategories: "Filter categories to shorten the list",
   showCategories: "Show categories",
   hideCategories: "Hide categories",
-  selectCategories: "Select categories"
+  selectCategories: "Select categories",
+  selectNoneCategories: "No categories selected yet"
 };

@@ -8,5 +8,8 @@ export default {
   group: "Group",
   home: "Home",
   allProducts: "All products",
-  allCategories: "All categories"
+  allCategories: "All categories",
+  cn: "China",
+  viewMore: "View more",
+  viewMPopularOnly: "View popular products only"
 };

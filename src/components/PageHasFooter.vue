@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch } from "vue";
+import CartButton from "@/views/gio-hang/CartButton.vue";
 
 const props = defineProps(["scrollToTop"]);
 const emit = defineEmits(["update:scrollToTop"]);
@@ -23,7 +24,7 @@ watch(
 
 <template>
   <div class="page-has-footer">
-    <div ref="refPageBody" class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-2 sm:pb-3">
+    <div ref="refPageBody" class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-10">
       <slot />
     </div>
 
@@ -32,5 +33,7 @@ watch(
         <slot name="footer" />
       </div>
     </div>
+
+    <CartButton />
   </div>
 </template>

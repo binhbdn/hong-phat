@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 
 export const categoryKeys = [
   {
@@ -7,12 +7,12 @@ export const categoryKeys = [
       {
         key: "pDaoPhay",
         children: [
-          { key: "pDaoPhayCau" },
-          { key: "pDaoPhayBoGoc" },
           { key: "pDaoPhayNgon" },
-          { key: "pDaoPhayPhaTho" },
+          { key: "pDaoPhayCau" },
+          { key: "pDaoPhayVatMep" },
+          { key: "pDaoPhayBoGoc" },
           { key: "pDaoPhayRTrong" },
-          { key: "pDaoPhayVatMep" }
+          { key: "pDaoPhayPhaTho" }
         ]
       },
       { key: "pBauKep" }
@@ -40,7 +40,15 @@ const defaultSelectedKeys = {
     checked: true,
     partialChecked: false
   },
+  pDaoPhayNgon: {
+    checked: true,
+    partialChecked: false
+  },
   pDaoPhayCau: {
+    checked: true,
+    partialChecked: false
+  },
+  pDaoPhayVatMep: {
     checked: true,
     partialChecked: false
   },
@@ -48,19 +56,11 @@ const defaultSelectedKeys = {
     checked: true,
     partialChecked: false
   },
-  pDaoPhayNgon: {
-    checked: true,
-    partialChecked: false
-  },
-  pDaoPhayPhaTho: {
-    checked: true,
-    partialChecked: false
-  },
   pDaoPhayRTrong: {
     checked: true,
     partialChecked: false
   },
-  pDaoPhayVatMep: {
+  pDaoPhayPhaTho: {
     checked: true,
     partialChecked: false
   },
@@ -71,3 +71,40 @@ const defaultSelectedKeys = {
 };
 
 export const selectedKeys = ref(defaultSelectedKeys);
+
+export const view = reactive({
+  allCategories: {
+    show: true,
+    expanded: true
+  },
+  pDaoPhayNgon: {
+    show: true,
+    expanded: true,
+    showAll: false
+  },
+  pDaoPhayCau: {
+    show: true,
+    expanded: true
+  },
+  pDaoPhayVatMep: {
+    show: true,
+    expanded: true
+  },
+  pDaoPhayBoGoc: {
+    show: true,
+    expanded: true
+  },
+  pDaoPhayRTrong: {
+    show: true,
+    expanded: true
+  },
+  pDaoPhayPhaTho: {
+    show: true,
+    expanded: true
+  },
+  pBauKep: {
+    show: true,
+    expanded: true,
+    showAll: false
+  }
+});

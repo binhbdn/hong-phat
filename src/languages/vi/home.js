@@ -11,5 +11,6 @@ export default {
   msgFilterCategories: "Lọc danh mục để thu gọn danh sách",
   showCategories: "Hiển thị danh mục",
   hideCategories: "Ẩn danh mục",
-  selectCategories: "Chọn danh mục sản phẩm"
+  selectCategories: "Chọn danh mục sản phẩm",
+  selectNoneCategories: "Chưa có danh mục nào được chọn"
 };
