@@ -1,7 +1,7 @@
 const items = [
   {
     isTypical: false,
-    code: "DPN-45HRC-3F",
+    code: "DPN_45HRC_3F",
     name: {
       vi: "Dao phay ngón 45HRC-3F - gia công nhôm",
       en: "End mill 45HRC-3F - aluminum machining"
@@ -29,7 +29,7 @@ const items = [
   },
   {
     isTypical: true,
-    code: "DPN-55HRC-3F",
+    code: "DPN_55HRC_3F",
     name: {
       vi: "Dao phay ngón 55HRC-3F - gia công nhôm",
       en: "End mill 55HRC-3F - aluminum machining"
@@ -52,12 +52,12 @@ const items = [
     },
     overallLength: {
       min: 50,
-      max: 150
+      max: 200
     }
   },
   {
     isTypical: false,
-    code: "DPN-45HRC-2F",
+    code: "DPN_45HRC_2F",
     name: {
       vi: "Dao phay ngón 45HRC-2F",
       en: "End mill 45HRC-2F"
@@ -84,8 +84,8 @@ const items = [
     }
   },
   {
-    isTypical: false,
-    code: "DPN-45HRC-4F",
+    isTypical: true,
+    code: "DPN_45HRC_4F",
     name: {
       vi: "Dao phay ngón 45HRC-4F",
       en: "End mill 45HRC-4F"
@@ -113,7 +113,7 @@ const items = [
   },
   {
     isTypical: false,
-    code: "DPN-55HRC-2F",
+    code: "DPN_55HRC_2F",
     name: {
       vi: "Dao phay ngón 55HRC-2F",
       en: "End mill 55HRC-2F"
@@ -127,7 +127,7 @@ const items = [
     material: "CarbideTungsten",
     coating: "TiSiN",
     bladeDiameter: {
-      min: 1,
+      min: 0.1,
       max: 20
     },
     handleDiameter: {
@@ -141,7 +141,7 @@ const items = [
   },
   {
     isTypical: true,
-    code: "DPN-55HRC-4F",
+    code: "DPN_55HRC_4F",
     name: {
       vi: "Dao phay ngón 55HRC-4F",
       en: "End mill 55HRC-4F"
@@ -164,12 +164,12 @@ const items = [
     },
     overallLength: {
       min: 50,
-      max: 150
+      max: 200
     }
   },
   {
     isTypical: false,
-    code: "DPN-60HRC-4F",
+    code: "DPN_60HRC_4F",
     name: {
       vi: "Dao phay ngón 60HRC-4F",
       en: "End mill 60HRC-4F"
@@ -192,12 +192,12 @@ const items = [
     },
     overallLength: {
       min: 50,
-      max: 150
+      max: 100
     }
   },
   {
-    isTypical: false,
-    code: "DPN-65HRC-4F",
+    isTypical: true,
+    code: "DPN_65HRC_4F",
     name: {
       vi: "Dao phay ngón 65HRC-4F",
       en: "End mill 65HRC-4F"
@@ -221,6 +221,34 @@ const items = [
     overallLength: {
       min: 50,
       max: 150
+    }
+  },
+  {
+    isTypical: false,
+    code: "DPN_65HRC_hard_4F",
+    name: {
+      vi: "Dao phay ngón 65HRC-4F - tăng cứng",
+      en: "End mill 65HRC-4F - harden"
+    },
+    imgSrc: "/img/dao_phay_ngon/65HRC_hard_4F.avif",
+    flutes: 4,
+    description: {
+      vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
+      en: "Suitable for processing cast iron, hard steel, stainless steel…"
+    },
+    material: "CarbideTungsten",
+    coating: "AlCrSiN",
+    bladeDiameter: {
+      min: 1,
+      max: 12
+    },
+    handleDiameter: {
+      min: 4,
+      max: 12
+    },
+    overallLength: {
+      min: 50,
+      max: 100
     }
   }
 ];
