@@ -4,7 +4,10 @@ import DaoPhayItem from "@/views/san-pham/dao-phay/DaoPhayItem.vue";
 import items from "@/stores/daoPhayNgon";
 
 defineProps({
-  showAll: Boolean
+  showAll: {
+    type: Boolean,
+    default: true
+  }
 });
 
 const { current } = useI18n();
@@ -14,7 +17,7 @@ const { current } = useI18n();
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
     <DaoPhayItem
       v-for="item in items"
-      v-show="showAll || item.isPopular"
+      v-show="showAll || item.isTypical"
       :key="item.code"
       :name="item.name[current]"
       :description="item.description[current]"

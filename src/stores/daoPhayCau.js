@@ -1,6 +1,7 @@
 const items = [
   {
-    code: "DPC-45HRC-2F",
+    isTypical: false,
+    code: "DPC_45HRC_2F",
     name: {
       vi: "Dao phay cầu 45HRC-2F",
       en: "Ball end mill 45HRC-2F"
@@ -27,7 +28,8 @@ const items = [
     }
   },
   {
-    code: "DPC-55HRC-2F",
+    isTypical: true,
+    code: "DPC_55HRC_2F",
     name: {
       vi: "Dao phay cầu 55HRC-2F",
       en: "Ball end mill 55HRC-2F"
@@ -54,12 +56,41 @@ const items = [
     }
   },
   {
-    code: "DPC-65HRC-2F",
+    isTypical: true,
+    code: "DPC_65HRC_2F",
+    name: {
+      vi: "Dao phay cầu 65HRC-2F",
+      en: "Ball end mill 65HRC-2F"
+    },
+    imgSrc: "/img/dao_phay_cau/65HRC_2F.avif",
+    flutes: 2,
+    description: {
+      vi: "Thích hợp gia công thép, gang…",
+      en: "Suitable for processing steel, cast iron…"
+    },
+    material: "CarbideTungsten",
+    coating: "NACO",
+    bladeRadius: {
+      min: 0.5,
+      max: 10
+    },
+    handleDiameter: {
+      min: 4,
+      max: 20
+    },
+    overallLength: {
+      min: 50,
+      max: 150
+    }
+  },
+  {
+    isTypical: false,
+    code: "DPC_65HRC_hard_2F",
     name: {
       vi: "Dao phay cầu 65HRC-2F - tăng cứng",
       en: "Ball end mill 65HRC-2F - harden"
     },
-    imgSrc: "/img/dao_phay_cau/65HRC_2F.avif",
+    imgSrc: "/img/dao_phay_cau/65HRC_hard_2F.avif",
     flutes: 2,
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
@@ -73,11 +104,11 @@ const items = [
     },
     handleDiameter: {
       min: 4,
-      max: 20
+      max: 18
     },
     overallLength: {
       min: 50,
-      max: 150
+      max: 100
     }
   }
 ];

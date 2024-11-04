@@ -1,6 +1,6 @@
 const items = [
   {
-    isPopular: false,
+    isTypical: false,
     code: "DPN-45HRC-3F",
     name: {
       vi: "Dao phay ngón 45HRC-3F - gia công nhôm",
@@ -28,7 +28,7 @@ const items = [
     }
   },
   {
-    isPopular: true,
+    isTypical: true,
     code: "DPN-55HRC-3F",
     name: {
       vi: "Dao phay ngón 55HRC-3F - gia công nhôm",
@@ -56,7 +56,7 @@ const items = [
     }
   },
   {
-    isPopular: false,
+    isTypical: false,
     code: "DPN-45HRC-2F",
     name: {
       vi: "Dao phay ngón 45HRC-2F",
@@ -84,7 +84,7 @@ const items = [
     }
   },
   {
-    isPopular: true,
+    isTypical: false,
     code: "DPN-45HRC-4F",
     name: {
       vi: "Dao phay ngón 45HRC-4F",
@@ -112,7 +112,7 @@ const items = [
     }
   },
   {
-    isPopular: false,
+    isTypical: false,
     code: "DPN-55HRC-2F",
     name: {
       vi: "Dao phay ngón 55HRC-2F",
@@ -140,7 +140,7 @@ const items = [
     }
   },
   {
-    isPopular: true,
+    isTypical: true,
     code: "DPN-55HRC-4F",
     name: {
       vi: "Dao phay ngón 55HRC-4F",
@@ -168,7 +168,7 @@ const items = [
     }
   },
   {
-    isPopular: false,
+    isTypical: false,
     code: "DPN-60HRC-4F",
     name: {
       vi: "Dao phay ngón 60HRC-4F",
@@ -196,7 +196,7 @@ const items = [
     }
   },
   {
-    isPopular: true,
+    isTypical: false,
     code: "DPN-65HRC-4F",
     name: {
       vi: "Dao phay ngón 65HRC-4F",

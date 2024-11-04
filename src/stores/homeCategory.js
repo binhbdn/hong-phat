@@ -84,23 +84,28 @@ export const view = reactive({
   },
   pDaoPhayCau: {
     show: true,
-    expanded: true
+    expanded: true,
+    showAll: false
   },
   pDaoPhayVatMep: {
     show: true,
-    expanded: true
+    expanded: true,
+    showAll: false
   },
   pDaoPhayBoGoc: {
     show: true,
-    expanded: true
+    expanded: true,
+    showAll: false
   },
   pDaoPhayRTrong: {
     show: true,
-    expanded: true
+    expanded: true,
+    showAll: false
   },
   pDaoPhayPhaTho: {
     show: true,
-    expanded: true
+    expanded: true,
+    showAll: false
   },
   pBauKep: {
     show: true,

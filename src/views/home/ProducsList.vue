@@ -123,7 +123,8 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayCau.show" class="home-category" :class="{ expanded: view.pDaoPhayCau.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
-        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" />
+        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll" />
+        <ViewMoreBtn v-show="view.pDaoPhayCau.expanded" v-model:showAll="view.pDaoPhayCau.showAll" class="mt-2" />
       </div>
     </div>
   </div>
