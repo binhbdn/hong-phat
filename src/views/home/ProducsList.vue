@@ -136,7 +136,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayNgon.expanded" name="pDaoPhayNgon" />
         <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :showAll="view.pDaoPhayNgon.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayNgon.expanded" v-model:showAll="view.pDaoPhayNgon.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayNgon.showAll" />
           </template>
         </DaoPhayNgonList>
       </div>
@@ -145,7 +145,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
         <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayCau.expanded" v-model:showAll="view.pDaoPhayCau.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayCau.showAll" />
           </template>
         </DaoPhayCauList>
       </div>
@@ -158,7 +158,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <!--
         <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :showAll="view.pDaoPhayVatMep.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayVatMep.expanded" v-model:showAll="view.pDaoPhayVatMep.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayVatMep.showAll" />
           </template>
         </DaoPhayVatMepList>
         -->
@@ -168,7 +168,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
         <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayBoGoc.expanded" v-model:showAll="view.pDaoPhayBoGoc.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayBoGoc.showAll" />
           </template>
         </DaoPhayBoGocList>
       </div>
@@ -177,7 +177,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayRTrong.expanded" name="pDaoPhayRTrong" />
         <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :showAll="view.pDaoPhayRTrong.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayRTrong.expanded" v-model:showAll="view.pDaoPhayRTrong.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayRTrong.showAll" />
           </template>
         </DaoPhayRTrongList>
       </div>
@@ -186,7 +186,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayPhaTho.expanded" name="pDaoPhayPhaTho" />
         <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :showAll="view.pDaoPhayPhaTho.showAll">
           <template #last>
-            <ViewMoreBtn v-show="view.pDaoPhayPhaTho.expanded" v-model:showAll="view.pDaoPhayPhaTho.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pDaoPhayPhaTho.showAll" />
           </template>
         </DaoPhayPhaThoList>
       </div>
