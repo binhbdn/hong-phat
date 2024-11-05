@@ -10,6 +10,5 @@ export default {
   allProducts: "All products",
   allCategories: "All categories",
   cn: "China",
-  viewMore: "View more",
-  viewTypicalProducts: "View typical products"
+  viewMore: "View more"
 };

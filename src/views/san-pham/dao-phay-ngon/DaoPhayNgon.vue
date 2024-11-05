@@ -5,8 +5,6 @@ import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue"
 
 <template>
   <PageHasTitle>
-    <div class="bg-white rounded-lg shadow-lg p-2 sm:p-3">
-      <DaoPhayNgonList />
-    </div>
+    <DaoPhayNgonList />
   </PageHasTitle>
 </template>

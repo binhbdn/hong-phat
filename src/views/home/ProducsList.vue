@@ -6,6 +6,7 @@ import CategoryHeader from "@/views/home/CategoryHeader.vue";
 import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
 import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue";
 import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
+import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -48,20 +49,34 @@ const unbindOutsideClickTreeCategoriesListener = () => {
 
 watch(selectedKeys, (val) => {
   view.allCategories.show = Boolean(val?.allCategories);
+
   view.pDaoPhayNgon.show = Boolean(val?.pDaoPhayNgon?.checked);
   if (view.pDaoPhayNgon.show) view.pDaoPhayNgon.expanded = true;
+  else view.pDaoPhayNgon.showAll = false;
+
   view.pDaoPhayCau.show = Boolean(val?.pDaoPhayCau?.checked);
   if (view.pDaoPhayCau.show) view.pDaoPhayCau.expanded = true;
+  else view.pDaoPhayCau.showAll = false;
+
   view.pDaoPhayVatMep.show = Boolean(val?.pDaoPhayVatMep?.checked);
   if (view.pDaoPhayVatMep.show) view.pDaoPhayVatMep.expanded = true;
+  else view.pDaoPhayVatMep.showAll = false;
+
   view.pDaoPhayBoGoc.show = Boolean(val?.pDaoPhayBoGoc?.checked);
   if (view.pDaoPhayBoGoc.show) view.pDaoPhayBoGoc.expanded = true;
+  else view.pDaoPhayBoGoc.showAll = false;
+
   view.pDaoPhayRTrong.show = Boolean(val?.pDaoPhayRTrong?.checked);
   if (view.pDaoPhayRTrong.show) view.pDaoPhayRTrong.expanded = true;
+  else view.pDaoPhayRTrong.showAll = false;
+
   view.pDaoPhayPhaTho.show = Boolean(val?.pDaoPhayPhaTho?.checked);
   if (view.pDaoPhayPhaTho.show) view.pDaoPhayPhaTho.expanded = true;
+  else view.pDaoPhayPhaTho.showAll = false;
+
   view.pBauKep.show = Boolean(val?.pBauKep?.checked);
   if (view.pBauKep.show) view.pBauKep.expanded = true;
+  else view.pBauKep.showAll = false;
 });
 
 onMounted(() => {
@@ -125,6 +140,12 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
         <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll" />
         <ViewMoreBtn v-show="view.pDaoPhayCau.expanded" v-model:showAll="view.pDaoPhayCau.showAll" class="mt-2" />
+      </div>
+
+      <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
+        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll" />
+        <ViewMoreBtn v-show="view.pDaoPhayBoGoc.expanded" v-model:showAll="view.pDaoPhayBoGoc.showAll" class="mt-2" />
       </div>
     </div>
   </div>

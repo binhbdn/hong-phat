@@ -6,10 +6,9 @@ defineEmits(["update:showAll"]);
 </script>
 
 <template>
-  <div class="flex justify-end sm:justify-center">
-    <div class="text-xs text-blue-500 border border-blue-500 cursor-pointer rounded-md px-2 py-1" @click="$emit('update:showAll', !showAll)">
-      <span v-show="showAll"> {{ $t("viewTypicalProducts") }} </span>
-      <span v-show="!showAll"> {{ $t("viewMore") }} </span>
+  <div v-show="!showAll" class="flex justify-end sm:justify-start">
+    <div class="text-xs text-primary/70 border border-primary/70 cursor-pointer rounded-md px-2 py-1" @click="$emit('update:showAll', true)">
+      {{ $t("viewMore") }}
     </div>
   </div>
 </template>

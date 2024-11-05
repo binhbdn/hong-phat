@@ -10,6 +10,5 @@ export default {
   allProducts: "Tất cả sản phẩm",
   allCategories: "Tất cả danh mục",
   cn: "Trung Quốc",
-  viewMore: "Xem thêm",
-  viewTypicalProducts: "Xem sản phẩm tiêu biểu"
+  viewMore: "Xem thêm"
 };
