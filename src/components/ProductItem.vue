@@ -20,15 +20,15 @@ defineEmits(["changeOrderQuantity"]);
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
-            class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-400 rounded-full"
+            class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-500 rounded-full"
             @click.stop="$emit('changeOrderQuantity', true)"
           >
             <i class="pi pi-plus text-[10px]" />
           </div>
           <template v-if="orderQuantity">
-            <div class="font-bold bg-white text-primary text-center border border-gray-400 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
+            <div class="font-bold bg-white text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
             <div
-              class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-400 rounded-full"
+              class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-500 rounded-full"
               @click.stop="$emit('changeOrderQuantity', false)"
             >
               <i class="pi pi-minus text-[10px]" />
