@@ -11,6 +11,7 @@ export default {
   pDaoPhayRTrong: "Dao phay R trong",
   pDaoPhayRTrongCT: "Chi tiết dao phay R trong",
   pDaoPhayPhaTho: "Dao phay phá thô",
+  pDaoPhayPhaThoCT: "Chi tiết dao phay phá thô",
   pBauKep: "Bầu kẹp",
   pDaoPhay: "Dao phay"
 };

@@ -8,6 +8,7 @@ import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue"
 import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
 import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
 import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
+import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -149,6 +150,20 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         </DaoPhayCauList>
       </div>
 
+      <div v-show="view.pDaoPhayVatMep.show" class="home-category" :class="{ expanded: view.pDaoPhayVatMep.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayVatMep.expanded" name="pDaoPhayVatMep" />
+        <div v-show="view.pDaoPhayVatMep.expanded">
+          Danh sách dao phay vát mép: chuẩn bị đưa vào
+        </div>
+        <!--
+        <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :showAll="view.pDaoPhayVatMep.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayVatMep.expanded" v-model:showAll="view.pDaoPhayVatMep.showAll" />
+          </template>
+        </DaoPhayVatMepList>
+        -->
+      </div>
+
       <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
         <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll">
@@ -165,6 +180,15 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
             <ViewMoreBtn v-show="view.pDaoPhayRTrong.expanded" v-model:showAll="view.pDaoPhayRTrong.showAll" />
           </template>
         </DaoPhayRTrongList>
+      </div>
+
+      <div v-show="view.pDaoPhayPhaTho.show" class="home-category" :class="{ expanded: view.pDaoPhayPhaTho.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayPhaTho.expanded" name="pDaoPhayPhaTho" />
+        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :showAll="view.pDaoPhayPhaTho.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayPhaTho.expanded" v-model:showAll="view.pDaoPhayPhaTho.showAll" />
+          </template>
+        </DaoPhayPhaThoList>
       </div>
     </div>
   </div>
