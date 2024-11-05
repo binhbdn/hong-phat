@@ -1,12 +1,10 @@
 <script setup>
 import PageHasTitle from "@/components/PageHasTitle.vue";
+import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
 </script>
 
 <template>
   <PageHasTitle>
-    <div class="bg-white rounded-lg shadow-lg p-2 sm:p-3">
-      TODO: Các sản phẩm dao phay R trong
-      <div class="h-screen"></div>
-    </div>
+    <DaoPhayRTrongList />
   </PageHasTitle>
 </template>

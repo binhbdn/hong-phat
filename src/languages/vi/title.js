@@ -9,6 +9,7 @@ export default {
   pDaoPhayBoGoc: "Dao phay bo góc",
   pDaoPhayBoGocCT: "Chi tiết dao phay bo góc",
   pDaoPhayRTrong: "Dao phay R trong",
+  pDaoPhayRTrongCT: "Chi tiết dao phay R trong",
   pDaoPhayPhaTho: "Dao phay phá thô",
   pBauKep: "Bầu kẹp",
   pDaoPhay: "Dao phay"

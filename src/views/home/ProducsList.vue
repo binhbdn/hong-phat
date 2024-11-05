@@ -7,6 +7,7 @@ import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
 import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue";
 import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
 import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
+import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -132,20 +133,38 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayNgon.show" class="home-category" :class="{ expanded: view.pDaoPhayNgon.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayNgon.expanded" name="pDaoPhayNgon" />
-        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :showAll="view.pDaoPhayNgon.showAll" />
-        <ViewMoreBtn v-show="view.pDaoPhayNgon.expanded" v-model:showAll="view.pDaoPhayNgon.showAll" class="mt-2" />
+        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :showAll="view.pDaoPhayNgon.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayNgon.expanded" v-model:showAll="view.pDaoPhayNgon.showAll" />
+          </template>
+        </DaoPhayNgonList>
       </div>
 
       <div v-show="view.pDaoPhayCau.show" class="home-category" :class="{ expanded: view.pDaoPhayCau.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
-        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll" />
-        <ViewMoreBtn v-show="view.pDaoPhayCau.expanded" v-model:showAll="view.pDaoPhayCau.showAll" class="mt-2" />
+        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayCau.expanded" v-model:showAll="view.pDaoPhayCau.showAll" />
+          </template>
+        </DaoPhayCauList>
       </div>
 
       <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
-        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll" />
-        <ViewMoreBtn v-show="view.pDaoPhayBoGoc.expanded" v-model:showAll="view.pDaoPhayBoGoc.showAll" class="mt-2" />
+        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayBoGoc.expanded" v-model:showAll="view.pDaoPhayBoGoc.showAll" />
+          </template>
+        </DaoPhayBoGocList>
+      </div>
+
+      <div v-show="view.pDaoPhayRTrong.show" class="home-category" :class="{ expanded: view.pDaoPhayRTrong.expanded }">
+        <CategoryHeader v-model:expanded="view.pDaoPhayRTrong.expanded" name="pDaoPhayRTrong" />
+        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :showAll="view.pDaoPhayRTrong.showAll">
+          <template #last>
+            <ViewMoreBtn v-show="view.pDaoPhayRTrong.expanded" v-model:showAll="view.pDaoPhayRTrong.showAll" />
+          </template>
+        </DaoPhayRTrongList>
       </div>
     </div>
   </div>

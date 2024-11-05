@@ -14,7 +14,7 @@ const { current } = useI18n();
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 sm:p-0.5">
     <DaoPhayItem
       v-for="item in items"
       v-show="showAll || item.isTypical"
@@ -29,5 +29,6 @@ const { current } = useI18n();
         })
       "
     />
+    <slot name="last" />
   </div>
 </template>

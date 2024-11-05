@@ -1,7 +1,7 @@
 <script setup>
 import { useI18n } from "vue-i18n-lite";
 import DaoPhayItem from "@/views/san-pham/dao-phay/DaoPhayItem.vue";
-import items from "@/stores/daoPhayNgon";
+import items from "@/stores/daoPhayRTrong";
 
 defineProps({
   showAll: {
@@ -24,7 +24,7 @@ const { current } = useI18n();
       :item="item"
       @click="
         $router.push({
-          name: 'pDaoPhayNgonCT',
+          name: 'pDaoPhayRTrongCT',
           params: { code: item.code }
         })
       "
