@@ -3,8 +3,8 @@ const items = [
     isTypical: true,
     code: "DPRT_55HRC_4F",
     name: {
-      vi: "Dao phay R trong 55HRC-4F",
-      en: "Corner rounding end mill 55HRC-4F"
+      vi: "55HRC - Dao phay R trong 4F",
+      en: "55HRC - Corner rounding end mill 4F"
     },
     imgSrc: "/img/dao_phay_r_trong/55HRC_4F.avif",
     flutes: 4,
@@ -31,8 +31,8 @@ const items = [
     isTypical: false,
     code: "DPRT_55HRC_4F_Al",
     name: {
-      vi: "Dao phay R trong 55HRC-4F-Al - gia công nhôm",
-      en: "Corner rounding end mill 55HRC-4F-Al - aluminum machining"
+      vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
+      en: "55HRC - Corner rounding end mill 4F - aluminum machining"
     },
     imgSrc: "/img/dao_phay_r_trong/55HRC_4F_Al.avif",
     flutes: 4,

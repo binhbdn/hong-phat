@@ -3,8 +3,8 @@ const items = [
     isTypical: false,
     code: "DPC_45HRC_2F",
     name: {
-      vi: "Dao phay cầu 45HRC-2F",
-      en: "Ball end mill 45HRC-2F"
+      vi: "45HRC - Dao phay cầu 2F",
+      en: "45HRC - Ball end mill 2F"
     },
     imgSrc: "/img/dao_phay_cau/45HRC_2F.avif",
     flutes: 2,
@@ -31,8 +31,8 @@ const items = [
     isTypical: true,
     code: "DPC_55HRC_2F",
     name: {
-      vi: "Dao phay cầu 55HRC-2F",
-      en: "Ball end mill 55HRC-2F"
+      vi: "55HRC - Dao phay cầu 2F",
+      en: "55HRC - Ball end mill 2F"
     },
     imgSrc: "/img/dao_phay_cau/55HRC_2F.avif",
     flutes: 2,
@@ -59,8 +59,8 @@ const items = [
     isTypical: true,
     code: "DPC_65HRC_2F",
     name: {
-      vi: "Dao phay cầu 65HRC-2F",
-      en: "Ball end mill 65HRC-2F"
+      vi: "65HRC - Dao phay cầu 2F",
+      en: "65HRC - Ball end mill 2F"
     },
     imgSrc: "/img/dao_phay_cau/65HRC_2F.avif",
     flutes: 2,
@@ -85,12 +85,12 @@ const items = [
   },
   {
     isTypical: false,
-    code: "DPC_65HRC_hard_2F",
+    code: "DPC_65HRC_2F_hard",
     name: {
-      vi: "Dao phay cầu 65HRC-2F - tăng cứng",
-      en: "Ball end mill 65HRC-2F - harden"
+      vi: "65HRC - Dao phay cầu 2F - tăng cứng",
+      en: "65HRC - Ball end mill 2F - harden"
     },
-    imgSrc: "/img/dao_phay_cau/65HRC_hard_2F.avif",
+    imgSrc: "/img/dao_phay_cau/65HRC_2F_hard.avif",
     flutes: 2,
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",

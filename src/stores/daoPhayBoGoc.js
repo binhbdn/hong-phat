@@ -3,8 +3,8 @@ const items = [
     isTypical: true,
     code: "DPBG_55HRC_4F",
     name: {
-      vi: "Dao phay bo góc 55HRC-4F",
-      en: "Corner radius end mill 55HRC-4F"
+      vi: "55HRC - Dao phay bo góc 4F",
+      en: "55HRC - Corner radius end mill 4F"
     },
     imgSrc: "/img/dao_phay_bo_goc/55HRC_4F.avif",
     flutes: 4,
@@ -31,8 +31,8 @@ const items = [
     isTypical: true,
     code: "DPBG_65HRC_4F",
     name: {
-      vi: "Dao phay bo góc 65HRC-4F",
-      en: "Corner radius end mill 65HRC-4F"
+      vi: "65HRC - Dao phay bo góc 4F",
+      en: "65HRC - Corner radius end mill 4F"
     },
     imgSrc: "/img/dao_phay_bo_goc/65HRC_4F.avif",
     flutes: 4,
@@ -57,12 +57,12 @@ const items = [
   },
   {
     isTypical: false,
-    code: "DPBG_65HRC_hard_4F",
+    code: "DPBG_65HRC_4F_hard",
     name: {
-      vi: "Dao phay bo góc 65HRC-4F - tăng cứng",
-      en: "Corner radius end mill 65HRC-4F - harden"
+      vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
+      en: "65HRC - Corner radius end mill 4F - harden"
     },
-    imgSrc: "/img/dao_phay_bo_goc/65HRC_hard_4F.avif",
+    imgSrc: "/img/dao_phay_bo_goc/65HRC_4F_hard.avif",
     flutes: 4,
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",

@@ -6,6 +6,7 @@ import CategoryHeader from "@/views/home/CategoryHeader.vue";
 import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
 import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue";
 import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
+import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepList.vue";
 import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
 import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
 import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoList.vue";
@@ -152,16 +153,11 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayVatMep.show" class="home-category" :class="{ expanded: view.pDaoPhayVatMep.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayVatMep.expanded" name="pDaoPhayVatMep" />
-        <div v-show="view.pDaoPhayVatMep.expanded">
-          Danh sách dao phay vát mép: chuẩn bị đưa vào
-        </div>
-        <!--
         <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :showAll="view.pDaoPhayVatMep.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayVatMep.showAll" />
           </template>
         </DaoPhayVatMepList>
-        -->
       </div>
 
       <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">

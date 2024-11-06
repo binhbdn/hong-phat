@@ -45,6 +45,11 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMep.vue")
         },
         {
+          path: "san-pham/dao-phay-vat-mep/:code",
+          name: "pDaoPhayVatMepCT",
+          component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepDetails.vue")
+        },
+        {
           path: "san-pham/dao-phay-bo-goc",
           name: "pDaoPhayBoGoc",
           component: () => import("@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGoc.vue")

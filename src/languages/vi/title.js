@@ -6,6 +6,7 @@ export default {
   pDaoPhayCau: "Dao phay cầu",
   pDaoPhayCauCT: "Chi tiết dao phay cầu",
   pDaoPhayVatMep: "Dao phay vát mép",
+  pDaoPhayVatMepCT: "Chi tiết dao phay vát mép",
   pDaoPhayBoGoc: "Dao phay bo góc",
   pDaoPhayBoGocCT: "Chi tiết dao phay bo góc",
   pDaoPhayRTrong: "Dao phay R trong",

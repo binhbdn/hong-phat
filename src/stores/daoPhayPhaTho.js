@@ -3,8 +3,8 @@ const items = [
     isTypical: false,
     code: "DPPT_55HRC_3F",
     name: {
-      vi: "Dao phay phá thô 55HRC-3F - gia công nhôm",
-      en: "Roughing mill 55HRC-3F - aluminum machining"
+      vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
+      en: "55HRC - Roughing end mill 3F - aluminum machining"
     },
     imgSrc: "/img/dao_phay_pha_tho/55HRC_3F.avif",
     flutes: 3,
@@ -31,8 +31,8 @@ const items = [
     isTypical: true,
     code: "DPPT_55HRC_4F",
     name: {
-      vi: "Dao phay phá thô 55HRC-4F",
-      en: "Roughing mill 55HRC-4F"
+      vi: "55HRC - Dao phay phá thô 4F",
+      en: "55HRC - Roughing end mill 4F"
     },
     imgSrc: "/img/dao_phay_pha_tho/55HRC_4F.avif",
     flutes: 4,

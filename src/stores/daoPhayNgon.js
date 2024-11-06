@@ -3,8 +3,8 @@ const items = [
     isTypical: false,
     code: "DPN_45HRC_3F",
     name: {
-      vi: "Dao phay ngón 45HRC-3F - gia công nhôm",
-      en: "End mill 45HRC-3F - aluminum machining"
+      vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
+      en: "45HRC - End mill 3F - aluminum machining"
     },
     imgSrc: "/img/dao_phay_ngon/55HRC_3F.avif",
     flutes: 3,
@@ -31,8 +31,8 @@ const items = [
     isTypical: true,
     code: "DPN_55HRC_3F",
     name: {
-      vi: "Dao phay ngón 55HRC-3F - gia công nhôm",
-      en: "End mill 55HRC-3F - aluminum machining"
+      vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
+      en: "55HRC - End mill 3F - aluminum machining"
     },
     imgSrc: "/img/dao_phay_ngon/55HRC_3F.avif",
     flutes: 3,
@@ -59,8 +59,8 @@ const items = [
     isTypical: false,
     code: "DPN_45HRC_2F",
     name: {
-      vi: "Dao phay ngón 45HRC-2F",
-      en: "End mill 45HRC-2F"
+      vi: "45HRC - Dao phay ngón 2F",
+      en: "45HRC - End mill 2F"
     },
     imgSrc: "/img/dao_phay_ngon/45HRC_2F.avif",
     flutes: 2,
@@ -87,8 +87,8 @@ const items = [
     isTypical: true,
     code: "DPN_45HRC_4F",
     name: {
-      vi: "Dao phay ngón 45HRC-4F",
-      en: "End mill 45HRC-4F"
+      vi: "45HRC - Dao phay ngón 4F",
+      en: "45HRC - End mill 4F"
     },
     imgSrc: "/img/dao_phay_ngon/45HRC_4F.avif",
     flutes: 4,
@@ -115,8 +115,8 @@ const items = [
     isTypical: false,
     code: "DPN_55HRC_2F",
     name: {
-      vi: "Dao phay ngón 55HRC-2F",
-      en: "End mill 55HRC-2F"
+      vi: "55HRC - Dao phay ngón 2F",
+      en: "55HRC - End mill 2F"
     },
     imgSrc: "/img/dao_phay_ngon/55HRC_2F.avif",
     flutes: 2,
@@ -143,8 +143,8 @@ const items = [
     isTypical: true,
     code: "DPN_55HRC_4F",
     name: {
-      vi: "Dao phay ngón 55HRC-4F",
-      en: "End mill 55HRC-4F"
+      vi: "55HRC - Dao phay ngón 4F",
+      en: "55HRC - End mill 4F"
     },
     imgSrc: "/img/dao_phay_ngon/55HRC_4F.avif",
     flutes: 4,
@@ -171,8 +171,8 @@ const items = [
     isTypical: false,
     code: "DPN_60HRC_4F",
     name: {
-      vi: "Dao phay ngón 60HRC-4F",
-      en: "End mill 60HRC-4F"
+      vi: "60HRC - Dao phay ngón 4F",
+      en: "60HRC - End mill 4F"
     },
     imgSrc: "/img/dao_phay_ngon/60HRC_4F.avif",
     flutes: 4,
@@ -199,8 +199,8 @@ const items = [
     isTypical: true,
     code: "DPN_65HRC_4F",
     name: {
-      vi: "Dao phay ngón 65HRC-4F",
-      en: "End mill 65HRC-4F"
+      vi: "65HRC - Dao phay ngón 4F",
+      en: "65HRC - End mill 4F"
     },
     imgSrc: "/img/dao_phay_ngon/65HRC_4F.avif",
     flutes: 4,
@@ -225,12 +225,12 @@ const items = [
   },
   {
     isTypical: false,
-    code: "DPN_65HRC_hard_4F",
+    code: "DPN_65HRC_4F_hard",
     name: {
-      vi: "Dao phay ngón 65HRC-4F - tăng cứng",
-      en: "End mill 65HRC-4F - harden"
+      vi: "65HRC - Dao phay ngón 4F - tăng cứng",
+      en: "65HRC - End mill 4F - harden"
     },
-    imgSrc: "/img/dao_phay_ngon/65HRC_hard_4F.avif",
+    imgSrc: "/img/dao_phay_ngon/65HRC_4F_hard.avif",
     flutes: 4,
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",

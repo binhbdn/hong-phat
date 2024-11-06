@@ -6,6 +6,7 @@ export default {
   pDaoPhayCau: "Ball nose end mills",
   pDaoPhayCauCT: "Details of ball nose end mill",
   pDaoPhayVatMep: "Chamfer end mills",
+  pDaoPhayVatMepCT: "Details of chamfer end mill",
   pDaoPhayBoGoc: "Corner radius end mills",
   pDaoPhayBoGocCT: "Details of corner radius end mill",
   pDaoPhayRTrong: "Corner rounding end mills",
