@@ -8,6 +8,11 @@ const items = [
     },
     imgSrc: "/img/dao_phay_r_trong/55HRC_4F.avif",
     flutes: 4,
+    prices: {
+      current: 0,
+      min: 107000,
+      max: 800000
+    },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       en: "Suitable for processing iron, steel, copper, cast iron…"
@@ -36,6 +41,11 @@ const items = [
     },
     imgSrc: "/img/dao_phay_r_trong/55HRC_4F_Al.avif",
     flutes: 4,
+    prices: {
+      current: 0,
+      min: 107000,
+      max: 800000
+    },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, nhựa…",
       en: "High gloss, suitable for processing aluminum, plastic…"

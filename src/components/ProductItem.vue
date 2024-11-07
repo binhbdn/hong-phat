@@ -1,21 +1,31 @@
 <script setup>
-defineProps({
+import { computed } from "vue";
+import { numberToVnd } from "@/library/helper";
+
+const props = defineProps({
   viewDetails: Boolean,
   name: String,
   imgSrc: String,
+  prices: Object,
   orderQuantity: Number
 });
 defineEmits(["changeOrderQuantity"]);
+
+const formattedPrice = computed(() => {
+  if (props.prices.current) return numberToVnd(props.prices.current);
+  return `${ numberToVnd(props.prices.min) } - ${ numberToVnd(props.prices.max) }`;
+});
 </script>
 
 <template>
   <div
-    class="group flex flex-col gap-y-1.5 text-[13px]/5 text-gray-600 cursor-pointer"
+    class="group flex flex-col gap-y-1.5 text-xs sm:text-[13px]/5 text-gray-600 cursor-pointer"
     :class="viewDetails ? 'bg-gray-50 rounded-lg shadow-gray-400 hover:shadow-primary shadow-sm p-2' : 'w-[calc(50%-6px)] sm:max-w-[200px]'"
   >
-    <div class="font-semibold text-sm text-gray-900 group-hover:text-primary line-clamp-2" :class="{ 'order-1': !viewDetails }">
+    <div class="font-semibold text-[13px]/[18px] sm:text-sm text-gray-900 group-hover:text-primary line-clamp-2" :class="{ 'order-1': !viewDetails }">
       {{ name }}
     </div>
+
     <div class="flex gap-x-3">
       <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
         <Image :src="imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-md" @click.stop />
@@ -41,7 +51,23 @@ defineEmits(["changeOrderQuantity"]);
         </div>
       </div>
 
-      <slot />
+      <div
+        class="w-0 flex-grow flex-col leading-4 xl:leading-5"
+        :class="viewDetails ? 'flex' : 'hidden'"
+      >
+        <div class="flex-grow flex justify-end font-medium leading-4 text-primary/70">
+          {{ formattedPrice }}
+        </div>
+
+        <slot v-if="viewDetails" />
+      </div>
+    </div>
+
+    <div
+      class="order-2 flex-grow items-end font-medium leading-4 text-primary/70 -mt-1"
+      :class="viewDetails ? 'hidden' : 'flex'"
+    >
+      {{ formattedPrice }}
     </div>
   </div>
 </template>

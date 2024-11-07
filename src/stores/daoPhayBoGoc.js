@@ -8,6 +8,11 @@ const items = [
     },
     imgSrc: "/img/dao_phay_bo_goc/55HRC_4F.avif",
     flutes: 4,
+    prices: {
+      current: 0,
+      min: 115000,
+      max: 704000
+    },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       en: "Suitable for processing iron, steel, copper, cast iron…"
@@ -36,6 +41,11 @@ const items = [
     },
     imgSrc: "/img/dao_phay_bo_goc/65HRC_4F.avif",
     flutes: 4,
+    prices: {
+      current: 0,
+      min: 163000,
+      max: 2910000
+    },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
       en: "Suitable for processing cast iron, hard steel, stainless steel…"
@@ -64,6 +74,11 @@ const items = [
     },
     imgSrc: "/img/dao_phay_bo_goc/65HRC_4F_hard.avif",
     flutes: 4,
+    prices: {
+      current: 0,
+      min: 163000,
+      max: 2910000
+    },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
       en: "Suitable for processing cast iron, hard steel, stainless steel…"

@@ -16,6 +16,7 @@ defineEmits(["changeOrderQuantity"]);
     :viewDetails="viewDetails"
     :name="name"
     :imgSrc="item.imgSrc"
+    :prices="item.prices"
     :orderQuantity="orderQuantity"
     @changeOrderQuantity="$emit('changeOrderQuantity', $event)"
   >
@@ -23,7 +24,7 @@ defineEmits(["changeOrderQuantity"]);
       <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
     </template>
 
-    <div v-if="viewDetails" class="w-0 flex-grow flex flex-col leading-4 xl:leading-5">
+    <template v-if="viewDetails">
       <div class="flex-grow font-medium leading-4 text-gray-900">
         {{ description }}
       </div>
@@ -49,6 +50,6 @@ defineEmits(["changeOrderQuantity"]);
         {{ $t("origin") }}:
         <span class="font-medium text-gray-900"> {{ $t("cn") }} </span>
       </div>
-    </div>
+    </template>
   </ProductItem>
 </template>
