@@ -1,5 +1,7 @@
 const items = [
   {
+    category: "pDaoPhay",
+    cutStyle: "csCornerRounding",
     isTypical: true,
     code: "DPRT_55HRC_4F",
     name: {
@@ -33,6 +35,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csCornerRounding",
     isTypical: false,
     code: "DPRT_55HRC_4F_Al",
     name: {

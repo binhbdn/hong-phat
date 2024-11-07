@@ -1,5 +1,7 @@
 const items = [
   {
+    category: "pDaoPhay",
+    cutStyle: "csRoundedEdgeSquare",
     isTypical: true,
     code: "DPBG_55HRC_4F",
     name: {
@@ -33,6 +35,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csRoundedEdgeSquare",
     isTypical: true,
     code: "DPBG_65HRC_4F",
     name: {
@@ -66,6 +70,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csRoundedEdgeSquare",
     isTypical: false,
     code: "DPBG_65HRC_4F_hard",
     name: {

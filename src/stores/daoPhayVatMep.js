@@ -1,5 +1,7 @@
 const items = [
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: false,
     code: "DPVM_55HRC_2F",
     name: {
@@ -33,6 +35,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: true,
     code: "DPVM_55HRC_3F",
     name: {
@@ -66,6 +70,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: true,
     code: "DPVM_55HRC_2F_Al",
     name: {
@@ -99,6 +105,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: false,
     code: "DPVM_55HRC_3F_Al",
     name: {
@@ -132,6 +140,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: false,
     code: "DPVM_55HRC_1F_CS",
     name: {
@@ -165,6 +175,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csChamfer",
     isTypical: false,
     code: "DPVM_55HRC_3F_CS",
     name: {

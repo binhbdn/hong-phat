@@ -1,5 +1,7 @@
 const items = [
   {
+    category: "pDaoPhay",
+    cutStyle: "csRoughing",
     isTypical: false,
     code: "DPPT_55HRC_3F",
     name: {
@@ -33,6 +35,8 @@ const items = [
     }
   },
   {
+    category: "pDaoPhay",
+    cutStyle: "csRoughing",
     isTypical: true,
     code: "DPPT_55HRC_4F",
     name: {
