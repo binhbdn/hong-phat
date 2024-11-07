@@ -2,6 +2,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csBall",
+    routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_45HRC_2F",
     name: {
@@ -37,6 +38,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csBall",
+    routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_55HRC_2F",
     name: {
@@ -72,6 +74,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csBall",
+    routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_65HRC_2F",
     name: {
@@ -107,6 +110,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csBall",
+    routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_65HRC_2F_hard",
     name: {

@@ -2,6 +2,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_3F",
     name: {
@@ -37,6 +38,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_55HRC_3F",
     name: {
@@ -72,6 +74,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_2F",
     name: {
@@ -107,6 +110,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_45HRC_4F",
     name: {
@@ -142,6 +146,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_55HRC_2F",
     name: {
@@ -177,6 +182,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_55HRC_4F",
     name: {
@@ -212,6 +218,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_60HRC_4F",
     name: {
@@ -247,6 +254,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_65HRC_4F",
     name: {
@@ -282,6 +290,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csSquare",
+    routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_65HRC_4F_hard",
     name: {

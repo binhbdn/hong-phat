@@ -2,6 +2,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csRoughing",
+    routeName: "pDaoPhayPhaThoCT",
     isTypical: false,
     code: "DPPT_55HRC_3F",
     name: {
@@ -37,6 +38,7 @@ const items = [
   {
     category: "pDaoPhay",
     cutStyle: "csRoughing",
+    routeName: "pDaoPhayPhaThoCT",
     isTypical: true,
     code: "DPPT_55HRC_4F",
     name: {

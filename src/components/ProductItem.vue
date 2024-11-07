@@ -1,36 +1,47 @@
 <script setup>
 import { computed } from "vue";
+import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
+import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
+
+const { current } = useI18n();
 
 const props = defineProps({
   viewDetails: Boolean,
-  name: String,
-  imgSrc: String,
-  prices: Object,
+  item: Object,
   orderQuantity: Number
 });
 defineEmits(["changeOrderQuantity"]);
 
 const formattedPrice = computed(() => {
-  if (props.prices.current) return numberToVnd(props.prices.current);
-  return `${ numberToVnd(props.prices.min) } - ${ numberToVnd(props.prices.max) }`;
+  if (props.item.prices.current) return numberToVnd(props.item.prices.current);
+  return `${numberToVnd(props.item.prices.min)} - ${numberToVnd(props.item.prices.max)}`;
 });
+
+// dao phay
+const isEndMill = computed(() => props.item.category === "pDaoPhay");
 </script>
 
 <template>
   <div
     class="group flex flex-col gap-y-1.5 text-xs sm:text-[13px]/5 text-gray-600 cursor-pointer"
     :class="viewDetails ? 'bg-gray-50 rounded-lg shadow-gray-400 hover:shadow-primary shadow-sm p-2' : 'w-[calc(50%-6px)] sm:max-w-[200px]'"
+    @click="
+      $router.push({
+        name: item.routeName,
+        params: { code: item.code }
+      })
+    "
   >
     <div class="font-semibold text-[13px]/[18px] sm:text-sm text-gray-900 group-hover:text-primary line-clamp-2" :class="{ 'order-1': !viewDetails }">
-      {{ name }}
+      {{ item.name[current] }}
     </div>
 
     <div class="flex gap-x-3">
       <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
-        <Image :src="imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-md" @click.stop />
+        <Image :src="item.imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-md" @click.stop />
 
-        <slot name="icons" />
+        <img v-if="isEndMill" v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
@@ -51,22 +62,18 @@ const formattedPrice = computed(() => {
         </div>
       </div>
 
-      <div
-        class="w-0 flex-grow flex-col leading-4 xl:leading-5"
-        :class="viewDetails ? 'flex' : 'hidden'"
-      >
+      <div class="w-0 flex-grow flex-col leading-4 xl:leading-5" :class="viewDetails ? 'flex' : 'hidden'">
         <div class="flex-grow flex justify-end font-medium leading-4 text-primary/70">
           {{ formattedPrice }}
         </div>
 
-        <slot v-if="viewDetails" />
+        <template v-if="viewDetails">
+          <DaoPhayItemDetails v-if="isEndMill" :description="item.description[current]" :item="item" />
+        </template>
       </div>
     </div>
 
-    <div
-      class="order-2 flex-grow items-end font-medium leading-4 text-primary/70 -mt-1"
-      :class="viewDetails ? 'hidden' : 'flex'"
-    >
+    <div class="order-2 flex-grow items-end font-medium leading-4 text-primary/70 -mt-1" :class="viewDetails ? 'hidden' : 'flex'">
       {{ formattedPrice }}
     </div>
   </div>
