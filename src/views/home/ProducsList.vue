@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
-import { categoryKeys, showMsg, showFilter, expandedKeys, selectedKeys, view } from "@/stores/homeCategory";
+import { categoryKeys, viewDetails, showMsg, showFilter, expandedKeys, selectedKeys, view } from "@/stores/homeCategory";
 import Overlay from "@/components/Overlay.vue";
 import CategoryHeader from "@/views/home/CategoryHeader.vue";
 import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
@@ -93,16 +93,39 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
 <template>
   <div class="flex flex-col text-gray-700 relative">
-    <Message v-if="showMsg" class="home-msg-filter mb-3">
-      {{ $t("h.msgFilterCategories") }}
+    <Message v-if="showMsg" class="home-products-msg hover:bg-yellow-200 mb-3">
+      <div>
+        {{ $t("h.msgFilterCategories") }}
+      </div>
+      <div>
+        {{ $t("h.msgChangeViewMode") }}
+      </div>
     </Message>
 
-    <div
-      v-tooltip="showFilter ? $t('h.hideCategories') : $t('h.showCategories')"
-      class="home-icon-filter w-6 h-6 absolute flex justify-center items-center text-gray-700 hover:text-primary bg-gray-300 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
-      @click.prevent="onToggleShowFilter()"
-    >
-      <i class="pi" :class="showFilter ? 'pi-filter-slash' : 'pi-filter'" />
+    <div class="home-products-icons w-fit h-6 absolute flex gap-x-4">
+      <div class="flex gap-x-1">
+        <div
+          class="w-6 h-6 flex justify-center items-center hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+          :class="viewDetails ? 'text-gray-700' : 'bg-primary/20 text-primary/70'"
+          @click="viewDetails = false"
+        >
+          <i class="pi pi-th-large" />
+        </div>
+        <div
+          class="home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+          :class="viewDetails ? 'bg-primary/20 text-primary/70' : 'text-gray-700'"
+          @click="viewDetails = true"
+        >
+          <i class="pi pi-list" />
+        </div>
+      </div>
+      <div
+        v-tooltip="showFilter ? $t('h.hideCategories') : $t('h.showCategories')"
+        class="home-icon-filter home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+        @click.prevent="onToggleShowFilter()"
+      >
+        <i class="pi" :class="showFilter ? 'pi-filter-slash' : 'pi-filter'" />
+      </div>
     </div>
 
     <Overlay v-show="showFilter" class="sm:hidden" />
@@ -135,7 +158,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayNgon.show" class="home-category" :class="{ expanded: view.pDaoPhayNgon.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayNgon.expanded" name="pDaoPhayNgon" />
-        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :showAll="view.pDaoPhayNgon.showAll">
+        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayNgon.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayNgon.showAll" />
           </template>
@@ -144,7 +167,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayCau.show" class="home-category" :class="{ expanded: view.pDaoPhayCau.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
-        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :showAll="view.pDaoPhayCau.showAll">
+        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayCau.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayCau.showAll" />
           </template>
@@ -153,7 +176,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayVatMep.show" class="home-category" :class="{ expanded: view.pDaoPhayVatMep.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayVatMep.expanded" name="pDaoPhayVatMep" />
-        <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :showAll="view.pDaoPhayVatMep.showAll">
+        <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayVatMep.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayVatMep.showAll" />
           </template>
@@ -162,7 +185,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
-        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :showAll="view.pDaoPhayBoGoc.showAll">
+        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayBoGoc.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayBoGoc.showAll" />
           </template>
@@ -171,31 +194,37 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayRTrong.show" class="home-category" :class="{ expanded: view.pDaoPhayRTrong.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayRTrong.expanded" name="pDaoPhayRTrong" />
-        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :showAll="view.pDaoPhayRTrong.showAll">
+        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" />
+        <!--
+        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayRTrong.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayRTrong.showAll" />
           </template>
         </DaoPhayRTrongList>
+        -->
       </div>
 
       <div v-show="view.pDaoPhayPhaTho.show" class="home-category" :class="{ expanded: view.pDaoPhayPhaTho.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayPhaTho.expanded" name="pDaoPhayPhaTho" />
-        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :showAll="view.pDaoPhayPhaTho.showAll">
+        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" />
+        <!--
+        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayPhaTho.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayPhaTho.showAll" />
           </template>
         </DaoPhayPhaThoList>
+        -->
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.home-msg-filter:hover + .home-icon-filter {
+.home-products-msg:hover + .home-products-icons .home-icon-highlight {
   color: var(--primary-color);
-  background-color: rgb(var(--primary-rgb) / 0.2);
+  background-color: var(--yellow-200);
 }
-.home-icon-filter {
+.home-products-icons {
   top: -2.25rem;
   right: 0;
 

@@ -19,7 +19,8 @@ defineEmits(["update:expanded"]);
       class="w-8 sm:w-6 h-5 flex justify-center items-center text-primary/70 hover:bg-primary/20 hover:text-primary rounded-md cursor-pointer"
       @click="$emit('update:expanded', !expanded)"
     >
-      <i class="pi" :class="expanded ? 'pi-angle-up' : 'pi-angle-down'" />
+      <i class="sm:hidden pi" :class="expanded ? 'pi-angle-up' : 'pi-angle-down'" />
+      <i class="hidden sm:block pi" :class="expanded ? 'pi-angle-up' : 'pi-angle-right'" />
     </div>
   </div>
 </template>

@@ -2,6 +2,7 @@
 import ProductItem from "@/components/ProductItem.vue";
 
 defineProps({
+  viewDetails: Boolean,
   name: String,
   description: String,
   item: Object,
@@ -11,12 +12,18 @@ defineEmits(["changeOrderQuantity"]);
 </script>
 
 <template>
-  <ProductItem :name="name" :imgSrc="item.imgSrc" :orderQuantity="orderQuantity" @changeOrderQuantity="$emit('changeOrderQuantity', $event)">
+  <ProductItem
+    :viewDetails="viewDetails"
+    :name="name"
+    :imgSrc="item.imgSrc"
+    :orderQuantity="orderQuantity"
+    @changeOrderQuantity="$emit('changeOrderQuantity', $event)"
+  >
     <template #icons>
       <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
     </template>
 
-    <div class="w-0 flex-grow flex flex-col leading-4 xl:leading-5">
+    <div v-if="viewDetails" class="w-0 flex-grow flex flex-col leading-4 xl:leading-5">
       <div class="flex-grow font-medium leading-4 text-gray-900">
         {{ description }}
       </div>

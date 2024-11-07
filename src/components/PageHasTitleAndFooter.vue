@@ -4,7 +4,7 @@ import AppTitle from "@/layout/AppTitle.vue";
 
 <template>
   <div class="page-has-title page-has-footer">
-    <AppTitle hasBackIcon class="content-page-title px-1 sm:px-3 pb-2 sm:pb-3" />
+    <AppTitle hasBackIcon class="flex px-1 sm:px-3 pb-2 sm:pb-3" />
     <div class="page-body overflow-y-scroll hide-scrollbar px-1 sm:px-3 pb-2 sm:pb-3">
       <slot />
     </div>

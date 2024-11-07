@@ -190,9 +190,6 @@ a {
   .layout-container .topbar-logo {
     display: none;
   }
-  .layout-container .content-page-title {
-    display: none;
-  }
 }
 @media screen and (max-width: 991px) {
   .blocked-scroll {
@@ -229,9 +226,6 @@ a {
   }
   .layout-container .topbar-page-title {
     display: none;
-  }
-  .layout-container .content-page-title {
-    display: flex;
   }
 }
 @media screen and (min-width: 1960px) {

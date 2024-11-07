@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { isDesktop } from "@/composable/layout";
+import { showFilter } from "@/stores/homeCategory";
 import PageHasFooter from "@/components/PageHasFooter.vue";
 import Banner from "./Banner.vue";
 import ProducsList from "./ProducsList.vue";
@@ -91,7 +92,7 @@ watch(
 
 <template>
   <PageHasFooter v-model:scrollToTop="scrollToTop">
-    <Accordion v-model:activeIndex="activeMenus" multiple @tabOpen="onTabOpen">
+    <Accordion v-model:activeIndex="activeMenus" multiple expandIcon="pi pi-angle-right" collapseIcon="pi pi-angle-up" @tabOpen="onTabOpen">
       <AccordionTab v-if="isDesktop || viewMode === 0" contentClass="bg-banner">
         <template #header>
           <div class="w-full flex items-stretch">
@@ -109,7 +110,7 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("productCategories") }}
             </div>
-            <div class="flex-grow cursor-default" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop="showFilter = false" />
           </div>
         </template>
         <ProducsList />

@@ -15,12 +15,9 @@
 }
 
 .page-has-title .page-body {
-  height: calc(100vh - 160px + 64px - 8px);
+  height: calc(100vh - 104px);
   @media (min-width: 640px) {
-    height: calc(100vh - 196px + 68px - 16px);
-  }
-  @media (min-width: 992px) {
-    height: calc(100vh - 156px + 68px - 16px);
+    height: calc(100vh - 144px);
   }
 }
 
@@ -29,18 +26,12 @@
   @media (min-width: 640px) {
     height: calc(100vh - 156px);
   }
-  @media (min-width: 992px) {
-    height: calc(100vh - 156px);
-  }
 }
 
 .page-has-title.page-has-footer > .page-body {
   height: calc(100vh - 160px);
   @media (min-width: 640px) {
     height: calc(100vh - 196px);
-  }
-  @media (min-width: 992px) {
-    height: calc(100vh - 156px);
   }
 }
 

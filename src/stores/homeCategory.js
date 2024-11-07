@@ -20,6 +20,8 @@ export const categoryKeys = [
   }
 ];
 
+export const viewDetails = ref(false);
+
 export const showMsg = ref(true);
 
 export const showFilter = ref(false);

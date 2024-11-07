@@ -1,10 +1,11 @@
 <script setup>
-import PageHasTitle from "@/components/PageHasTitle.vue";
+import { viewDetails } from "@/stores/listPage";
+import ProductsListLayout from "@/views/san-pham/components/ProductsListLayout.vue";
 import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepList.vue";
 </script>
 
 <template>
-  <PageHasTitle>
-    <DaoPhayVatMepList />
-  </PageHasTitle>
+  <ProductsListLayout>
+    <DaoPhayVatMepList :viewDetails="viewDetails" />
+  </ProductsListLayout>
 </template>
