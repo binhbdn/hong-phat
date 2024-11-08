@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayBoGocCT",
     isTypical: true,
     code: "DPBG_55HRC_4F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay bo góc 4F",
       en: "55HRC - Corner radius end mill 4F"
@@ -41,6 +42,7 @@ const items = [
     routeName: "pDaoPhayBoGocCT",
     isTypical: true,
     code: "DPBG_65HRC_4F",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F",
       en: "65HRC - Corner radius end mill 4F"
@@ -77,6 +79,7 @@ const items = [
     routeName: "pDaoPhayBoGocCT",
     isTypical: false,
     code: "DPBG_65HRC_4F_hard",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
       en: "65HRC - Corner radius end mill 4F - harden"

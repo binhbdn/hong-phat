@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_3F",
+    hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
       en: "45HRC - End mill 3F - aluminum machining"
@@ -40,6 +41,7 @@ const items = [
     cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
+    hardness: "55HRC",
     code: "DPN_55HRC_3F",
     name: {
       vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
@@ -77,6 +79,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_2F",
+    hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 2F",
       en: "45HRC - End mill 2F"
@@ -113,6 +116,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_45HRC_4F",
+    hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 4F",
       en: "45HRC - End mill 4F"
@@ -148,6 +152,7 @@ const items = [
     cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
+    hardness: "55HRC",
     code: "DPN_55HRC_2F",
     name: {
       vi: "55HRC - Dao phay ngón 2F",
@@ -184,6 +189,7 @@ const items = [
     cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
+    hardness: "55HRC",
     code: "DPN_55HRC_4F",
     name: {
       vi: "55HRC - Dao phay ngón 4F",
@@ -221,6 +227,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_60HRC_4F",
+    hardness: "60HRC",
     name: {
       vi: "60HRC - Dao phay ngón 4F",
       en: "60HRC - End mill 4F"
@@ -257,6 +264,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_65HRC_4F",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F",
       en: "65HRC - End mill 4F"
@@ -293,6 +301,7 @@ const items = [
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_65HRC_4F_hard",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
       en: "65HRC - End mill 4F - harden"

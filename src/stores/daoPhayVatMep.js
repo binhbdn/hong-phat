@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_2F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90°",
       en: "55HRC - Chamfer end mill 2F 90°"
@@ -41,6 +42,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: true,
     code: "DPVM_55HRC_3F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90°",
       en: "55HRC - Chamfer end mill 3F 90°"
@@ -77,6 +79,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: true,
     code: "DPVM_55HRC_2F_Al",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
       en: "55HRC - Chamfer end mill 2F 90° - aluminum machining"
@@ -113,6 +116,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_3F_Al",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
       en: "55HRC - Chamfer end mill 3F 90° - aluminum machining"
@@ -149,6 +153,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_1F_CS",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
       en: "55HRC - Chamfer end mill 1F 90° - mushroom shape"
@@ -185,6 +190,7 @@ const items = [
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_3F_CS",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
       en: "55HRC - Chamfer end mill 3F 90° - mushroom shape"

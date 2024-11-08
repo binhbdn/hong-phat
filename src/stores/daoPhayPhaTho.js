@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayPhaThoCT",
     isTypical: false,
     code: "DPPT_55HRC_3F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
       en: "55HRC - Roughing end mill 3F - aluminum machining"
@@ -41,6 +42,7 @@ const items = [
     routeName: "pDaoPhayPhaThoCT",
     isTypical: true,
     code: "DPPT_55HRC_4F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay phá thô 4F",
       en: "55HRC - Roughing end mill 4F"

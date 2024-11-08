@@ -4765,10 +4765,15 @@ input.p-dropdown-label {
   height: 1.25rem;
 }
 
-.p-image-preview-container:hover > .p-image-preview-indicator {
-  background-color: rgba(0, 0, 0, 0.5);
+/*
+.p-image-preview-container {
+    &:hover {
+        > .p-image-preview-indicator {
+            background-color: $imagePreviewIndicatorBg;
+        }
+    }
 }
-
+*/
 .p-image-toolbar {
   padding: 0.75rem;
 }

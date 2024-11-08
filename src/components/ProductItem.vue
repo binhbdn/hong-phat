@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
+import DaoPhayItemRibbon from "@/views/san-pham/dao-phay/DaoPhayItemRibbon.vue";
 
 const { current } = useI18n();
 
@@ -38,10 +39,13 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
     </div>
 
     <div class="flex gap-x-3">
-      <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
-        <Image :src="item.imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-md" @click.stop />
+      <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[180px]'">
+        <Image :src="item.imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-t-md rounded-br-md" @click.stop />
 
-        <img v-if="isEndMill" v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
+        <template v-if="isEndMill">
+          <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
+          <DaoPhayItemRibbon :item="item" />
+        </template>
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
@@ -63,7 +67,7 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
       </div>
 
       <div class="w-0 flex-grow flex-col leading-4 xl:leading-5" :class="viewDetails ? 'flex' : 'hidden'">
-        <div class="flex-grow flex justify-end font-medium leading-4 text-primary/70">
+        <div class="flex-grow flex justify-end font-medium leading-4 text-gray-500">
           {{ formattedPrice }}
         </div>
 
@@ -73,7 +77,7 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
       </div>
     </div>
 
-    <div class="order-2 flex-grow items-end font-medium leading-4 text-primary/70 -mt-1" :class="viewDetails ? 'hidden' : 'flex'">
+    <div class="order-2 flex-grow items-end font-medium leading-4 text-gray-500 -mt-1" :class="viewDetails ? 'hidden' : 'flex'">
       {{ formattedPrice }}
     </div>
   </div>

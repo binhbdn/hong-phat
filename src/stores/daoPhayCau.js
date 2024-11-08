@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_45HRC_2F",
+    hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay cầu 2F",
       en: "45HRC - Ball end mill 2F"
@@ -41,6 +42,7 @@ const items = [
     routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_55HRC_2F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay cầu 2F",
       en: "55HRC - Ball end mill 2F"
@@ -77,6 +79,7 @@ const items = [
     routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_65HRC_2F",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay cầu 2F",
       en: "65HRC - Ball end mill 2F"
@@ -113,6 +116,7 @@ const items = [
     routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_65HRC_2F_hard",
+    hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay cầu 2F - tăng cứng",
       en: "65HRC - Ball end mill 2F - harden"

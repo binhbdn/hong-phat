@@ -5,6 +5,7 @@ const items = [
     routeName: "pDaoPhayRTrongCT",
     isTypical: true,
     code: "DPRT_55HRC_4F",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay R trong 4F",
       en: "55HRC - Corner rounding end mill 4F"
@@ -41,6 +42,7 @@ const items = [
     routeName: "pDaoPhayRTrongCT",
     isTypical: false,
     code: "DPRT_55HRC_4F_Al",
+    hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
       en: "55HRC - Corner rounding end mill 4F - aluminum machining"

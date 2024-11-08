@@ -10,8 +10,8 @@ import CartButton from "@/views/gio-hang/CartButton.vue";
       <slot name="headerIcons" />
     </div>
 
-    <div class="px-2 sm:px-4 pb-2 sm:pb-3">
-      <div class="page-body overflow-y-scroll hide-scrollbar">
+    <div class="pb-2 sm:pb-3">
+      <div class="page-body overflow-y-scroll hide-scrollbar px-2 sm:px-4">
         <slot />
       </div>
     </div>

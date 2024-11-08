@@ -47,3 +47,43 @@
 .page-has-footer .cart-btn {
   bottom: 4rem;
 }
+
+.ribbon {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0.5em;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  line-height: 1.875em;
+  color: #27272a;
+  border-radius: 0 0.313em 0.313em 0;
+  background: #ffa6a6bb;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ribbon:before,
+.ribbon:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.ribbon:before {
+  width: 0.469em;
+  height: calc(100% + 0.438em);
+  bottom: 0;
+  left: -0.469em;
+  background: #ffa6a6;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after {
+  width: 0.313em;
+  height: 0.313em;
+  background: rgba(0, 0, 0, 0.35);
+  top: -0.313em;
+  left: -0.313em;
+  border-radius: 0.313em 0 0 0.313em;
+  box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+}
