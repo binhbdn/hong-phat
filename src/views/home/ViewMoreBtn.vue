@@ -8,11 +8,6 @@ defineEmits(["update:showAll"]);
 
 <template>
   <div :class="[viewDetails ? 'h-fit self-end justify-self-end md:justify-self-start' : 'w-full sm:w-auto justify-end items-end', showAll ? 'hidden' : 'flex']">
-    <div
-      class="h-fit text-xs text-gray-900 bg-primary/20 hover:bg-primary/40 border border-gray-500 cursor-pointer rounded-md px-2 py-1"
-      @click="$emit('update:showAll', true)"
-    >
-      {{ $t("viewMore") }}
-    </div>
+    <PrimeButton :label="$t('viewMore')" outlined severity="info" class="h-fit text-xs/none px-2 py-1.5" @click="$emit('update:showAll', true)" />
   </div>
 </template>

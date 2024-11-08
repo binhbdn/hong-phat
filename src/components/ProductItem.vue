@@ -39,7 +39,7 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
     </div>
 
     <div class="flex gap-x-3">
-      <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[180px]'">
+      <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
         <Image :src="item.imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-t-md rounded-br-md" @click.stop />
 
         <template v-if="isEndMill">
