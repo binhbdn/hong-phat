@@ -77,6 +77,7 @@ export const selectedKeys = ref(defaultSelectedKeys);
 export const view = reactive({
   allCategories: {
     show: true,
+    partialChecked: false,
     expanded: true
   },
   pDaoPhayNgon: {

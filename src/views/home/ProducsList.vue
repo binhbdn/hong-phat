@@ -52,6 +52,7 @@ const unbindOutsideClickTreeCategoriesListener = () => {
 
 watch(selectedKeys, (val) => {
   view.allCategories.show = Boolean(val?.allCategories);
+  view.allCategories.partialChecked = Boolean(val?.allCategories?.partialChecked);
 
   view.pDaoPhayNgon.show = Boolean(val?.pDaoPhayNgon?.checked);
   if (view.pDaoPhayNgon.show) view.pDaoPhayNgon.expanded = true;
@@ -122,9 +123,10 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
       <div
         v-tooltip="showFilter ? $t('h.hideCategories') : $t('h.showCategories')"
         class="home-icon-filter home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+        :class="view.allCategories.partialChecked ? 'text-primary/70' : 'text-gray-700'"
         @click.prevent="onToggleShowFilter()"
       >
-        <i class="pi" :class="showFilter ? 'pi-filter-slash' : 'pi-filter'" />
+        <i class="pi" :class="showFilter ? 'pi-filter-slash' : view.allCategories.partialChecked ? 'pi-filter-fill' : 'pi-filter'" />
       </div>
     </div>
 
