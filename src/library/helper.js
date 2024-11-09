@@ -1,3 +1,5 @@
+export const formatNumber = (number) => new Intl.NumberFormat("de-DE").format(number);
+
 export const numberToVnd = (input) => {
   const number = Number(input);
   /*

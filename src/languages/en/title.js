@@ -13,6 +13,7 @@ export default {
   pDaoPhayRTrongCT: "Details of corner rounding end mill",
   pDaoPhayPhaTho: "Roughing end mills",
   pDaoPhayPhaThoCT: "Details of roughing end mill",
-  pBauKep: "Tool holders",
+  pBauKepCollet: "Tool holders",
+  pBauKepColletCT: "Details of tool holder",
   pDaoPhay: "Milling cutters"
 };

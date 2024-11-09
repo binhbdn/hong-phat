@@ -4,6 +4,8 @@ import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
 import DaoPhayItemRibbon from "@/views/san-pham/dao-phay/DaoPhayItemRibbon.vue";
+import BauKepColletItemDetails from "@/views/san-pham/bau-kep-collet/BauKepColletItemDetails.vue";
+import BauKepColletItemRibbon from "@/views/san-pham/bau-kep-collet/BauKepColletItemRibbon.vue";
 
 const { current } = useI18n();
 
@@ -21,6 +23,8 @@ const formattedPrice = computed(() => {
 
 // dao phay
 const isEndMill = computed(() => props.item.category === "pDaoPhay");
+// bầu kẹp - collet
+const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
 </script>
 
 <template>
@@ -46,6 +50,8 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
           <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
           <DaoPhayItemRibbon :item="item" />
         </template>
+
+        <BauKepColletItemRibbon v-else-if="isBauKepCollet" :item="item" />
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
@@ -73,6 +79,7 @@ const isEndMill = computed(() => props.item.category === "pDaoPhay");
 
         <template v-if="viewDetails">
           <DaoPhayItemDetails v-if="isEndMill" :description="item.description[current]" :item="item" />
+          <BauKepColletItemDetails v-else-if="isBauKepCollet" :description="item.description[current]" :item="item" />
         </template>
       </div>
     </div>

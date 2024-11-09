@@ -11,5 +11,9 @@ export default {
   bladeRadius: "Bán kính lưỡi",
   handleDiameter: "Đường kính cán",
   overallLength: "Tổng chiều dài",
-  origin: "Xuất xứ"
+  origin: "Xuất xứ",
+  brand: "Thương hiệu",
+  runout: "Độ đảo",
+  maxSpeed: "Tốc độ tối đa",
+  rpm: "vòng/ phút"
 };

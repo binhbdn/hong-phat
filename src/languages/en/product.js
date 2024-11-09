@@ -11,5 +11,9 @@ export default {
   bladeRadius: "Blade radius",
   handleDiameter: "Handle diameter",
   overallLength: "Overall length",
-  origin: "Origin"
+  origin: "Origin",
+  brand: "Brand",
+  runout: "Runout",
+  maxSpeed: "Max speed",
+  rpm: "RPM"
 };

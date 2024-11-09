@@ -59,8 +59,8 @@ const model = [
             ]
           },
           {
-            label: "pBauKep",
-            to: "/san-pham/bau-kep"
+            label: "pBauKepCollet",
+            to: "/san-pham/bau-kep-collet"
           }
         ]
       }

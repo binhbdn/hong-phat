@@ -10,6 +10,7 @@ import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepLi
 import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
 import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
 import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoList.vue";
+import BauKepColletList from "@/views/san-pham/bau-kep-collet/BauKepColletList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -78,9 +79,9 @@ watch(selectedKeys, (val) => {
   if (view.pDaoPhayPhaTho.show) view.pDaoPhayPhaTho.expanded = true;
   else view.pDaoPhayPhaTho.showAll = false;
 
-  view.pBauKep.show = Boolean(val?.pBauKep?.checked);
-  if (view.pBauKep.show) view.pBauKep.expanded = true;
-  else view.pBauKep.showAll = false;
+  view.pBauKepCollet.show = Boolean(val?.pBauKepCollet?.checked);
+  if (view.pBauKepCollet.show) view.pBauKepCollet.expanded = true;
+  else view.pBauKepCollet.showAll = false;
 });
 
 onMounted(() => {
@@ -216,6 +217,15 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
           </template>
         </DaoPhayPhaThoList>
         -->
+      </div>
+
+      <div v-show="view.pBauKepCollet.show" class="home-category" :class="{ expanded: view.pBauKepCollet.expanded }">
+        <CategoryHeader v-model:expanded="view.pBauKepCollet.expanded" name="pBauKepCollet" />
+        <BauKepColletList v-show="view.pBauKepCollet.expanded" :viewDetails="viewDetails" :showAll="view.pBauKepCollet.showAll">
+          <template #last>
+            <ViewMoreBtn v-model:showAll="view.pBauKepCollet.showAll" />
+          </template>
+        </BauKepColletList>
       </div>
     </div>
   </div>
