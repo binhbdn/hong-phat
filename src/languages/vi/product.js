@@ -15,5 +15,6 @@ export default {
   brand: "Thương hiệu",
   runout: "Độ đảo",
   maxSpeed: "Tốc độ tối đa",
-  rpm: "vòng/ phút"
+  rpm: "vòng/ phút",
+  noProductWithCode: "Không tìm thấy sản phẩm có mã"
 };

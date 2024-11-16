@@ -9,7 +9,7 @@ const items = [
       vi: "Bầu kẹp Suken BT40 loại ER16/20/25/32",
       en: "Collet chuck Suken BT40 ER16/20/25/32"
     },
-    imgSrc: "/img/bau_kep_suken/BT40_ER32_100L.avif",
+    images: ["/img/bau_kep_suken/BT40_ER32_100L.avif"],
     prices: {
       current: 793000,
       min: 0,
@@ -36,7 +36,7 @@ const items = [
       vi: "Bầu kẹp Suken BT50 loại ER16/20/25/32/40",
       en: "Collet chuck Suken BT50 ER16/20/25/32/40"
     },
-    imgSrc: "/img/bau_kep_suken/BT50_ER40_100L.avif",
+    images: ["/img/bau_kep_suken/BT50_ER40_100L.avif"],
     prices: {
       current: 0,
       min: 1790000,

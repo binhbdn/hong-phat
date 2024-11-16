@@ -15,5 +15,6 @@ export default {
   brand: "Brand",
   runout: "Runout",
   maxSpeed: "Max speed",
-  rpm: "RPM"
+  rpm: "RPM",
+  noProductWithCode: "No product found with code"
 };

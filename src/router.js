@@ -27,6 +27,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-ngon/:code",
           name: "pDaoPhayNgonCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-ngon/DaoPhayNgonDetails.vue")
         },
         {
@@ -37,6 +38,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-cau/:code",
           name: "pDaoPhayCauCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-cau/DaoPhayCauDetails.vue")
         },
         {
@@ -47,6 +49,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-vat-mep/:code",
           name: "pDaoPhayVatMepCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepDetails.vue")
         },
         {
@@ -57,6 +60,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-bo-goc/:code",
           name: "pDaoPhayBoGocCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocDetails.vue")
         },
         {
@@ -67,6 +71,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-r-trong/:code",
           name: "pDaoPhayRTrongCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongDetails.vue")
         },
         {
@@ -77,6 +82,7 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-pha-tho/:code",
           name: "pDaoPhayPhaThoCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoDetails.vue")
         },
         {
@@ -87,6 +93,7 @@ const router = createRouter({
         {
           path: "san-pham/bau-kep-collet/:code",
           name: "pBauKepColletCT",
+          props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/bau-kep-collet/BauKepColletDetails.vue")
         }
       ]

@@ -10,7 +10,10 @@ const items = [
       vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
       en: "45HRC - End mill 3F - aluminum machining"
     },
-    imgSrc: "/img/dao_phay_ngon/55HRC_3F.avif",
+    images: [
+      "/img/dao_phay_ngon/55HRC_3F.avif",
+      "/img/dao_phay_ngon/45HRC_2F.avif"
+    ],
     flutes: 3,
     prices: {
       current: 0,
@@ -47,7 +50,7 @@ const items = [
       vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
       en: "55HRC - End mill 3F - aluminum machining"
     },
-    imgSrc: "/img/dao_phay_ngon/55HRC_3F.avif",
+    images: ["/img/dao_phay_ngon/55HRC_3F.avif"],
     flutes: 3,
     prices: {
       current: 0,
@@ -84,7 +87,7 @@ const items = [
       vi: "45HRC - Dao phay ngón 2F",
       en: "45HRC - End mill 2F"
     },
-    imgSrc: "/img/dao_phay_ngon/45HRC_2F.avif",
+    images: ["/img/dao_phay_ngon/45HRC_2F.avif"],
     flutes: 2,
     prices: {
       current: 0,
@@ -121,7 +124,7 @@ const items = [
       vi: "45HRC - Dao phay ngón 4F",
       en: "45HRC - End mill 4F"
     },
-    imgSrc: "/img/dao_phay_ngon/45HRC_4F.avif",
+    images: ["/img/dao_phay_ngon/45HRC_4F.avif"],
     flutes: 4,
     prices: {
       current: 0,
@@ -158,7 +161,7 @@ const items = [
       vi: "55HRC - Dao phay ngón 2F",
       en: "55HRC - End mill 2F"
     },
-    imgSrc: "/img/dao_phay_ngon/55HRC_2F.avif",
+    images: ["/img/dao_phay_ngon/55HRC_2F.avif"],
     flutes: 2,
     prices: {
       current: 0,
@@ -195,7 +198,7 @@ const items = [
       vi: "55HRC - Dao phay ngón 4F",
       en: "55HRC - End mill 4F"
     },
-    imgSrc: "/img/dao_phay_ngon/55HRC_4F.avif",
+    images: ["/img/dao_phay_ngon/55HRC_4F.avif"],
     flutes: 4,
     prices: {
       current: 0,
@@ -232,7 +235,7 @@ const items = [
       vi: "60HRC - Dao phay ngón 4F",
       en: "60HRC - End mill 4F"
     },
-    imgSrc: "/img/dao_phay_ngon/60HRC_4F.avif",
+    images: ["/img/dao_phay_ngon/60HRC_4F.avif"],
     flutes: 4,
     prices: {
       current: 0,
@@ -269,7 +272,7 @@ const items = [
       vi: "65HRC - Dao phay ngón 4F",
       en: "65HRC - End mill 4F"
     },
-    imgSrc: "/img/dao_phay_ngon/65HRC_4F.avif",
+    images: ["/img/dao_phay_ngon/65HRC_4F.avif"],
     flutes: 4,
     prices: {
       current: 0,
@@ -306,7 +309,7 @@ const items = [
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
       en: "65HRC - End mill 4F - harden"
     },
-    imgSrc: "/img/dao_phay_ngon/65HRC_4F_hard.avif",
+    images: ["/img/dao_phay_ngon/65HRC_4F_hard.avif"],
     flutes: 4,
     prices: {
       current: 0,
@@ -335,3 +338,5 @@ const items = [
 ];
 
 export default items;
+
+export const getItemByCode = (code) => items.find((item) => item.code === code);

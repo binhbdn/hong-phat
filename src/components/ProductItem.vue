@@ -44,7 +44,7 @@ const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
 
     <div class="flex gap-x-3">
       <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
-        <Image :src="item.imgSrc" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-t-md rounded-br-md" @click.stop />
+        <Image :src="item.images[0]" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-t-md rounded-br-md" @click.stop />
 
         <template v-if="isEndMill">
           <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />

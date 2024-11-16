@@ -10,7 +10,7 @@ const items = [
       vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
       en: "55HRC - Roughing end mill 3F - aluminum machining"
     },
-    imgSrc: "/img/dao_phay_pha_tho/55HRC_3F.avif",
+    images: ["/img/dao_phay_pha_tho/55HRC_3F.avif"],
     flutes: 3,
     prices: {
       current: 0,
@@ -47,7 +47,7 @@ const items = [
       vi: "55HRC - Dao phay phá thô 4F",
       en: "55HRC - Roughing end mill 4F"
     },
-    imgSrc: "/img/dao_phay_pha_tho/55HRC_4F.avif",
+    images: ["/img/dao_phay_pha_tho/55HRC_4F.avif"],
     flutes: 4,
     prices: {
       current: 0,
