@@ -10,7 +10,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 2F 90°",
       en: "55HRC - Chamfer end mill 2F 90°"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_2F.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_2F.webp"],
     flutes: 2,
     prices: {
       current: 0,
@@ -47,7 +47,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 3F 90°",
       en: "55HRC - Chamfer end mill 3F 90°"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_3F.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_3F.webp"],
     flutes: 3,
     prices: {
       current: 0,
@@ -84,7 +84,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
       en: "55HRC - Chamfer end mill 2F 90° - aluminum machining"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_2F_Al.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp"],
     flutes: 2,
     prices: {
       current: 0,
@@ -121,7 +121,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
       en: "55HRC - Chamfer end mill 3F 90° - aluminum machining"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_3F_Al.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp"],
     flutes: 3,
     prices: {
       current: 0,
@@ -158,7 +158,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
       en: "55HRC - Chamfer end mill 1F 90° - mushroom shape"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_1F_CS.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
     flutes: 1,
     prices: {
       current: 0,
@@ -195,7 +195,7 @@ const items = [
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
       en: "55HRC - Chamfer end mill 3F 90° - mushroom shape"
     },
-    images: ["/img/dao_phay_vat_mep/55HRC_3F_CS.avif"],
+    images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
     flutes: 3,
     prices: {
       current: 0,

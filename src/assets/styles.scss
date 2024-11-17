@@ -87,3 +87,38 @@
   border-radius: 0.313em 0 0 0.313em;
   box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+.smv-slides-box {
+  background-color: #fff;
+  border-radius: 6px;
+}
+.smv .smv-button-fullscreen {
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+}
+.smv-h .smv-arrow-control {
+  width: 40px;
+}
+.smv-h .smv-arrow {
+  width: 24px;
+  height: 50px;
+}
+.smv-fullscreen-box {
+  padding-top: 8px;
+}
+.smv-selectors-box .smv-selectors .smv-ss {
+  padding-top: 6px;
+}
+.smv-selectors-box.smv-thumbnails.smv-h .smv-item {
+  height: 100%;
+  padding: 0 4px 0 0;
+}
+.smv-thumbnails .smv-item smv-thumbnail {
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.mobile-magic .smv-fullscreen-box .smv-selectors-bottom .smv-selectors-box.smv-thumbnails {
+  padding-bottom: 8px;
+}

@@ -10,7 +10,7 @@ const items = [
       vi: "55HRC - Dao phay bo góc 4F",
       en: "55HRC - Corner radius end mill 4F"
     },
-    images: ["/img/dao_phay_bo_goc/55HRC_4F.avif"],
+    images: ["/dao_phay_bo_goc/55HRC_4F.webp"],
     flutes: 4,
     prices: {
       current: 0,
@@ -47,7 +47,7 @@ const items = [
       vi: "65HRC - Dao phay bo góc 4F",
       en: "65HRC - Corner radius end mill 4F"
     },
-    images: ["/img/dao_phay_bo_goc/65HRC_4F.avif"],
+    images: ["/dao_phay_bo_goc/65HRC_4F.webp"],
     flutes: 4,
     prices: {
       current: 0,
@@ -84,7 +84,7 @@ const items = [
       vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
       en: "65HRC - Corner radius end mill 4F - harden"
     },
-    images: ["/img/dao_phay_bo_goc/65HRC_4F_hard.avif"],
+    images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
     flutes: 4,
     prices: {
       current: 0,

@@ -1,11 +1,13 @@
 <script setup>
+import { imgServer } from "@/config";
+
 defineProps({
   images: Array
 });
 </script>
 
 <template>
-  <div class="text-xs sm:text-[13px]/5 text-gray-600 bg-white rounded-lg shadow-lg p-2 sm:p-3">
-    {{ images }}
+  <div class="Sirv" data-options="mode:magnifier" style="height: 425px">
+    <div v-for="(image, index) in images" :key="index" :data-src="`${imgServer}${image}`" data-type="zoom" />
   </div>
 </template>

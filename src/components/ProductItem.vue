@@ -2,6 +2,8 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
+import { imgServer } from "@/config";
+
 import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
 import DaoPhayItemRibbon from "@/views/san-pham/dao-phay/DaoPhayItemRibbon.vue";
 import BauKepColletItemDetails from "@/views/san-pham/bau-kep-collet/BauKepColletItemDetails.vue";
@@ -44,7 +46,7 @@ const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
 
     <div class="flex gap-x-3">
       <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
-        <Image :src="item.images[0]" width="100%" height="100%" preview imageClass="border border-gray-400 rounded-t-md rounded-br-md" @click.stop />
+        <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="border border-gray-400 rounded-t-md rounded-br-md" />
 
         <template v-if="isEndMill">
           <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />

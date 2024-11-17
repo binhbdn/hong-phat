@@ -10,7 +10,7 @@ const items = [
       vi: "55HRC - Dao phay R trong 4F",
       en: "55HRC - Corner rounding end mill 4F"
     },
-    images: ["/img/dao_phay_r_trong/55HRC_4F.avif"],
+    images: ["/dao_phay_r_trong/55HRC_4F.webp"],
     flutes: 4,
     prices: {
       current: 0,
@@ -47,7 +47,7 @@ const items = [
       vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
       en: "55HRC - Corner rounding end mill 4F - aluminum machining"
     },
-    images: ["/img/dao_phay_r_trong/55HRC_4F_Al.avif"],
+    images: ["/dao_phay_r_trong/55HRC_4F_Al.webp"],
     flutes: 4,
     prices: {
       current: 0,

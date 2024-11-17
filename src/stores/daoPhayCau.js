@@ -10,7 +10,7 @@ const items = [
       vi: "45HRC - Dao phay cầu 2F",
       en: "45HRC - Ball end mill 2F"
     },
-    images: ["/img/dao_phay_cau/45HRC_2F.avif"],
+    images: ["/dao_phay_cau/45HRC_2F.webp"],
     flutes: 2,
     prices: {
       current: 0,
@@ -47,7 +47,7 @@ const items = [
       vi: "55HRC - Dao phay cầu 2F",
       en: "55HRC - Ball end mill 2F"
     },
-    images: ["/img/dao_phay_cau/55HRC_2F.avif"],
+    images: ["/dao_phay_cau/55HRC_2F.webp"],
     flutes: 2,
     prices: {
       current: 0,
@@ -84,7 +84,7 @@ const items = [
       vi: "65HRC - Dao phay cầu 2F",
       en: "65HRC - Ball end mill 2F"
     },
-    images: ["/img/dao_phay_cau/65HRC_2F.avif"],
+    images: ["/dao_phay_cau/65HRC_2F.webp"],
     flutes: 2,
     prices: {
       current: 0,
@@ -121,7 +121,7 @@ const items = [
       vi: "65HRC - Dao phay cầu 2F - tăng cứng",
       en: "65HRC - Ball end mill 2F - harden"
     },
-    images: ["/img/dao_phay_cau/65HRC_2F_hard.avif"],
+    images: ["/dao_phay_cau/65HRC_2F_hard.webp"],
     flutes: 2,
     prices: {
       current: 0,
