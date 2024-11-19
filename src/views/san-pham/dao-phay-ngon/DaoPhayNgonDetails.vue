@@ -1,12 +1,12 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import { useI18n } from "vue-i18n-lite";
 import { getItemByCode } from "@/stores/daoPhayNgon";
 import PageHasTitle from "@/components/PageHasTitle.vue";
-import ProductImages from "@/components/ProductImages.vue";
+import ProductNotFound from "@/components/ProductNotFound.vue";
+import DaoPhayBasicInfo from "@/views/san-pham/dao-phay/DaoPhayBasicInfo.vue";
+import DaoPhayNgonSpec from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonSpec.vue";
 
 const props = defineProps(["code"]);
-const { current } = useI18n();
 const item = ref(null);
 
 onMounted(() => {
@@ -16,22 +16,11 @@ onMounted(() => {
 
 <template>
   <PageHasTitle>
-    <div v-if="item" class="flex flex-col sm:flex-row gap-3">
-      <div class="sm:w-1/2">
-        <ProductImages :images="item.images" />
-      </div>
-      <div class="sm:w-1/2">
-        <div class="font-bold text-base">
-          {{ item.name[current] }}
-        </div>
-      </div>
-    </div>
+    <template v-if="item">
+      <DaoPhayBasicInfo :item="item" />
+      <DaoPhayNgonSpec :code="code" />
+    </template>
 
-    <div v-else class="text-xs sm:text-[13px]/5 text-gray-600 bg-white rounded-lg shadow-lg p-2 sm:p-3">
-      {{ $t("noProductWithCode") }}
-      <strong class="text-red-500">
-        {{ code }}
-      </strong>
-    </div>
+    <ProductNotFound v-else :code="code" />
   </PageHasTitle>
 </template>

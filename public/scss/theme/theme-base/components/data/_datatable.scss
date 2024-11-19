@@ -250,6 +250,11 @@
     .p-paginator-bottom {
         border-width: $tableBottomPaginatorBorderWidth;
         border-radius: 0;
+
+        .p-paginator {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
     }
 
     .p-datatable-header {

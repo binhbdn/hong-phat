@@ -11,7 +11,7 @@ import CartButton from "@/views/gio-hang/CartButton.vue";
     </div>
 
     <div class="pb-2 sm:pb-3">
-      <div class="page-body overflow-y-scroll hide-scrollbar px-2 sm:px-4">
+      <div class="page-body overflow-y-scroll hide-scrollbar px-2 sm:px-4 pb-11 sm:pb-9 xl:pb-0">
         <slot />
       </div>
     </div>

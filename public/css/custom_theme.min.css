@@ -2807,6 +2807,10 @@ input.p-dropdown-label {
   border-width: 0 0 1px 0;
   border-radius: 0;
 }
+.p-datatable .p-paginator-bottom .p-paginator {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .p-datatable .p-datatable-header {
   color: #3f3f46;
   font-weight: 600;

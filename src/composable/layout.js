@@ -1,4 +1,4 @@
-import { toRefs, reactive, computed } from "vue";
+import { reactive, computed } from "vue";
 import { useWindowSize } from "@vueuse/core";
 
 const { width } = useWindowSize();

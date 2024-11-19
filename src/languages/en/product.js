@@ -1,6 +1,15 @@
 export default {
   material: "Material",
   CarbideTungsten: "Carbide/Tungsten",
+  processingMaterials: "Applicable working materials",
+  pm: {
+    P: "Iron, steel, alloy steel",
+    M: "Stainless steel",
+    K: "Cast iron, spherical cast iron, ductile cast iron",
+    N: "Aluminum and other non-ferrous metals",
+    S: "Heat-resistant superalloys",
+    H: "Hard steel, super hard alloy"
+  },
   coating: "Coating",
   AlTiN: "Aluminum Titanium Nitride",
   TiSiN: "Titanium Silicon Nitride",
@@ -10,11 +19,19 @@ export default {
   bladeDiameter: "Blade diameter",
   bladeRadius: "Blade radius",
   handleDiameter: "Handle diameter",
+  cuttingLength: "Cutting length",
   overallLength: "Overall length",
   origin: "Origin",
   brand: "Brand",
   runout: "Runout",
   maxSpeed: "Max speed",
   rpm: "RPM",
-  noProductWithCode: "No product found with code"
+  noProductWithCode: "No product found with code",
+  productCode: "Product code",
+  hardness: "Hardness",
+  flutes: "Flutes",
+  cutStyle: "Cut style",
+  csSquare: "Flat",
+  helixAngle: "Helix angle",
+  specifications: "Specifications"
 };
