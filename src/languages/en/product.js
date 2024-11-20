@@ -33,5 +33,7 @@ export default {
   cutStyle: "Cut style",
   csSquare: "Flat",
   helixAngle: "Helix angle",
-  specifications: "Specifications"
+  specifications: "Specifications",
+  showSortButtons: "Show sort buttons",
+  hideSortButtons: "Hide sort buttons"
 };

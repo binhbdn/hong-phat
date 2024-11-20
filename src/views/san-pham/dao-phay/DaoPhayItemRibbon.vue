@@ -11,7 +11,7 @@ defineProps({
       {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }}
     </span>
     <span v-else class="text-[10px]">
-      {{ `d${item.bladeDiameter.min}-d${item.bladeDiameter.max}` }}
+      {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }}
     </span>
   </div>
 </template>

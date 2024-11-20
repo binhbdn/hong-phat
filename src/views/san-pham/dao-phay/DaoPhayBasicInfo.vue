@@ -68,7 +68,7 @@ const formattedPrice = computed(() => {
         <div class="border-t border-dashed border-gray-400 pt-1 mt-1">
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("bladeDiameter") }}: </span>
-            <span class="font-medium text-gray-900"> {{ `d${item.bladeDiameter.min}-d${item.bladeDiameter.max}` }} </span>
+            <span class="font-medium text-gray-900"> {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }} </span>
           </div>
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("handleDiameter") }}: </span>

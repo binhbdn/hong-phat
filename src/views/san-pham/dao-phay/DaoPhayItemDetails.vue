@@ -18,7 +18,7 @@ defineProps({
   <div v-else class="flex justify-between gap-x-1">
     {{ $t("bladeDiameter") }}:
     <span class="font-medium text-gray-900">
-      {{ `d${item.bladeDiameter.min}-d${item.bladeDiameter.max}` }}
+      {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }}
     </span>
   </div>
   <div class="flex justify-between gap-x-1">

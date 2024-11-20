@@ -33,5 +33,7 @@ export default {
   cutStyle: "Kiểu cắt",
   csSquare: "Phẳng",
   helixAngle: "Góc xoắn ốc",
-  specifications: "Thông số kỹ thuật"
+  specifications: "Thông số kỹ thuật",
+  showSortButtons: "Hiển thị button sắp xếp",
+  hideSortButtons: "Ẩn button sắp xếp"
 };
