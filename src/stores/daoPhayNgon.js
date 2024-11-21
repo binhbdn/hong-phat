@@ -96,7 +96,7 @@ const items = [
       vi: "45HRC - Dao phay ngón 2F",
       en: "45HRC - End mill 2F"
     },
-    images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp"],
+    images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp", "/dao_phay_ngon/45hrc_2f/3.webp"],
     flutes: 2,
     helixAngle: 35,
     prices: {
@@ -354,7 +354,7 @@ const items = [
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
       en: "65HRC - End mill 4F - harden"
     },
-    images: ["/dao_phay_ngon/65HRC_4F_hard.webp"],
+    images: ["/dao_phay_ngon/65HRC_4F_hard.webp", "/dao_phay_ngon/65hrc_4f_hard/1.webp", "/dao_phay_ngon/65hrc_4f_hard/2.webp"],
     flutes: 4,
     helixAngle: 35,
     prices: {
