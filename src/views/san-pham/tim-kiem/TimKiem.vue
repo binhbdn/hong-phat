@@ -5,7 +5,7 @@ import PageHasTitle from "@/components/PageHasTitle.vue";
 <template>
   <PageHasTitle>
     <div class="bg-white rounded-lg shadow-lg p-2 sm:p-3">
-      TODO: Tìm kiếm sản phẩm
+      <!-- TODO: Tìm kiếm sản phẩm -->
       <div class="h-screen"></div>
     </div>
   </PageHasTitle>
