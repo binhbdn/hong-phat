@@ -31,9 +31,9 @@ export default {
   hardness: "Độ cứng",
   flutes: "Me cắt",
   cutStyle: "Kiểu cắt",
-  csSquare: "Phẳng",
   helixAngle: "Góc xoắn ốc",
   specifications: "Thông số kỹ thuật",
+  dimension: "Kích thước",
   showSortButtons: "Hiển thị button sắp xếp",
   hideSortButtons: "Ẩn button sắp xếp"
 };

@@ -31,9 +31,9 @@ export default {
   hardness: "Hardness",
   flutes: "Flutes",
   cutStyle: "Cut style",
-  csSquare: "Flat",
   helixAngle: "Helix angle",
   specifications: "Specifications",
+  dimension: "Dimension",
   showSortButtons: "Show sort buttons",
   hideSortButtons: "Hide sort buttons"
 };

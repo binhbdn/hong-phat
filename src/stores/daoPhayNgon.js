@@ -818,7 +818,7 @@ export const getSpecByCode = (code) => {
   if (!spec) return [];
 
   const list = spec.data.map((item) => ({
-    code: `D${item[0]}*D${item[1]}*${item[3]}`,
+    dim: `D${item[0]}*D${item[1]}*${item[3]}`,
     bladeDiameter: item[0],
     handleDiameter: item[1],
     cuttingLength: item[2],

@@ -18,7 +18,7 @@ onMounted(() => {
   <PageHasTitle>
     <template v-if="item">
       <DaoPhayBasicInfo :item="item" />
-      <DaoPhayNgonSpec :code="code" />
+      <DaoPhayNgonSpec :code="code" :flutes="item.flutes" />
     </template>
 
     <ProductNotFound v-else :code="code" />

@@ -7,7 +7,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="Sirv" data-options="mode:magnifier" style="height: 425px">
-    <div v-for="(image, index) in images" :key="index" :data-src="`${imgServer}${image}`" data-type="zoom" />
+  <div class="h-[375px] sm:h-[450px]">
+    <div class="Sirv" data-options="mode:magnifier">
+      <div v-for="(image, index) in images" :key="index" :data-src="`${imgServer}${image}`" data-type="zoom" />
+    </div>
   </div>
 </template>

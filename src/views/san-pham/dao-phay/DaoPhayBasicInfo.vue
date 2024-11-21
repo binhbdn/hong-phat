@@ -40,6 +40,10 @@ const formattedPrice = computed(() => {
         </div>
 
         <div class="border-t border-dashed border-gray-400 pt-1 mt-1">
+          <div class="flex justify-between items-center gap-x-2 xl:gap-x-5 hover:bg-white px-2 pb-1">
+            <span> {{ $t("cutStyle") }}: </span>
+            <img :src="`/svg/cut_style/${item.cutStyle}.svg`" />
+          </div>
           <div class="flex justify-between items-center gap-x-2 xl:gap-x-5 px-2">
             <span> {{ $t("processingMaterials") }}: </span>
             <ProcessingMaterials :codes="item.processingMaterials" />
@@ -56,10 +60,6 @@ const formattedPrice = computed(() => {
             <span class="font-medium text-gray-900"> {{ item.flutes }}F </span>
           </div>
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
-            <span> {{ $t("cutStyle") }}: </span>
-            <span class="font-medium text-gray-900"> {{ $t(item.cutStyle) }} </span>
-          </div>
-          <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("helixAngle") }}: </span>
             <span class="font-medium text-gray-900"> {{ item.helixAngle }}° </span>
           </div>
@@ -67,8 +67,14 @@ const formattedPrice = computed(() => {
 
         <div class="border-t border-dashed border-gray-400 pt-1 mt-1">
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
-            <span> {{ $t("bladeDiameter") }}: </span>
-            <span class="font-medium text-gray-900"> {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }} </span>
+            <template v-if="item.cutStyle === 'csBall'">
+              <span> {{ $t("bladeRadius") }}: </span>
+              <span class="font-medium text-gray-900"> {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }} </span>
+            </template>
+            <template v-else>
+              <span> {{ $t("bladeDiameter") }}: </span>
+              <span class="font-medium text-gray-900"> {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }} </span>
+            </template>
           </div>
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("handleDiameter") }}: </span>
