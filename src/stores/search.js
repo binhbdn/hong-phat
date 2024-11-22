@@ -26,3 +26,5 @@ export const textSearched = ref("");
 export const listSearched = ref([]);
 
 export const textSearchTrim = computed(() => textSearch.value.trim());
+
+export const first = ref(0);

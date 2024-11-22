@@ -1,6 +1,7 @@
 <script setup>
-import { ref, computed } from "vue";
+import { computed } from "vue";
 import { useI18n } from "vue-i18n-lite";
+import { first } from "@/stores/search";
 import { isDesktop } from "@/composable/layout";
 import { imgServer } from "@/config";
 
@@ -10,19 +11,18 @@ const props = defineProps({
 
 const { current } = useI18n();
 const rows = 5;
-const first = ref(0);
 const hasMultiplePages = computed(() => props.items.length > rows);
 </script>
 
 <template>
   <div>
     <DataTable v-model:first="first" :value="items" dataKey="code" :paginator="hasMultiplePages" :rows="rows" :size="isDesktop ? null : 'small'">
-      <Column header="#" headerClass="text-[13px]/5 sm:text-sm/[22px]" bodyClass="text-[13px]/5 sm:text-sm/[22px]">
+      <Column header="#">
         <template #body="{ index }">
           {{ first + index + 1 }}
         </template>
       </Column>
-      <Column :header="$t('products')" headerClass="text-[13px]/5 sm:text-sm/[22px]" bodyClass="text-[13px]/5 sm:text-sm/[22px]">
+      <Column :header="$t('products')">
         <template #body="{ data }">
           <div
             class="group flex items-stretch gap-x-3 text-gray-600 cursor-pointer"
@@ -33,7 +33,7 @@ const hasMultiplePages = computed(() => props.items.length > rows);
               })
             "
           >
-            <div class="flex-shrink-0 w-14 h-14 border border-gray-400 rounded-md">
+            <div class="flex-shrink-0 w-14 h-14 border border-gray-400 rounded-md" @click.stop>
               <Image :src="`${imgServer}${data.image}?w=300&h=300`" preview imageClass="rounded-md" />
             </div>
             <div class="flex flex-col justify-between">

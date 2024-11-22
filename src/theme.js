@@ -15,7 +15,7 @@ import PrimeVue from "primevue/config";
 import ToastService from "primevue/toastservice";
 
 /* Form */
-// import AutoComplete from "primevue/autocomplete";
+import AutoComplete from "primevue/autocomplete";
 // import Calendar from "primevue/calendar";
 // import CascadeSelect from "primevue/cascadeselect";
 // import Checkbox from "primevue/checkbox";
@@ -159,6 +159,7 @@ export const usePrimeVue = (app) => {
   // app.directive("styleclass", StyleClass);
 
   /* Form */
+  app.component("AutoComplete", AutoComplete);
   app.component("Chips", Chips);
   app.component("Dropdown", Dropdown);
   app.component("IconField", IconField);

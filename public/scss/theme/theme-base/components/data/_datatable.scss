@@ -465,6 +465,9 @@
         }
 
         .p-datatable-thead {
+            font-size: 13px;
+            line-height: 1.25rem;
+
             > tr {
                 > th {
                     border-width: 1px 0 1px 1px;
@@ -474,9 +477,17 @@
                     }
                 }
             }
+
+            @media (min-width: 640px) {
+                font-size: 0.875rem;
+                line-height: 22px;
+            }
         }
 
         .p-datatable-tbody {
+            font-size: 13px;
+            line-height: 1.25rem;
+
             > tr {
                 > td {
                     border-width: 1px 0 0 1px;
@@ -495,6 +506,11 @@
                         }
                     }
                 }
+            }
+
+            @media (min-width: 640px) {
+                font-size: 0.875rem;
+                line-height: 22px;
             }
         }
 
