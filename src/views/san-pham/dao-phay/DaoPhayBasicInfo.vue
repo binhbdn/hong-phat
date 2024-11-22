@@ -16,7 +16,7 @@ const formattedPrice = computed(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 xl:gap-7 text-xs/[18px] sm:text-[13px]/[22px] text-gray-600">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 xl:gap-7 text-[13px]/5 sm:text-sm/[22px] text-gray-600">
     <ProductImages :images="item.images" />
     <div>
       <div class="font-bold text-base text-gray-900 px-2">{{ item.name[current] }}</div>

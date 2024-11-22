@@ -1,3 +1,5 @@
+import { mapSearchProps } from "@/stores/search";
+
 const items = [
   {
     category: "pDaoPhay",
@@ -810,6 +812,8 @@ const specs = [
 ];
 
 export default items;
+
+export const daoPhayNgonItems = mapSearchProps(items);
 
 export const getItemByCode = (code) => items.find((item) => item.code === code);
 

@@ -9,3 +9,11 @@ export const numberToVnd = (input) => {
   */
   return new Intl.NumberFormat("de-DE", { style: "currency", currency: "VND" }).format(number);
 };
+
+export const removeDiacriticsAndLowerCase = (str) =>
+  str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase();

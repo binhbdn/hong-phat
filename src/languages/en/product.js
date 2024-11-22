@@ -35,5 +35,8 @@ export default {
   specifications: "Specifications",
   dimension: "Dimension",
   showSortButtons: "Show sort buttons",
-  hideSortButtons: "Hide sort buttons"
+  hideSortButtons: "Hide sort buttons",
+  searchForProductName: "Search for product name",
+  searchResultsWithKeyword: "Search results with keyword",
+  noProductsFound: "No products found"
 };

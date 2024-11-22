@@ -1,3 +1,3 @@
-import { ref, reactive } from "vue";
+import { ref } from "vue";
 
 export const viewDetails = ref(false);

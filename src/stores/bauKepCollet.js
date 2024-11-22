@@ -1,3 +1,5 @@
+import { mapSearchProps } from "@/stores/search";
+
 const items = [
   {
     category: "pBauKepCollet",
@@ -56,3 +58,5 @@ const items = [
 ];
 
 export default items;
+
+export const bauKepColletItems = mapSearchProps(items);

@@ -1,3 +1,5 @@
+import { mapSearchProps } from "@/stores/search";
+
 const items = [
   {
     category: "pDaoPhay",
@@ -113,3 +115,5 @@ const items = [
 ];
 
 export default items;
+
+export const daoPhayBoGocItems = mapSearchProps(items);
