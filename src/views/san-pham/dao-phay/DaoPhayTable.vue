@@ -1,11 +1,26 @@
 <script setup>
+import { computed } from "vue";
 import { isDesktop } from "@/composable/layout";
 
-defineProps(["value", "sortable"]);
+const props = defineProps(["value", "sortable"]);
+
+const rows = 10;
+const hasMultiplePages = computed(() => props.value.length > rows);
 </script>
 
 <template>
-  <DataTable v-if="value" :value="value" dataKey="dim" showGridlines stripedRows rowHover paginator removableSort :rows="10" :size="isDesktop ? null : 'small'">
+  <DataTable
+    v-if="value"
+    :value="value"
+    dataKey="dim"
+    showGridlines
+    stripedRows
+    rowHover
+    removableSort
+    :paginator="hasMultiplePages"
+    :rows="rows"
+    :size="isDesktop ? null : 'small'"
+  >
     <Column field="dim" :header="$t('dimension')"> </Column>
     <Column field="bladeDiameter" :sortable="sortable">
       <template #header>
