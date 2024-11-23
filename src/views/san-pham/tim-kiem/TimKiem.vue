@@ -59,11 +59,13 @@ const onSelectSuggestion = ({ value }) => {
     <div class="text-[13px]/5 sm:text-sm/[22px] text-gray-600">
       <div class="py-1">
         <InputGroup class="relative h-10 mx-auto">
-          <!-- <InputText v-model="textSearch" :placeholder="$t('searchForProductName')" @keyup.enter="onSearch()" /> -->
           <AutoComplete
             v-model="textSearch"
+            appendTo="self"
+            inputClass="pr-8"
+            panelClass="w-[calc(100%+40px)] sm:w-[calc(100%+80px)] whitespace-normal"
             dataKey="code"
-            scrollHeight="320px"
+            scrollHeight="336px"
             :placeholder="$t('searchForProductName')"
             :delay="1000"
             :suggestions="suggestions"
@@ -72,11 +74,11 @@ const onSelectSuggestion = ({ value }) => {
           >
             <template #option="{ option }">
               <div class="flex items-stretch gap-x-3 text-gray-600 cursor-pointer">
-                <div class="flex-shrink-0 w-14 h-14 border border-gray-400 rounded-md">
+                <div class="flex-shrink-0 w-[60px] h-[60px] border border-gray-400 rounded-md">
                   <img :src="`${imgServer}${option.image}?w=300&h=300`" class="rounded-md" />
                 </div>
                 <div class="flex flex-col justify-between">
-                  <div class="font-bold text-gray-900 group-hover:text-primary line-clamp-2">
+                  <div class="font-bold text-gray-900 group-hover:text-primary line-clamp-2 whitespace-normal">
                     {{ option.name }}
                   </div>
                   <div class="font-medium leading-4 text-gray-500">

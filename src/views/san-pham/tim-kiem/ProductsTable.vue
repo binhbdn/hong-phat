@@ -33,7 +33,7 @@ const hasMultiplePages = computed(() => props.items.length > rows);
               })
             "
           >
-            <div class="flex-shrink-0 w-14 h-14 border border-gray-400 rounded-md" @click.stop>
+            <div class="flex-shrink-0 w-[60px] h-[60px] border border-gray-400 rounded-md" @click.stop>
               <Image :src="`${imgServer}${data.image}?w=300&h=300`" preview imageClass="rounded-md" />
             </div>
             <div class="flex flex-col justify-between">
