@@ -1,5 +1,5 @@
 import { mapSearchProps } from "@/stores/search";
-import { findItemByCode, findSpecByCode } from "@/stores/daoPhay";
+import { findItemByCode, findSpecDDLByCode } from "@/stores/daoPhay";
 
 const items = [
   {
@@ -127,4 +127,4 @@ export const daoPhayPhaThoItems = mapSearchProps(items);
 
 export const getItemByCode = (code) => findItemByCode(items, code);
 
-export const getSpecByCode = (code) => findSpecByCode(specs, code);
+export const getSpecByCode = (code) => findSpecDDLByCode(specs, code);

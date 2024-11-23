@@ -1,6 +1,6 @@
 export const findItemByCode = (items, code) => items.find((item) => item.code === code);
 
-export const findSpecByCode = (specs, code) => {
+export const findSpecDDLByCode = (specs, code) => {
   const spec = specs.find((item) => item.code === code);
   if (!spec) return [];
 
@@ -15,7 +15,7 @@ export const findSpecByCode = (specs, code) => {
   return list;
 };
 
-export const findSpecTypeRByCode = (specs, code) => {
+export const findSpecRDLByCode = (specs, code) => {
   const spec = specs.find((item) => item.code === code);
   if (!spec) return [];
 
@@ -25,6 +25,22 @@ export const findSpecTypeRByCode = (specs, code) => {
     handleDiameter: item[1],
     cuttingLength: item[2],
     overallLength: item[3]
+  }));
+
+  return list;
+};
+
+export const findSpecDRDLByCode = (specs, code) => {
+  const spec = specs.find((item) => item.code === code);
+  if (!spec) return [];
+
+  const list = spec.data.map((item) => ({
+    dim: `D${item[0]}*R${item[1]}*D${item[2]}*${item[4]}`,
+    bladeDiameter: item[0],
+    bladeRadius: item[1],
+    handleDiameter: item[2],
+    cuttingLength: item[3],
+    overallLength: item[4]
   }));
 
   return list;

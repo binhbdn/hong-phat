@@ -1,4 +1,5 @@
 import { mapSearchProps } from "@/stores/search";
+import { findItemByCode, findSpecDRDLByCode } from "@/stores/daoPhay";
 
 const items = [
   {
@@ -12,8 +13,9 @@ const items = [
       vi: "55HRC - Dao phay bo góc 4F",
       en: "55HRC - Corner radius end mill 4F"
     },
-    images: ["/dao_phay_bo_goc/55HRC_4F.webp"],
+    images: ["/dao_phay_bo_goc/55HRC_4F.webp", "/dao_phay_bo_goc/55hrc_4f/1.webp", "/dao_phay_bo_goc/55hrc_4f/2.webp"],
     flutes: 4,
+    helixAngle: 35,
     prices: {
       current: 0,
       min: 115000,
@@ -24,6 +26,7 @@ const items = [
       en: "Suitable for processing iron, steel, copper, cast iron…"
     },
     material: "CarbideTungsten",
+    processingMaterials: "PMK",
     coating: "TiSiN",
     bladeDiameter: {
       min: 1,
@@ -32,6 +35,10 @@ const items = [
     handleDiameter: {
       min: 4,
       max: 12
+    },
+    cuttingLength: {
+      min: 2,
+      max: 30
     },
     overallLength: {
       min: 50,
@@ -49,8 +56,9 @@ const items = [
       vi: "65HRC - Dao phay bo góc 4F",
       en: "65HRC - Corner radius end mill 4F"
     },
-    images: ["/dao_phay_bo_goc/65HRC_4F.webp"],
+    images: ["/dao_phay_bo_goc/65HRC_4F.webp", "/dao_phay_bo_goc/65hrc_4f/1.webp", "/dao_phay_bo_goc/65hrc_4f/2.webp"],
     flutes: 4,
+    helixAngle: 35,
     prices: {
       current: 0,
       min: 163000,
@@ -61,6 +69,7 @@ const items = [
       en: "Suitable for processing cast iron, hard steel, stainless steel…"
     },
     material: "CarbideTungsten",
+    processingMaterials: "PMKSH",
     coating: "NACO",
     bladeDiameter: {
       min: 1,
@@ -69,6 +78,10 @@ const items = [
     handleDiameter: {
       min: 4,
       max: 10
+    },
+    cuttingLength: {
+      min: 3.3,
+      max: 30.5
     },
     overallLength: {
       min: 50,
@@ -88,6 +101,7 @@ const items = [
     },
     images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
     flutes: 4,
+    helixAngle: 35,
     prices: {
       current: 0,
       min: 163000,
@@ -98,6 +112,7 @@ const items = [
       en: "Suitable for processing cast iron, hard steel, stainless steel…"
     },
     material: "CarbideTungsten",
+    processingMaterials: "PMKSH",
     coating: "AlCrSiN",
     bladeDiameter: {
       min: 1,
@@ -107,6 +122,10 @@ const items = [
       min: 4,
       max: 12
     },
+    cuttingLength: {
+      min: 3,
+      max: 18
+    },
     overallLength: {
       min: 50,
       max: 100
@@ -114,6 +133,115 @@ const items = [
   }
 ];
 
+const specs = [
+  {
+    code: "DPBG_55HRC_4F",
+    data: [
+      [1, 0.2, 4, 2, 50],
+      [2, 0.2, 4, 4, 50],
+      [3, 0.5, 4, 6, 50],
+      [4, 0.2, 4, 8, 50],
+      [4, 0.5, 4, 8, 50],
+      [4, 1, 4, 8, 50],
+      [5, 0.5, 5, 10, 50],
+      [5, 1, 6, 10, 50],
+      [6, 0.2, 6, 12, 50],
+      [6, 0.5, 6, 12, 50],
+      [6, 1, 6, 12, 50],
+      [6, 2, 6, 12, 50],
+      [8, 0.5, 8, 16, 50],
+      [8, 1, 8, 16, 50],
+      [8, 1.5, 8, 16, 50],
+      [8, 2, 8, 16, 50],
+      [8, 3, 8, 16, 50],
+      [4, 0.5, 4, 10, 75],
+      [4, 1, 4, 12, 75],
+      [6, 0.5, 6, 15, 75],
+      [6, 1, 6, 15, 75],
+      [8, 1, 8, 20, 75],
+      [10, 0.5, 10, 20, 75],
+      [10, 1, 10, 20, 75],
+      [10, 2, 10, 20, 75],
+      [10, 2.5, 10, 20, 75],
+      [10, 3, 10, 20, 75],
+      [12, 0.5, 12, 24, 75],
+      [12, 1, 12, 24, 75],
+      [12, 2, 12, 24, 75],
+      [12, 3, 12, 24, 75],
+      [4, 0.5, 4, 12, 100],
+      [8, 0.5, 8, 20, 100],
+      [8, 1, 8, 20, 100],
+      [10, 0.5, 10, 25, 100],
+      [10, 1, 10, 25, 100],
+      [12, 0.5, 12, 30, 100],
+      [12, 1, 12, 30, 100]
+    ]
+  },
+  {
+    code: "DPBG_65HRC_4F",
+    data: [
+      [1, 0.2, 4, 3.3, 50],
+      [3, 0.5, 4, 7, 50],
+      [4, 0.5, 4, 8.5, 50],
+      [5, 0.5, 6, 11, 50],
+      [6, 0.2, 6, 13, 50],
+      [6, 1, 6, 16, 75],
+      [6, 0.5, 6, 15.5, 100],
+      [5, 0.5, 5, 11, 50],
+      [6, 0.5, 6, 12.7, 50],
+      [4, 1, 4, 8.5, 50],
+      [2, 0.1, 4, 5, 50],
+      [8, 0.5, 8, 20, 75],
+      [8, 1, 8, 20.4, 75],
+      [10, 1, 10, 20.4, 75],
+      [10, 0.5, 10, 20.4, 75],
+      [10, 1, 10, 26, 100],
+      [10, 1, 10, 30.5, 150]
+    ]
+  },
+  {
+    code: "DPBG_65HRC_4F_hard",
+    data: [
+      [1, 0.1, 4, 3, 50],
+      [1, 0.2, 4, 3, 50],
+      [1.5, 0.2, 4, 5, 50],
+      [2, 0.5, 4, 5, 50],
+      [2, 0.2, 4, 5, 50],
+      [2, 0.1, 4, 5, 50],
+      [3, 0.2, 4, 8, 50],
+      [3, 0.5, 4, 8, 50],
+      [3, 0.1, 4, 8, 50],
+      [4, 0.5, 4, 10, 50],
+      [4, 0.2, 4, 10, 50],
+      [4, 1, 4, 10, 50],
+      [6, 0.2, 6, 9, 50],
+      [6, 0.5, 6, 9, 50],
+      [6, 1, 6, 9, 50],
+      [8, 1, 8, 12, 60],
+      [8, 0.5, 8, 12, 60],
+      [6, 0.5, 6, 9, 75],
+      [6, 1, 6, 9, 75],
+      [8, 1, 8, 12, 75],
+      [8, 0.5, 8, 12, 75],
+      [10, 0.5, 10, 15, 75],
+      [10, 1, 10, 15, 75],
+      [12, 0.5, 12, 18, 75],
+      [12, 1, 12, 18, 75],
+      [6, 0.5, 6, 9, 100],
+      [8, 1, 8, 12, 100],
+      [8, 0.5, 8, 12, 100],
+      [10, 0.5, 10, 15, 100],
+      [10, 1, 10, 15, 100],
+      [12, 1, 12, 18, 100],
+      [12, 0.5, 12, 18, 100]
+    ]
+  }
+];
+
 export default items;
 
 export const daoPhayBoGocItems = mapSearchProps(items);
+
+export const getItemByCode = (code) => findItemByCode(items, code);
+
+export const getSpecByCode = (code) => findSpecDRDLByCode(specs, code);

@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { getSpecByCode } from "@/stores/daoPhayNgon";
-import DaoPhayTable from "@/views/san-pham/dao-phay/DaoPhayTable.vue";
+import DaoPhayTableDDL from "@/views/san-pham/dao-phay/DaoPhayTableDDL.vue";
 import SortButton from "@/views/san-pham/components/SortButton.vue";
 
 const props = defineProps(["code", "flutes"]);
@@ -19,6 +19,6 @@ const sortable = ref(false);
     <img v-else src="/svg/end_mills/square_4f.svg" class="mx-auto mt-2" />
 
     <SortButton v-model:sortable="sortable" />
-    <DaoPhayTable :value="list" :sortable="sortable" />
+    <DaoPhayTableDDL :value="list" :sortable="sortable" />
   </div>
 </template>
