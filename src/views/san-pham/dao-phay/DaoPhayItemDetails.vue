@@ -1,15 +1,19 @@
 <script setup>
-defineProps({
+import { computed } from "vue";
+
+const props = defineProps({
   description: String,
   item: Object
 });
+
+const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item.cutStyle === "csCornerRounding");
 </script>
 
 <template>
   <div class="flex-grow font-medium leading-4 text-gray-900">
     {{ description }}
   </div>
-  <div v-if="item.cutStyle === 'csBall'" class="flex justify-between gap-x-1">
+  <div v-if="showRadius" class="flex justify-between gap-x-1">
     {{ $t("bladeRadius") }}:
     <span class="font-medium text-gray-900">
       {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }}

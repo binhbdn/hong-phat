@@ -1,12 +1,26 @@
 <script setup>
+import { ref, onMounted } from "vue";
+import { getItemByCode } from "@/stores/daoPhayRTrong";
 import PageHasTitle from "@/components/PageHasTitle.vue";
+import ProductNotFound from "@/components/ProductNotFound.vue";
+import DaoPhayBasicInfo from "@/views/san-pham/dao-phay/DaoPhayBasicInfo.vue";
+import DaoPhayRTrongSpec from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongSpec.vue";
+
+const props = defineProps(["code"]);
+const item = ref(null);
+
+onMounted(() => {
+  item.value = getItemByCode(props.code);
+});
 </script>
 
 <template>
   <PageHasTitle>
-    <div class="bg-white rounded-lg shadow-lg p-2 sm:p-3">
-      TODO: Chi tiết sản phẩm dao phay R trong
-      <div class="h-screen"></div>
-    </div>
+    <template v-if="item">
+      <DaoPhayBasicInfo :item="item" />
+      <DaoPhayRTrongSpec :code="code" />
+    </template>
+
+    <ProductNotFound v-else :code="code" />
   </PageHasTitle>
 </template>

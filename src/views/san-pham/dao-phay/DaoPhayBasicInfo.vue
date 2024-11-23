@@ -13,6 +13,8 @@ const formattedPrice = computed(() => {
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
   return `${numberToVnd(props.item.prices.min)} - ${numberToVnd(props.item.prices.max)}`;
 });
+
+const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item.cutStyle === "csCornerRounding");
 </script>
 
 <template>
@@ -67,7 +69,7 @@ const formattedPrice = computed(() => {
 
         <div class="border-t border-dashed border-gray-400 pt-1 mt-1">
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
-            <template v-if="item.cutStyle === 'csBall'">
+            <template v-if="showRadius">
               <span> {{ $t("bladeRadius") }}: </span>
               <span class="font-medium text-gray-900"> {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }} </span>
             </template>

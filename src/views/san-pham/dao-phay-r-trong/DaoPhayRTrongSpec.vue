@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import { getSpecByCode } from "@/stores/daoPhayCau";
+import { getSpecByCode } from "@/stores/daoPhayRTrong";
+import { imgServer } from "@/config";
 import DaoPhayTableTypeR from "@/views/san-pham/dao-phay/DaoPhayTableTypeR.vue";
 import SortButton from "@/views/san-pham/components/SortButton.vue";
 
@@ -14,7 +15,7 @@ const sortable = ref(false);
   <div class="xl:max-w-[88%] text-[13px]/5 sm:text-sm/[22px] text-gray-600 mt-3 sm:mt-5">
     <div class="font-bold text-sm text-gray-900">{{ $t("specifications") }}</div>
 
-    <img src="/svg/end_mills/ball_2f.svg" class="mx-auto mt-2" />
+    <img :src="`${imgServer}/dao_phay_r_trong/corner_rounding.webp`" class="mx-auto mt-2" />
 
     <SortButton v-model:sortable="sortable" />
     <DaoPhayTableTypeR :value="list" :sortable="sortable" />

@@ -1,4 +1,5 @@
 import { mapSearchProps } from "@/stores/search";
+import { findItemByCode, findSpecTypeRByCode } from "@/stores/daoPhay";
 
 const items = [
   {
@@ -337,19 +338,6 @@ export default items;
 
 export const daoPhayCauItems = mapSearchProps(items);
 
-export const getItemByCode = (code) => items.find((item) => item.code === code);
+export const getItemByCode = (code) => findItemByCode(items, code);
 
-export const getSpecByCode = (code) => {
-  const spec = specs.find((item) => item.code === code);
-  if (!spec) return [];
-
-  const list = spec.data.map((item) => ({
-    dim: `R${item[0]}*D${item[1]}*${item[3]}`,
-    bladeRadius: item[0],
-    handleDiameter: item[1],
-    cuttingLength: item[2],
-    overallLength: item[3]
-  }));
-
-  return list;
-};
+export const getSpecByCode = (code) => findSpecTypeRByCode(specs, code);
