@@ -53,6 +53,12 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepDetails.vue")
         },
         {
+          path: "san-pham/dao-phay-vat-mep-hinh-nam/:code",
+          name: "pDaoPhayVatMepHinhNamCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepHinhNamDetails.vue")
+        },
+        {
           path: "san-pham/dao-phay-bo-goc",
           name: "pDaoPhayBoGoc",
           component: () => import("@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGoc.vue")

@@ -15,6 +15,8 @@ const formattedPrice = computed(() => {
 });
 
 const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item.cutStyle === "csCornerRounding");
+const showCuttingLength = computed(() => props.item.cutStyle !== "csChamfer" || props.item.cuttingLength !== null);
+const showNoseAngle = computed(() => props.item.cutStyle === "csChamfer");
 </script>
 
 <template>
@@ -82,13 +84,17 @@ const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item
             <span> {{ $t("handleDiameter") }}: </span>
             <span class="font-medium text-gray-900"> {{ `D${item.handleDiameter.min}-D${item.handleDiameter.max}` }} </span>
           </div>
-          <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
+          <div v-if="showCuttingLength" class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("cuttingLength") }}: </span>
             <span class="font-medium text-gray-900"> {{ `${item.cuttingLength.min}-${item.cuttingLength.max}` }} </span>
           </div>
           <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
             <span> {{ $t("overallLength") }}: </span>
             <span class="font-medium text-gray-900"> {{ `${item.overallLength.min}-${item.overallLength.max}` }} </span>
+          </div>
+          <div v-if="showNoseAngle" class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
+            <span> {{ $t("noseAngle") }}: </span>
+            <span class="font-medium text-gray-900"> {{ item.noseAngle }}° </span>
           </div>
         </div>
 

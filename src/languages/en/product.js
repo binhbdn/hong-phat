@@ -32,6 +32,7 @@ export default {
   flutes: "Flutes",
   cutStyle: "Cut style",
   helixAngle: "Helix angle",
+  noseAngle: "Nose angle",
   specifications: "Specifications",
   dimension: "Dimension",
   showSortButtons: "Show sort buttons",

@@ -4,7 +4,7 @@ import { getItemByCode } from "@/stores/daoPhayVatMep";
 import PageHasTitle from "@/components/PageHasTitle.vue";
 import ProductNotFound from "@/components/ProductNotFound.vue";
 import DaoPhayBasicInfo from "@/views/san-pham/dao-phay/DaoPhayBasicInfo.vue";
-import DaoPhayVatMepSpec from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepSpec.vue";
+import DaoPhayVatMepHinhNamSpec from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepHinhNamSpec.vue";
 
 const props = defineProps(["code"]);
 const item = ref(null);
@@ -18,7 +18,7 @@ onMounted(() => {
   <PageHasTitle>
     <template v-if="item">
       <DaoPhayBasicInfo :item="item" />
-      <DaoPhayVatMepSpec :code="code" />
+      <DaoPhayVatMepHinhNamSpec :code="code" />
     </template>
 
     <ProductNotFound v-else :code="code" />

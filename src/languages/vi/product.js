@@ -32,6 +32,7 @@ export default {
   flutes: "Me cắt",
   cutStyle: "Kiểu cắt",
   helixAngle: "Góc xoắn ốc",
+  noseAngle: "Góc mũi",
   specifications: "Thông số kỹ thuật",
   dimension: "Kích thước",
   showSortButtons: "Hiển thị button sắp xếp",
