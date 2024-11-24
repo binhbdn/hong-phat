@@ -11,5 +11,5 @@ export default {
   allProducts: "所有产品",
   allCategories: "所有类别",
   cn: "中国",
-  viewMore: "View more"
+  viewMore: "查看更多"
 };
