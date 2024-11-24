@@ -20,7 +20,7 @@ export default allProducts;
 
 const mapAllProducts = {
   vi: [],
-  en: []
+  cn: []
 };
 
 allProducts.forEach((item) => {
@@ -30,11 +30,11 @@ allProducts.forEach((item) => {
     name: item.name.vi,
     normalizedName: item.normalizedName.vi
   });
-  mapAllProducts.en.push({
+  mapAllProducts.cn.push({
     code: item.code,
     image: item.image,
-    name: item.name.en,
-    normalizedName: item.normalizedName.en
+    name: item.name.cn,
+    normalizedName: item.normalizedName.cn
   });
 });
 

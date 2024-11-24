@@ -14,7 +14,7 @@ export const mapSearchProps = (items) =>
     name: item.name,
     normalizedName: {
       vi: removeDiacriticsAndLowerCase(item.name.vi),
-      en: removeDiacriticsAndLowerCase(item.name.en)
+      cn: removeDiacriticsAndLowerCase(item.name.cn)
     },
     formattedPrice: getFormattedPrice(item.prices)
   }));

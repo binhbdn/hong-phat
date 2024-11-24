@@ -1,13 +1,13 @@
 import { createI18n } from "vue-i18n-lite";
-import en from "@/languages/en";
+import cn from "@/languages/cn";
 import vi from "@/languages/vi";
 
 const i18n = createI18n({
   locale: "vi",
-  fallbackLocale: "en",
+  fallbackLocale: "cn",
   allowComposition: true,
   messages: {
-    en,
+    cn,
     vi
   }
 });

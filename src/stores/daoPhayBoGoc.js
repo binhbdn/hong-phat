@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay bo góc 4F",
-      en: "55HRC - Corner radius end mill 4F"
+      cn: "55HRC - Corner radius end mill 4F"
     },
     images: ["/dao_phay_bo_goc/55HRC_4F.webp", "/dao_phay_bo_goc/55hrc_4f/1.webp", "/dao_phay_bo_goc/55hrc_4f/2.webp"],
     flutes: 4,
@@ -23,7 +23,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      en: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "Suitable for processing iron, steel, copper, cast iron…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -54,7 +54,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F",
-      en: "65HRC - Corner radius end mill 4F"
+      cn: "65HRC - Corner radius end mill 4F"
     },
     images: ["/dao_phay_bo_goc/65HRC_4F.webp", "/dao_phay_bo_goc/65hrc_4f/1.webp", "/dao_phay_bo_goc/65hrc_4f/2.webp"],
     flutes: 4,
@@ -66,7 +66,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
-      en: "Suitable for processing cast iron, hard steel, stainless steel…"
+      cn: "Suitable for processing cast iron, hard steel, stainless steel…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
@@ -97,7 +97,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
-      en: "65HRC - Corner radius end mill 4F - harden"
+      cn: "65HRC - Corner radius end mill 4F - harden"
     },
     images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
     flutes: 4,
@@ -109,7 +109,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
-      en: "Suitable for processing cast iron, hard steel, stainless steel…"
+      cn: "Suitable for processing cast iron, hard steel, stainless steel…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",

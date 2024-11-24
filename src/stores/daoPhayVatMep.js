@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90°",
-      en: "55HRC - Chamfer end mill 2F 90°"
+      cn: "55HRC - Chamfer end mill 2F 90°"
     },
     images: ["/dao_phay_vat_mep/55HRC_2F.webp", "/dao_phay_vat_mep/55hrc_2f/1.webp"],
     flutes: 2,
@@ -24,7 +24,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      en: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "Suitable for processing iron, steel, copper, cast iron…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -55,7 +55,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90°",
-      en: "55HRC - Chamfer end mill 3F 90°"
+      cn: "55HRC - Chamfer end mill 3F 90°"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F.webp", "/dao_phay_vat_mep/55hrc_3f/1.webp"],
     flutes: 3,
@@ -68,7 +68,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      en: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "Suitable for processing iron, steel, copper, cast iron…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -99,7 +99,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
-      en: "55HRC - Chamfer end mill 2F 90° - aluminum machining"
+      cn: "55HRC - Chamfer end mill 2F 90° - aluminum machining"
     },
     images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp", "/dao_phay_vat_mep/55hrc_2f_al/1.webp", "/dao_phay_vat_mep/55hrc_2f_al/2.webp"],
     flutes: 2,
@@ -112,7 +112,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
-      en: "High gloss, suitable for processing aluminum, aluminum alloy…"
+      cn: "High gloss, suitable for processing aluminum, aluminum alloy…"
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -143,7 +143,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
-      en: "55HRC - Chamfer end mill 3F 90° - aluminum machining"
+      cn: "55HRC - Chamfer end mill 3F 90° - aluminum machining"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp", "/dao_phay_vat_mep/55hrc_3f_al/1.webp"],
     flutes: 3,
@@ -156,7 +156,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
-      en: "High gloss, suitable for processing aluminum, aluminum alloy…"
+      cn: "High gloss, suitable for processing aluminum, aluminum alloy…"
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -187,7 +187,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
-      en: "55HRC - Chamfer end mill 1F 90° - mushroom shape"
+      cn: "55HRC - Chamfer end mill 1F 90° - mushroom shape"
     },
     images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
     flutes: 1,
@@ -200,7 +200,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
-      en: "High gloss, suitable for processing aluminum, aluminum alloy…"
+      cn: "High gloss, suitable for processing aluminum, aluminum alloy…"
     },
     material: "HSS",
     processingMaterials: "N",
@@ -228,7 +228,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
-      en: "55HRC - Chamfer end mill 3F 90° - mushroom shape"
+      cn: "55HRC - Chamfer end mill 3F 90° - mushroom shape"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
     flutes: 3,
@@ -241,7 +241,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
-      en: "High gloss, suitable for processing aluminum, aluminum alloy…"
+      cn: "High gloss, suitable for processing aluminum, aluminum alloy…"
     },
     material: "HSS",
     processingMaterials: "N",

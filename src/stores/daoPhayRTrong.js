@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay R trong 4F",
-      en: "55HRC - Corner rounding end mill 4F"
+      cn: "55HRC - Corner rounding end mill 4F"
     },
     images: ["/dao_phay_r_trong/55HRC_4F.webp", "/dao_phay_r_trong/55hrc_4f/1.webp", "/dao_phay_r_trong/55hrc_4f/2.webp"],
     flutes: 4,
@@ -23,7 +23,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      en: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "Suitable for processing iron, steel, copper, cast iron…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -58,7 +58,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
-      en: "55HRC - Corner rounding end mill 4F - aluminum machining"
+      cn: "55HRC - Corner rounding end mill 4F - aluminum machining"
     },
     images: ["/dao_phay_r_trong/55HRC_4F_Al.webp"],
     flutes: 4,
@@ -70,7 +70,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, nhựa…",
-      en: "High gloss, suitable for processing aluminum, plastic…"
+      cn: "High gloss, suitable for processing aluminum, plastic…"
     },
     material: "CarbideTungsten",
     processingMaterials: "N",

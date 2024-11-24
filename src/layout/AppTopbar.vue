@@ -78,9 +78,9 @@ const isOutsideClicked = (event) => {
           <img src="/svg/locale/vi.svg" class="h-4" />
           <span class="whitespace-nowrap"> Tiếng Việt </span>
         </div>
-        <div class="flex items-center gap-x-2 cursor-pointer mt-2" :class="{ 'text-primary': current === 'en' }" @click="onChangeLocale('en')">
-          <img src="/svg/locale/en.svg" class="h-4" />
-          <span class="whitespace-nowrap"> English </span>
+        <div class="flex items-center gap-x-2 cursor-pointer mt-2" :class="{ 'text-primary': current === 'cn' }" @click="onChangeLocale('cn')">
+          <img src="/svg/locale/cn.svg" class="h-4" />
+          <span class="whitespace-nowrap"> 中国人 </span>
         </div>
       </OverlayPanel>
     </div>
