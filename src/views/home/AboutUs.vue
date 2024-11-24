@@ -7,42 +7,52 @@ const { $copy } = window;
 <template>
   <div class="flex flex-col gap-y-3 text-[13px]/[18px] text-gray-700">
     <div>
-      <div class="font-semibold text-sm text-primary">Về chúng tôi</div>
+      <div class="font-semibold text-sm text-primary">
+        {{ $t("aboutUs") }}
+      </div>
       <div class="flex flex-col gap-y-2 ml-4 mt-2">
         <div>
-          Công ty <strong class="text-primary">Ngũ Kim Hồng Phát</strong> là một trong những công ty kinh doanh hàng đầu tại Việt Nam trong lĩnh vực cung cấp và
-          phân phối:
+          {{ $t("h.aboutCompany1") }}
+          <strong class="text-primary"> {{ $t("h.aboutCompany2") }} </strong>
+          {{ $t("h.aboutCompany3") }}:
         </div>
         <ul class="list-disc font-medium ml-8">
-          <li>Dụng cụ cơ khí & Phụ kiện máy CNC</li>
-          <li>Các loại bầu kẹp & Phụ kiện gá kẹp</li>
-          <li>Các loại dụng cụ cắt gọt kim loại</li>
-          <li>Dao & cán dao gia công kim loại</li>
+          <li>{{ $t("h.introduceService1") }}</li>
+          <li>{{ $t("h.introduceService2") }}</li>
+          <li>{{ $t("h.introduceService3") }}</li>
+          <li>{{ $t("h.introduceService4") }}</li>
         </ul>
       </div>
     </div>
 
     <div>
-      <div class="font-semibold text-sm text-primary">Chúng tôi CAM KẾT</div>
+      <div class="font-semibold text-sm text-primary">
+        {{ $t("h.weCommit") }}
+      </div>
       <div class="flex flex-col gap-y-2 ml-4 mt-2">
         <div>
-          <div class="font-medium">➡️ Về chất lượng sản phẩm:</div>
+          <div class="font-medium">➡️ {{ $t("h.aboutProductQuality") }}:</div>
           <div class="pl-4 mt-1">
-            Tất cả các mặt hàng do chúng tôi cung cấp đều đạt tiêu chuẩn xuất khẩu của nhiều nước trên Thế giới như: Đức, Mỹ, Ý, Anh, Nhật, Hà Lan, Thuỵ Sỹ, Tây
-            Ban Nha, Pháp, Singapore, Hàn Quốc, Đài Loan…
+            {{ $t("h.aboutProductQualityContent") }}
           </div>
         </div>
         <div>
-          <div class="font-medium">➡️ Về dịch vụ:</div>
-          <div class="pl-4 mt-1">Chúng tôi sẽ cố gắng phản hồi mọi thắc mắc của quý khách nhanh nhất có thể.</div>
+          <div class="font-medium">➡️ {{ $t("h.aboutService") }}:</div>
+          <div class="pl-4 mt-1">
+            {{ $t("h.aboutServiceContent") }}
+          </div>
         </div>
         <div>
-          <div class="font-medium">➡️ Thời gian chuẩn bị hàng:</div>
-          <div class="pl-4 mt-1">Thời gian chuẩn bị tối ưu nhất.</div>
+          <div class="font-medium">➡️ {{ $t("h.goodsPreparationTime") }}:</div>
+          <div class="pl-4 mt-1">
+            {{ $t("h.goodsPreparationTimeContent") }}
+          </div>
         </div>
         <div>
-          <div class="font-medium">➡️ Quyền Lợi của Khách Hàng:</div>
-          <div class="pl-4 mt-1">Tuân thủ chính sách đổi trả hàng khi sản phẩm bị lỗi từ nhà sản xuất, khi bị nhầm sản phẩm.</div>
+          <div class="font-medium">➡️ {{ $t("h.customerRights") }}:</div>
+          <div class="pl-4 mt-1">
+            {{ $t("h.customerRightsContent") }}
+          </div>
         </div>
       </div>
     </div>

@@ -13,5 +13,22 @@ export default {
   showCategories: "Hiển thị danh mục",
   hideCategories: "Ẩn danh mục",
   selectCategories: "Chọn danh mục sản phẩm",
-  selectNoneCategories: "Chưa có danh mục nào được chọn"
+  selectNoneCategories: "Chưa có danh mục nào được chọn",
+  aboutCompany1: "Công ty",
+  aboutCompany2: "Ngũ Kim Hồng Phát",
+  aboutCompany3: "là một trong những công ty kinh doanh hàng đầu tại Việt Nam trong lĩnh vực cung cấp và phân phối",
+  introduceService1: "Dụng cụ cơ khí & Phụ kiện máy CNC",
+  introduceService2: "Các loại bầu kẹp & Phụ kiện gá kẹp",
+  introduceService3: "Các loại dụng cụ cắt gọt kim loại",
+  introduceService4: "Dao & cán dao gia công kim loại",
+  weCommit: "Chúng tôi CAM KẾT",
+  aboutProductQuality: "Về chất lượng sản phẩm",
+  aboutProductQualityContent:
+    "Tất cả các mặt hàng do chúng tôi cung cấp đều đạt tiêu chuẩn xuất khẩu của nhiều nước trên Thế giới như: Đức, Mỹ, Ý, Anh, Nhật, Hà Lan, Thuỵ Sỹ, Tây Ban Nha, Pháp, Singapore, Hàn Quốc, Đài Loan…",
+  aboutService: "Về dịch vụ",
+  aboutServiceContent: "Chúng tôi sẽ cố gắng phản hồi mọi thắc mắc của quý khách nhanh nhất có thể.",
+  goodsPreparationTime: "Thời gian chuẩn bị hàng",
+  goodsPreparationTimeContent: "Thời gian chuẩn bị tối ưu nhất.",
+  customerRights: "Quyền Lợi của Khách Hàng",
+  customerRightsContent: "Tuân thủ chính sách đổi trả hàng khi sản phẩm bị lỗi từ nhà sản xuất, khi bị nhầm sản phẩm."
 };

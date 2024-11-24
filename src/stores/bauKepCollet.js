@@ -9,7 +9,7 @@ const items = [
     hardness: "58HRC-60HRC",
     name: {
       vi: "Bầu kẹp Suken BT40 loại ER16/20/25/32",
-      cn: "Collet chuck Suken BT40 ER16/20/25/32"
+      cn: "筒夹夹头 Suken BT40 ER16/20/25/32"
     },
     images: ["/bau_kep_suken/BT40_ER32_100L.webp"],
     prices: {
@@ -19,7 +19,7 @@ const items = [
     },
     description: {
       vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-      cn: "Used to clamp drill bits, reamers, finger mills and tap parts on milling machines"
+      cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
     },
     material: "AlloySteel",
     brand: "Suken",
@@ -36,7 +36,7 @@ const items = [
     hardness: "58HRC-60HRC",
     name: {
       vi: "Bầu kẹp Suken BT50 loại ER16/20/25/32/40",
-      cn: "Collet chuck Suken BT50 ER16/20/25/32/40"
+      cn: "筒夹夹头 Suken BT50 ER16/20/25/32/40"
     },
     images: ["/bau_kep_suken/BT50_ER40_100L.webp"],
     prices: {
@@ -46,7 +46,7 @@ const items = [
     },
     description: {
       vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-      cn: "Used to clamp drill bits, reamers, finger mills and tap parts on milling machines"
+      cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
     },
     material: "AlloySteel",
     brand: "Suken",

@@ -119,7 +119,7 @@ watch(
         <template #header>
           <div class="w-full flex items-stretch">
             <div class="py-2 sm:py-4 pr-2">
-              {{ $t("aboutUs") }}
+              {{ $t("introduce") }}
             </div>
             <div class="flex-grow cursor-default" @click.stop />
           </div>
@@ -152,7 +152,7 @@ watch(
             @click="onFocusMenu(1)"
           />
           <PrimeButton
-            :label="$t('aboutUs')"
+            :label="$t('introduce')"
             icon="pi pi-info-circle"
             iconPos="top"
             iconClass="!mb-1"

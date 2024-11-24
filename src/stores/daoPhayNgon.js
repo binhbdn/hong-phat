@@ -11,7 +11,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
-      cn: "45HRC - End mill 3F - aluminum machining"
+      cn: "45HRC - 立铣刀 3F - 铝加工"
     },
     images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/45hrc_3f/1.webp", "/dao_phay_ngon/45hrc_3f/2.webp"],
     flutes: 3,
@@ -23,7 +23,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, nhựa…",
-      cn: "High gloss, suitable for processing aluminum, plastic…"
+      cn: "高光泽，适合加工铝、塑料…"
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -54,7 +54,7 @@ const items = [
     code: "DPN_55HRC_3F",
     name: {
       vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
-      cn: "55HRC - End mill 3F - aluminum machining"
+      cn: "55HRC - 立铣刀 3F - 铝加工"
     },
     images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/55hrc_3f/1.webp", "/dao_phay_ngon/55hrc_3f/2.webp"],
     flutes: 3,
@@ -66,7 +66,7 @@ const items = [
     },
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, nhựa…",
-      cn: "High gloss, suitable for processing aluminum, plastic…"
+      cn: "高光泽，适合加工铝、塑料…"
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -97,7 +97,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 2F",
-      cn: "45HRC - End mill 2F"
+      cn: "45HRC - 立铣刀 2F"
     },
     images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp", "/dao_phay_ngon/45hrc_2f/3.webp"],
     flutes: 2,
@@ -109,7 +109,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công thép thông thường, gang…",
-      cn: "Suitable for processing common steel, cast iron…"
+      cn: "适用于加工普通钢、铸铁…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -140,7 +140,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 4F",
-      cn: "45HRC - End mill 4F"
+      cn: "45HRC - 立铣刀 4F"
     },
     images: ["/dao_phay_ngon/45HRC_4F.webp", "/dao_phay_ngon/45hrc_4f/1.webp", "/dao_phay_ngon/45hrc_4f/2.webp"],
     flutes: 4,
@@ -152,7 +152,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công thép thông thường, gang…",
-      cn: "Suitable for processing common steel, cast iron…"
+      cn: "适用于加工普通钢、铸铁…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -183,7 +183,7 @@ const items = [
     code: "DPN_55HRC_2F",
     name: {
       vi: "55HRC - Dao phay ngón 2F",
-      cn: "55HRC - End mill 2F"
+      cn: "55HRC - 立铣刀 2F"
     },
     images: ["/dao_phay_ngon/55HRC_2F.webp", "/dao_phay_ngon/55hrc_2f/1.webp", "/dao_phay_ngon/55hrc_2f/2.webp"],
     flutes: 2,
@@ -195,7 +195,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      cn: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "适用于加工铁、钢、铜、铸铁…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -226,7 +226,7 @@ const items = [
     code: "DPN_55HRC_4F",
     name: {
       vi: "55HRC - Dao phay ngón 4F",
-      cn: "55HRC - End mill 4F"
+      cn: "55HRC - 立铣刀 4F"
     },
     images: ["/dao_phay_ngon/55HRC_4F.webp", "/dao_phay_ngon/55hrc_4f/1.webp", "/dao_phay_ngon/55hrc_4f/2.webp"],
     flutes: 4,
@@ -238,7 +238,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
-      cn: "Suitable for processing iron, steel, copper, cast iron…"
+      cn: "适用于加工铁、钢、铜、铸铁…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -269,7 +269,7 @@ const items = [
     hardness: "60HRC",
     name: {
       vi: "60HRC - Dao phay ngón 4F - gia công inox",
-      cn: "60HRC - End mill 4F - inox machining"
+      cn: "60HRC - 立铣刀 4F - 不锈钢加工"
     },
     images: ["/dao_phay_ngon/60HRC_4F.webp", "/dao_phay_ngon/60hrc_4f/1.webp", "/dao_phay_ngon/60hrc_4f/2.webp"],
     flutes: 4,
@@ -281,7 +281,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
-      cn: "Suitable for processing cast iron, hard steel, stainless steel…"
+      cn: "适用于加工铸铁、硬钢、不锈钢…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKH",
@@ -312,7 +312,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F",
-      cn: "65HRC - End mill 4F"
+      cn: "65HRC - 立铣刀 4F"
     },
     images: ["/dao_phay_ngon/65HRC_4F.webp", "/dao_phay_ngon/65hrc_4f/1.webp", "/dao_phay_ngon/65hrc_4f/2.webp"],
     flutes: 4,
@@ -324,7 +324,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
-      cn: "Suitable for processing cast iron, hard steel, stainless steel…"
+      cn: "适用于加工铸铁、硬钢、不锈钢…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
@@ -355,7 +355,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
-      cn: "65HRC - End mill 4F - harden"
+      cn: "65HRC - 立铣刀 4F - harden"
     },
     images: ["/dao_phay_ngon/65HRC_4F_hard.webp", "/dao_phay_ngon/65hrc_4f_hard/1.webp", "/dao_phay_ngon/65hrc_4f_hard/2.webp"],
     flutes: 4,
@@ -367,7 +367,7 @@ const items = [
     },
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
-      cn: "Suitable for processing cast iron, hard steel, stainless steel…"
+      cn: "适用于加工铸铁、硬钢、不锈钢…"
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
