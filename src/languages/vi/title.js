@@ -1,6 +1,7 @@
 export default {
   pHome: " ",
   pTimKiem: "Tìm kiếm sản phẩm",
+  pDaoPhay: "Dao phay",
   pDaoPhayNgon: "Dao phay ngón",
   pDaoPhayNgonCT: "Chi tiết dao phay ngón",
   pDaoPhayCau: "Dao phay cầu",
@@ -14,7 +15,8 @@ export default {
   pDaoPhayRTrongCT: "Chi tiết dao phay R trong",
   pDaoPhayPhaTho: "Dao phay phá thô",
   pDaoPhayPhaThoCT: "Chi tiết dao phay phá thô",
-  pBauKepCollet: "Bầu kẹp - collet",
-  pBauKepColletCT: "Chi tiết gá kẹp",
-  pDaoPhay: "Dao phay"
+  pBauKep: "Bầu kẹp",
+  pBauKepCT: "Chi tiết bầu kẹp",
+  pCollet: "Collet",
+  pColletCT: "Chi tiết collet"
 };

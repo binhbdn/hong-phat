@@ -11,7 +11,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay cầu 2F",
-      cn: "45HRC - 球头立铣刀 2F"
+      cn: "45HRC - 球刀 2F"
     },
     images: ["/dao_phay_cau/45HRC_2F.webp", "/dao_phay_cau/45hrc_2f/1.webp", "/dao_phay_cau/45hrc_2f/2.webp"],
     flutes: 2,
@@ -54,7 +54,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay cầu 2F",
-      cn: "55HRC - 球头立铣刀 2F"
+      cn: "55HRC - 球刀 2F"
     },
     images: ["/dao_phay_cau/55HRC_2F.webp", "/dao_phay_cau/55hrc_2f/1.webp", "/dao_phay_cau/55hrc_2f/2.webp"],
     flutes: 2,
@@ -97,7 +97,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay cầu 2F",
-      cn: "65HRC - 球头立铣刀 2F"
+      cn: "65HRC - 球刀 2F"
     },
     images: ["/dao_phay_cau/65HRC_2F.webp", "/dao_phay_cau/65hrc_2f/1.webp", "/dao_phay_cau/65hrc_2f/2.webp"],
     flutes: 2,
@@ -140,7 +140,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay cầu 2F - tăng cứng",
-      cn: "65HRC - 球头立铣刀 2F - harden"
+      cn: "65HRC - 球刀 2F - 硬化"
     },
     images: ["/dao_phay_cau/65HRC_2F_hard.webp", "/dao_phay_cau/65hrc_2f_hard/1.webp", "/dao_phay_cau/65hrc_2f_hard/2.webp"],
     flutes: 2,

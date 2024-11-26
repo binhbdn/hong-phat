@@ -11,7 +11,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
-      cn: "45HRC - 立铣刀 3F - 铝加工"
+      cn: "45HRC - 铣刀（平刀）3F - 铝加工"
     },
     images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/45hrc_3f/1.webp", "/dao_phay_ngon/45hrc_3f/2.webp"],
     flutes: 3,
@@ -54,7 +54,7 @@ const items = [
     code: "DPN_55HRC_3F",
     name: {
       vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
-      cn: "55HRC - 立铣刀 3F - 铝加工"
+      cn: "55HRC - 铣刀（平刀）3F - 铝加工"
     },
     images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/55hrc_3f/1.webp", "/dao_phay_ngon/55hrc_3f/2.webp"],
     flutes: 3,
@@ -97,7 +97,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 2F",
-      cn: "45HRC - 立铣刀 2F"
+      cn: "45HRC - 铣刀（平刀）2F"
     },
     images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp", "/dao_phay_ngon/45hrc_2f/3.webp"],
     flutes: 2,
@@ -140,7 +140,7 @@ const items = [
     hardness: "45HRC",
     name: {
       vi: "45HRC - Dao phay ngón 4F",
-      cn: "45HRC - 立铣刀 4F"
+      cn: "45HRC - 铣刀（平刀）4F"
     },
     images: ["/dao_phay_ngon/45HRC_4F.webp", "/dao_phay_ngon/45hrc_4f/1.webp", "/dao_phay_ngon/45hrc_4f/2.webp"],
     flutes: 4,
@@ -183,7 +183,7 @@ const items = [
     code: "DPN_55HRC_2F",
     name: {
       vi: "55HRC - Dao phay ngón 2F",
-      cn: "55HRC - 立铣刀 2F"
+      cn: "55HRC - 铣刀（平刀）2F"
     },
     images: ["/dao_phay_ngon/55HRC_2F.webp", "/dao_phay_ngon/55hrc_2f/1.webp", "/dao_phay_ngon/55hrc_2f/2.webp"],
     flutes: 2,
@@ -226,7 +226,7 @@ const items = [
     code: "DPN_55HRC_4F",
     name: {
       vi: "55HRC - Dao phay ngón 4F",
-      cn: "55HRC - 立铣刀 4F"
+      cn: "55HRC - 铣刀（平刀）4F"
     },
     images: ["/dao_phay_ngon/55HRC_4F.webp", "/dao_phay_ngon/55hrc_4f/1.webp", "/dao_phay_ngon/55hrc_4f/2.webp"],
     flutes: 4,
@@ -269,7 +269,7 @@ const items = [
     hardness: "60HRC",
     name: {
       vi: "60HRC - Dao phay ngón 4F - gia công inox",
-      cn: "60HRC - 立铣刀 4F - 不锈钢加工"
+      cn: "60HRC - 铣刀（平刀）4F - 不锈钢加工"
     },
     images: ["/dao_phay_ngon/60HRC_4F.webp", "/dao_phay_ngon/60hrc_4f/1.webp", "/dao_phay_ngon/60hrc_4f/2.webp"],
     flutes: 4,
@@ -312,7 +312,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F",
-      cn: "65HRC - 立铣刀 4F"
+      cn: "65HRC - 铣刀（平刀）4F"
     },
     images: ["/dao_phay_ngon/65HRC_4F.webp", "/dao_phay_ngon/65hrc_4f/1.webp", "/dao_phay_ngon/65hrc_4f/2.webp"],
     flutes: 4,
@@ -355,7 +355,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
-      cn: "65HRC - 立铣刀 4F - harden"
+      cn: "65HRC - 铣刀（平刀）4F - 硬化"
     },
     images: ["/dao_phay_ngon/65HRC_4F_hard.webp", "/dao_phay_ngon/65hrc_4f_hard/1.webp", "/dao_phay_ngon/65hrc_4f_hard/2.webp"],
     flutes: 4,

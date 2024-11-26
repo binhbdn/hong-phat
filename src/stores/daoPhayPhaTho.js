@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
-      cn: "55HRC - 粗加工立铣刀 3F - 铝加工"
+      cn: "55HRC - 粗皮刀 3F - 铝加工"
     },
     images: ["/dao_phay_pha_tho/55HRC_3F.webp", "/dao_phay_pha_tho/55hrc_3f/1.webp"],
     flutes: 3,
@@ -54,7 +54,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay phá thô 4F",
-      cn: "55HRC - 粗加工立铣刀 4F"
+      cn: "55HRC - 粗皮刀 4F"
     },
     images: ["/dao_phay_pha_tho/55HRC_4F.webp", "/dao_phay_pha_tho/55hrc_4f/1.webp"],
     flutes: 4,

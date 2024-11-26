@@ -92,15 +92,15 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoDetails.vue")
         },
         {
-          path: "san-pham/bau-kep-collet",
-          name: "pBauKepCollet",
-          component: () => import("@/views/san-pham/bau-kep-collet/BauKepCollet.vue")
+          path: "san-pham/bau-kep",
+          name: "pBauKep",
+          component: () => import("@/views/san-pham/bau-kep/BauKep.vue")
         },
         {
-          path: "san-pham/bau-kep-collet/:code",
-          name: "pBauKepColletCT",
+          path: "san-pham/bau-kep/:code",
+          name: "pBauKepCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/bau-kep-collet/BauKepColletDetails.vue")
+          component: () => import("@/views/san-pham/bau-kep/BauKepDetails.vue")
         }
       ]
     },

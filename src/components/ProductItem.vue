@@ -6,8 +6,8 @@ import { imgServer } from "@/config";
 
 import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
 import DaoPhayItemRibbon from "@/views/san-pham/dao-phay/DaoPhayItemRibbon.vue";
-import BauKepColletItemDetails from "@/views/san-pham/bau-kep-collet/BauKepColletItemDetails.vue";
-import BauKepColletItemRibbon from "@/views/san-pham/bau-kep-collet/BauKepColletItemRibbon.vue";
+import BauKepItemDetails from "@/views/san-pham/bau-kep/BauKepItemDetails.vue";
+import BauKepItemRibbon from "@/views/san-pham/bau-kep/BauKepItemRibbon.vue";
 
 const { current } = useI18n();
 
@@ -25,8 +25,8 @@ const formattedPrice = computed(() => {
 
 // dao phay
 const isEndMill = computed(() => props.item.category === "pDaoPhay");
-// bầu kẹp - collet
-const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
+// bầu kẹp
+const isBauKep = computed(() => props.item.category === "pBauKep");
 </script>
 
 <template>
@@ -53,7 +53,7 @@ const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
           <DaoPhayItemRibbon :item="item" />
         </template>
 
-        <BauKepColletItemRibbon v-else-if="isBauKepCollet" :item="item" />
+        <BauKepItemRibbon v-else-if="isBauKep" :item="item" />
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
@@ -81,7 +81,7 @@ const isBauKepCollet = computed(() => props.item.category === "pBauKepCollet");
 
         <template v-if="viewDetails">
           <DaoPhayItemDetails v-if="isEndMill" :description="item.description[current]" :item="item" />
-          <BauKepColletItemDetails v-else-if="isBauKepCollet" :description="item.description[current]" :item="item" />
+          <BauKepItemDetails v-else-if="isBauKep" :description="item.description[current]" :item="item" />
         </template>
       </div>
     </div>

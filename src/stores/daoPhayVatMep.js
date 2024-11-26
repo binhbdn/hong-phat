@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90°",
-      cn: "55HRC - 倒角立铣刀 2F 90°"
+      cn: "55HRC - 倒角刀（定心钻）2F 90°"
     },
     images: ["/dao_phay_vat_mep/55HRC_2F.webp", "/dao_phay_vat_mep/55hrc_2f/1.webp"],
     flutes: 2,
@@ -55,7 +55,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90°",
-      cn: "55HRC - 倒角立铣刀 3F 90°"
+      cn: "55HRC - 倒角刀（定心钻）3F 90°"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F.webp", "/dao_phay_vat_mep/55hrc_3f/1.webp"],
     flutes: 3,
@@ -99,7 +99,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
-      cn: "55HRC - 倒角立铣刀 2F 90° - 铝加工"
+      cn: "55HRC - 倒角刀（定心钻）2F 90° - 铝加工"
     },
     images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp", "/dao_phay_vat_mep/55hrc_2f_al/1.webp", "/dao_phay_vat_mep/55hrc_2f_al/2.webp"],
     flutes: 2,
@@ -143,7 +143,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
-      cn: "55HRC - 倒角立铣刀 3F 90° - 铝加工"
+      cn: "55HRC - 倒角刀（定心钻）3F 90° - 铝加工"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp", "/dao_phay_vat_mep/55hrc_3f_al/1.webp"],
     flutes: 3,
@@ -187,7 +187,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
-      cn: "55HRC - 倒角立铣刀 1F 90° - 蘑菇形状"
+      cn: "55HRC - 倒角刀（定心钻）1F 90° - 蘑菇形状"
     },
     images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
     flutes: 1,
@@ -228,7 +228,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
-      cn: "55HRC - 倒角立铣刀 3F 90° - 蘑菇形状"
+      cn: "55HRC - 倒角刀（定心钻）3F 90° - 蘑菇形状"
     },
     images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
     flutes: 3,

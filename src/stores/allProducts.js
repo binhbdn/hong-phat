@@ -4,7 +4,7 @@ import { daoPhayVatMepItems } from "@/stores/daoPhayVatMep";
 import { daoPhayBoGocItems } from "@/stores/daoPhayBoGoc";
 import { daoPhayRTrongItems } from "@/stores/daoPhayRTrong";
 import { daoPhayPhaThoItems } from "@/stores/daoPhayPhaTho";
-import { bauKepColletItems } from "@/stores/bauKepCollet";
+import { bauKepItems } from "@/stores/bauKep";
 
 const allProducts = [
   ...daoPhayNgonItems,
@@ -13,7 +13,7 @@ const allProducts = [
   ...daoPhayBoGocItems,
   ...daoPhayRTrongItems,
   ...daoPhayPhaThoItems,
-  ...bauKepColletItems
+  ...bauKepItems
 ];
 
 export default allProducts;

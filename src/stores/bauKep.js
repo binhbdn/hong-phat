@@ -2,14 +2,14 @@ import { mapSearchProps } from "@/stores/search";
 
 const items = [
   {
-    category: "pBauKepCollet",
-    routeName: "pBauKepColletCT",
+    category: "pBauKep",
+    routeName: "pBauKepCT",
     isTypical: true,
     code: "BK_SUKEN_BT40_ER",
     hardness: "58HRC-60HRC",
     name: {
       vi: "Bầu kẹp Suken BT40 loại ER16/20/25/32",
-      cn: "筒夹夹头 Suken BT40 ER16/20/25/32"
+      cn: "刀柄 Suken BT40 ER16/20/25/32"
     },
     images: ["/bau_kep_suken/BT40_ER32_100L.webp"],
     prices: {
@@ -29,14 +29,14 @@ const items = [
     maxRPM: 25000
   },
   {
-    category: "pBauKepCollet",
-    routeName: "pBauKepColletCT",
+    category: "pBauKep",
+    routeName: "pBauKepCT",
     isTypical: false,
     code: "BK_SUKEN_BT50_ER",
     hardness: "58HRC-60HRC",
     name: {
       vi: "Bầu kẹp Suken BT50 loại ER16/20/25/32/40",
-      cn: "筒夹夹头 Suken BT50 ER16/20/25/32/40"
+      cn: "刀柄 Suken BT50 ER16/20/25/32/40"
     },
     images: ["/bau_kep_suken/BT50_ER40_100L.webp"],
     prices: {
@@ -59,4 +59,4 @@ const items = [
 
 export default items;
 
-export const bauKepColletItems = mapSearchProps(items);
+export const bauKepItems = mapSearchProps(items);

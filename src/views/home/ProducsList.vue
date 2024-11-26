@@ -10,7 +10,7 @@ import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepLi
 import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
 import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
 import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoList.vue";
-import BauKepColletList from "@/views/san-pham/bau-kep-collet/BauKepColletList.vue";
+import BauKepList from "@/views/san-pham/bau-kep/BauKepList.vue";
 
 let treeCategoriesEl;
 let iconFilterEl;
@@ -79,9 +79,9 @@ watch(selectedKeys, (val) => {
   if (view.pDaoPhayPhaTho.show) view.pDaoPhayPhaTho.expanded = true;
   else view.pDaoPhayPhaTho.showAll = false;
 
-  view.pBauKepCollet.show = Boolean(val?.pBauKepCollet?.checked);
-  if (view.pBauKepCollet.show) view.pBauKepCollet.expanded = true;
-  else view.pBauKepCollet.showAll = false;
+  view.pBauKep.show = Boolean(val?.pBauKep?.checked);
+  if (view.pBauKep.show) view.pBauKep.expanded = true;
+  else view.pBauKep.showAll = false;
 });
 
 onMounted(() => {
@@ -219,13 +219,13 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         -->
       </div>
 
-      <div v-show="view.pBauKepCollet.show" class="home-category" :class="{ expanded: view.pBauKepCollet.expanded }">
-        <CategoryHeader v-model:expanded="view.pBauKepCollet.expanded" name="pBauKepCollet" />
-        <BauKepColletList v-show="view.pBauKepCollet.expanded" :viewDetails="viewDetails" :showAll="view.pBauKepCollet.showAll">
+      <div v-show="view.pBauKep.show" class="home-category" :class="{ expanded: view.pBauKep.expanded }">
+        <CategoryHeader v-model:expanded="view.pBauKep.expanded" name="pBauKep" />
+        <BauKepList v-show="view.pBauKep.expanded" :viewDetails="viewDetails" :showAll="view.pBauKep.showAll">
           <template #last>
-            <ViewMoreBtn v-model:showAll="view.pBauKepCollet.showAll" />
+            <ViewMoreBtn v-model:showAll="view.pBauKep.showAll" />
           </template>
-        </BauKepColletList>
+        </BauKepList>
       </div>
     </div>
   </div>

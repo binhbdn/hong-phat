@@ -11,7 +11,7 @@ const items = [
     hardness: "55HRC",
     name: {
       vi: "55HRC - Dao phay bo góc 4F",
-      cn: "55HRC - 圆角立铣刀 4F"
+      cn: "55HRC - 圆鼻刀 4F"
     },
     images: ["/dao_phay_bo_goc/55HRC_4F.webp", "/dao_phay_bo_goc/55hrc_4f/1.webp", "/dao_phay_bo_goc/55hrc_4f/2.webp"],
     flutes: 4,
@@ -54,7 +54,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F",
-      cn: "65HRC - 圆角立铣刀 4F"
+      cn: "65HRC - 圆鼻刀 4F"
     },
     images: ["/dao_phay_bo_goc/65HRC_4F.webp", "/dao_phay_bo_goc/65hrc_4f/1.webp", "/dao_phay_bo_goc/65hrc_4f/2.webp"],
     flutes: 4,
@@ -97,7 +97,7 @@ const items = [
     hardness: "65HRC",
     name: {
       vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
-      cn: "65HRC - 圆角立铣刀 4F - harden"
+      cn: "65HRC - 圆鼻刀 4F - 硬化"
     },
     images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
     flutes: 4,

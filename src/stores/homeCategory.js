@@ -15,7 +15,7 @@ export const categoryKeys = [
           { key: "pDaoPhayPhaTho" }
         ]
       },
-      { key: "pBauKepCollet" }
+      { key: "pBauKep" }
     ]
   }
 ];
@@ -66,7 +66,7 @@ const defaultSelectedKeys = {
     checked: true,
     partialChecked: false
   },
-  pBauKepCollet: {
+  pBauKep: {
     checked: true,
     partialChecked: false
   }
@@ -110,7 +110,7 @@ export const view = reactive({
     expanded: true,
     showAll: false
   },
-  pBauKepCollet: {
+  pBauKep: {
     show: true,
     expanded: true,
     showAll: false
