@@ -34,6 +34,7 @@ export default {
   helixAngle: "Góc xoắn ốc",
   noseAngle: "Góc mũi",
   specifications: "Thông số kỹ thuật",
+  description: "Mô tả",
   dimension: "Kích thước",
   showSortButtons: "Hiển thị button sắp xếp",
   hideSortButtons: "Ẩn button sắp xếp",

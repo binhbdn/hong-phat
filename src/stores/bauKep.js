@@ -21,6 +21,10 @@ const items = [
       vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
       cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "AlloySteel",
     brand: "Suken",
     seri: "BT40",
@@ -47,6 +51,10 @@ const items = [
     description: {
       vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
       cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "AlloySteel",
     brand: "Suken",

@@ -25,6 +25,10 @@ const items = [
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -71,6 +75,10 @@ const items = [
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, nhựa…",
       cn: "高光泽，适合加工铝、塑料…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "CarbideTungsten",
     processingMaterials: "N",

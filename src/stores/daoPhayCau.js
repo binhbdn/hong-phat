@@ -25,6 +25,10 @@ const items = [
       vi: "Thích hợp gia công thép thông thường, gang…",
       cn: "适用于加工普通钢、铸铁…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
@@ -67,6 +71,10 @@ const items = [
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       cn: "适用于加工铁、钢、铜、铸铁…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -111,6 +119,10 @@ const items = [
       vi: "Thích hợp gia công thép, gang…",
       cn: "适用于加工钢、铸铁…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
@@ -153,6 +165,10 @@ const items = [
     description: {
       vi: "Thích hợp gia công gang, thép cứng, thép không gỉ…",
       cn: "适用于加工铸铁、硬钢、不锈钢…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",

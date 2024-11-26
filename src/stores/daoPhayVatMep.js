@@ -26,6 +26,10 @@ const items = [
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -69,6 +73,10 @@ const items = [
     description: {
       vi: "Thích hợp gia công sắt, thép, đồng, gang…",
       cn: "适用于加工铁、钢、铜、铸铁…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -114,6 +122,10 @@ const items = [
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
       cn: "高光泽，适合加工铝、铝合金…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -157,6 +169,10 @@ const items = [
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
       cn: "高光泽，适合加工铝、铝合金…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -202,6 +218,10 @@ const items = [
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
       cn: "高光泽，适合加工铝、铝合金…"
     },
+    descriptions: {
+      vi: [],
+      cn: []
+    },
     material: "HSS",
     processingMaterials: "N",
     coating: "Al",
@@ -242,6 +262,10 @@ const items = [
     description: {
       vi: "Độ bóng cao, thích hợp gia công nhôm, hợp kim nhôm…",
       cn: "高光泽，适合加工铝、铝合金…"
+    },
+    descriptions: {
+      vi: [],
+      cn: []
     },
     material: "HSS",
     processingMaterials: "N",

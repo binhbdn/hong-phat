@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { getItemByCode } from "@/stores/daoPhayNgon";
 import PageHasTitle from "@/components/PageHasTitle.vue";
 import ProductNotFound from "@/components/ProductNotFound.vue";
-import DaoPhayBasicInfo from "@/views/san-pham/dao-phay/DaoPhayBasicInfo.vue";
+import DaoPhayDetails from "@/views/san-pham/dao-phay/DaoPhayDetails.vue";
 import DaoPhayNgonSpec from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonSpec.vue";
 
 const props = defineProps(["code"]);
@@ -17,7 +17,7 @@ onMounted(() => {
 <template>
   <PageHasTitle>
     <template v-if="item">
-      <DaoPhayBasicInfo :item="item" />
+      <DaoPhayDetails :item="item" />
       <DaoPhayNgonSpec :code="code" :flutes="item.flutes" />
     </template>
 
