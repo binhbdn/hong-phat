@@ -26,8 +26,16 @@ const items = [
       cn: "适用于加工普通钢、铸铁…"
     },
     descriptions: {
-      vi: [],
-      cn: []
+      vi: [
+        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+        "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Titan Nitride tăng độ cứng và giảm mài mòn."
+      ],
+      cn: [
+        "半球刀头设计，专用于曲面加工和3D零件。",
+        "双刃设计，35°螺旋角，多种尺寸选择。",
+        "整体合金材料，铝钛氮化物涂层提高硬度并减少磨损。"
+      ]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -73,8 +81,16 @@ const items = [
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
     descriptions: {
-      vi: [],
-      cn: []
+      vi: [
+        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+        "Vật liệu hợp kim nguyên khối, lớp phủ Titan Silic Nitride tăng độ cứng và giảm mài mòn."
+      ],
+      cn: [
+        "半球刀头设计，专用于曲面加工和3D零件。",
+        "双刃设计，35°螺旋角，多种尺寸选择。",
+        "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"
+      ]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -120,8 +136,16 @@ const items = [
       cn: "适用于加工钢、铸铁…"
     },
     descriptions: {
-      vi: [],
-      cn: []
+      vi: [
+        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+        "Vật liệu hợp kim nguyên khối, lớp phủ Nano tăng độ cứng và giảm mài mòn."
+      ],
+      cn: [
+        "半球刀头设计，专用于曲面加工和3D零件。",
+        "双刃设计，35°螺旋角，多种尺寸选择。",
+        "整体合金材料，纳米复合涂层提高硬度并减少磨损。"
+      ]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
@@ -167,8 +191,16 @@ const items = [
       cn: "适用于加工铸铁、硬钢、不锈钢…"
     },
     descriptions: {
-      vi: [],
-      cn: []
+      vi: [
+        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+        "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Chrome Silic Nitride tăng độ cứng và giảm mài mòn."
+      ],
+      cn: [
+        "半球刀头设计，专用于曲面加工和3D零件。",
+        "双刃设计，35°螺旋角，多种尺寸选择。",
+        "整体合金材料，铝铬硅氮化物涂层提高硬度并减少磨损。"
+      ]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",

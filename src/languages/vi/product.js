@@ -11,10 +11,10 @@ export default {
     H: "Thép cứng, hợp kim siêu cứng"
   },
   coating: "Lớp phủ",
-  AlTiN: "Nhôm Titan Nitrua",
-  TiSiN: "Titan Silic Nitrua",
+  AlTiN: "Nhôm Titan Nitride",
+  TiSiN: "Titan Silic Nitride",
   NACO: "Nano",
-  AlCrSiN: "Nhôm Crom Silicon Nitrua",
+  AlCrSiN: "Nhôm Chrome Silic Nitride",
   Al: "Nhôm",
   bladeDiameter: "Đường kính lưỡi",
   bladeRadius: "Bán kính lưỡi",
