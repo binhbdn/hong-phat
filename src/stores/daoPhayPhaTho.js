@@ -26,14 +26,8 @@ const items = [
       cn: "高光泽，适合加工铝、铝合金…"
     },
     descriptions: {
-      vi: [
-        "Phay phá thô với hiệu suất cao.",
-        "Me cắt có gân tăng cứng giảm mài mòn."
-      ],
-      cn: [
-        "高效的粗加工切削。",
-        "切削片加强筋，减少磨损。"
-      ]
+      vi: ["Phay phá thô với hiệu suất cao.", "Me cắt có gân tăng cứng giảm mài mòn."],
+      cn: ["高效的粗加工切削。", "切削片加强筋，减少磨损。"]
     },
     material: "CarbideTungsten",
     processingMaterials: "N",
@@ -79,14 +73,8 @@ const items = [
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
     descriptions: {
-      vi: [
-        "Phay phá thô với hiệu suất cao.",
-        "Me cắt có gân tăng cứng giảm mài mòn."
-      ],
-      cn: [
-        "高效的粗加工切削。",
-        "切削片加强筋，减少磨损。"
-      ]
+      vi: ["Phay phá thô với hiệu suất cao.", "Me cắt có gân tăng cứng giảm mài mòn."],
+      cn: ["高效的粗加工切削。", "切削片加强筋，减少磨损。"]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKH",

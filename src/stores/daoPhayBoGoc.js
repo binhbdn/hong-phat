@@ -30,10 +30,7 @@ const items = [
         "Thiết kế 4 me, phủ Titan Silic Nitride tăng độ cứng, chống mài mòn tốt.",
         "Dung sai cạnh chính xác, giảm thiểu sứt mẻ, phù hợp cho nhiều ứng dụng."
       ],
-      cn: [
-        "四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。",
-        "边缘精度高，减少崩刃，适用于多种应用场景。"
-      ]
+      cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMK",
@@ -83,10 +80,7 @@ const items = [
         "Thiết kế 4 me, phủ Titan Silic Nitride tăng độ cứng, chống mài mòn tốt.",
         "Dung sai cạnh chính xác, giảm thiểu sứt mẻ, phù hợp cho nhiều ứng dụng."
       ],
-      cn: [
-        "四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。",
-        "边缘精度高，减少崩刃，适用于多种应用场景。"
-      ]
+      cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
@@ -136,10 +130,7 @@ const items = [
         "Thiết kế 4 me, phủ Titan Silic Nitride tăng độ cứng, chống mài mòn tốt.",
         "Dung sai cạnh chính xác, giảm thiểu sứt mẻ, phù hợp cho nhiều ứng dụng."
       ],
-      cn: [
-        "四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。",
-        "边缘精度高，减少崩刃，适用于多种应用场景。"
-      ]
+      cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
