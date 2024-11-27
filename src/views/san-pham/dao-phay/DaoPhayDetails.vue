@@ -21,15 +21,15 @@ const showNoseAngle = computed(() => props.item.cutStyle === "csChamfer");
 </script>
 
 <template>
-  <div class="text-[13px]/5 sm:text-sm/[22px] text-gray-600">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 xl:gap-7">
+  <div class="flex flex-col gap-y-3 sm:gap-y-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 md:gap-x-5 xl:gap-x-7">
       <ProductImages :images="item.images" />
       <div>
         <div class="font-bold text-base sm:text-xl text-gray-900 px-2">{{ item.name[current] }}</div>
-        <div class="xl:w-fit xl:min-w-[75%] text-gray-500 text-right px-2">{{ formattedPrice }}</div>
-        <div class="xl:w-fit xl:max-w-[75%] font-medium text-gray-900 my-2 px-2">{{ item.description[current] }}</div>
+        <div class="text-gray-500 text-right px-2">{{ formattedPrice }}</div>
+        <div class="font-medium text-gray-900 my-2 px-2">{{ item.description[current] }}</div>
 
-        <div class="xl:w-fit xl:min-w-[75%]">
+        <div>
           <div>
             <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("productCode") }}: </span>

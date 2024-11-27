@@ -16,10 +16,10 @@ onMounted(() => {
 
 <template>
   <PageHasTitle>
-    <template v-if="item">
+    <div v-if="item" class="xl:max-w-[88%] flex flex-col gap-y-3 sm:gap-y-5 text-[13px]/5 sm:text-sm/[22px] text-gray-600">
       <DaoPhayDetails :item="item" />
       <DaoPhayRTrongSpec :code="code" />
-    </template>
+    </div>
 
     <ProductNotFound v-else :code="code" />
   </PageHasTitle>

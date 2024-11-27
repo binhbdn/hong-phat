@@ -12,7 +12,7 @@ const sortable = ref(false);
 </script>
 
 <template>
-  <div class="xl:max-w-[88%] text-[13px]/5 sm:text-sm/[22px] text-gray-600 mt-3 sm:mt-5">
+  <div>
     <div class="font-bold text-sm sm:text-base text-gray-900">{{ $t("specifications") }}</div>
 
     <img :src="`${imgServer}/dao_phay_r_trong/corner_rounding.webp`" class="mx-auto mt-2" />
