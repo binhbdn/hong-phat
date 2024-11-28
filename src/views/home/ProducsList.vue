@@ -1,6 +1,17 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
-import { categoryKeys, viewDetails, showMsg, showFilter, expandedKeys, selectedKeys, view } from "@/stores/homeCategory";
+import {
+  categoryKeys,
+  viewDetails,
+  showMsg,
+  showFilter,
+  expandedKeys,
+  resetExpandedKeys,
+  selectedKeys,
+  resetSelectedKeys,
+  view,
+  setViewExpanded
+} from "@/stores/homeCategory";
 import Overlay from "@/components/Overlay.vue";
 import CategoryHeader from "@/views/home/CategoryHeader.vue";
 import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
@@ -20,6 +31,12 @@ const outsideClickTreeCategoriesListener = ref(null);
 const onToggleShowFilter = () => {
   showMsg.value = false;
   showFilter.value = !showFilter.value;
+};
+
+const onToggleShowAll = (showAll) => {
+  resetExpandedKeys();
+  resetSelectedKeys();
+  setViewExpanded(showAll);
 };
 
 const isOutsideClickedTreeCategories = (event) => {
@@ -121,6 +138,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
     <div class="home-products-icons w-fit h-6 absolute flex gap-x-4">
       <div class="flex gap-x-1">
         <div
+          v-tooltip.left="$t('h.gridView')"
           class="w-6 h-6 flex justify-center items-center hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
           :class="viewDetails ? 'text-gray-700' : 'bg-primary/20 text-primary/70'"
           @click="viewDetails = false"
@@ -128,6 +146,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
           <i class="pi pi-th-large" />
         </div>
         <div
+          v-tooltip.left="$t('h.listView')"
           class="home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
           :class="viewDetails ? 'bg-primary/20 text-primary/70' : 'text-gray-700'"
           @click="viewDetails = true"
@@ -135,8 +154,26 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
           <i class="pi pi-list" />
         </div>
       </div>
+
+      <div class="flex gap-x-1">
+        <div
+          v-tooltip.left="$t('h.showAllCategoryNamesOnly')"
+          class="home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+          @click="onToggleShowAll(false)"
+        >
+          <i class="pi pi-list-check" />
+        </div>
+        <div
+          v-tooltip.left="$t('h.showProductsFromAllCategories')"
+          class="home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
+          @click="onToggleShowAll(true)"
+        >
+          <i class="pi pi-arrows-alt" />
+        </div>
+      </div>
+
       <div
-        v-tooltip="showFilter ? $t('h.hideCategories') : $t('h.showCategories')"
+        v-tooltip.left="showFilter ? $t('h.hideFilter') : $t('h.showFilter')"
         class="home-icon-filter home-icon-highlight w-6 h-6 flex justify-center items-center text-gray-700 hover:text-primary bg-gray-200 hover:bg-primary hover:bg-opacity-20 rounded-md cursor-pointer z-10"
         :class="view.allCategories.partialChecked ? 'text-primary/70' : 'text-gray-700'"
         @click.prevent="onToggleShowFilter()"

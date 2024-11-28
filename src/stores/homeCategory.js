@@ -33,6 +33,8 @@ const defaultExpandedKeys = {
 
 export const expandedKeys = ref(defaultExpandedKeys);
 
+export const resetExpandedKeys = () => (expandedKeys.value = defaultExpandedKeys);
+
 const defaultSelectedKeys = {
   allCategories: {
     checked: true,
@@ -73,6 +75,8 @@ const defaultSelectedKeys = {
 };
 
 export const selectedKeys = ref(defaultSelectedKeys);
+
+export const resetSelectedKeys = () => (selectedKeys.value = defaultSelectedKeys);
 
 export const view = reactive({
   allCategories: {
@@ -123,3 +127,5 @@ export const view = reactive({
     showAll: false
   }
 });
+
+export const setViewExpanded = (value) => Object.keys(view).forEach((key) => (view[key].expanded = value));
