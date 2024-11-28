@@ -6,6 +6,9 @@ import AppTitle from "./AppTitle.vue";
 
 const { current, changeLocale } = useI18n();
 
+const locale = localStorage.getItem("locale");
+if (locale) changeLocale(locale);
+
 const op = ref(null);
 const outsideClickListener = ref(null);
 const topbarMenuActive = ref(false);
@@ -25,6 +28,7 @@ const toggle = (event) => {
 const onChangeLocale = (locale) => {
   changeLocale(locale);
   op.value.hide();
+  localStorage.setItem("locale", locale);
 };
 
 const bindOutsideClickListener = () => {

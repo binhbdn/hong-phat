@@ -82,37 +82,44 @@ export const view = reactive({
   },
   pDaoPhayNgon: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pDaoPhayCau: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pDaoPhayVatMep: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pDaoPhayBoGoc: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pDaoPhayRTrong: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pDaoPhayPhaTho: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   },
   pBauKep: {
     show: true,
-    expanded: true,
+    expanded: false,
+    render: false,
     showAll: false
   }
 });

@@ -84,6 +84,20 @@ watch(selectedKeys, (val) => {
   else view.pBauKep.showAll = false;
 });
 
+watch(
+  view,
+  () => {
+    if (view.pDaoPhayNgon.expanded) view.pDaoPhayNgon.render = true;
+    if (view.pDaoPhayCau.expanded) view.pDaoPhayCau.render = true;
+    if (view.pDaoPhayVatMep.expanded) view.pDaoPhayVatMep.render = true;
+    if (view.pDaoPhayBoGoc.expanded) view.pDaoPhayBoGoc.render = true;
+    if (view.pDaoPhayRTrong.expanded) view.pDaoPhayRTrong.render = true;
+    if (view.pDaoPhayPhaTho.expanded) view.pDaoPhayPhaTho.render = true;
+    if (view.pBauKep.expanded) view.pBauKep.render = true;
+  },
+  { deep: true }
+);
+
 onMounted(() => {
   treeCategoriesEl = document.querySelector(".home-tree-categories");
   iconFilterEl = document.querySelector(".home-icon-filter");
@@ -161,7 +175,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayNgon.show" class="home-category" :class="{ expanded: view.pDaoPhayNgon.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayNgon.expanded" name="pDaoPhayNgon" />
-        <DaoPhayNgonList v-show="view.pDaoPhayNgon.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayNgon.showAll">
+        <DaoPhayNgonList v-if="view.pDaoPhayNgon.render" v-show="view.pDaoPhayNgon.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayNgon.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayNgon.showAll" />
           </template>
@@ -170,7 +184,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayCau.show" class="home-category" :class="{ expanded: view.pDaoPhayCau.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayCau.expanded" name="pDaoPhayCau" />
-        <DaoPhayCauList v-show="view.pDaoPhayCau.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayCau.showAll">
+        <DaoPhayCauList v-if="view.pDaoPhayCau.render" v-show="view.pDaoPhayCau.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayCau.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayCau.showAll" />
           </template>
@@ -179,7 +193,12 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayVatMep.show" class="home-category" :class="{ expanded: view.pDaoPhayVatMep.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayVatMep.expanded" name="pDaoPhayVatMep" />
-        <DaoPhayVatMepList v-show="view.pDaoPhayVatMep.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayVatMep.showAll">
+        <DaoPhayVatMepList
+          v-if="view.pDaoPhayVatMep.render"
+          v-show="view.pDaoPhayVatMep.expanded"
+          :viewDetails="viewDetails"
+          :showAll="view.pDaoPhayVatMep.showAll"
+        >
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayVatMep.showAll" />
           </template>
@@ -188,7 +207,12 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayBoGoc.show" class="home-category" :class="{ expanded: view.pDaoPhayBoGoc.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayBoGoc.expanded" name="pDaoPhayBoGoc" />
-        <DaoPhayBoGocList v-show="view.pDaoPhayBoGoc.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayBoGoc.showAll">
+        <DaoPhayBoGocList
+          v-if="view.pDaoPhayBoGoc.render"
+          v-show="view.pDaoPhayBoGoc.expanded"
+          :viewDetails="viewDetails"
+          :showAll="view.pDaoPhayBoGoc.showAll"
+        >
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayBoGoc.showAll" />
           </template>
@@ -197,9 +221,9 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayRTrong.show" class="home-category" :class="{ expanded: view.pDaoPhayRTrong.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayRTrong.expanded" name="pDaoPhayRTrong" />
-        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" />
+        <DaoPhayRTrongList v-if="view.pDaoPhayRTrong.render" v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" />
         <!--
-        <DaoPhayRTrongList v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayRTrong.showAll">
+        <DaoPhayRTrongList v-if="view.pDaoPhayRTrong.render" v-show="view.pDaoPhayRTrong.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayRTrong.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayRTrong.showAll" />
           </template>
@@ -209,9 +233,9 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pDaoPhayPhaTho.show" class="home-category" :class="{ expanded: view.pDaoPhayPhaTho.expanded }">
         <CategoryHeader v-model:expanded="view.pDaoPhayPhaTho.expanded" name="pDaoPhayPhaTho" />
-        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" />
+        <DaoPhayPhaThoList v-if="view.pDaoPhayPhaTho.render" v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" />
         <!--
-        <DaoPhayPhaThoList v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayPhaTho.showAll">
+        <DaoPhayPhaThoList v-if="view.pDaoPhayPhaTho.render" v-show="view.pDaoPhayPhaTho.expanded" :viewDetails="viewDetails" :showAll="view.pDaoPhayPhaTho.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pDaoPhayPhaTho.showAll" />
           </template>
@@ -221,7 +245,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
 
       <div v-show="view.pBauKep.show" class="home-category" :class="{ expanded: view.pBauKep.expanded }">
         <CategoryHeader v-model:expanded="view.pBauKep.expanded" name="pBauKep" />
-        <BauKepList v-show="view.pBauKep.expanded" :viewDetails="viewDetails" :showAll="view.pBauKep.showAll">
+        <BauKepList v-if="view.pBauKep.render" v-show="view.pBauKep.expanded" :viewDetails="viewDetails" :showAll="view.pBauKep.showAll">
           <template #last>
             <ViewMoreBtn v-model:showAll="view.pBauKep.showAll" />
           </template>

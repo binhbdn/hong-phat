@@ -60,7 +60,7 @@ const itemClick = async (event, item) => {
     onMenuToggle();
   }
 
-  if (item.command) {
+  if (item?.command) {
     item.command({ originalEvent: event, item: item });
   }
 

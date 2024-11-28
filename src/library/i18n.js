@@ -4,7 +4,7 @@ import vi from "@/languages/vi";
 
 const i18n = createI18n({
   locale: "vi",
-  fallbackLocale: "cn",
+  fallbackLocale: "vi",
   allowComposition: true,
   messages: {
     cn,
