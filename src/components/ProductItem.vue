@@ -4,11 +4,6 @@ import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import { imgServer } from "@/config";
 
-import DaoPhayItemDetails from "@/views/san-pham/dao-phay/DaoPhayItemDetails.vue";
-import DaoPhayItemRibbon from "@/views/san-pham/dao-phay/DaoPhayItemRibbon.vue";
-import BauKepItemDetails from "@/views/san-pham/bau-kep/BauKepItemDetails.vue";
-import BauKepItemRibbon from "@/views/san-pham/bau-kep/BauKepItemRibbon.vue";
-
 const { current } = useI18n();
 
 const props = defineProps({
@@ -22,11 +17,6 @@ const formattedPrice = computed(() => {
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
   return `${numberToVnd(props.item.prices.min)} - ${numberToVnd(props.item.prices.max)}`;
 });
-
-// dao phay
-const isEndMill = computed(() => props.item.category === "pDaoPhay");
-// bầu kẹp
-const isBauKep = computed(() => props.item.category === "pBauKep");
 </script>
 
 <template>
@@ -48,12 +38,7 @@ const isBauKep = computed(() => props.item.category === "pBauKep");
       <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
         <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="border border-gray-400 rounded-t-md rounded-br-md" />
 
-        <template v-if="isEndMill">
-          <img v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
-          <DaoPhayItemRibbon :item="item" />
-        </template>
-
-        <BauKepItemRibbon v-else-if="isBauKep" :item="item" />
+        <slot name="ribbon" />
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
@@ -80,8 +65,7 @@ const isBauKep = computed(() => props.item.category === "pBauKep");
         </div>
 
         <template v-if="viewDetails">
-          <DaoPhayItemDetails v-if="isEndMill" :description="item.description[current]" :item="item" />
-          <BauKepItemDetails v-else-if="isBauKep" :description="item.description[current]" :item="item" />
+          <slot />
         </template>
       </div>
     </div>
