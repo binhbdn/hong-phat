@@ -42,7 +42,14 @@ const formattedPrice = computed(() => {
       >
         <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="rounded-t-md rounded-br-md" />
 
-        <slot name="ribbon" />
+        <slot name="imgExtra" />
+
+        <div class="ribbon">
+          {{ item.seri }}
+          <span class="text-[10px]">
+            {{ item.specs }}
+          </span>
+        </div>
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
