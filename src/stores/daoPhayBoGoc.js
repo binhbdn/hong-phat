@@ -1,3 +1,4 @@
+import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecDRDLByCode } from "@/stores/daoPhay";
@@ -33,6 +34,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "55HRC",
@@ -76,6 +78,7 @@ const items = [
     specs: "D1-D10",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "65HRC",
@@ -119,6 +122,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "65HRC",

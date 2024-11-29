@@ -1,3 +1,4 @@
+import { listViewRMB } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
@@ -29,9 +30,10 @@ const items = [
     specs: "specs",
     brand: "brand",
     origin: null,
+    listView: listViewRMB,
     // extra data
-    runout: "runout",
-    maxRPM: "maxRPM"
+    runout: "0.00?mm",
+    maxRPM: "?rpm"
   },
   {
     category: "pCollet",
@@ -60,9 +62,10 @@ const items = [
     specs: "specs",
     brand: "brand",
     origin: null,
+    listView: listViewRMB,
     // extra data
-    runout: "runout",
-    maxRPM: "maxRPM"
+    runout: "0.00?mm",
+    maxRPM: "?rpm"
   }
 ];
 

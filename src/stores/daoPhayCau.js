@@ -1,3 +1,4 @@
+import { listViewRDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecRDLByCode } from "@/stores/daoPhay";
@@ -34,6 +35,7 @@ const items = [
     specs: "R0.5-R10",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csBall",
     hardness: "45HRC",
@@ -78,6 +80,7 @@ const items = [
     specs: "R0.1-R10",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csBall",
     hardness: "55HRC",
@@ -122,6 +125,7 @@ const items = [
     specs: "R0.5-R10",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csBall",
     hardness: "65HRC",
@@ -166,6 +170,7 @@ const items = [
     specs: "R0.5-R6",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csBall",
     hardness: "65HRC",

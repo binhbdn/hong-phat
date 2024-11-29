@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from "vue";
+import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import { imgServer } from "@/config";
@@ -8,10 +8,11 @@ const { current } = useI18n();
 
 const props = defineProps({
   viewDetails: Boolean,
-  item: Object,
-  orderQuantity: Number
+  item: Object
 });
 defineEmits(["changeOrderQuantity"]);
+
+const orderQuantity = ref(0);
 
 const formattedPrice = computed(() => {
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
@@ -42,7 +43,7 @@ const formattedPrice = computed(() => {
       >
         <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="rounded-t-md rounded-br-md" />
 
-        <slot name="imgExtra" />
+        <img v-if="item?.flutes" v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
 
         <div class="ribbon">
           {{ item.seri }}
@@ -53,15 +54,15 @@ const formattedPrice = computed(() => {
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
-            class="w-6 h-6 flex justify-center items-center bg-gray-200 hover:bg-primary/20 text-primary border border-gray-500 rounded-full"
+            class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full"
             @click.stop="$emit('changeOrderQuantity', true)"
           >
             <i class="pi pi-plus text-[10px]" />
           </div>
           <template v-if="orderQuantity">
-            <div class="font-bold bg-gray-200 text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
+            <div class="font-bold bg-white text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
             <div
-              class="w-6 h-6 flex justify-center items-center bg-gray-200 hover:bg-primary/20 text-primary border border-gray-500 rounded-full"
+              class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full"
               @click.stop="$emit('changeOrderQuantity', false)"
             >
               <i class="pi pi-minus text-[10px]" />
@@ -76,7 +77,15 @@ const formattedPrice = computed(() => {
         </div>
 
         <template v-if="viewDetails">
-          <slot />
+          <div class="flex-grow font-medium leading-4 text-gray-900">
+            {{ item.description[current] }}
+          </div>
+          <div v-for="(prop, index) in item.listView" :key="index" class="flex justify-between gap-x-1">
+            {{ $t(prop) }}:
+            <span class="font-medium text-gray-900">
+              {{ item[prop] }}
+            </span>
+          </div>
         </template>
       </div>
     </div>

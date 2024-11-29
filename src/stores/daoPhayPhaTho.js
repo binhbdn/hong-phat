@@ -1,3 +1,4 @@
+import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecDDLByCode } from "@/stores/daoPhay";
@@ -30,6 +31,7 @@ const items = [
     specs: "D4-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
@@ -70,6 +72,7 @@ const items = [
     specs: "D4-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",

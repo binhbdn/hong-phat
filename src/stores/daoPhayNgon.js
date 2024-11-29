@@ -1,3 +1,4 @@
+import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecDDLByCode } from "@/stores/daoPhay";
@@ -42,6 +43,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "45HRC",
@@ -94,6 +96,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
@@ -144,6 +147,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "45HRC",
@@ -194,6 +198,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "45HRC",
@@ -244,6 +249,7 @@ const items = [
     specs: "D0.1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
@@ -294,6 +300,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
@@ -344,6 +351,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "60HRC",
@@ -388,6 +396,7 @@ const items = [
     specs: "D1-D20",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "65HRC",
@@ -436,6 +445,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csSquare",
     hardness: "65HRC",

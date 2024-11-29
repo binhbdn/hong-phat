@@ -1,3 +1,4 @@
+import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecDDLAByCode, findSpecDLAByCode } from "@/stores/daoPhay";
@@ -30,6 +31,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",
@@ -71,6 +73,7 @@ const items = [
     specs: "D3-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",
@@ -112,6 +115,7 @@ const items = [
     specs: "D1-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",
@@ -153,6 +157,7 @@ const items = [
     specs: "D3-D12",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",
@@ -194,6 +199,7 @@ const items = [
     specs: "D8.3-D35",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",
@@ -235,6 +241,7 @@ const items = [
     specs: "D8.3-D35",
     brand: null,
     origin: "cn",
+    listView: listViewDDL,
     // extra data
     cutStyle: "csChamfer",
     hardness: "55HRC",

@@ -1,3 +1,4 @@
+import { listViewRMB } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
@@ -29,11 +30,12 @@ const items = [
     specs: "ER16-32",
     brand: "Suken",
     origin: null,
+    listView: listViewRMB,
     // extra data
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
-    runout: 0.003,
-    maxRPM: 25000
+    runout: "0.003mm",
+    maxRPM: "25.000rpm"
   },
   {
     category: "pBauKep",
@@ -62,11 +64,12 @@ const items = [
     specs: "ER16-40",
     brand: "Suken",
     origin: null,
+    listView: listViewRMB,
     // extra data
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
-    runout: 0.003,
-    maxRPM: 25000
+    runout: "0.003mm",
+    maxRPM: "25.000rpm"
   }
 ];
 

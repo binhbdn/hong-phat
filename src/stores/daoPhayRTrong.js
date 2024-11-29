@@ -1,3 +1,4 @@
+import { listViewRDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 import { findSpecRDLByCode } from "@/stores/daoPhay";
@@ -33,6 +34,7 @@ const items = [
     specs: "R0.5-R5",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csCornerRounding",
     hardness: "55HRC",
@@ -74,6 +76,7 @@ const items = [
     specs: "R0.5-R5",
     brand: null,
     origin: "cn",
+    listView: listViewRDL,
     // extra data
     cutStyle: "csCornerRounding",
     hardness: "55HRC",
