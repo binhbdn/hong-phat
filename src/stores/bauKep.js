@@ -1,4 +1,5 @@
 import { mapSearchProps } from "@/stores/search";
+import { findItemByCode } from "@/stores/products";
 
 const items = [
   {
@@ -68,3 +69,5 @@ const items = [
 export default items;
 
 export const bauKepItems = mapSearchProps(items);
+
+export const getItemByCode = (code) => findItemByCode(items, code);

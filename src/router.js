@@ -101,6 +101,17 @@ const router = createRouter({
           name: "pBauKepCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/bau-kep/BauKepDetails.vue")
+        },
+        {
+          path: "san-pham/collet",
+          name: "pCollet",
+          component: () => import("@/views/san-pham/collet/Collet.vue")
+        },
+        {
+          path: "san-pham/collet/:code",
+          name: "pColletCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/collet/ColletDetails.vue")
         }
       ]
     },

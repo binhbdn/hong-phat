@@ -66,7 +66,7 @@ const onSelectSuggestion = ({ value }) => {
             panelClass="w-[calc(100%+40px)] sm:w-[calc(100%+80px)] whitespace-normal"
             dataKey="code"
             scrollHeight="336px"
-            :placeholder="$t('searchForProductName')"
+            :placeholder="$t('enterProductNameOrProductCode')"
             :delay="1000"
             :suggestions="suggestions"
             @complete="onSetSuggestions"

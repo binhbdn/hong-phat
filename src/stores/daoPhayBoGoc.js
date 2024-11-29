@@ -1,5 +1,6 @@
 import { mapSearchProps } from "@/stores/search";
-import { findItemByCode, findSpecDRDLByCode } from "@/stores/daoPhay";
+import { findItemByCode } from "@/stores/products";
+import { findSpecDRDLByCode } from "@/stores/daoPhay";
 
 const items = [
   {

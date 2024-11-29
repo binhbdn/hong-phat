@@ -16,6 +16,7 @@ export default {
   NACO: "纳米复合",
   AlCrSiN: "铝铬硅氮化物",
   Al: "铝",
+  contactForQuote: "价格：联系报价",
   bladeDiameter: "刀片直径",
   bladeRadius: "刀片半径",
   handleDiameter: "手柄直径",
@@ -38,7 +39,7 @@ export default {
   dimension: "方面",
   showSortButtons: "显示排序按钮",
   hideSortButtons: "隐藏排序按钮",
-  searchForProductName: "搜索产品名称",
+  enterProductNameOrProductCode: "输入产品名称或产品代码",
   searchResultsWithKeyword: "使用关键字搜索结果",
   noProductsFound: "没有找到产品"
 };

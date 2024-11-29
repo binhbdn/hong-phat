@@ -66,6 +66,10 @@ const model = [
           {
             label: "pBauKep",
             to: "/san-pham/bau-kep"
+          },
+          {
+            label: "pCollet",
+            to: "/san-pham/collet"
           }
         ]
       }

@@ -15,6 +15,7 @@ defineEmits(["changeOrderQuantity"]);
 
 const formattedPrice = computed(() => {
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
+  if (props.item.prices.current === null) return null;
   return `${numberToVnd(props.item.prices.min)} - ${numberToVnd(props.item.prices.max)}`;
 });
 </script>
@@ -35,22 +36,25 @@ const formattedPrice = computed(() => {
     </div>
 
     <div class="flex gap-x-3">
-      <div class="relative aspect-square" :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'">
-        <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="border border-gray-400 rounded-t-md rounded-br-md" />
+      <div
+        class="relative aspect-square bg-white border border-gray-400 rounded-t-md rounded-br-md"
+        :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'"
+      >
+        <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="rounded-t-md rounded-br-md" />
 
         <slot name="ribbon" />
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div
-            class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-500 rounded-full"
+            class="w-6 h-6 flex justify-center items-center bg-gray-200 hover:bg-primary/20 text-primary border border-gray-500 rounded-full"
             @click.stop="$emit('changeOrderQuantity', true)"
           >
             <i class="pi pi-plus text-[10px]" />
           </div>
           <template v-if="orderQuantity">
-            <div class="font-bold bg-white text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
+            <div class="font-bold bg-gray-200 text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
             <div
-              class="w-6 h-6 flex justify-center items-center bg-white text-primary border border-gray-500 rounded-full"
+              class="w-6 h-6 flex justify-center items-center bg-gray-200 hover:bg-primary/20 text-primary border border-gray-500 rounded-full"
               @click.stop="$emit('changeOrderQuantity', false)"
             >
               <i class="pi pi-minus text-[10px]" />
@@ -61,7 +65,7 @@ const formattedPrice = computed(() => {
 
       <div class="w-0 flex-grow flex-col leading-4 xl:leading-5" :class="viewDetails ? 'flex' : 'hidden'">
         <div class="flex-grow flex justify-end font-medium leading-4 text-gray-500">
-          {{ formattedPrice }}
+          {{ formattedPrice || $t("contactForQuote") }}
         </div>
 
         <template v-if="viewDetails">
@@ -71,7 +75,7 @@ const formattedPrice = computed(() => {
     </div>
 
     <div class="order-2 flex-grow items-end font-medium leading-4 text-gray-500 -mt-1" :class="viewDetails ? 'hidden' : 'flex'">
-      {{ formattedPrice }}
+      {{ formattedPrice || $t("contactForQuote") }}
     </div>
   </div>
 </template>

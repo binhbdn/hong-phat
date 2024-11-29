@@ -3,6 +3,7 @@ import { numberToVnd, removeDiacriticsAndLowerCase } from "@/library/helper";
 
 const getFormattedPrice = (prices) => {
   if (prices.current) return numberToVnd(prices.current);
+  if (prices.current === null) return null;
   return `${numberToVnd(prices.min)} - ${numberToVnd(prices.max)}`;
 };
 

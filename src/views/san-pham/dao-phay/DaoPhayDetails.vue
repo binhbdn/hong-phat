@@ -12,6 +12,7 @@ const { current } = useI18n();
 const formattedPrice = computed(() => {
   if (!props.item) return "";
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
+  if (props.item.prices.current === null) return null;
   return `${numberToVnd(props.item.prices.min)} - ${numberToVnd(props.item.prices.max)}`;
 });
 
@@ -26,7 +27,9 @@ const showNoseAngle = computed(() => props.item.cutStyle === "csChamfer");
       <ProductImages :images="item.images" />
       <div>
         <div class="font-bold text-base sm:text-xl text-gray-900 px-2">{{ item.name[current] }}</div>
-        <div class="text-gray-500 text-right px-2">{{ formattedPrice }}</div>
+        <div class="text-gray-500 text-right px-2">
+          {{ formattedPrice || $t("contactForQuote") }}
+        </div>
         <div class="font-medium text-gray-900 my-2 px-2">{{ item.description[current] }}</div>
 
         <div>

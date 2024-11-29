@@ -41,7 +41,7 @@ const hasMultiplePages = computed(() => props.items.length > rows);
                 {{ data.name[current] }}
               </div>
               <div class="font-medium leading-4 text-gray-500">
-                {{ data.formattedPrice }}
+                {{ formattedPrice || $t("contactForQuote") }}
               </div>
             </div>
           </div>

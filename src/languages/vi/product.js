@@ -16,6 +16,7 @@ export default {
   NACO: "Nano",
   AlCrSiN: "Nhôm Chrome Silic Nitride",
   Al: "Nhôm",
+  contactForQuote: "Giá bán: Liên hệ báo giá",
   bladeDiameter: "Đường kính lưỡi",
   bladeRadius: "Bán kính lưỡi",
   handleDiameter: "Đường kính cán",
@@ -38,7 +39,7 @@ export default {
   dimension: "Kích thước",
   showSortButtons: "Hiển thị button sắp xếp",
   hideSortButtons: "Ẩn button sắp xếp",
-  searchForProductName: "Tìm kiếm tên sản phẩm",
+  enterProductNameOrProductCode: "Nhập tên hoặc mã sản phẩm",
   searchResultsWithKeyword: "Kết quả tìm kiếm với từ khoá",
   noProductsFound: "Không tìm thấy sản phẩm nào"
 };
