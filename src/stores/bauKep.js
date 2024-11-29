@@ -29,7 +29,7 @@ const items = [
     material: "AlloySteel",
     brand: "Suken",
     seri: "BT40",
-    specifications: "ER16-32",
+    specs: "ER16-32",
     runout: 0.003,
     maxRPM: 25000
   },
@@ -60,7 +60,7 @@ const items = [
     material: "AlloySteel",
     brand: "Suken",
     seri: "BT50",
-    specifications: "ER16-40",
+    specs: "ER16-40",
     runout: 0.003,
     maxRPM: 25000
   }

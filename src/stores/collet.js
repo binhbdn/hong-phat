@@ -29,7 +29,7 @@ const items = [
     material: null,
     brand: "brand",
     seri: "seri",
-    specifications: "specs",
+    specs: "specs",
     runout: "runout",
     maxRPM: "maxRPM"
   },
@@ -60,7 +60,7 @@ const items = [
     material: null,
     brand: "brand",
     seri: "seri",
-    specifications: "specs",
+    specs: "specs",
     runout: "runout",
     maxRPM: "maxRPM"
   }

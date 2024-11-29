@@ -1,14 +1,15 @@
 <script setup>
 defineProps({
-  item: Object
+  seri: String,
+  specs: String
 });
 </script>
 
 <template>
   <div class="ribbon">
-    {{ item.seri }}
+    {{ seri }}
     <span class="text-[10px]">
-      {{ item.specifications }}
+      {{ specs }}
     </span>
   </div>
 </template>
