@@ -42,22 +42,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
-    bladeRadius: {
-      min: 0.5,
-      max: 10
-    },
-    handleDiameter: {
-      min: 4,
-      max: 20
-    },
-    cuttingLength: {
-      min: 2,
-      max: 30
-    },
-    overallLength: {
-      min: 50,
-      max: 150
-    }
+    bladeRadius: "R0.5-R10",
+    handleDiameter: "D4-D20",
+    cuttingLength: "2-30",
+    overallLength: "50-150"
   },
   {
     category: "pDaoPhay",
@@ -98,22 +86,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
-    bladeRadius: {
-      min: 0.1,
-      max: 10
-    },
-    handleDiameter: {
-      min: 4,
-      max: 20
-    },
-    cuttingLength: {
-      min: 1,
-      max: 40
-    },
-    overallLength: {
-      min: 50,
-      max: 150
-    }
+    bladeRadius: "R0.1-R10",
+    handleDiameter: "D4-D20",
+    cuttingLength: "1-40",
+    overallLength: "50-150"
   },
   {
     category: "pDaoPhay",
@@ -154,22 +130,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
-    bladeRadius: {
-      min: 0.5,
-      max: 10
-    },
-    handleDiameter: {
-      min: 4,
-      max: 20
-    },
-    cuttingLength: {
-      min: 2.5,
-      max: 30
-    },
-    overallLength: {
-      min: 50,
-      max: 150
-    }
+    bladeRadius: "R0.5-R10",
+    handleDiameter: "D4-D20",
+    cuttingLength: "2.5-30",
+    overallLength: "50-150"
   },
   {
     category: "pDaoPhay",
@@ -210,22 +174,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",
-    bladeRadius: {
-      min: 0.5,
-      max: 6
-    },
-    handleDiameter: {
-      min: 4,
-      max: 18
-    },
-    cuttingLength: {
-      min: 2,
-      max: 18
-    },
-    overallLength: {
-      min: 50,
-      max: 100
-    }
+    bladeRadius: "R0.5-R6",
+    handleDiameter: "D4-D18",
+    cuttingLength: "2-18",
+    overallLength: "50-100"
   }
 ];
 

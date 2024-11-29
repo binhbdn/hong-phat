@@ -39,22 +39,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
-    bladeDiameter: {
-      min: 1,
-      max: 12
-    },
-    handleDiameter: {
-      min: 4,
-      max: 12
-    },
-    cuttingLength: {
-      min: 2,
-      max: 22
-    },
-    overallLength: {
-      min: 50,
-      max: 75
-    }
+    bladeDiameter: "D1-D12",
+    handleDiameter: "D4-D12",
+    cuttingLength: "2-22",
+    overallLength: "50-75"
   },
   {
     category: "pDaoPhay",
@@ -92,22 +80,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
-    bladeDiameter: {
-      min: 3,
-      max: 12
-    },
-    handleDiameter: {
-      min: 3,
-      max: 12
-    },
-    cuttingLength: {
-      min: 9,
-      max: 18
-    },
-    overallLength: {
-      min: 50,
-      max: 60
-    }
+    bladeDiameter: "D3-D12",
+    handleDiameter: "D3-D12",
+    cuttingLength: "9-18",
+    overallLength: "50-60"
   },
   {
     category: "pDaoPhay",
@@ -145,22 +121,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
-    bladeDiameter: {
-      min: 1,
-      max: 12
-    },
-    handleDiameter: {
-      min: 4,
-      max: 12
-    },
-    cuttingLength: {
-      min: 2,
-      max: 22
-    },
-    overallLength: {
-      min: 50,
-      max: 75
-    }
+    bladeDiameter: "D1-D12",
+    handleDiameter: "D4-D12",
+    cuttingLength: "2-22",
+    overallLength: "50-75"
   },
   {
     category: "pDaoPhay",
@@ -198,22 +162,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
-    bladeDiameter: {
-      min: 3,
-      max: 12
-    },
-    handleDiameter: {
-      min: 3,
-      max: 12
-    },
-    cuttingLength: {
-      min: 9,
-      max: 18
-    },
-    overallLength: {
-      min: 50,
-      max: 60
-    }
+    bladeDiameter: "D3-D12",
+    handleDiameter: "D3-D12",
+    cuttingLength: "9-18",
+    overallLength: "50-60"
   },
   {
     category: "pDaoPhay",
@@ -251,19 +203,10 @@ const items = [
     material: "HSS",
     processingMaterials: "N",
     coating: "Al",
-    bladeDiameter: {
-      min: 8.3,
-      max: 35
-    },
-    handleDiameter: {
-      min: 6,
-      max: 12
-    },
+    bladeDiameter: "D8.3-D35",
+    handleDiameter: "D6-D12",
     cuttingLength: null,
-    overallLength: {
-      min: 50,
-      max: 82
-    }
+    overallLength: "50-82"
   },
   {
     category: "pDaoPhay",
@@ -301,19 +244,10 @@ const items = [
     material: "HSS",
     processingMaterials: "N",
     coating: "Al",
-    bladeDiameter: {
-      min: 8.3,
-      max: 35
-    },
-    handleDiameter: {
-      min: 6,
-      max: 12
-    },
+    bladeDiameter: "D8.3-D35",
+    handleDiameter: "D6-D12",
     cuttingLength: null,
-    overallLength: {
-      min: 50,
-      max: 82
-    }
+    overallLength: "50-82"
   }
 ];
 

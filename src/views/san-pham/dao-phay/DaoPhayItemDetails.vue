@@ -16,19 +16,19 @@ const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item
   <div v-if="showRadius" class="flex justify-between gap-x-1">
     {{ $t("bladeRadius") }}:
     <span class="font-medium text-gray-900">
-      {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }}
+      {{ item.bladeRadius }}
     </span>
   </div>
   <div v-else class="flex justify-between gap-x-1">
     {{ $t("bladeDiameter") }}:
     <span class="font-medium text-gray-900">
-      {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }}
+      {{ item.bladeDiameter }}
     </span>
   </div>
   <div class="flex justify-between gap-x-1">
     {{ $t("handleDiameter") }}:
     <span class="font-medium text-gray-900">
-      {{ `D${item.handleDiameter.min}-D${item.handleDiameter.max}` }}
+      {{ item.handleDiameter }}
     </span>
   </div>
   <div class="flex justify-between gap-x-1">

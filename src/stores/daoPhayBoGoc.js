@@ -41,22 +41,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
-    bladeDiameter: {
-      min: 1,
-      max: 12
-    },
-    handleDiameter: {
-      min: 4,
-      max: 12
-    },
-    cuttingLength: {
-      min: 2,
-      max: 30
-    },
-    overallLength: {
-      min: 50,
-      max: 100
-    }
+    bladeDiameter: "D1-D12",
+    handleDiameter: "D4-D12",
+    cuttingLength: "2-30",
+    overallLength: "50-100"
   },
   {
     category: "pDaoPhay",
@@ -96,22 +84,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
-    bladeDiameter: {
-      min: 1,
-      max: 10
-    },
-    handleDiameter: {
-      min: 4,
-      max: 10
-    },
-    cuttingLength: {
-      min: 3.3,
-      max: 30.5
-    },
-    overallLength: {
-      min: 50,
-      max: 150
-    }
+    bladeDiameter: "D1-D10",
+    handleDiameter: "D4-D10",
+    cuttingLength: "3.3-30.5",
+    overallLength: "50-150"
   },
   {
     category: "pDaoPhay",
@@ -151,22 +127,10 @@ const items = [
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",
-    bladeDiameter: {
-      min: 1,
-      max: 12
-    },
-    handleDiameter: {
-      min: 4,
-      max: 12
-    },
-    cuttingLength: {
-      min: 3,
-      max: 18
-    },
-    overallLength: {
-      min: 50,
-      max: 100
-    }
+    bladeDiameter: "D1-D12",
+    handleDiameter: "D4-D12",
+    cuttingLength: "3-18",
+    overallLength: "50-100"
   }
 ];
 

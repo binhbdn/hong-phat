@@ -78,24 +78,34 @@ const showNoseAngle = computed(() => props.item.cutStyle === "csChamfer");
             <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <template v-if="showRadius">
                 <span> {{ $t("bladeRadius") }}: </span>
-                <span class="font-medium text-gray-900"> {{ `R${item.bladeRadius.min}-R${item.bladeRadius.max}` }} </span>
+                <span class="font-medium text-gray-900">
+                  {{ item.bladeRadius }}
+                </span>
               </template>
               <template v-else>
                 <span> {{ $t("bladeDiameter") }}: </span>
-                <span class="font-medium text-gray-900"> {{ `D${item.bladeDiameter.min}-D${item.bladeDiameter.max}` }} </span>
+                <span class="font-medium text-gray-900">
+                  {{ item.bladeDiameter }}
+                </span>
               </template>
             </div>
             <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("handleDiameter") }}: </span>
-              <span class="font-medium text-gray-900"> {{ `D${item.handleDiameter.min}-D${item.handleDiameter.max}` }} </span>
+              <span class="font-medium text-gray-900">
+                {{ item.handleDiameter }}
+              </span>
             </div>
             <div v-if="showCuttingLength" class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("cuttingLength") }}: </span>
-              <span class="font-medium text-gray-900"> {{ `${item.cuttingLength.min}-${item.cuttingLength.max}` }} </span>
+              <span class="font-medium text-gray-900">
+                {{ item.cuttingLength }}
+              </span>
             </div>
             <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("overallLength") }}: </span>
-              <span class="font-medium text-gray-900"> {{ `${item.overallLength.min}-${item.overallLength.max}` }} </span>
+              <span class="font-medium text-gray-900">
+                {{ item.overallLength }}
+              </span>
             </div>
             <div v-if="showNoseAngle" class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("noseAngle") }}: </span>
