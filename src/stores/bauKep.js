@@ -7,12 +7,11 @@ const items = [
     routeName: "pBauKepCT",
     isTypical: true,
     code: "BK_SUKEN_BT40_ER",
-    hardness: "58HRC-60HRC",
+    images: ["/bau_kep_suken/BT40_ER32_100L.webp"],
     name: {
       vi: "Bầu kẹp Suken BT40 loại ER16/20/25/32",
       cn: "刀柄 Suken BT40 ER16/20/25/32"
     },
-    images: ["/bau_kep_suken/BT40_ER32_100L.webp"],
     prices: {
       current: 793000,
       min: 0,
@@ -26,10 +25,13 @@ const items = [
       vi: [],
       cn: []
     },
-    material: "AlloySteel",
-    brand: "Suken",
     seri: "BT40",
     specs: "ER16-32",
+    brand: "Suken",
+    origin: null,
+    // extra data
+    material: "AlloySteel",
+    hardness: "58HRC-60HRC",
     runout: 0.003,
     maxRPM: 25000
   },
@@ -38,12 +40,11 @@ const items = [
     routeName: "pBauKepCT",
     isTypical: false,
     code: "BK_SUKEN_BT50_ER",
-    hardness: "58HRC-60HRC",
+    images: ["/bau_kep_suken/BT50_ER40_100L.webp"],
     name: {
       vi: "Bầu kẹp Suken BT50 loại ER16/20/25/32/40",
       cn: "刀柄 Suken BT50 ER16/20/25/32/40"
     },
-    images: ["/bau_kep_suken/BT50_ER40_100L.webp"],
     prices: {
       current: 0,
       min: 1790000,
@@ -57,10 +58,13 @@ const items = [
       vi: [],
       cn: []
     },
-    material: "AlloySteel",
-    brand: "Suken",
     seri: "BT50",
     specs: "ER16-40",
+    brand: "Suken",
+    origin: null,
+    // extra data
+    material: "AlloySteel",
+    hardness: "58HRC-60HRC",
     runout: 0.003,
     maxRPM: 25000
   }

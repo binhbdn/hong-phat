@@ -5,18 +5,14 @@ import { findSpecDDLByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayPhaThoCT",
     isTypical: false,
     code: "DPPT_55HRC_3F",
-    hardness: "55HRC",
+    images: ["/dao_phay_pha_tho/55HRC_3F.webp", "/dao_phay_pha_tho/55hrc_3f/1.webp"],
     name: {
       vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
       cn: "55HRC - 粗皮刀 3F - 铝加工"
     },
-    images: ["/dao_phay_pha_tho/55HRC_3F.webp", "/dao_phay_pha_tho/55hrc_3f/1.webp"],
-    flutes: 3,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 88000,
@@ -30,6 +26,15 @@ const items = [
       vi: ["Phay phá thô với hiệu suất cao.", "Me cắt có gân tăng cứng giảm mài mòn."],
       cn: ["高效的粗加工切削。", "切削片加强筋，减少磨损。"]
     },
+    seri: "55HRC",
+    specs: "D4-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "55HRC",
+    flutes: 3,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -52,18 +57,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayPhaThoCT",
     isTypical: true,
     code: "DPPT_55HRC_4F",
-    hardness: "55HRC",
+    images: ["/dao_phay_pha_tho/55HRC_4F.webp", "/dao_phay_pha_tho/55hrc_4f/1.webp"],
     name: {
       vi: "55HRC - Dao phay phá thô 4F",
       cn: "55HRC - 粗皮刀 4F"
     },
-    images: ["/dao_phay_pha_tho/55HRC_4F.webp", "/dao_phay_pha_tho/55hrc_4f/1.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 88000,
@@ -77,6 +78,15 @@ const items = [
       vi: ["Phay phá thô với hiệu suất cao.", "Me cắt có gân tăng cứng giảm mài mòn."],
       cn: ["高效的粗加工切削。", "切削片加强筋，减少磨损。"]
     },
+    seri: "55HRC",
+    specs: "D4-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "55HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKH",
     coating: "TiSiN",

@@ -7,12 +7,11 @@ const items = [
     routeName: "pColletCT",
     isTypical: true,
     code: "CL_1",
-    hardness: null,
+    images: ["/img/logo.png"],
     name: {
       vi: "Name vi",
       cn: "Name cn"
     },
-    images: ["/img/logo.png"],
     prices: {
       current: null,
       min: 0,
@@ -26,24 +25,24 @@ const items = [
       vi: [],
       cn: []
     },
-    material: null,
-    brand: "brand",
     seri: "seri",
     specs: "specs",
+    brand: "brand",
+    origin: null,
+    // extra data
     runout: "runout",
     maxRPM: "maxRPM"
   },
   {
     category: "pCollet",
     routeName: "pColletCT",
-    isTypical: false,
+    isTypical: true,
     code: "CL_2",
-    hardness: null,
+    images: ["/img/logo.png"],
     name: {
       vi: "Name vi",
       cn: "Name cn"
     },
-    images: ["/img/logo.png"],
     prices: {
       current: null,
       min: 0,
@@ -57,10 +56,11 @@ const items = [
       vi: [],
       cn: []
     },
-    material: null,
-    brand: "brand",
     seri: "seri",
     specs: "specs",
+    brand: "brand",
+    origin: null,
+    // extra data
     runout: "runout",
     maxRPM: "maxRPM"
   }

@@ -5,18 +5,14 @@ import { findSpecDRDLByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csRoundedEdgeSquare",
     routeName: "pDaoPhayBoGocCT",
     isTypical: true,
     code: "DPBG_55HRC_4F",
-    hardness: "55HRC",
+    images: ["/dao_phay_bo_goc/55HRC_4F.webp", "/dao_phay_bo_goc/55hrc_4f/1.webp", "/dao_phay_bo_goc/55hrc_4f/2.webp"],
     name: {
       vi: "55HRC - Dao phay bo góc 4F",
       cn: "55HRC - 圆鼻刀 4F"
     },
-    images: ["/dao_phay_bo_goc/55HRC_4F.webp", "/dao_phay_bo_goc/55hrc_4f/1.webp", "/dao_phay_bo_goc/55hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 115000,
@@ -33,6 +29,15 @@ const items = [
       ],
       cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
+    seri: "55HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csRoundedEdgeSquare",
+    hardness: "55HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -55,18 +60,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csRoundedEdgeSquare",
     routeName: "pDaoPhayBoGocCT",
     isTypical: true,
     code: "DPBG_65HRC_4F",
-    hardness: "65HRC",
+    images: ["/dao_phay_bo_goc/65HRC_4F.webp", "/dao_phay_bo_goc/65hrc_4f/1.webp", "/dao_phay_bo_goc/65hrc_4f/2.webp"],
     name: {
       vi: "65HRC - Dao phay bo góc 4F",
       cn: "65HRC - 圆鼻刀 4F"
     },
-    images: ["/dao_phay_bo_goc/65HRC_4F.webp", "/dao_phay_bo_goc/65hrc_4f/1.webp", "/dao_phay_bo_goc/65hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 163000,
@@ -83,6 +84,15 @@ const items = [
       ],
       cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
+    seri: "65HRC",
+    specs: "D1-D10",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csRoundedEdgeSquare",
+    hardness: "65HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
@@ -105,18 +115,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csRoundedEdgeSquare",
     routeName: "pDaoPhayBoGocCT",
     isTypical: false,
     code: "DPBG_65HRC_4F_hard",
-    hardness: "65HRC",
+    images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
     name: {
       vi: "65HRC - Dao phay bo góc 4F - tăng cứng",
       cn: "65HRC - 圆鼻刀 4F - 硬化"
     },
-    images: ["/dao_phay_bo_goc/65HRC_4F_hard.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 163000,
@@ -133,6 +139,15 @@ const items = [
       ],
       cn: ["四刃设计，钛硅氮化物涂层提高硬度并具备良好的耐磨性。", "边缘精度高，减少崩刃，适用于多种应用场景。"]
     },
+    seri: "65HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csRoundedEdgeSquare",
+    hardness: "65HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",

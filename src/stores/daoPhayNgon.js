@@ -5,18 +5,14 @@ import { findSpecDDLByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_3F",
-    hardness: "45HRC",
+    images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/45hrc_3f/1.webp", "/dao_phay_ngon/45hrc_3f/2.webp"],
     name: {
       vi: "45HRC - Dao phay ngón 3F - gia công nhôm",
       cn: "45HRC - 铣刀（平刀）3F - 铝加工"
     },
-    images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/45hrc_3f/1.webp", "/dao_phay_ngon/45hrc_3f/2.webp"],
-    flutes: 3,
-    helixAngle: 45,
     prices: {
       current: 0,
       min: 115000,
@@ -42,6 +38,15 @@ const items = [
         "三刃间距不均匀，有助于提高效率并降低切削阻力。"
       ]
     },
+    seri: "45HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "45HRC",
+    flutes: 3,
+    helixAngle: 45,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -64,18 +69,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
-    hardness: "55HRC",
     code: "DPN_55HRC_3F",
+    images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/55hrc_3f/1.webp", "/dao_phay_ngon/55hrc_3f/2.webp"],
     name: {
       vi: "55HRC - Dao phay ngón 3F - gia công nhôm",
       cn: "55HRC - 铣刀（平刀）3F - 铝加工"
     },
-    images: ["/dao_phay_ngon/55HRC_3F.webp", "/dao_phay_ngon/55hrc_3f/1.webp", "/dao_phay_ngon/55hrc_3f/2.webp"],
-    flutes: 3,
-    helixAngle: 55,
     prices: {
       current: 0,
       min: 47000,
@@ -101,6 +102,15 @@ const items = [
         "三刃间距不均匀，有助于提高效率并降低切削阻力。"
       ]
     },
+    seri: "55HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "55HRC",
+    flutes: 3,
+    helixAngle: 55,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -123,18 +133,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_45HRC_2F",
-    hardness: "45HRC",
+    images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp", "/dao_phay_ngon/45hrc_2f/3.webp"],
     name: {
       vi: "45HRC - Dao phay ngón 2F",
       cn: "45HRC - 铣刀（平刀）2F"
     },
-    images: ["/dao_phay_ngon/45HRC_2F.webp", "/dao_phay_ngon/45hrc_2f/1.webp", "/dao_phay_ngon/45hrc_2f/2.webp", "/dao_phay_ngon/45hrc_2f/3.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 34000,
@@ -158,6 +164,15 @@ const items = [
         "加工铝材、铜材的理想解决方案，性能卓越。"
       ]
     },
+    seri: "45HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "45HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
@@ -180,18 +195,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_45HRC_4F",
-    hardness: "45HRC",
+    images: ["/dao_phay_ngon/45HRC_4F.webp", "/dao_phay_ngon/45hrc_4f/1.webp", "/dao_phay_ngon/45hrc_4f/2.webp"],
     name: {
       vi: "45HRC - Dao phay ngón 4F",
       cn: "45HRC - 铣刀（平刀）4F"
     },
-    images: ["/dao_phay_ngon/45HRC_4F.webp", "/dao_phay_ngon/45hrc_4f/1.webp", "/dao_phay_ngon/45hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 34000,
@@ -215,6 +226,15 @@ const items = [
         "加工铝材、铜材的理想解决方案，性能卓越。"
       ]
     },
+    seri: "45HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "45HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
@@ -237,18 +257,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
-    hardness: "55HRC",
     code: "DPN_55HRC_2F",
+    images: ["/dao_phay_ngon/55HRC_2F.webp", "/dao_phay_ngon/55hrc_2f/1.webp", "/dao_phay_ngon/55hrc_2f/2.webp"],
     name: {
       vi: "55HRC - Dao phay ngón 2F",
       cn: "55HRC - 铣刀（平刀）2F"
     },
-    images: ["/dao_phay_ngon/55HRC_2F.webp", "/dao_phay_ngon/55hrc_2f/1.webp", "/dao_phay_ngon/55hrc_2f/2.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 34000,
@@ -272,6 +288,15 @@ const items = [
         "两刃间距不均匀，有助于提高效率并降低切削阻力。"
       ]
     },
+    seri: "55HRC",
+    specs: "D0.1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "55HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -294,18 +319,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
-    hardness: "55HRC",
     code: "DPN_55HRC_4F",
+    images: ["/dao_phay_ngon/55HRC_4F.webp", "/dao_phay_ngon/55hrc_4f/1.webp", "/dao_phay_ngon/55hrc_4f/2.webp"],
     name: {
       vi: "55HRC - Dao phay ngón 4F",
       cn: "55HRC - 铣刀（平刀）4F"
     },
-    images: ["/dao_phay_ngon/55HRC_4F.webp", "/dao_phay_ngon/55hrc_4f/1.webp", "/dao_phay_ngon/55hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 34000,
@@ -329,6 +350,15 @@ const items = [
         "四刃间距不均匀，有助于提高效率并降低切削阻力。"
       ]
     },
+    seri: "55HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "55HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -351,18 +381,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_60HRC_4F",
-    hardness: "60HRC",
+    images: ["/dao_phay_ngon/60HRC_4F.webp", "/dao_phay_ngon/60hrc_4f/1.webp", "/dao_phay_ngon/60hrc_4f/2.webp"],
     name: {
       vi: "60HRC - Dao phay ngón 4F - gia công inox",
       cn: "60HRC - 铣刀（平刀）4F - 不锈钢加工"
     },
-    images: ["/dao_phay_ngon/60HRC_4F.webp", "/dao_phay_ngon/60hrc_4f/1.webp", "/dao_phay_ngon/60hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 900000,
@@ -386,6 +412,15 @@ const items = [
         "理想的解决方案，用于不锈钢加工，具备较高的硬度和卓越的耐用性。"
       ]
     },
+    seri: "60HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "60HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKH",
     coating: "NACO",
@@ -408,18 +443,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: true,
     code: "DPN_65HRC_4F",
-    hardness: "65HRC",
+    images: ["/dao_phay_ngon/65HRC_4F.webp", "/dao_phay_ngon/65hrc_4f/1.webp", "/dao_phay_ngon/65hrc_4f/2.webp"],
     name: {
       vi: "65HRC - Dao phay ngón 4F",
       cn: "65HRC - 铣刀（平刀）4F"
     },
-    images: ["/dao_phay_ngon/65HRC_4F.webp", "/dao_phay_ngon/65hrc_4f/1.webp", "/dao_phay_ngon/65hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 1190000,
@@ -437,6 +468,15 @@ const items = [
       ],
       cn: ["精密机械加工工具，广泛用于数控铣床。", "进口材料，精细加工，确保高耐用性和高光洁度。", "纳米涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"]
     },
+    seri: "65HRC",
+    specs: "D1-D20",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "65HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
@@ -459,18 +499,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csSquare",
     routeName: "pDaoPhayNgonCT",
     isTypical: false,
     code: "DPN_65HRC_4F_hard",
-    hardness: "65HRC",
+    images: ["/dao_phay_ngon/65HRC_4F_hard.webp", "/dao_phay_ngon/65hrc_4f_hard/1.webp", "/dao_phay_ngon/65hrc_4f_hard/2.webp"],
     name: {
       vi: "65HRC - Dao phay ngón 4F - tăng cứng",
       cn: "65HRC - 铣刀（平刀）4F - 硬化"
     },
-    images: ["/dao_phay_ngon/65HRC_4F_hard.webp", "/dao_phay_ngon/65hrc_4f_hard/1.webp", "/dao_phay_ngon/65hrc_4f_hard/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 1190000,
@@ -492,6 +528,15 @@ const items = [
         "AlCrSiN涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"
       ]
     },
+    seri: "65HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csSquare",
+    hardness: "65HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",

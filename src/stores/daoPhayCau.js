@@ -5,18 +5,14 @@ import { findSpecRDLByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csBall",
     routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_45HRC_2F",
-    hardness: "45HRC",
+    images: ["/dao_phay_cau/45HRC_2F.webp", "/dao_phay_cau/45hrc_2f/1.webp", "/dao_phay_cau/45hrc_2f/2.webp"],
     name: {
       vi: "45HRC - Dao phay cầu 2F",
       cn: "45HRC - 球刀 2F"
     },
-    images: ["/dao_phay_cau/45HRC_2F.webp", "/dao_phay_cau/45hrc_2f/1.webp", "/dao_phay_cau/45hrc_2f/2.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 65000,
@@ -34,6 +30,15 @@ const items = [
       ],
       cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝钛氮化物涂层提高硬度并减少磨损。"]
     },
+    seri: "45HRC",
+    specs: "R0.5-R10",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csBall",
+    hardness: "45HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
@@ -56,18 +61,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csBall",
     routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_55HRC_2F",
-    hardness: "55HRC",
+    images: ["/dao_phay_cau/55HRC_2F.webp", "/dao_phay_cau/55hrc_2f/1.webp", "/dao_phay_cau/55hrc_2f/2.webp"],
     name: {
       vi: "55HRC - Dao phay cầu 2F",
       cn: "55HRC - 球刀 2F"
     },
-    images: ["/dao_phay_cau/55HRC_2F.webp", "/dao_phay_cau/55hrc_2f/1.webp", "/dao_phay_cau/55hrc_2f/2.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 98000,
@@ -85,6 +86,15 @@ const items = [
       ],
       cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
     },
+    seri: "55HRC",
+    specs: "R0.1-R10",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csBall",
+    hardness: "55HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -107,18 +117,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csBall",
     routeName: "pDaoPhayCauCT",
     isTypical: true,
     code: "DPC_65HRC_2F",
-    hardness: "65HRC",
+    images: ["/dao_phay_cau/65HRC_2F.webp", "/dao_phay_cau/65hrc_2f/1.webp", "/dao_phay_cau/65hrc_2f/2.webp"],
     name: {
       vi: "65HRC - Dao phay cầu 2F",
       cn: "65HRC - 球刀 2F"
     },
-    images: ["/dao_phay_cau/65HRC_2F.webp", "/dao_phay_cau/65hrc_2f/1.webp", "/dao_phay_cau/65hrc_2f/2.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 142000,
@@ -136,6 +142,15 @@ const items = [
       ],
       cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，纳米复合涂层提高硬度并减少磨损。"]
     },
+    seri: "65HRC",
+    specs: "R0.5-R10",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csBall",
+    hardness: "65HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
@@ -158,18 +173,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csBall",
     routeName: "pDaoPhayCauCT",
     isTypical: false,
     code: "DPC_65HRC_2F_hard",
-    hardness: "65HRC",
+    images: ["/dao_phay_cau/65HRC_2F_hard.webp", "/dao_phay_cau/65hrc_2f_hard/1.webp", "/dao_phay_cau/65hrc_2f_hard/2.webp"],
     name: {
       vi: "65HRC - Dao phay cầu 2F - tăng cứng",
       cn: "65HRC - 球刀 2F - 硬化"
     },
-    images: ["/dao_phay_cau/65HRC_2F_hard.webp", "/dao_phay_cau/65hrc_2f_hard/1.webp", "/dao_phay_cau/65hrc_2f_hard/2.webp"],
-    flutes: 2,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 142000,
@@ -187,6 +198,15 @@ const items = [
       ],
       cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝铬硅氮化物涂层提高硬度并减少磨损。"]
     },
+    seri: "65HRC",
+    specs: "R0.5-R6",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csBall",
+    hardness: "65HRC",
+    flutes: 2,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",

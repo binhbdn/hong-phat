@@ -106,7 +106,7 @@ const showNoseAngle = computed(() => props.item.cutStyle === "csChamfer");
           <div class="border-t border-dashed border-gray-400 pt-1 mt-1">
             <div class="flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2">
               <span> {{ $t("origin") }}: </span>
-              <span class="font-medium text-gray-900"> {{ $t("cn") }} </span>
+              <span class="font-medium text-gray-900"> {{ $t(item.origin) }} </span>
             </div>
           </div>
         </div>

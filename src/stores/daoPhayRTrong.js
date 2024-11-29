@@ -5,18 +5,14 @@ import { findSpecRDLByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csCornerRounding",
     routeName: "pDaoPhayRTrongCT",
     isTypical: true,
     code: "DPRT_55HRC_4F",
-    hardness: "55HRC",
+    images: ["/dao_phay_r_trong/55HRC_4F.webp", "/dao_phay_r_trong/55hrc_4f/1.webp", "/dao_phay_r_trong/55hrc_4f/2.webp"],
     name: {
       vi: "55HRC - Dao phay R trong 4F",
       cn: "55HRC - 内R铣刀 4F"
     },
-    images: ["/dao_phay_r_trong/55HRC_4F.webp", "/dao_phay_r_trong/55hrc_4f/1.webp", "/dao_phay_r_trong/55hrc_4f/2.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 107000,
@@ -33,6 +29,15 @@ const items = [
       ],
       cn: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
     },
+    seri: "55HRC",
+    specs: "R0.5-R5",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csCornerRounding",
+    hardness: "55HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -59,18 +64,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csCornerRounding",
     routeName: "pDaoPhayRTrongCT",
     isTypical: false,
     code: "DPRT_55HRC_4F_Al",
-    hardness: "55HRC",
+    images: ["/dao_phay_r_trong/55HRC_4F_Al.webp"],
     name: {
       vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
       cn: "55HRC - 内R铣刀 4F - 铝加工"
     },
-    images: ["/dao_phay_r_trong/55HRC_4F_Al.webp"],
-    flutes: 4,
-    helixAngle: 35,
     prices: {
       current: 0,
       min: 107000,
@@ -84,6 +85,15 @@ const items = [
       vi: ["Thiết kế 4 me, dải kích thước đa dạng, hiệu suất tuyệt vời trong quá trình cắt tốc độ cao.", "Vật liệu hợp kim nguyên khối."],
       cn: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料。"]
     },
+    seri: "55HRC",
+    specs: "R0.5-R5",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csCornerRounding",
+    hardness: "55HRC",
+    flutes: 4,
+    helixAngle: 35,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",

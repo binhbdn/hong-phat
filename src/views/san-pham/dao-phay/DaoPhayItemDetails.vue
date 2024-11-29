@@ -33,6 +33,6 @@ const showRadius = computed(() => props.item.cutStyle === "csBall" || props.item
   </div>
   <div class="flex justify-between gap-x-1">
     {{ $t("origin") }}:
-    <span class="font-medium text-gray-900"> {{ $t("cn") }} </span>
+    <span class="font-medium text-gray-900"> {{ $t(item.origin) }} </span>
   </div>
 </template>

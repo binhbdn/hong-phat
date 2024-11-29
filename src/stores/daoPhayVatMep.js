@@ -5,19 +5,14 @@ import { findSpecDDLAByCode, findSpecDLAByCode } from "@/stores/daoPhay";
 const items = [
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_2F",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_2F.webp", "/dao_phay_vat_mep/55hrc_2f/1.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90°",
       cn: "55HRC - 倒角刀（定心钻）2F 90°"
     },
-    images: ["/dao_phay_vat_mep/55HRC_2F.webp", "/dao_phay_vat_mep/55hrc_2f/1.webp"],
-    flutes: 2,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 98000,
@@ -31,6 +26,16 @@ const items = [
       vi: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"],
       cn: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
     },
+    seri: "55HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 2,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -53,19 +58,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepCT",
     isTypical: true,
     code: "DPVM_55HRC_3F",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_3F.webp", "/dao_phay_vat_mep/55hrc_3f/1.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90°",
       cn: "55HRC - 倒角刀（定心钻）3F 90°"
     },
-    images: ["/dao_phay_vat_mep/55HRC_3F.webp", "/dao_phay_vat_mep/55hrc_3f/1.webp"],
-    flutes: 3,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 98000,
@@ -79,6 +79,16 @@ const items = [
       vi: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"],
       cn: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
     },
+    seri: "55HRC",
+    specs: "D3-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 3,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "AlTiN",
@@ -101,19 +111,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepCT",
     isTypical: true,
     code: "DPVM_55HRC_2F_Al",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp", "/dao_phay_vat_mep/55hrc_2f_al/1.webp", "/dao_phay_vat_mep/55hrc_2f_al/2.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
       cn: "55HRC - 倒角刀（定心钻）2F 90° - 铝加工"
     },
-    images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp", "/dao_phay_vat_mep/55hrc_2f_al/1.webp", "/dao_phay_vat_mep/55hrc_2f_al/2.webp"],
-    flutes: 2,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 34000,
@@ -127,6 +132,16 @@ const items = [
       vi: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
       cn: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
     },
+    seri: "55HRC",
+    specs: "D1-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 2,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -149,19 +164,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepCT",
     isTypical: false,
     code: "DPVM_55HRC_3F_Al",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp", "/dao_phay_vat_mep/55hrc_3f_al/1.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
       cn: "55HRC - 倒角刀（定心钻）3F 90° - 铝加工"
     },
-    images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp", "/dao_phay_vat_mep/55hrc_3f_al/1.webp"],
-    flutes: 3,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 34000,
@@ -175,6 +185,16 @@ const items = [
       vi: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
       cn: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
     },
+    seri: "55HRC",
+    specs: "D3-D12",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 3,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -197,19 +217,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepHinhNamCT",
     isTypical: false,
     code: "DPVM_55HRC_1F_CS",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
       cn: "55HRC - 倒角刀（定心钻）1F 90° - 蘑菇形状"
     },
-    images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
-    flutes: 1,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 125000,
@@ -223,6 +238,16 @@ const items = [
       vi: ["Thiết kế 1 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
       cn: ["单刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
     },
+    seri: "55HRC",
+    specs: "D8.3-D35",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 1,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "HSS",
     processingMaterials: "N",
     coating: "Al",
@@ -242,19 +267,14 @@ const items = [
   },
   {
     category: "pDaoPhay",
-    cutStyle: "csChamfer",
     routeName: "pDaoPhayVatMepHinhNamCT",
     isTypical: false,
     code: "DPVM_55HRC_3F_CS",
-    hardness: "55HRC",
+    images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
       cn: "55HRC - 倒角刀（定心钻）3F 90° - 蘑菇形状"
     },
-    images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
-    flutes: 3,
-    helixAngle: 45,
-    noseAngle: 90,
     prices: {
       current: 0,
       min: 125000,
@@ -268,6 +288,16 @@ const items = [
       vi: ["Thiết kế 3 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
       cn: ["三刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
     },
+    seri: "55HRC",
+    specs: "D8.3-D35",
+    brand: null,
+    origin: "cn",
+    // extra data
+    cutStyle: "csChamfer",
+    hardness: "55HRC",
+    flutes: 3,
+    helixAngle: 45,
+    noseAngle: 90,
     material: "HSS",
     processingMaterials: "N",
     coating: "Al",
