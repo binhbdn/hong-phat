@@ -1,6 +1,7 @@
 export default {
   material: "材料",
   CarbideTungsten: "硬质合金/钨",
+  AlloySteel: "合金钢",
   processingMaterials: "适用工作材质",
   pm: {
     P: "铁、钢、合金钢",
@@ -24,12 +25,14 @@ export default {
   overallLength: "总长",
   origin: "起源",
   brand: "品牌",
+  seri: "塞里",
+  model: "型號",
   runout: "跳动",
   maxRPM: "最大速度",
   noProductWithCode: "未找到带有代码的产品",
   productCode: "产品代码",
   hardness: "硬度",
-  flutes: "长笛",
+  flutesF: "长笛",
   cutStyle: "剪裁风格",
   helixAngle: "螺旋角",
   noseAngle: "鼻角",

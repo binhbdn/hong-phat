@@ -12,7 +12,7 @@ const sortable = ref(false);
 
 <template>
   <div>
-    <div class="font-bold text-sm sm:text-base text-gray-900">{{ $t("specifications") }}</div>
+    <div class="hp-h1">{{ $t("specifications") }}</div>
 
     <img src="/svg/end_mills/rounded_edge_square_4f.svg" class="mx-auto mt-2" />
 

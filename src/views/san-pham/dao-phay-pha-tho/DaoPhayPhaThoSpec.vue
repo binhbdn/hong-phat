@@ -12,7 +12,7 @@ const sortable = ref(false);
 
 <template>
   <div>
-    <div class="font-bold text-sm sm:text-base text-gray-900">{{ $t("specifications") }}</div>
+    <div class="hp-h1">{{ $t("specifications") }}</div>
 
     <img v-if="flutes === 3" src="/svg/end_mills/roughing_3f.svg" class="mx-auto mt-2" />
     <img v-else src="/svg/end_mills/roughing_4f.svg" class="mx-auto mt-2" />

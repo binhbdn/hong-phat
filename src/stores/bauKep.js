@@ -2,6 +2,11 @@ import { listViewRMB } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const detailsView = [
+  ["seri", "model"],
+  [{ type: "i18n", value: "material" }, "hardness", "runout", "maxRPM"]
+];
+
 const items = [
   {
     category: "pBauKep",
@@ -29,9 +34,11 @@ const items = [
     seri: "BT40",
     specs: "ER16-32",
     brand: "Suken",
-    origin: null,
+    origin: "cn",
     listView: listViewRMB,
+    detailsView,
     // extra data
+    model: "ER16/20/25/32",
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
     runout: "0.003mm",
@@ -63,9 +70,11 @@ const items = [
     seri: "BT50",
     specs: "ER16-40",
     brand: "Suken",
-    origin: null,
+    origin: "cn",
     listView: listViewRMB,
+    detailsView,
     // extra data
+    model: "ER16/20/25/32/40",
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
     runout: "0.003mm",

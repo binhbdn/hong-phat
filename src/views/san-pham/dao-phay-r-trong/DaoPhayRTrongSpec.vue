@@ -13,7 +13,7 @@ const sortable = ref(false);
 
 <template>
   <div>
-    <div class="font-bold text-sm sm:text-base text-gray-900">{{ $t("specifications") }}</div>
+    <div class="hp-h1">{{ $t("specifications") }}</div>
 
     <img :src="`${imgServer}/dao_phay_r_trong/corner_rounding.webp`" class="mx-auto mt-2" />
 

@@ -1,4 +1,22 @@
-export const findItemByCode = (items, code) => items.find((item) => item.code === code);
+export const detailsViewHFAvsDDLL = [
+  ["hardness", "flutesF", "helixAngle"],
+  ["bladeDiameter", "handleDiameter", "cuttingLength", "overallLength"]
+];
+
+export const detailsViewHFAvsRDLL = [
+  ["hardness", "flutesF", "helixAngle"],
+  ["bladeRadius", "handleDiameter", "cuttingLength", "overallLength"]
+];
+
+export const detailsViewHFAAvsDDLL = [
+  ["hardness", "flutesF", "helixAngle", "noseAngle"],
+  ["bladeDiameter", "handleDiameter", "cuttingLength", "overallLength"]
+];
+
+export const detailsViewHFAAvsDDL = [
+  ["hardness", "flutesF", "helixAngle", "noseAngle"],
+  ["bladeDiameter", "handleDiameter", "overallLength"]
+];
 
 export const findSpecDDLByCode = (specs, code) => {
   const spec = specs.find((item) => item.code === code);

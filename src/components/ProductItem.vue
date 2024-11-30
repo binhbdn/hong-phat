@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import { imgServer } from "@/config";
@@ -7,12 +7,20 @@ import { imgServer } from "@/config";
 const { current } = useI18n();
 
 const props = defineProps({
+  visible: Boolean,
   viewDetails: Boolean,
   item: Object
 });
-defineEmits(["changeOrderQuantity"]);
 
+const render = ref(props.visible);
 const orderQuantity = ref(0);
+
+watch(
+  () => props.visible,
+  (val) => {
+    if (val) render.value = true;
+  }
+);
 
 const formattedPrice = computed(() => {
   if (props.item.prices.current) return numberToVnd(props.item.prices.current);
@@ -23,6 +31,8 @@ const formattedPrice = computed(() => {
 
 <template>
   <div
+    v-if="render"
+    v-show="visible"
     class="group flex flex-col gap-y-1.5 text-xs sm:text-[13px]/5 text-gray-600 cursor-pointer"
     :class="viewDetails ? 'bg-gray-50 rounded-lg shadow-gray-400 hover:shadow-primary shadow-sm p-2' : 'w-[calc(50%-6px)] sm:max-w-[200px]'"
     @click="
@@ -43,7 +53,7 @@ const formattedPrice = computed(() => {
       >
         <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="rounded-t-md rounded-br-md" />
 
-        <img v-if="item?.flutes" v-show="!orderQuantity" :src="`/svg/flutes/${item.flutes}.svg`" class="h-6 absolute bottom-2 right-2" />
+        <slot name="extraImg" :data="item" :quantity="orderQuantity" />
 
         <div class="ribbon">
           {{ item.seri }}
@@ -53,17 +63,14 @@ const formattedPrice = computed(() => {
         </div>
 
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
-          <div
-            class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full"
-            @click.stop="$emit('changeOrderQuantity', true)"
-          >
+          <div class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full" @click.stop="null">
             <i class="pi pi-plus text-[10px]" />
           </div>
           <template v-if="orderQuantity">
             <div class="font-bold bg-white text-primary text-center border border-gray-500 rounded-lg px-2 py-1">{{ orderQuantity }}</div>
             <div
               class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full"
-              @click.stop="$emit('changeOrderQuantity', false)"
+              @click.stop="null"
             >
               <i class="pi pi-minus text-[10px]" />
             </div>

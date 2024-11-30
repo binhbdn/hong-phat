@@ -56,7 +56,7 @@ const onSelectSuggestion = ({ value }) => {
 
 <template>
   <PageHasTitle>
-    <div class="text-[13px]/5 sm:text-sm/[22px] text-gray-600">
+    <div class="hp-textstyle">
       <div class="py-1">
         <InputGroup class="relative h-10 mx-auto">
           <AutoComplete

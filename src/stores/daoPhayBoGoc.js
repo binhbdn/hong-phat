@@ -1,7 +1,7 @@
 import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
-import { findSpecDRDLByCode } from "@/stores/daoPhay";
+import { detailsViewHFAvsDDLL, findSpecDRDLByCode } from "@/stores/daoPhay";
 
 const items = [
   {
@@ -35,11 +35,13 @@ const items = [
     brand: null,
     origin: "cn",
     listView: listViewDDL,
+    detailsView: detailsViewHFAvsDDLL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "55HRC",
     flutes: 4,
-    helixAngle: 35,
+    flutesF: "4F",
+    helixAngle: "35°",
     material: "CarbideTungsten",
     processingMaterials: "PMK",
     coating: "TiSiN",
@@ -79,11 +81,13 @@ const items = [
     brand: null,
     origin: "cn",
     listView: listViewDDL,
+    detailsView: detailsViewHFAvsDDLL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "65HRC",
     flutes: 4,
-    helixAngle: 35,
+    flutesF: "4F",
+    helixAngle: "35°",
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "NACO",
@@ -123,11 +127,13 @@ const items = [
     brand: null,
     origin: "cn",
     listView: listViewDDL,
+    detailsView: detailsViewHFAvsDDLL,
     // extra data
     cutStyle: "csRoundedEdgeSquare",
     hardness: "65HRC",
     flutes: 4,
-    helixAngle: 35,
+    flutesF: "4F",
+    helixAngle: "35°",
     material: "CarbideTungsten",
     processingMaterials: "PMKSH",
     coating: "AlCrSiN",

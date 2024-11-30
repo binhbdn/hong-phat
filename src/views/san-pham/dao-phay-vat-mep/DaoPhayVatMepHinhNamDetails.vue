@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <PageHasTitle>
-    <div v-if="item" class="xl:max-w-[88%] flex flex-col gap-y-3 sm:gap-y-5 text-[13px]/5 sm:text-sm/[22px] text-gray-600">
+    <div v-if="item" class="hp-pagedetails-layout hp-textstyle">
       <DaoPhayDetails :item="item" />
       <DaoPhayVatMepHinhNamSpec :code="code" />
     </div>

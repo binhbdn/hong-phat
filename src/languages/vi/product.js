@@ -1,6 +1,7 @@
 export default {
   material: "Vật liệu",
   CarbideTungsten: "Cacbua/Vonfram",
+  AlloySteel: "Thép hợp kim",
   processingMaterials: "Vật liệu làm việc áp dụng",
   pm: {
     P: "Sắt, thép, thép hợp kim",
@@ -24,12 +25,14 @@ export default {
   overallLength: "Tổng chiều dài",
   origin: "Xuất xứ",
   brand: "Thương hiệu",
+  seri: "Seri",
+  model: "Model",
   runout: "Độ đảo",
   maxRPM: "Tốc độ tối đa",
   noProductWithCode: "Không tìm thấy sản phẩm có mã",
   productCode: "Mã sản phẩm",
   hardness: "Độ cứng",
-  flutes: "Me cắt",
+  flutesF: "Me cắt",
   cutStyle: "Kiểu cắt",
   helixAngle: "Góc xoắn ốc",
   noseAngle: "Góc mũi",

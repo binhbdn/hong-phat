@@ -1,7 +1,7 @@
 import { listViewDDL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
-import { findSpecDDLByCode } from "@/stores/daoPhay";
+import { detailsViewHFAvsDDLL, findSpecDDLByCode } from "@/stores/daoPhay";
 
 const items = [
   {
@@ -32,11 +32,13 @@ const items = [
     brand: null,
     origin: "cn",
     listView: listViewDDL,
+    detailsView: detailsViewHFAvsDDLL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
     flutes: 3,
-    helixAngle: 35,
+    flutesF: "3F",
+    helixAngle: "35°",
     material: "CarbideTungsten",
     processingMaterials: "N",
     coating: "Al",
@@ -73,11 +75,13 @@ const items = [
     brand: null,
     origin: "cn",
     listView: listViewDDL,
+    detailsView: detailsViewHFAvsDDLL,
     // extra data
     cutStyle: "csSquare",
     hardness: "55HRC",
     flutes: 4,
-    helixAngle: 35,
+    flutesF: "4F",
+    helixAngle: "35°",
     material: "CarbideTungsten",
     processingMaterials: "PMKH",
     coating: "TiSiN",

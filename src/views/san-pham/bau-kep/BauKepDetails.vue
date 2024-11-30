@@ -3,6 +3,7 @@ import { ref, onMounted } from "vue";
 import { getItemByCode } from "@/stores/bauKep";
 import PageHasTitle from "@/components/PageHasTitle.vue";
 import ProductNotFound from "@/components/ProductNotFound.vue";
+import ProductDetails from "@/components/ProductDetails.vue";
 
 const props = defineProps(["code"]);
 const item = ref(null);
@@ -14,8 +15,8 @@ onMounted(() => {
 
 <template>
   <PageHasTitle>
-    <div v-if="item" class="xl:max-w-[88%] flex flex-col gap-y-3 sm:gap-y-5 text-[13px]/5 sm:text-sm/[22px] text-gray-600">
-      Chi tiết sản phẩm bầu kẹp {{ code }}
+    <div v-if="item" class="hp-pagedetails-layout hp-textstyle">
+      <ProductDetails :item="item" />
     </div>
 
     <ProductNotFound v-else :code="code" />

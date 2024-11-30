@@ -9,6 +9,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hp-h1 {
+    @apply font-bold text-sm sm:text-base text-gray-900;
+  }
+  .hp-textstyle {
+    @apply text-[13px]/5 sm:text-sm/[22px] text-gray-600;
+  }
+  .hp-list-grid {
+    @apply grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 sm:p-0.5;
+  }
+  .hp-list-flex {
+    @apply flex gap-3 flex-wrap;
+  }
+  .hp-pagedetails-layout {
+    @apply xl:max-w-[88%] flex flex-col gap-y-3 sm:gap-y-5;
+  }
+  .hp-pagedetails-rows {
+    @apply border-t border-dashed border-gray-400 pt-1 mt-1;
+  }
+  .hp-pagedetails-row {
+    @apply flex justify-between gap-x-2 xl:gap-x-5 hover:bg-white px-2;
+  }
+  .hp-pagedetails-bold {
+    @apply font-medium text-gray-900;
+  }
+}
+
 .hide-scrollbar {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */

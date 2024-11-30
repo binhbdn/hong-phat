@@ -1,5 +1,5 @@
 <script setup>
-import ProductItem from "@/components/ProductItem.vue";
+import DaoPhayItem from "@/views/san-pham/dao-phay/DaoPhayItem.vue";
 import items from "@/stores/daoPhayRTrong";
 
 defineProps({
@@ -12,8 +12,8 @@ defineProps({
 </script>
 
 <template>
-  <div :class="viewDetails ? 'grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 sm:p-0.5' : 'flex gap-3 flex-wrap'">
-    <ProductItem v-for="item in items" v-show="showAll || item.isTypical" :key="item.code" :viewDetails="viewDetails" :item="item" />
+  <div :class="viewDetails ? 'hp-list-grid' : 'hp-list-flex'">
+    <DaoPhayItem v-for="item in items" :key="item.code" :visible="showAll || item.isTypical" :viewDetails="viewDetails" :item="item" />
     <slot name="last" />
   </div>
 </template>
