@@ -10,8 +10,8 @@ const items = [
     code: "CL_1",
     images: ["/img/logo.png"],
     name: {
-      vi: "Name vi",
-      cn: "Name cn"
+      vi: "Collet 1 vi?",
+      cn: "Collet 1 cn?"
     },
     prices: {
       current: null,
@@ -19,21 +19,21 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description vi",
-      cn: "Description cn"
+      vi: "Description collet vi?",
+      cn: "Description collet cn?"
     },
     descriptions: {
       vi: [],
       cn: []
     },
-    seri: "seri",
-    specs: "specs",
-    brand: "brand",
-    origin: null,
+    seri: "seri?",
+    specs: "specs?",
+    brand: "brand?",
+    origin: "cn",
     listView: listViewRMB,
     // extra data
-    runout: "0.00?mm",
-    maxRPM: "?rpm"
+    runout: "mm?",
+    maxRPM: "rpm?"
   },
   {
     category: "pCollet",
@@ -42,8 +42,8 @@ const items = [
     code: "CL_2",
     images: ["/img/logo.png"],
     name: {
-      vi: "Name vi",
-      cn: "Name cn"
+      vi: "Collet 2 vi?",
+      cn: "Collet 2 cn?"
     },
     prices: {
       current: null,
@@ -51,21 +51,21 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description vi",
-      cn: "Description cn"
+      vi: "Description collet vi?",
+      cn: "Description collet cn?"
     },
     descriptions: {
       vi: [],
       cn: []
     },
-    seri: "seri",
-    specs: "specs",
-    brand: "brand",
-    origin: null,
+    seri: "seri?",
+    specs: "specs?",
+    brand: "brand?",
+    origin: "cn",
     listView: listViewRMB,
     // extra data
-    runout: "0.00?mm",
-    maxRPM: "?rpm"
+    runout: "mm?",
+    maxRPM: "rpm?"
   }
 ];
 
