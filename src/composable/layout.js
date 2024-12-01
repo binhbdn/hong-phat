@@ -13,7 +13,11 @@ export const layoutState = reactive({
 export const isSidebarActive = computed(() => layoutState.staticMenuMobileActive);
 
 export const setActiveMenuItem = (item) => {
-  layoutState.activeMenuItem = item.value || item;
+  if (item === "2") {
+    layoutState.activeMenuItem = "2-0";
+  } else {
+    layoutState.activeMenuItem = item.value || item;
+  }
 };
 
 export const onMenuToggle = () => {

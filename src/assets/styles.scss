@@ -36,6 +36,10 @@
   }
 }
 
+.active-menuitem > .active-no-toggler > .layout-submenu-toggler {
+  display: none;
+}
+
 .hide-scrollbar {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */

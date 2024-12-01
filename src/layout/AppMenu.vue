@@ -32,6 +32,7 @@ const model = [
       {
         label: "productCategories",
         icon: "pi pi-database",
+        class: "active-no-toggler",
         command: onClickProductCategories,
         items: [
           {
