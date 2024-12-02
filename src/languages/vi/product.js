@@ -39,8 +39,8 @@ export default {
   specifications: "Thông số kỹ thuật",
   description: "Mô tả",
   dimension: "Kích thước",
-  showSortButtons: "Hiển thị button sắp xếp",
-  hideSortButtons: "Ẩn button sắp xếp",
+  showSortBtns: "Hiển thị button sắp xếp",
+  hideSortBtns: "Ẩn button sắp xếp",
   enterProductNameOrProductCode: "Nhập tên hoặc mã sản phẩm",
   searchResultsWithKeyword: "Kết quả tìm kiếm với từ khoá",
   noProductsFound: "Không tìm thấy sản phẩm nào"

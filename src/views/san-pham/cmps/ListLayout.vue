@@ -1,6 +1,6 @@
 <script setup>
 import PageHasTitle from "@/components/PageHasTitle.vue";
-import ViewModes from "@/views/san-pham/components/ViewModes.vue";
+import ViewModes from "@/views/san-pham/cmps/ViewModes.vue";
 </script>
 
 <template>

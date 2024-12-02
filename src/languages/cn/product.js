@@ -39,8 +39,8 @@ export default {
   specifications: "规格",
   description: "描述",
   dimension: "方面",
-  showSortButtons: "显示排序按钮",
-  hideSortButtons: "隐藏排序按钮",
+  showSortBtns: "显示排序按钮",
+  hideSortBtns: "隐藏排序按钮",
   enterProductNameOrProductCode: "输入产品名称或产品代码",
   searchResultsWithKeyword: "使用关键字搜索结果",
   noProductsFound: "没有找到产品"

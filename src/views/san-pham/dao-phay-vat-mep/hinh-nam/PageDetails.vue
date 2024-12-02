@@ -1,10 +1,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import { getItemByCode } from "@/stores/daoPhayCau";
+import { getItemByCode } from "@/stores/daoPhayVatMep";
 import PageHasTitle from "@/components/PageHasTitle.vue";
 import ProductNotFound from "@/components/ProductNotFound.vue";
 import DaoPhayDetails from "@/views/san-pham/dao-phay/DaoPhayDetails.vue";
-import DaoPhayCauSpec from "@/views/san-pham/dao-phay-cau/DaoPhayCauSpec.vue";
+import SpecTable from "./SpecTable.vue";
 
 const props = defineProps(["code"]);
 const item = ref(null);
@@ -18,7 +18,7 @@ onMounted(() => {
   <PageHasTitle>
     <div v-if="item" class="hp-pagedetails-layout hp-textstyle">
       <DaoPhayDetails :item="item" />
-      <DaoPhayCauSpec :code="code" />
+      <SpecTable :code="code" />
     </div>
 
     <ProductNotFound v-else :code="code" />

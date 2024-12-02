@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from "vue";
-import CartButton from "@/views/gio-hang/CartButton.vue";
+import CartBtn from "@/views/gio-hang/CartBtn.vue";
 
 const props = defineProps(["scrollToTop"]);
 const emit = defineEmits(["update:scrollToTop"]);
@@ -34,6 +34,6 @@ watch(
       </div>
     </div>
 
-    <CartButton />
+    <CartBtn />
   </div>
 </template>

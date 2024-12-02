@@ -14,16 +14,16 @@ import {
   setViewExpanded
 } from "@/stores/homeCategory";
 import Overlay from "@/components/Overlay.vue";
-import CategoryHeader from "@/views/home/CategoryHeader.vue";
-import ViewMoreBtn from "@/views/home/ViewMoreBtn.vue";
-import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/DaoPhayNgonList.vue";
-import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/DaoPhayCauList.vue";
-import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/DaoPhayVatMepList.vue";
-import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/DaoPhayBoGocList.vue";
-import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/DaoPhayRTrongList.vue";
-import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/DaoPhayPhaThoList.vue";
-import BauKepList from "@/views/san-pham/bau-kep/BauKepList.vue";
-import ColletList from "@/views/san-pham/collet/ColletList.vue";
+import SectionHeader from "@/views/home/SectionHeader.vue";
+import ShowAllBtn from "@/views/home/ShowAllBtn.vue";
+import DaoPhayNgonList from "@/views/san-pham/dao-phay-ngon/ListItems.vue";
+import DaoPhayCauList from "@/views/san-pham/dao-phay-cau/ListItems.vue";
+import DaoPhayVatMepList from "@/views/san-pham/dao-phay-vat-mep/ListItems.vue";
+import DaoPhayBoGocList from "@/views/san-pham/dao-phay-bo-goc/ListItems.vue";
+import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/ListItems.vue";
+import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/ListItems.vue";
+import BauKepList from "@/views/san-pham/bau-kep/ListItems.vue";
+import ColletList from "@/views/san-pham/collet/ListItems.vue";
 
 const childCategoriesList = [
   {
@@ -237,7 +237,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         class="home-category"
         :class="{ expanded: view[item.key].expanded }"
       >
-        <CategoryHeader v-model:expanded="view[item.key].expanded" :name="item.key" />
+        <SectionHeader v-model:expanded="view[item.key].expanded" :name="item.key" />
         <Component
           :is="item.listComponent"
           v-if="view[item.key].render"
@@ -246,7 +246,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
           :showAll="item.listAll || view[item.key].showAll"
         >
           <template v-if="!item.listAll" #last>
-            <ViewMoreBtn v-model:showAll="view[item.key].showAll" />
+            <ShowAllBtn v-model:showAll="view[item.key].showAll" />
           </template>
         </Component>
       </div>

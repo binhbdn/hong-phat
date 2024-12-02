@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { getSpecByCode } from "@/stores/daoPhayNgon";
 import DaoPhayTableDDL from "@/views/san-pham/dao-phay/DaoPhayTableDDL.vue";
-import SortButton from "@/views/san-pham/components/SortButton.vue";
+import SortBtn from "@/views/san-pham/cmps/SortBtn.vue";
 
 const props = defineProps(["code", "flutes"]);
 
@@ -18,7 +18,7 @@ const sortable = ref(false);
     <img v-else-if="flutes === 3" src="/svg/end_mills/square_3f.svg" class="mx-auto mt-2" />
     <img v-else src="/svg/end_mills/square_4f.svg" class="mx-auto mt-2" />
 
-    <SortButton v-model:sortable="sortable" />
+    <SortBtn v-model:sortable="sortable" />
     <DaoPhayTableDDL :value="list" :sortable="sortable" />
   </div>
 </template>

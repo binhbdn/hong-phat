@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { getSpecByCode } from "@/stores/daoPhayBoGoc";
 import DaoPhayTableDRDL from "@/views/san-pham/dao-phay/DaoPhayTableDRDL.vue";
-import SortButton from "@/views/san-pham/components/SortButton.vue";
+import SortBtn from "@/views/san-pham/cmps/SortBtn.vue";
 
 const props = defineProps(["code"]);
 
@@ -16,7 +16,7 @@ const sortable = ref(false);
 
     <img src="/svg/end_mills/rounded_edge_square_4f.svg" class="mx-auto mt-2" />
 
-    <SortButton v-model:sortable="sortable" />
+    <SortBtn v-model:sortable="sortable" />
     <DaoPhayTableDRDL :value="list" :sortable="sortable" />
   </div>
 </template>

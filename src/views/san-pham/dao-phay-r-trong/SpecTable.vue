@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { getSpecByCode } from "@/stores/daoPhayRTrong";
 import { imgServer } from "@/config";
 import DaoPhayTableRDL from "@/views/san-pham/dao-phay/DaoPhayTableRDL.vue";
-import SortButton from "@/views/san-pham/components/SortButton.vue";
+import SortBtn from "@/views/san-pham/cmps/SortBtn.vue";
 
 const props = defineProps(["code"]);
 
@@ -17,7 +17,7 @@ const sortable = ref(false);
 
     <img :src="`${imgServer}/dao_phay_r_trong/corner_rounding.webp`" class="mx-auto mt-2" />
 
-    <SortButton v-model:sortable="sortable" />
+    <SortBtn v-model:sortable="sortable" />
     <DaoPhayTableRDL :value="list" :sortable="sortable" />
   </div>
 </template>

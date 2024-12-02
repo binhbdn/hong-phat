@@ -1,6 +1,6 @@
 <script setup>
 import AppTitle from "@/layout/AppTitle.vue";
-import CartButton from "@/views/gio-hang/CartButton.vue";
+import CartBtn from "@/views/gio-hang/CartBtn.vue";
 </script>
 
 <template>
@@ -16,6 +16,6 @@ import CartButton from "@/views/gio-hang/CartButton.vue";
       </div>
     </div>
 
-    <CartButton />
+    <CartBtn />
   </div>
 </template>

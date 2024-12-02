@@ -3,9 +3,9 @@ import { ref, computed, watch } from "vue";
 import { isDesktop } from "@/composable/layout";
 import { showFilter } from "@/stores/homeCategory";
 import PageHasFooter from "@/components/PageHasFooter.vue";
-import Banner from "./Banner.vue";
-import ProducsList from "./ProducsList.vue";
-import AboutUs from "./AboutUs.vue";
+import SectionBanner from "./SectionBanner.vue";
+import SectionProducts from "./SectionProducts.vue";
+import SectionAbout from "./SectionAbout.vue";
 
 const props = defineProps(["view"]);
 
@@ -102,7 +102,7 @@ watch(
             <div class="flex-grow cursor-default" @click.stop />
           </div>
         </template>
-        <Banner />
+        <SectionBanner />
       </AccordionTab>
       <AccordionTab v-if="isDesktop || viewMode !== 2">
         <template #header>
@@ -113,7 +113,7 @@ watch(
             <div class="flex-grow cursor-default" @click.stop="showFilter = false" />
           </div>
         </template>
-        <ProducsList />
+        <SectionProducts />
       </AccordionTab>
       <AccordionTab v-if="isDesktop || viewMode !== 1">
         <template #header>
@@ -124,7 +124,7 @@ watch(
             <div class="flex-grow cursor-default" @click.stop />
           </div>
         </template>
-        <AboutUs />
+        <SectionAbout />
       </AccordionTab>
     </Accordion>
 
