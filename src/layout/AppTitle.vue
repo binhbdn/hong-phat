@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+  title: String,
   hasBackIcon: {
     type: Boolean,
     default: false
@@ -17,7 +18,7 @@ defineProps({
       <i class="pi pi-angle-left text-lg/5 sm:text-xl/5" />
     </div>
     <div class="text-gray-900 text-base sm:text-lg whitespace-nowrap">
-      {{ $t($route.name) }}
+      {{ title || $t($route.name) }}
     </div>
   </div>
 </template>

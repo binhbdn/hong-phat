@@ -29,7 +29,7 @@ const formattedPrice = computed(() => {
 
         <div class="hp-pagedetails-rows">
           <div class="hp-pagedetails-row">
-            <span> {{ $t("productCode") }}: </span>
+            <span> {{ $t("code") }}: </span>
             <span class="hp-pagedetails-bold"> {{ item.code }} </span>
           </div>
           <div v-if="item.brand" class="hp-pagedetails-row">

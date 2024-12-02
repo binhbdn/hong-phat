@@ -46,6 +46,10 @@ const categoriesTreeConfig = [
   {
     key: "pCollet",
     isChild: true
+  },
+  {
+    key: "pPhuKienBauKep",
+    isChild: true
   }
 ];
 

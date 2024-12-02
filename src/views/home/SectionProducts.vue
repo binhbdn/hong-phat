@@ -24,6 +24,7 @@ import DaoPhayRTrongList from "@/views/san-pham/dao-phay-r-trong/ListItems.vue";
 import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/ListItems.vue";
 import BauKepList from "@/views/san-pham/bau-kep/ListItems.vue";
 import ColletList from "@/views/san-pham/collet/ListItems.vue";
+import PhuKienBauKepList from "@/views/san-pham/phu-kien-bau-kep/ListItems.vue";
 
 const childCategoriesList = [
   {
@@ -65,6 +66,11 @@ const childCategoriesList = [
     key: "pCollet",
     listAll: false,
     listComponent: ColletList
+  },
+  {
+    key: "pPhuKienBauKep",
+    listAll: false,
+    listComponent: PhuKienBauKepList
   }
 ];
 

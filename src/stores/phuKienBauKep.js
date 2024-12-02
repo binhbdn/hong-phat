@@ -1,17 +1,17 @@
-import { listViewRMB } from "@/stores/listViewOptions";
+import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
 const items = [
   {
-    category: "pCollet",
-    routeName: "pColletCT",
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
     isTypical: true,
-    code: "CL_1",
+    code: "PKBK_1",
     images: ["/img/logo.png"],
     name: {
-      vi: "Collet 1 vi?",
-      cn: "Collet 1 cn?"
+      vi: "Phụ kiện 1 vi?",
+      cn: "Phụ kiện 1 cn?"
     },
     prices: {
       current: null,
@@ -19,8 +19,8 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description collet vi?",
-      cn: "Description collet cn?"
+      vi: "Description vi?",
+      cn: "Description cn?"
     },
     descriptions: {
       vi: [],
@@ -30,20 +30,18 @@ const items = [
     specs: "specs?",
     brand: "brand?",
     origin: "cn",
-    listView: listViewRMB,
+    listView: listViewCBO
     // extra data
-    runout: "mm?",
-    maxRPM: "rpm?"
   },
   {
-    category: "pCollet",
-    routeName: "pColletCT",
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
     isTypical: false,
-    code: "CL_2",
+    code: "PKBK_2",
     images: ["/img/logo.png"],
     name: {
-      vi: "Collet 2 vi?",
-      cn: "Collet 2 cn?"
+      vi: "Phụ kiện 2 vi?",
+      cn: "Phụ kiện 2 cn?"
     },
     prices: {
       current: null,
@@ -51,8 +49,8 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description collet vi?",
-      cn: "Description collet cn?"
+      vi: "Description vi?",
+      cn: "Description cn?"
     },
     descriptions: {
       vi: [],
@@ -62,15 +60,13 @@ const items = [
     specs: "specs?",
     brand: "brand?",
     origin: "cn",
-    listView: listViewRMB,
+    listView: listViewCBO
     // extra data
-    runout: "mm?",
-    maxRPM: "rpm?"
   }
 ];
 
 export default items;
 
-export const colletItems = mapSearchProps(items);
+export const phuKienBauKepItems = mapSearchProps(items);
 
 export const getItemByCode = (code) => findItemByCode(items, code);

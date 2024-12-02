@@ -30,7 +30,7 @@ export default {
   runout: "Độ đảo",
   maxRPM: "Tốc độ tối đa",
   noProductWithCode: "Không tìm thấy sản phẩm có mã",
-  productCode: "Mã sản phẩm",
+  code: "Mã sản phẩm",
   hardness: "Độ cứng",
   flutesF: "Me cắt",
   cutStyle: "Kiểu cắt",
@@ -43,5 +43,6 @@ export default {
   hideSortBtns: "Ẩn button sắp xếp",
   enterProductNameOrProductCode: "Nhập tên hoặc mã sản phẩm",
   searchResultsWithKeyword: "Kết quả tìm kiếm với từ khoá",
-  noProductsFound: "Không tìm thấy sản phẩm nào"
+  noProductsFound: "Không tìm thấy sản phẩm nào",
+  productDetails: "Chi tiết sản phẩm"
 };

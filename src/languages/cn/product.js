@@ -30,7 +30,7 @@ export default {
   runout: "跳动",
   maxRPM: "最大速度",
   noProductWithCode: "未找到带有代码的产品",
-  productCode: "产品代码",
+  code: "产品代码",
   hardness: "硬度",
   flutesF: "长笛",
   cutStyle: "剪裁风格",
@@ -43,5 +43,6 @@ export default {
   hideSortBtns: "隐藏排序按钮",
   enterProductNameOrProductCode: "输入产品名称或产品代码",
   searchResultsWithKeyword: "使用关键字搜索结果",
-  noProductsFound: "没有找到产品"
+  noProductsFound: "没有找到产品",
+  productDetails: "商品详情"
 };

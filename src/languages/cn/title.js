@@ -35,5 +35,6 @@ export default {
   // pBauKepCT: "Details of tool holder",
   pBauKepCT: "刀柄细节",
   pCollet: "筒夹（夹头）",
-  pColletCT: "筒夹细节（夹头）"
+  pColletCT: "筒夹细节（夹头）",
+  pPhuKienBauKep: "刀柄配件"
 };

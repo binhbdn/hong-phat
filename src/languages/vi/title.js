@@ -18,5 +18,6 @@ export default {
   pBauKep: "Bầu kẹp",
   pBauKepCT: "Chi tiết bầu kẹp",
   pCollet: "Collet",
-  pColletCT: "Chi tiết collet"
+  pColletCT: "Chi tiết collet",
+  pPhuKienBauKep: "Phụ kiện bầu kẹp"
 };

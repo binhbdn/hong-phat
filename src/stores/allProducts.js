@@ -6,6 +6,7 @@ import { daoPhayRTrongItems } from "@/stores/daoPhayRTrong";
 import { daoPhayPhaThoItems } from "@/stores/daoPhayPhaTho";
 import { bauKepItems } from "@/stores/bauKep";
 import { colletItems } from "@/stores/collet";
+import { phuKienBauKepItems } from "@/stores/phuKienBauKep";
 
 const allProducts = [
   ...daoPhayNgonItems,
@@ -15,7 +16,8 @@ const allProducts = [
   ...daoPhayRTrongItems,
   ...daoPhayPhaThoItems,
   ...bauKepItems,
-  ...colletItems
+  ...colletItems,
+  ...phuKienBauKepItems
 ];
 
 export default allProducts;
