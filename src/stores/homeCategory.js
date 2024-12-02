@@ -3,10 +3,12 @@ import { ref, reactive } from "vue";
 const categoriesTreeConfig = [
   {
     key: "allCategories",
+    parent: "root",
     isChild: false
   },
   {
     key: "pDaoPhay",
+    parent: "allCategories",
     isChild: false
   },
   {
@@ -41,14 +43,17 @@ const categoriesTreeConfig = [
   },
   {
     key: "pBauKep",
+    parent: "allCategories",
     isChild: true
   },
   {
     key: "pCollet",
+    parent: "allCategories",
     isChild: true
   },
   {
     key: "pPhuKienBauKep",
+    parent: "allCategories",
     isChild: true
   }
 ];
@@ -57,19 +62,29 @@ const categories = categoriesTreeConfig.map((item) => item.key);
 
 export const childCategories = categoriesTreeConfig.filter((item) => item.isChild).map((item) => item.key);
 
-export const categoriesTree = [
-  {
-    key: "allCategories",
-    children: [
-      {
-        key: "pDaoPhay",
-        children: categoriesTreeConfig.filter((item) => item.parent === "pDaoPhay").map((item) => ({ key: item.key }))
-      },
-      { key: "pBauKep" },
-      { key: "pCollet" }
-    ]
-  }
-];
+const getCategoriesTree = () => {
+  const tree = [];
+  const map = {};
+
+  categoriesTreeConfig.forEach((item) => {
+    map[item.key] = item.isChild ? { key: item.key } : { key: item.key, children: [] };
+  });
+
+  categoriesTreeConfig.forEach((item) => {
+    if (item.parent === "root") {
+      tree.push(map[item.key]);
+    } else {
+      const parentNode = map[item.parent];
+      if (parentNode && parentNode.children) {
+        parentNode.children.push(map[item.key]);
+      }
+    }
+  });
+
+  return tree;
+};
+
+export const categoriesTree = getCategoriesTree();
 
 export const viewDetails = ref(false);
 

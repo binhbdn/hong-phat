@@ -127,7 +127,7 @@ watch(selectedKeys, (val) => {
     const category = val?.[key];
     view[key].show = Boolean(category?.checked);
     if (view[key].show) view[key].expanded = true;
-    else view[key].showAll = false;
+    // else view[key].showAll = false;
   });
 });
 
