@@ -5,7 +5,7 @@ import { manhDaoGCNhomItems } from "./manhDaoGCNhom";
 import { manhDaoGCSatThepInoxItems } from "./manhDaoGCSatThepInox";
 import { manhDaoTaoBongNhomItems } from "./manhDaoTaoBongNhom";
 
-const manhDaoItems = [
+export const manhDaoItems = [
   ...manhDaoGCGangItems,
   ...manhDaoGCSauNhietItems,
   ...manhDaoTienRanhRenItems,
@@ -13,5 +13,3 @@ const manhDaoItems = [
   ...manhDaoGCSatThepInoxItems,
   ...manhDaoTaoBongNhomItems
 ];
-
-export default manhDaoItems;

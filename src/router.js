@@ -22,74 +22,74 @@ const router = createRouter({
         {
           path: "san-pham/dao-phay-ngon",
           name: "pDaoPhayNgon",
-          component: () => import("@/views/san-pham/dao-phay-ngon/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/ngon/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-ngon/:code",
+          path: "san-pham/dao-phay/ngon/:code",
           name: "pDaoPhayNgonCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-ngon/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/ngon/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-cau",
           name: "pDaoPhayCau",
-          component: () => import("@/views/san-pham/dao-phay-cau/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/cau/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-cau/:code",
+          path: "san-pham/dao-phay/cau/:code",
           name: "pDaoPhayCauCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-cau/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/cau/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-vat-mep",
           name: "pDaoPhayVatMep",
-          component: () => import("@/views/san-pham/dao-phay-vat-mep/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/vat-mep/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-vat-mep/:code",
+          path: "san-pham/dao-phay/vat-mep/:code",
           name: "pDaoPhayVatMepCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-vat-mep/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/vat-mep/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-vat-mep-hinh-nam/:code",
           name: "pDaoPhayVatMepHinhNamCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-vat-mep/hinh-nam/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/vat-mep/hinh-nam/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-bo-goc",
           name: "pDaoPhayBoGoc",
-          component: () => import("@/views/san-pham/dao-phay-bo-goc/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/bo-goc/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-bo-goc/:code",
+          path: "san-pham/dao-phay/bo-goc/:code",
           name: "pDaoPhayBoGocCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-bo-goc/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/bo-goc/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-r-trong",
           name: "pDaoPhayRTrong",
-          component: () => import("@/views/san-pham/dao-phay-r-trong/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/r-trong/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-r-trong/:code",
+          path: "san-pham/dao-phay/r-trong/:code",
           name: "pDaoPhayRTrongCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-r-trong/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/r-trong/PageDetails.vue")
         },
         {
           path: "san-pham/dao-phay-pha-tho",
           name: "pDaoPhayPhaTho",
-          component: () => import("@/views/san-pham/dao-phay-pha-tho/PageList.vue")
+          component: () => import("@/views/san-pham/dao-phay/pha-tho/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay-pha-tho/:code",
+          path: "san-pham/dao-phay/pha-tho/:code",
           name: "pDaoPhayPhaThoCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/dao-phay-pha-tho/PageDetails.vue")
+          component: () => import("@/views/san-pham/dao-phay/pha-tho/PageDetails.vue")
         },
         {
           path: "san-pham/bau-kep",

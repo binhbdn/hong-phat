@@ -1,26 +1,10 @@
-import { daoPhayNgonItems } from "@/stores/daoPhayNgon";
-import { daoPhayCauItems } from "@/stores/daoPhayCau";
-import { daoPhayVatMepItems } from "@/stores/daoPhayVatMep";
-import { daoPhayBoGocItems } from "@/stores/daoPhayBoGoc";
-import { daoPhayRTrongItems } from "@/stores/daoPhayRTrong";
-import { daoPhayPhaThoItems } from "@/stores/daoPhayPhaTho";
+import { daoPhayItems } from "@/stores/daoPhay";
 import { bauKepItems } from "@/stores/bauKep";
 import { colletItems } from "@/stores/collet";
 import { phuKienBauKepItems } from "@/stores/phuKienBauKep";
-import manhDaoItems from "@/stores/manhDao";
+import { manhDaoItems } from "@/stores/manhDao";
 
-const allProducts = [
-  ...daoPhayNgonItems,
-  ...daoPhayCauItems,
-  ...daoPhayVatMepItems,
-  ...daoPhayBoGocItems,
-  ...daoPhayRTrongItems,
-  ...daoPhayPhaThoItems,
-  ...bauKepItems,
-  ...colletItems,
-  ...phuKienBauKepItems,
-  ...manhDaoItems
-];
+const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems];
 
 export default allProducts;
 
