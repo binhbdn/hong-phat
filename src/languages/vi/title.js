@@ -19,5 +19,13 @@ export default {
   pBauKepCT: "Chi tiết bầu kẹp",
   pCollet: "Collet",
   pColletCT: "Chi tiết collet",
-  pPhuKienBauKep: "Phụ kiện bầu kẹp"
+  pPhuKienBauKep: "Phụ kiện bầu kẹp",
+  pManhDao: "Mảnh dao",
+  pManhDaoCT: "Chi tiết mảnh dao",
+  pManhDaoGCGang: "Mảnh dao gia công gang",
+  pManhDaoGCSauNhiet: "Mảnh dao gia công sau nhiệt",
+  pManhDaoTienRanhRen: "Mảnh dao tiện rãnh-ren",
+  pManhDaoGCNhom: "Mảnh dao gia công nhôm",
+  pManhDaoGCSatThepInox: "Mảnh dao gia công sắt-thép-inox",
+  pManhDaoTaoBongNhom: "Mảnh dao tạo bóng nhôm"
 };

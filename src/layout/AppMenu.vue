@@ -75,6 +75,35 @@ const model = [
           {
             label: "pPhuKienBauKep",
             to: "/san-pham/phu-kien-bau-kep"
+          },
+          {
+            label: "pManhDao",
+            items: [
+              {
+                label: "pManhDaoGCGang",
+                to: "/san-pham/manh-dao-gia-cong-gang"
+              },
+              {
+                label: "pManhDaoGCSauNhiet",
+                to: "/san-pham/manh-dao-gia-cong-sau-nhiet"
+              },
+              {
+                label: "pManhDaoTienRanhRen",
+                to: "/san-pham/manh-dao-tien-ranh-ren"
+              },
+              {
+                label: "pManhDaoGCNhom",
+                to: "/san-pham/manh-dao-gia-cong-nhom"
+              },
+              {
+                label: "pManhDaoGCSatThepInox",
+                to: "/san-pham/manh-dao-gia-cong-sat-thep-inox"
+              },
+              {
+                label: "pManhDaoTaoBongNhom",
+                to: "/san-pham/manh-dao-tao-bong-nhom"
+              }
+            ]
           }
         ]
       }

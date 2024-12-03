@@ -25,6 +25,12 @@ import DaoPhayPhaThoList from "@/views/san-pham/dao-phay-pha-tho/ListItems.vue";
 import BauKepList from "@/views/san-pham/bau-kep/ListItems.vue";
 import ColletList from "@/views/san-pham/collet/ListItems.vue";
 import PhuKienBauKepList from "@/views/san-pham/phu-kien-bau-kep/ListItems.vue";
+import ManhDaoGCGangList from "@/views/san-pham/manh-dao/gia-cong-gang/ListItems.vue";
+import ManhDaoGCSauNhietList from "@/views/san-pham/manh-dao/gia-cong-sau-nhiet/ListItems.vue";
+import ManhDaoTienRanhRenList from "@/views/san-pham/manh-dao/tien-ranh-ren/ListItems.vue";
+import ManhDaoGCNhomList from "@/views/san-pham/manh-dao/gia-cong-nhom/ListItems.vue";
+import ManhDaoGCSatThepInoxList from "@/views/san-pham/manh-dao/gia-cong-sat-thep-inox/ListItems.vue";
+import ManhDaoTaoBongNhomList from "@/views/san-pham/manh-dao/tao-bong-nhom/ListItems.vue";
 
 const childCategoriesList = [
   {
@@ -71,6 +77,36 @@ const childCategoriesList = [
     key: "pPhuKienBauKep",
     listAll: false,
     listComponent: PhuKienBauKepList
+  },
+  {
+    key: "pManhDaoGCGang",
+    listAll: false,
+    listComponent: ManhDaoGCGangList
+  },
+  {
+    key: "pManhDaoGCSauNhiet",
+    listAll: false,
+    listComponent: ManhDaoGCSauNhietList
+  },
+  {
+    key: "pManhDaoTienRanhRen",
+    listAll: false,
+    listComponent: ManhDaoTienRanhRenList
+  },
+  {
+    key: "pManhDaoGCNhom",
+    listAll: false,
+    listComponent: ManhDaoGCNhomList
+  },
+  {
+    key: "pManhDaoGCSatThepInox",
+    listAll: false,
+    listComponent: ManhDaoGCSatThepInoxList
+  },
+  {
+    key: "pManhDaoTaoBongNhom",
+    listAll: true,
+    listComponent: ManhDaoTaoBongNhomList
   }
 ];
 

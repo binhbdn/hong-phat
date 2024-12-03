@@ -55,6 +55,41 @@ const categoriesTreeConfig = [
     key: "pPhuKienBauKep",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pManhDao",
+    parent: "allCategories",
+    isChild: false
+  },
+  {
+    key: "pManhDaoGCGang",
+    parent: "pManhDao",
+    isChild: true
+  },
+  {
+    key: "pManhDaoGCSauNhiet",
+    parent: "pManhDao",
+    isChild: true
+  },
+  {
+    key: "pManhDaoTienRanhRen",
+    parent: "pManhDao",
+    isChild: true
+  },
+  {
+    key: "pManhDaoGCNhom",
+    parent: "pManhDao",
+    isChild: true
+  },
+  {
+    key: "pManhDaoGCSatThepInox",
+    parent: "pManhDao",
+    isChild: true
+  },
+  {
+    key: "pManhDaoTaoBongNhom",
+    parent: "pManhDao",
+    isChild: true
   }
 ];
 

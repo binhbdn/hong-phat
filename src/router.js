@@ -123,6 +123,72 @@ const router = createRouter({
           name: "pPhuKienBauKepCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/phu-kien-bau-kep/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-gang",
+          name: "pManhDaoGCGang",
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-gang/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-gang/:code",
+          name: "pManhDaoGCGangCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-gang/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-sau-nhiet",
+          name: "pManhDaoGCSauNhiet",
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-sau-nhiet/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-sau-nhiet/:code",
+          name: "pManhDaoGCSauNhietCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-sau-nhiet/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-tien-ranh-ren",
+          name: "pManhDaoTienRanhRen",
+          component: () => import("@/views/san-pham/manh-dao/tien-ranh-ren/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-tien-ranh-ren/:code",
+          name: "pManhDaoTienRanhRenCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/tien-ranh-ren/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-nhom",
+          name: "pManhDaoGCNhom",
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-nhom/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-nhom/:code",
+          name: "pManhDaoGCNhomCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-nhom/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-sat-thep-inox",
+          name: "pManhDaoGCSatThepInox",
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-sat-thep-inox/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-gia-cong-sat-thep-inox/:code",
+          name: "pManhDaoGCSatThepInoxCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/gia-cong-sat-thep-inox/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao-tao-bong-nhom",
+          name: "pManhDaoTaoBongNhom",
+          component: () => import("@/views/san-pham/manh-dao/tao-bong-nhom/PageList.vue")
+        },
+        {
+          path: "san-pham/manh-dao-tao-bong-nhom/:code",
+          name: "pManhDaoTaoBongNhomCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/manh-dao/tao-bong-nhom/PageDetails.vue")
         }
       ]
     },
