@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
 import {
-  childCategories,
+  categories,
   categoriesTree,
   viewDetails,
   showMsg,
@@ -32,81 +32,108 @@ import ManhDaoGCNhomList from "@/views/san-pham/manh-dao/gia-cong-nhom/ListItems
 import ManhDaoGCSatThepInoxList from "@/views/san-pham/manh-dao/gia-cong-sat-thep-inox/ListItems.vue";
 import ManhDaoTaoBongNhomList from "@/views/san-pham/manh-dao/tao-bong-nhom/ListItems.vue";
 
-const childCategoriesList = [
+const categoriesTreeViews = [
   {
-    key: "pDaoPhayNgon",
-    listAll: false,
-    listComponent: DaoPhayNgonList
-  },
-  {
-    key: "pDaoPhayCau",
-    listAll: false,
-    listComponent: DaoPhayCauList
-  },
-  {
-    key: "pDaoPhayVatMep",
-    listAll: false,
-    listComponent: DaoPhayVatMepList
-  },
-  {
-    key: "pDaoPhayBoGoc",
-    listAll: false,
-    listComponent: DaoPhayBoGocList
-  },
-  {
-    key: "pDaoPhayRTrong",
-    listAll: true,
-    listComponent: DaoPhayRTrongList
-  },
-  {
-    key: "pDaoPhayPhaTho",
-    listAll: true,
-    listComponent: DaoPhayPhaThoList
+    key: "pDaoPhay",
+    isChild: false,
+    children: [
+      {
+        key: "pDaoPhayNgon",
+        isChild: true,
+        listAll: false,
+        listComponent: DaoPhayNgonList
+      },
+      {
+        key: "pDaoPhayCau",
+        isChild: true,
+        listAll: false,
+        listComponent: DaoPhayCauList
+      },
+      {
+        key: "pDaoPhayVatMep",
+        isChild: true,
+        listAll: false,
+        listComponent: DaoPhayVatMepList
+      },
+      {
+        key: "pDaoPhayBoGoc",
+        isChild: true,
+        listAll: false,
+        listComponent: DaoPhayBoGocList
+      },
+      {
+        key: "pDaoPhayRTrong",
+        isChild: true,
+        listAll: true,
+        listComponent: DaoPhayRTrongList
+      },
+      {
+        key: "pDaoPhayPhaTho",
+        isChild: true,
+        listAll: true,
+        listComponent: DaoPhayPhaThoList
+      }
+    ]
   },
   {
     key: "pBauKep",
+    isChild: true,
     listAll: false,
     listComponent: BauKepList
   },
   {
     key: "pCollet",
+    isChild: true,
     listAll: false,
     listComponent: ColletList
   },
   {
     key: "pPhuKienBauKep",
+    isChild: true,
     listAll: false,
     listComponent: PhuKienBauKepList
   },
   {
-    key: "pManhDaoGCGang",
-    listAll: false,
-    listComponent: ManhDaoGCGangList
-  },
-  {
-    key: "pManhDaoGCSauNhiet",
-    listAll: false,
-    listComponent: ManhDaoGCSauNhietList
-  },
-  {
-    key: "pManhDaoTienRanhRen",
-    listAll: false,
-    listComponent: ManhDaoTienRanhRenList
-  },
-  {
-    key: "pManhDaoGCNhom",
-    listAll: false,
-    listComponent: ManhDaoGCNhomList
-  },
-  {
-    key: "pManhDaoGCSatThepInox",
-    listAll: false,
-    listComponent: ManhDaoGCSatThepInoxList
-  },
-  {
-    key: "pManhDaoTaoBongNhom",
-    listAll: true,
-    listComponent: ManhDaoTaoBongNhomList
+    key: "pManhDao",
+    isChild: false,
+    children: [
+      {
+        key: "pManhDaoGCGang",
+        isChild: true,
+        listAll: false,
+        listComponent: ManhDaoGCGangList
+      },
+      {
+        key: "pManhDaoGCSauNhiet",
+        isChild: true,
+        listAll: false,
+        listComponent: ManhDaoGCSauNhietList
+      },
+      {
+        key: "pManhDaoTienRanhRen",
+        isChild: true,
+        listAll: false,
+        listComponent: ManhDaoTienRanhRenList
+      },
+      {
+        key: "pManhDaoGCNhom",
+        isChild: true,
+        listAll: false,
+        listComponent: ManhDaoGCNhomList
+      },
+      {
+        key: "pManhDaoGCSatThepInox",
+        isChild: true,
+        listAll: false,
+        listComponent: ManhDaoGCSatThepInoxList
+      },
+      {
+        key: "pManhDaoTaoBongNhom",
+        isChild: true,
+        listAll: true,
+        listComponent: ManhDaoTaoBongNhomList
+      }
+    ]
   }
 ];
 
@@ -114,6 +141,7 @@ let treeCategoriesEl;
 let iconFilterEl;
 
 const outsideClickTreeCategoriesListener = ref(null);
+const autoExpandMode = ref(true);
 
 const onToggleShowFilter = () => {
   showMsg.value = false;
@@ -121,9 +149,13 @@ const onToggleShowFilter = () => {
 };
 
 const onToggleShowAll = (showAll) => {
+  autoExpandMode.value = false;
   resetExpandedKeys();
   resetSelectedKeys();
   setViewExpanded(showAll);
+  setTimeout(() => {
+    autoExpandMode.value = true;
+  }, 500);
 };
 
 const isOutsideClickedTreeCategories = (event) => {
@@ -156,21 +188,19 @@ const unbindOutsideClickTreeCategoriesListener = () => {
 };
 
 watch(selectedKeys, (val) => {
-  view.allCategories.show = Boolean(val?.allCategories);
-  view.allCategories.partialChecked = Boolean(val?.allCategories?.partialChecked);
-
-  childCategories.forEach((key) => {
+  categories.forEach((key) => {
     const category = val?.[key];
-    view[key].show = Boolean(category?.checked);
-    if (view[key].show) view[key].expanded = true;
-    // else view[key].showAll = false;
+    view[key].show = view[key].isChild ? Boolean(category?.checked) : Boolean(category);
+    if (autoExpandMode.value && view[key].show) view[key].expanded = true;
   });
+
+  view.allCategories.partialChecked = Boolean(val?.allCategories?.partialChecked);
 });
 
 watch(
   view,
   () => {
-    childCategories.forEach((key) => {
+    categories.forEach((key) => {
       if (view[key].expanded) view[key].render = true;
     });
   },
@@ -257,7 +287,7 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
         v-model:selectionKeys="selectedKeys"
         :value="categoriesTree"
         selectionMode="checkbox"
-        class="sm:absolute sm:-top-4 sm:-right-2"
+        class="sm:absolute sm:min-w-[350px] sm:-top-4 sm:-right-2"
       >
         <template #default="{ node }">
           <div class="text-[13px]/[18px]">
@@ -273,24 +303,52 @@ onBeforeUnmount(unbindOutsideClickTreeCategoriesListener);
       </div>
 
       <div
-        v-for="item in childCategoriesList"
+        v-for="item in categoriesTreeViews"
         v-show="view[item.key].show"
         :key="item.key"
         class="home-category"
         :class="{ expanded: view[item.key].expanded }"
       >
-        <SectionHeader v-model:expanded="view[item.key].expanded" :name="item.key" />
-        <Component
-          :is="item.listComponent"
-          v-if="view[item.key].render"
-          v-show="view[item.key].expanded"
-          :viewDetails="viewDetails"
-          :showAll="item.listAll || view[item.key].showAll"
-        >
-          <template v-if="!item.listAll" #last>
-            <ShowAllBtn v-model:showAll="view[item.key].showAll" />
-          </template>
-        </Component>
+        <template v-if="item.isChild">
+          <SectionHeader v-model:expanded="view[item.key].expanded" :name="item.key" />
+          <Component
+            :is="item.listComponent"
+            v-if="view[item.key].render"
+            v-show="view[item.key].expanded"
+            :viewDetails="viewDetails"
+            :showAll="item.listAll || view[item.key].showAll"
+          >
+            <template v-if="!item.listAll" #last>
+              <ShowAllBtn v-model:showAll="view[item.key].showAll" />
+            </template>
+          </Component>
+        </template>
+        <div v-else v-show="view[item.key].show">
+          <SectionHeader v-model:expanded="view[item.key].expanded" :name="item.key" />
+
+          <div v-if="view[item.key].render" v-show="view[item.key].expanded">
+            <div
+              v-for="childItem in item.children"
+              v-show="view[childItem.key].show"
+              :key="childItem.key"
+              class="home-category"
+              :class="{ expanded: view[childItem.key].expanded }"
+            >
+              <SectionHeader v-model:expanded="view[childItem.key].expanded" :name="childItem.key" :subheader="true" />
+              <Component
+                :is="childItem.listComponent"
+                v-if="view[childItem.key].render"
+                v-show="view[childItem.key].expanded"
+                :viewDetails="viewDetails"
+                :showAll="childItem.listAll || view[childItem.key].showAll"
+              >
+                <template v-if="!childItem.listAll" #last>
+                  <ShowAllBtn v-model:showAll="view[childItem.key].showAll" />
+                </template>
+              </Component>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -99,7 +99,7 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("services") }}
             </div>
-            <div class="flex-grow cursor-default" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop="showFilter = false" />
           </div>
         </template>
         <SectionBanner />
@@ -121,7 +121,7 @@ watch(
             <div class="py-2 sm:py-4 pr-2">
               {{ $t("introduce") }}
             </div>
-            <div class="flex-grow cursor-default" @click.stop />
+            <div class="flex-grow cursor-default" @click.stop="showFilter = false" />
           </div>
         </template>
         <SectionAbout />

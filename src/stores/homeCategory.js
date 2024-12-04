@@ -93,9 +93,13 @@ const categoriesTreeConfig = [
   }
 ];
 
-const categories = categoriesTreeConfig.map((item) => item.key);
+export const categories = categoriesTreeConfig.map((item) => item.key);
+
+/*
+export const parentCategories = categoriesTreeConfig.filter((item) => !item.isChild).map((item) => item.key);
 
 export const childCategories = categoriesTreeConfig.filter((item) => item.isChild).map((item) => item.key);
+*/
 
 const getCategoriesTree = () => {
   const tree = [];
@@ -129,7 +133,6 @@ export const showFilter = ref(false);
 
 const defaultExpandedKeys = {
   allCategories: true
-  // pDaoPhay: true
 };
 
 export const expandedKeys = ref(defaultExpandedKeys);
@@ -156,19 +159,18 @@ export const resetSelectedKeys = () => (selectedKeys.value = defaultSelectedKeys
 
 const getDefaultView = () => {
   const obj = {};
-  obj.allCategories = {
-    show: true,
-    partialChecked: false,
-    expanded: true
-  };
-  childCategories.forEach((key) => {
-    obj[key] = {
+
+  categoriesTreeConfig.forEach((item) => {
+    obj[item.key] = {
+      isChild: item.isChild,
       show: true,
       expanded: false,
       render: false,
       showAll: false
     };
   });
+
+  obj.allCategories.partialChecked = false;
 
   return obj;
 };
