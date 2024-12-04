@@ -31,6 +31,7 @@ import ManhDaoTienRanhRenList from "@/views/san-pham/manh-dao/tien-ranh-ren/List
 import ManhDaoGCNhomList from "@/views/san-pham/manh-dao/gia-cong-nhom/ListItems.vue";
 import ManhDaoGCSatThepInoxList from "@/views/san-pham/manh-dao/gia-cong-sat-thep-inox/ListItems.vue";
 import ManhDaoTaoBongNhomList from "@/views/san-pham/manh-dao/tao-bong-nhom/ListItems.vue";
+import CanDaoGanManhList from "@/views/san-pham/can-dao-gan-manh/ListItems.vue";
 
 const categoriesTreeViews = [
   {
@@ -134,6 +135,12 @@ const categoriesTreeViews = [
         listComponent: ManhDaoTaoBongNhomList
       }
     ]
+  },
+  {
+    key: "pCanDaoGanManh",
+    isChild: true,
+    listAll: false,
+    listComponent: CanDaoGanManhList
   }
 ];
 

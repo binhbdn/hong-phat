@@ -104,6 +104,10 @@ const model = [
                 to: "/san-pham/manh-dao-tao-bong-nhom"
               }
             ]
+          },
+          {
+            label: "pCanDaoGanManh",
+            to: "/san-pham/can-dao-gan-manh"
           }
         ]
       }

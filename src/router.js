@@ -199,6 +199,17 @@ const router = createRouter({
           name: "pManhDaoTaoBongNhomCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/manh-dao/tao-bong-nhom/PageDetails.vue")
+        },
+        {
+          path: "san-pham/can-dao-gan-manh",
+          name: "pCanDaoGanManh",
+          component: () => import("@/views/san-pham/can-dao-gan-manh/PageList.vue")
+        },
+        {
+          path: "san-pham/can-dao-gan-manh/:code",
+          name: "pCanDaoGanManhCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/can-dao-gan-manh/PageDetails.vue")
         }
       ]
     },

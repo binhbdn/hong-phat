@@ -90,6 +90,11 @@ const categoriesTreeConfig = [
     key: "pManhDaoTaoBongNhom",
     parent: "pManhDao",
     isChild: true
+  },
+  {
+    key: "pCanDaoGanManh",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 
