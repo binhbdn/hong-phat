@@ -108,6 +108,10 @@ const model = [
           {
             label: "pCanDaoGanManh",
             to: "/san-pham/can-dao-gan-manh"
+          },
+          {
+            label: "pTaro",
+            to: "/san-pham/taro"
           }
         ]
       }

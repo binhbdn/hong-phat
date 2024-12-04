@@ -210,6 +210,17 @@ const router = createRouter({
           name: "pCanDaoGanManhCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/can-dao-gan-manh/PageDetails.vue")
+        },
+        {
+          path: "san-pham/taro",
+          name: "pTaro",
+          component: () => import("@/views/san-pham/taro/PageList.vue")
+        },
+        {
+          path: "san-pham/taro/:code",
+          name: "pTaroCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/taro/PageDetails.vue")
         }
       ]
     },

@@ -4,8 +4,9 @@ import { colletItems } from "@/stores/collet";
 import { phuKienBauKepItems } from "@/stores/phuKienBauKep";
 import { manhDaoItems } from "@/stores/manhDao";
 import { canDaoGanManhItems } from "@/stores/canDaoGanManh";
+import { taroItems } from "@/stores/taro";
 
-export const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems, ...canDaoGanManhItems];
+export const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems, ...canDaoGanManhItems, ...taroItems];
 
 const mapAllProducts = {
   vi: [],

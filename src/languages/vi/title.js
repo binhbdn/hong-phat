@@ -28,5 +28,6 @@ export default {
   pManhDaoGCNhom: "Mảnh dao gia công nhôm",
   pManhDaoGCSatThepInox: "Mảnh dao gia công sắt-thép-inox",
   pManhDaoTaoBongNhom: "Mảnh dao tạo bóng nhôm",
-  pCanDaoGanManh: "Cán dao gắn mảnh"
+  pCanDaoGanManh: "Cán dao gắn mảnh",
+  pTaro: "Taro ren trong - ren ngoài"
 };

@@ -45,5 +45,6 @@ export default {
   pManhDaoGCNhom: "用于加工铝材的刀片",
   pManhDaoGCSatThepInox: "用于加工铁、钢、不锈钢的刀片",
   pManhDaoTaoBongNhom: "用于铝材抛光的刀片",
-  pCanDaoGanManh: "可换刀片刀杆"
+  pCanDaoGanManh: "可换刀片刀杆",
+  pTaro: "内外螺纹加工工具"
 };
