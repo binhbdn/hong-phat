@@ -1,10 +1,14 @@
-import { daoPhayNgonItems } from "@/stores/daoPhay/daoPhayNgon";
-import { daoPhayCauItems } from "@/stores/daoPhay/daoPhayCau";
-import { daoPhayVatMepItems } from "@/stores/daoPhay/daoPhayVatMep";
-import { daoPhayBoGocItems } from "@/stores/daoPhay/daoPhayBoGoc";
-import { daoPhayRTrongItems } from "@/stores/daoPhay/daoPhayRTrong";
-import { daoPhayPhaThoItems } from "@/stores/daoPhay/daoPhayPhaTho";
+import daoPhayNgonList, { daoPhayNgonItems } from "./daoPhayNgon";
+import daoPhayCauList, { daoPhayCauItems } from "./daoPhayCau";
+import daoPhayVatMepList, { daoPhayVatMepItems } from "./daoPhayVatMep";
+import daoPhayBoGocList, { daoPhayBoGocItems } from "./daoPhayBoGoc";
+import daoPhayRTrongList, { daoPhayRTrongItems } from "./daoPhayRTrong";
+import daoPhayPhaThoList, { daoPhayPhaThoItems } from "./daoPhayPhaTho";
 
+// data for list view
+export const daoPhayList = [...daoPhayNgonList, ...daoPhayCauList, ...daoPhayVatMepList, ...daoPhayBoGocList, ...daoPhayRTrongList, ...daoPhayPhaThoList];
+
+// data for searching
 export const daoPhayItems = [
   ...daoPhayNgonItems,
   ...daoPhayCauItems,

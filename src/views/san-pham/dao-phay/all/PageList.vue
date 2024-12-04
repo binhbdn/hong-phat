@@ -5,7 +5,7 @@ import ListItems from "./ListItems.vue";
 </script>
 
 <template>
-  <ListLayout parentRouteName="pDaoPhay">
+  <ListLayout>
     <ListItems :viewDetails="viewDetails" />
   </ListLayout>
 </template>

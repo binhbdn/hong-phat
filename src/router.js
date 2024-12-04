@@ -20,6 +20,11 @@ const router = createRouter({
           component: () => import("@/views/san-pham/tim-kiem/PageTimKiem.vue")
         },
         {
+          path: "san-pham/dao-phay",
+          name: "pDaoPhay",
+          component: () => import("@/views/san-pham/dao-phay/all/PageList.vue")
+        },
+        {
           path: "san-pham/dao-phay-ngon",
           name: "pDaoPhayNgon",
           component: () => import("@/views/san-pham/dao-phay/ngon/PageList.vue")
@@ -123,6 +128,11 @@ const router = createRouter({
           name: "pPhuKienBauKepCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/phu-kien-bau-kep/PageDetails.vue")
+        },
+        {
+          path: "san-pham/manh-dao",
+          name: "pManhDao",
+          component: () => import("@/views/san-pham/manh-dao/all/PageList.vue")
         },
         {
           path: "san-pham/manh-dao-gia-cong-gang",

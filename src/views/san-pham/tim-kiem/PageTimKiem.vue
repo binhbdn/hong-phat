@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { textSearch, textSearched, listSearched, textSearchTrim, first } from "@/stores/search";
 import { removeDiacriticsAndLowerCase } from "@/library/helper";
-import allProducts, { mapProducts } from "@/stores/allProducts";
+import { allProducts, mapProducts } from "@/stores/dataSearch";
 import { imgServer } from "@/config";
 import PageHasTitle from "@/components/PageHasTitle.vue";
 import ProductsTable from "@/views/san-pham/tim-kiem/ProductsTable.vue";

@@ -4,9 +4,7 @@ import { colletItems } from "@/stores/collet";
 import { phuKienBauKepItems } from "@/stores/phuKienBauKep";
 import { manhDaoItems } from "@/stores/manhDao";
 
-const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems];
-
-export default allProducts;
+export const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems];
 
 const mapAllProducts = {
   vi: [],
