@@ -33,5 +33,6 @@ export default {
   pDuongKiemRen: "Dưỡng kiểm ren",
   pETo: "Ê tô",
   pGiaCongLo: "Mũi khoan, doa, chống tâm",
-  pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp"
+  pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp",
+  pDauDoTamPhoi: "Đầu dò tâm phôi"
 };

@@ -126,6 +126,10 @@ const model = [
           {
             label: "pBoCanDem",
             to: "/san-pham/bo-can-dem-can-mau-ga-kep"
+          },
+          {
+            label: "pDauDoTamPhoi",
+            to: "/san-pham/dau-do-tam-phoi"
           }
         ]
       }

@@ -120,6 +120,11 @@ const categoriesTreeConfig = [
     key: "pBoCanDem",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pDauDoTamPhoi",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 

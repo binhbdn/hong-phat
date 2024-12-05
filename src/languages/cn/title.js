@@ -50,5 +50,6 @@ export default {
   pDuongKiemRen: "螺纹量规",
   pETo: "虎钳",
   pGiaCongLo: "钻削工具",
-  pBoCanDem: "垫块, 样块, 夹具套装"
+  pBoCanDem: "垫块, 样块, 夹具套装",
+  pDauDoTamPhoi: "工件中心探针"
 };

@@ -9,6 +9,7 @@ import { duongKiemRenItems } from "@/stores/duongKiemRen";
 import { eToItems } from "@/stores/eTo";
 import { giaCongLoItems } from "@/stores/giaCongLo";
 import { boCanDemItems } from "@/stores/boCanDem";
+import { dauDoTamPhoiItems } from "@/stores/dauDoTamPhoi";
 
 export const allProducts = [
   ...daoPhayItems,
@@ -22,7 +23,8 @@ export const allProducts = [
   ...manhDaoItems,
   ...eToItems,
   ...giaCongLoItems,
-  ...boCanDemItems
+  ...boCanDemItems,
+  ...dauDoTamPhoiItems
 ];
 
 const mapAllProducts = {
