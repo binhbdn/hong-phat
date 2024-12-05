@@ -29,11 +29,11 @@ const model = [
         label: "productCategories",
         icon: "pi pi-database",
         class: "active-no-toggler",
-        autoGoTo: "/?view=san-pham",
+        autoGoTo: { name: "pHome", query: { view: "san-pham" } },
         items: [
           {
             label: "pDaoPhay",
-            autoGoTo: "/san-pham/dao-phay",
+            autoGoTo: { name: "pDaoPhay" },
             items: [
               {
                 label: "pDaoPhayNgon",
@@ -75,7 +75,7 @@ const model = [
           },
           {
             label: "pManhDao",
-            autoGoTo: "/san-pham/manh-dao",
+            autoGoTo: { name: "pManhDao" },
             items: [
               {
                 label: "pManhDaoGCGang",

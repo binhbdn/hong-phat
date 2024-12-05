@@ -73,8 +73,14 @@ const itemClick = async (event, item) => {
     setActiveMenuItem(itemKey);
   }
 
-  if (item?.autoGoTo && !checkActiveItem(item)) {
-    window.$router.push(item.autoGoTo);
+  if (item?.autoGoTo) {
+    if (window.$route.name !== item.autoGoTo.name) {
+      window.$router.push(item.autoGoTo);
+    } else if (window.$route.name === "pHome") {
+      if (window.$route.query?.view !== "san-pham") {
+        window.$router.push(item.autoGoTo);
+      }
+    }
   }
 };
 
