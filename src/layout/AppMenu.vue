@@ -118,6 +118,10 @@ const model = [
           {
             label: "pETo",
             to: "/san-pham/e-to"
+          },
+          {
+            label: "pGiaCongLo",
+            to: "/san-pham/gia-cong-lo"
           }
         ]
       }

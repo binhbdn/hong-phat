@@ -48,5 +48,6 @@ export default {
   pCanDaoGanManh: "可换刀片刀杆",
   pTaro: "内外螺纹加工工具",
   pDuongKiemRen: "螺纹量规",
-  pETo: "虎钳"
+  pETo: "虎钳",
+  pGiaCongLo: "钻削工具"
 };

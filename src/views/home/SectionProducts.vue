@@ -35,6 +35,7 @@ import CanDaoGanManhList from "@/views/san-pham/can-dao-gan-manh/ListItems.vue";
 import TaroList from "@/views/san-pham/taro/ListItems.vue";
 import DuongKiemRenList from "@/views/san-pham/duong-kiem-ren/ListItems.vue";
 import EToList from "@/views/san-pham/e-to/ListItems.vue";
+import GiaCongLoList from "@/views/san-pham/gia-cong-lo/ListItems.vue";
 
 const categoriesTreeViews = [
   {
@@ -162,6 +163,12 @@ const categoriesTreeViews = [
     isChild: true,
     listAll: true,
     listComponent: EToList
+  },
+  {
+    key: "pGiaCongLo",
+    isChild: true,
+    listAll: false,
+    listComponent: GiaCongLoList
   }
 ];
 

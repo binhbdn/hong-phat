@@ -110,6 +110,11 @@ const categoriesTreeConfig = [
     key: "pETo",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pGiaCongLo",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 

@@ -243,6 +243,17 @@ const router = createRouter({
           name: "pEToCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/e-to/PageDetails.vue")
+        },
+        {
+          path: "san-pham/gia-cong-lo",
+          name: "pGiaCongLo",
+          component: () => import("@/views/san-pham/gia-cong-lo/PageList.vue")
+        },
+        {
+          path: "san-pham/gia-cong-lo/:code",
+          name: "pGiaCongLoCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/gia-cong-lo/PageDetails.vue")
         }
       ]
     },
