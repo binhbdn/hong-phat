@@ -31,7 +31,7 @@ export default {
   pCanDaoGanManh: "Cán dao gắn mảnh",
   pTaro: "Taro ren trong - ren ngoài",
   pDuongKiemRen: "Dưỡng kiểm ren",
-  pETo: "Ê tô",
+  pETo: "Ê tô - mâm cặp",
   pGiaCongLo: "Mũi khoan, doa, chống tâm",
   pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp",
   pDauDoTamPhoi: "Đầu dò tâm phôi",

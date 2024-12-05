@@ -117,7 +117,7 @@ const model = [
           },
           {
             label: "pETo",
-            to: "/san-pham/e-to"
+            to: "/san-pham/e-to-mam-cap"
           },
           {
             label: "pGiaCongLo",

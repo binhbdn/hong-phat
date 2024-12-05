@@ -34,7 +34,7 @@ import ManhDaoTaoBongNhomList from "@/views/san-pham/manh-dao/tao-bong-nhom/List
 import CanDaoGanManhList from "@/views/san-pham/can-dao-gan-manh/ListItems.vue";
 import TaroList from "@/views/san-pham/taro/ListItems.vue";
 import DuongKiemRenList from "@/views/san-pham/duong-kiem-ren/ListItems.vue";
-import EToList from "@/views/san-pham/e-to/ListItems.vue";
+import EToList from "@/views/san-pham/e-to-mam-cap/ListItems.vue";
 import GiaCongLoList from "@/views/san-pham/gia-cong-lo/ListItems.vue";
 import BoCanDemList from "@/views/san-pham/bo-can-dem-can-mau-ga-kep/ListItems.vue";
 import DauDoTamPhoiList from "@/views/san-pham/dau-do-tam-phoi/ListItems.vue";

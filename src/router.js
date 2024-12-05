@@ -234,15 +234,15 @@ const router = createRouter({
           component: () => import("@/views/san-pham/duong-kiem-ren/PageDetails.vue")
         },
         {
-          path: "san-pham/e-to",
+          path: "san-pham/e-to-mam-cap",
           name: "pETo",
-          component: () => import("@/views/san-pham/e-to/PageList.vue")
+          component: () => import("@/views/san-pham/e-to-mam-cap/PageList.vue")
         },
         {
-          path: "san-pham/e-to/:code",
+          path: "san-pham/e-to-mam-cap/:code",
           name: "pEToCT",
           props: (route) => ({ code: route.params.code }),
-          component: () => import("@/views/san-pham/e-to/PageDetails.vue")
+          component: () => import("@/views/san-pham/e-to-mam-cap/PageDetails.vue")
         },
         {
           path: "san-pham/gia-cong-lo",
