@@ -8,6 +8,7 @@ import { taroItems } from "@/stores/taro";
 import { duongKiemRenItems } from "@/stores/duongKiemRen";
 import { eToItems } from "@/stores/eTo";
 import { giaCongLoItems } from "@/stores/giaCongLo";
+import { boCanDemItems } from "@/stores/boCanDem";
 
 export const allProducts = [
   ...daoPhayItems,
@@ -20,7 +21,8 @@ export const allProducts = [
   ...duongKiemRenItems,
   ...manhDaoItems,
   ...eToItems,
-  ...giaCongLoItems
+  ...giaCongLoItems,
+  ...boCanDemItems
 ];
 
 const mapAllProducts = {

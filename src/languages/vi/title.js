@@ -32,5 +32,6 @@ export default {
   pTaro: "Taro ren trong - ren ngoài",
   pDuongKiemRen: "Dưỡng kiểm ren",
   pETo: "Ê tô",
-  pGiaCongLo: "Mũi khoan - doa - chống tâm"
+  pGiaCongLo: "Mũi khoan, doa, chống tâm",
+  pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp"
 };

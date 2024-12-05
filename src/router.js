@@ -254,6 +254,17 @@ const router = createRouter({
           name: "pGiaCongLoCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/gia-cong-lo/PageDetails.vue")
+        },
+        {
+          path: "san-pham/bo-can-dem-can-mau-ga-kep",
+          name: "pBoCanDem",
+          component: () => import("@/views/san-pham/bo-can-dem-can-mau-ga-kep/PageList.vue")
+        },
+        {
+          path: "san-pham/bo-can-dem-can-mau-ga-kep/:code",
+          name: "pBoCanDemCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/bo-can-dem-can-mau-ga-kep/PageDetails.vue")
         }
       ]
     },
