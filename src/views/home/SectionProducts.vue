@@ -34,6 +34,7 @@ import ManhDaoTaoBongNhomList from "@/views/san-pham/manh-dao/tao-bong-nhom/List
 import CanDaoGanManhList from "@/views/san-pham/can-dao-gan-manh/ListItems.vue";
 import TaroList from "@/views/san-pham/taro/ListItems.vue";
 import DuongKiemRenList from "@/views/san-pham/duong-kiem-ren/ListItems.vue";
+import EToList from "@/views/san-pham/e-to/ListItems.vue";
 
 const categoriesTreeViews = [
   {
@@ -155,6 +156,12 @@ const categoriesTreeViews = [
     isChild: true,
     listAll: true,
     listComponent: DuongKiemRenList
+  },
+  {
+    key: "pETo",
+    isChild: true,
+    listAll: true,
+    listComponent: EToList
   }
 ];
 

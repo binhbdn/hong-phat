@@ -114,6 +114,10 @@ const model = [
           {
             label: "pDuongKiemRen",
             to: "/san-pham/duong-kiem-ren"
+          },
+          {
+            label: "pETo",
+            to: "/san-pham/e-to"
           }
         ]
       }

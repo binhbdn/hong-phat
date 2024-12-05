@@ -30,5 +30,6 @@ export default {
   pManhDaoTaoBongNhom: "Mảnh dao tạo bóng nhôm",
   pCanDaoGanManh: "Cán dao gắn mảnh",
   pTaro: "Taro ren trong - ren ngoài",
-  pDuongKiemRen: "Dưỡng kiểm ren"
+  pDuongKiemRen: "Dưỡng kiểm ren",
+  pETo: "Ê tô"
 };

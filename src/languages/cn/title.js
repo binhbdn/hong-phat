@@ -47,5 +47,6 @@ export default {
   pManhDaoTaoBongNhom: "用于铝材抛光的刀片",
   pCanDaoGanManh: "可换刀片刀杆",
   pTaro: "内外螺纹加工工具",
-  pDuongKiemRen: "螺纹量规"
+  pDuongKiemRen: "螺纹量规",
+  pETo: "虎钳"
 };

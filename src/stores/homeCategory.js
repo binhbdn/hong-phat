@@ -105,6 +105,11 @@ const categoriesTreeConfig = [
     key: "pDuongKiemRen",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pETo",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 
