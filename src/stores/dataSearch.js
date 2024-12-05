@@ -5,8 +5,19 @@ import { phuKienBauKepItems } from "@/stores/phuKienBauKep";
 import { manhDaoItems } from "@/stores/manhDao";
 import { canDaoGanManhItems } from "@/stores/canDaoGanManh";
 import { taroItems } from "@/stores/taro";
+import { duongKiemRenItems } from "@/stores/duongKiemRen";
 
-export const allProducts = [...daoPhayItems, ...bauKepItems, ...colletItems, ...phuKienBauKepItems, ...manhDaoItems, ...canDaoGanManhItems, ...taroItems];
+export const allProducts = [
+  ...daoPhayItems,
+  ...bauKepItems,
+  ...colletItems,
+  ...phuKienBauKepItems,
+  ...manhDaoItems,
+  ...canDaoGanManhItems,
+  ...taroItems,
+  ...duongKiemRenItems,
+  ...manhDaoItems
+];
 
 const mapAllProducts = {
   vi: [],

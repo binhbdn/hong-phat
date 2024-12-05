@@ -221,6 +221,17 @@ const router = createRouter({
           name: "pTaroCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/taro/PageDetails.vue")
+        },
+        {
+          path: "san-pham/duong-kiem-ren",
+          name: "pDuongKiemRen",
+          component: () => import("@/views/san-pham/duong-kiem-ren/PageList.vue")
+        },
+        {
+          path: "san-pham/duong-kiem-ren/:code",
+          name: "pDuongKiemRenCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/duong-kiem-ren/PageDetails.vue")
         }
       ]
     },
