@@ -51,5 +51,6 @@ export default {
   pETo: "虎钳",
   pGiaCongLo: "钻削工具",
   pBoCanDem: "垫块, 样块, 夹具套装",
-  pDauDoTamPhoi: "工件中心探针"
+  pDauDoTamPhoi: "工件中心探针",
+  pGotBavia: "去毛刺工具"
 };

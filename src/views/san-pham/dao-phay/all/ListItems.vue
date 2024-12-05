@@ -14,6 +14,5 @@ defineProps({
 <template>
   <div :class="viewDetails ? 'hp-list-grid' : 'hp-list-flex'">
     <DaoPhayItem v-for="item in daoPhayList" :key="item.code" :visible="showAll || item.isTypical" :viewDetails="viewDetails" :item="item" />
-    <slot name="last" />
   </div>
 </template>

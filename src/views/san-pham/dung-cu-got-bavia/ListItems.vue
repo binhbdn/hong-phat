@@ -1,6 +1,6 @@
 <script setup>
 import ProductItem from "@/components/ProductItem.vue";
-import { manhDaoList } from "@/stores/manhDao";
+import items from "@/stores/gotBavia";
 
 defineProps({
   viewDetails: Boolean,
@@ -13,6 +13,8 @@ defineProps({
 
 <template>
   <div :class="viewDetails ? 'hp-list-grid' : 'hp-list-flex'">
-    <ProductItem v-for="item in manhDaoList" :key="item.code" :visible="showAll || item.isTypical" :viewDetails="viewDetails" :item="item" />
+    <ProductItem v-for="item in items" :key="item.code" :visible="showAll || item.isTypical" :viewDetails="viewDetails" :item="item" />
+
+    <slot name="last" />
   </div>
 </template>

@@ -34,5 +34,6 @@ export default {
   pETo: "Ê tô",
   pGiaCongLo: "Mũi khoan, doa, chống tâm",
   pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp",
-  pDauDoTamPhoi: "Đầu dò tâm phôi"
+  pDauDoTamPhoi: "Đầu dò tâm phôi",
+  pGotBavia: "Dụng cụ gọt bavia"
 };

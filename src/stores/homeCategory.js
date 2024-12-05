@@ -125,6 +125,11 @@ const categoriesTreeConfig = [
     key: "pDauDoTamPhoi",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pGotBavia",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 
