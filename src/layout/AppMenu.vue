@@ -1,10 +1,6 @@
 <script setup>
 import AppSubMenu from "./AppSubMenu.vue";
 
-const onClickProductCategories = () => {
-  window.$router.push({ name: "pHome", query: { view: "san-pham" } });
-};
-
 const model = [
   {
     label: "group",
@@ -33,10 +29,11 @@ const model = [
         label: "productCategories",
         icon: "pi pi-database",
         class: "active-no-toggler",
-        command: onClickProductCategories,
+        autoGoTo: "/?view=san-pham",
         items: [
           {
             label: "pDaoPhay",
+            autoGoTo: "/san-pham/dao-phay",
             items: [
               {
                 label: "pDaoPhayNgon",
@@ -78,6 +75,7 @@ const model = [
           },
           {
             label: "pManhDao",
+            autoGoTo: "/san-pham/manh-dao",
             items: [
               {
                 label: "pManhDaoGCGang",
