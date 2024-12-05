@@ -130,6 +130,21 @@ const categoriesTreeConfig = [
     key: "pGotBavia",
     parent: "allCategories",
     isChild: true
+  },
+  {
+    key: "pDoLuong",
+    parent: "allCategories",
+    isChild: false
+  },
+  {
+    key: "pDoLuongItaly",
+    parent: "pDoLuong",
+    isChild: true
+  },
+  {
+    key: "pDoLuongChina",
+    parent: "pDoLuong",
+    isChild: true
   }
 ];
 

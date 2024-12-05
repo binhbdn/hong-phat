@@ -134,6 +134,20 @@ const model = [
           {
             label: "pGotBavia",
             to: "/san-pham/dung-cu-got-bavia"
+          },
+          {
+            label: "pDoLuong",
+            autoGoTo: { name: "pDoLuong" },
+            items: [
+              {
+                label: "pDoLuongItaly",
+                to: "/san-pham/dung-cu-do-luong-chinh-xac-dasqua-y"
+              },
+              {
+                label: "pDoLuongChina",
+                to: "/san-pham/dung-cu-do-luong-chinh-xac-trung-quoc"
+              }
+            ]
           }
         ]
       }

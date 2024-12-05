@@ -287,6 +287,33 @@ const router = createRouter({
           name: "pGotBaviaCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dung-cu-got-bavia/PageDetails.vue")
+        },
+        {
+          path: "san-pham/dung-cu-do-luong-chinh-xac",
+          name: "pDoLuong",
+          component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/all/PageList.vue")
+        },
+        {
+          path: "san-pham/dung-cu-do-luong-chinh-xac-dasqua-y",
+          name: "pDoLuongItaly",
+          component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/dasqua-y/PageList.vue")
+        },
+        {
+          path: "san-pham/dung-cu-do-luong-chinh-xac-dasqua-y/:code",
+          name: "pDoLuongItalyCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/dasqua-y/PageDetails.vue")
+        },
+        {
+          path: "san-pham/dung-cu-do-luong-chinh-xac-trung-quoc",
+          name: "pDoLuongChina",
+          component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/trung-quoc/PageList.vue")
+        },
+        {
+          path: "san-pham/dung-cu-do-luong-chinh-xac-trung-quoc/:code",
+          name: "pDoLuongChinaCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/trung-quoc/PageDetails.vue")
         }
       ]
     },

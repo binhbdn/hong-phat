@@ -11,6 +11,7 @@ import { giaCongLoItems } from "@/stores/giaCongLo";
 import { boCanDemItems } from "@/stores/boCanDem";
 import { dauDoTamPhoiItems } from "@/stores/dauDoTamPhoi";
 import { gotBaviaItems } from "@/stores/gotBavia";
+import { doLuongItems } from "@/stores/doLuong";
 
 export const allProducts = [
   ...daoPhayItems,
@@ -26,7 +27,8 @@ export const allProducts = [
   ...giaCongLoItems,
   ...boCanDemItems,
   ...dauDoTamPhoiItems,
-  ...gotBaviaItems
+  ...gotBaviaItems,
+  ...doLuongItems
 ];
 
 const mapAllProducts = {

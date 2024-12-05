@@ -35,5 +35,8 @@ export default {
   pGiaCongLo: "Mũi khoan, doa, chống tâm",
   pBoCanDem: "Bộ căn đệm, căn mẫu, gá kẹp",
   pDauDoTamPhoi: "Đầu dò tâm phôi",
-  pGotBavia: "Dụng cụ gọt bavia"
+  pGotBavia: "Dụng cụ gọt bavia",
+  pDoLuong: "Dụng cụ đo lường chính xác",
+  pDoLuongItaly: "Dụng cụ đo Dasqua - Ý",
+  pDoLuongChina: "Dụng cụ đo Trung Quốc"
 };
