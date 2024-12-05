@@ -30,7 +30,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/ngon/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/ngon/:code",
+          path: "san-pham/dao-phay-ngon/:code",
           name: "pDaoPhayNgonCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/ngon/PageDetails.vue")
@@ -41,7 +41,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/cau/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/cau/:code",
+          path: "san-pham/dao-phay-cau/:code",
           name: "pDaoPhayCauCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/cau/PageDetails.vue")
@@ -52,7 +52,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/vat-mep/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/vat-mep/:code",
+          path: "san-pham/dao-phay-vat-mep/:code",
           name: "pDaoPhayVatMepCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/vat-mep/PageDetails.vue")
@@ -69,7 +69,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/bo-goc/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/bo-goc/:code",
+          path: "san-pham/dao-phay-bo-goc/:code",
           name: "pDaoPhayBoGocCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/bo-goc/PageDetails.vue")
@@ -80,7 +80,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/r-trong/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/r-trong/:code",
+          path: "san-pham/dao-phay-r-trong/:code",
           name: "pDaoPhayRTrongCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/r-trong/PageDetails.vue")
@@ -91,7 +91,7 @@ const router = createRouter({
           component: () => import("@/views/san-pham/dao-phay/pha-tho/PageList.vue")
         },
         {
-          path: "san-pham/dao-phay/pha-tho/:code",
+          path: "san-pham/dao-phay-pha-tho/:code",
           name: "pDaoPhayPhaThoCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dao-phay/pha-tho/PageDetails.vue")
