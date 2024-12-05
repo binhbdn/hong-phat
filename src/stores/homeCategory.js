@@ -145,6 +145,11 @@ const categoriesTreeConfig = [
     key: "pDoLuongChina",
     parent: "pDoLuong",
     isChild: true
+  },
+  {
+    key: "pDauKepLapChuoiCon",
+    parent: "allCategories",
+    isChild: true
   }
 ];
 

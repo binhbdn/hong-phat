@@ -41,6 +41,7 @@ import DauDoTamPhoiList from "@/views/san-pham/dau-do-tam-phoi/ListItems.vue";
 import GotBaviaList from "@/views/san-pham/dung-cu-got-bavia/ListItems.vue";
 import DoLuongItalyList from "@/views/san-pham/dung-cu-do-luong-chinh-xac/dasqua-y/ListItems.vue";
 import DoLuongChinaList from "@/views/san-pham/dung-cu-do-luong-chinh-xac/trung-quoc/ListItems.vue";
+import DauKepLapChuoiConList from "@/views/san-pham/dau-kep-lap-chuoi-con/ListItems.vue";
 
 const categoriesTreeViews = [
   {
@@ -210,6 +211,12 @@ const categoriesTreeViews = [
         listComponent: DoLuongChinaList
       }
     ]
+  },
+  {
+    key: "pDauKepLapChuoiCon",
+    isChild: true,
+    listAll: true,
+    listComponent: DauKepLapChuoiConList
   }
 ];
 

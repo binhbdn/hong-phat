@@ -314,6 +314,17 @@ const router = createRouter({
           name: "pDoLuongChinaCT",
           props: (route) => ({ code: route.params.code }),
           component: () => import("@/views/san-pham/dung-cu-do-luong-chinh-xac/trung-quoc/PageDetails.vue")
+        },
+        {
+          path: "san-pham/dau-kep-lap-chuoi-con",
+          name: "pDauKepLapChuoiCon",
+          component: () => import("@/views/san-pham/dau-kep-lap-chuoi-con/PageList.vue")
+        },
+        {
+          path: "san-pham/dau-kep-lap-chuoi-con/:code",
+          name: "pDauKepLapChuoiConCT",
+          props: (route) => ({ code: route.params.code }),
+          component: () => import("@/views/san-pham/dau-kep-lap-chuoi-con/PageDetails.vue")
         }
       ]
     },

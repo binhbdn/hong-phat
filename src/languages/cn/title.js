@@ -55,5 +55,6 @@ export default {
   pGotBavia: "去毛刺工具",
   pDoLuong: "精密测量工具",
   pDoLuongItaly: "意大利 Dasqua 测量工具",
-  pDoLuongChina: "中国测量工具"
+  pDoLuongChina: "中国测量工具",
+  pDauKepLapChuoiCon: "锥柄夹头"
 };

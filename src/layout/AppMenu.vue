@@ -148,6 +148,10 @@ const model = [
                 to: "/san-pham/dung-cu-do-luong-chinh-xac-trung-quoc"
               }
             ]
+          },
+          {
+            label: "pDauKepLapChuoiCon",
+            to: "/san-pham/dau-kep-lap-chuoi-con"
           }
         ]
       }

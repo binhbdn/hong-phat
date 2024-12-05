@@ -38,5 +38,6 @@ export default {
   pGotBavia: "Dụng cụ gọt bavia",
   pDoLuong: "Dụng cụ đo lường chính xác",
   pDoLuongItaly: "Dụng cụ đo Dasqua - Ý",
-  pDoLuongChina: "Dụng cụ đo Trung Quốc"
+  pDoLuongChina: "Dụng cụ đo Trung Quốc",
+  pDauKepLapChuoiCon: "Đầu kẹp lắp chuôi côn"
 };
