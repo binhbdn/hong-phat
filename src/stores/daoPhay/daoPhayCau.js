@@ -25,11 +25,21 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
-        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
-        "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Titan Nitride tăng độ cứng và giảm mài mòn."
+        {
+          title: "description",
+          data: [
+            "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+            "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+            "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Titan Nitride tăng độ cứng và giảm mài mòn."
+          ]
+        }
       ],
-      cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝钛氮化物涂层提高硬度并减少磨损。"]
+      cn: [
+        {
+          title: "description",
+          data: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝钛氮化物涂层提高硬度并减少磨损。"]
+        }
+      ]
     },
     seri: "45HRC",
     specs: "R0.5-R10",
@@ -72,11 +82,21 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
-        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
-        "Vật liệu hợp kim nguyên khối, lớp phủ Titan Silic Nitride tăng độ cứng và giảm mài mòn."
+        {
+          title: "description",
+          data: [
+            "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+            "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+            "Vật liệu hợp kim nguyên khối, lớp phủ Titan Silic Nitride tăng độ cứng và giảm mài mòn."
+          ]
+        }
       ],
-      cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
+      cn: [
+        {
+          title: "description",
+          data: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "R0.1-R10",
@@ -119,11 +139,21 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
-        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
-        "Vật liệu hợp kim nguyên khối, lớp phủ Nano tăng độ cứng và giảm mài mòn."
+        {
+          title: "description",
+          data: [
+            "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+            "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+            "Vật liệu hợp kim nguyên khối, lớp phủ Nano tăng độ cứng và giảm mài mòn."
+          ]
+        }
       ],
-      cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，纳米复合涂层提高硬度并减少磨损。"]
+      cn: [
+        {
+          title: "description",
+          data: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，纳米复合涂层提高硬度并减少磨损。"]
+        }
+      ]
     },
     seri: "65HRC",
     specs: "R0.5-R10",
@@ -166,11 +196,21 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
-        "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
-        "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Chrome Silic Nitride tăng độ cứng và giảm mài mòn."
+        {
+          title: "description",
+          data: [
+            "Thiết kế mũi bán cầu, chuyên gia công bề mặt cong và chi tiết 3D.",
+            "Thiết kế 2 me, góc xoắn 35°, dải kích thước đa dạng.",
+            "Vật liệu hợp kim nguyên khối, lớp phủ Nhôm Chrome Silic Nitride tăng độ cứng và giảm mài mòn."
+          ]
+        }
       ],
-      cn: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝铬硅氮化物涂层提高硬度并减少磨损。"]
+      cn: [
+        {
+          title: "description",
+          data: ["半球刀头设计，专用于曲面加工和3D零件。", "双刃设计，35°螺旋角，多种尺寸选择。", "整体合金材料，铝铬硅氮化物涂层提高硬度并减少磨损。"]
+        }
+      ]
     },
     seri: "65HRC",
     specs: "R0.5-R6",

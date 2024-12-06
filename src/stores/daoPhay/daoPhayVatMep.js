@@ -24,8 +24,18 @@ const items = [
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
     descriptions: {
-      vi: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"],
-      cn: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D1-D12",
@@ -68,8 +78,18 @@ const items = [
       cn: "适用于加工铁、钢、铜、铸铁…"
     },
     descriptions: {
-      vi: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"],
-      cn: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công sắt, thép, đồng, gang…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铁、钢、铜、铸铁材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D3-D12",
@@ -112,8 +132,18 @@ const items = [
       cn: "高光泽，适合加工铝、铝合金…"
     },
     descriptions: {
-      vi: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
-      cn: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 2 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["双刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D1-D12",
@@ -156,8 +186,18 @@ const items = [
       cn: "高光泽，适合加工铝、铝合金…"
     },
     descriptions: {
-      vi: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
-      cn: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 3 me, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["三刃设计，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝材及铝合金材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D3-D12",
@@ -200,8 +240,18 @@ const items = [
       cn: "高光泽，适合加工铝、铝合金…"
     },
     descriptions: {
-      vi: ["Thiết kế 1 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
-      cn: ["单刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 1 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["单刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D8.3-D35",
@@ -244,8 +294,18 @@ const items = [
       cn: "高光泽，适合加工铝、铝合金…"
     },
     descriptions: {
-      vi: ["Thiết kế 3 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"],
-      cn: ["三刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 3 me, hình nấm, góc lưỡi cắt 90°, phù hợp vát mép lỗ và mép cạnh.", "Chất liệu hợp kim, thích hợp gia công nhôm, hợp kim nhôm…"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["三刃设计，蘑菇形，90°刀刃角，适合孔口倒角及边缘加工。", "合金材质，适合加工铝及铝合金材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "D8.3-D35",

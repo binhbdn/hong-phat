@@ -25,18 +25,28 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 3 me giúp tối ưu tốc độ gia công, thoát phoi tốt và bề mặt cắt đẹp.",
-        "Góc cắt 45° giúp tăng hiệu quả gia công, phù hợp với vật liệu nhôm và đồng.",
-        "Khoảng cách giữa 3 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 3 me giúp tối ưu tốc độ gia công, thoát phoi tốt và bề mặt cắt đẹp.",
+            "Góc cắt 45° giúp tăng hiệu quả gia công, phù hợp với vật liệu nhôm và đồng.",
+            "Khoảng cách giữa 3 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "三刃设计优化加工速度，排屑性能佳，切割面光滑。",
-        "45°切削角提高加工效率，适用于铝材和铜材。",
-        "三刃间距不均匀，有助于提高效率并降低切削阻力。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "三刃设计优化加工速度，排屑性能佳，切割面光滑。",
+            "45°切削角提高加工效率，适用于铝材和铜材。",
+            "三刃间距不均匀，有助于提高效率并降低切削阻力。"
+          ]
+        }
       ]
     },
     seri: "45HRC",
@@ -80,18 +90,28 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 3 me giúp tối ưu tốc độ gia công, thoát phoi tốt và bề mặt cắt đẹp.",
-        "Góc cắt 55° giúp dao cứng vững hơn, phù hợp gia công nhôm và hợp kim.",
-        "Khoảng cách giữa 3 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 3 me giúp tối ưu tốc độ gia công, thoát phoi tốt và bề mặt cắt đẹp.",
+            "Góc cắt 55° giúp dao cứng vững hơn, phù hợp gia công nhôm và hợp kim.",
+            "Khoảng cách giữa 3 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "三刃设计优化加工速度，排屑性能佳，切割面光滑。",
-        "55°切削角使刀具更加坚固，适用于铝材和合金加工。",
-        "三刃间距不均匀，有助于提高效率并降低切削阻力。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "三刃设计优化加工速度，排屑性能佳，切割面光滑。",
+            "55°切削角使刀具更加坚固，适用于铝材和合金加工。",
+            "三刃间距不均匀，有助于提高效率并降低切削阻力。"
+          ]
+        }
       ]
     },
     seri: "55HRC",
@@ -135,16 +155,26 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 2 me tối ưu tốc độ gia công, mang lại đường cắt hoàn hảo.",
-        "Giải pháp lý tưởng cho gia công nhôm, đồng với hiệu suất vượt trội."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 2 me tối ưu tốc độ gia công, mang lại đường cắt hoàn hảo.",
+            "Giải pháp lý tưởng cho gia công nhôm, đồng với hiệu suất vượt trội."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "双刃设计优化加工速度，带来完美切割效果。",
-        "加工铝材、铜材的理想解决方案，性能卓越。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "双刃设计优化加工速度，带来完美切割效果。",
+            "加工铝材、铜材的理想解决方案，性能卓越。"
+          ]
+        }
       ]
     },
     seri: "45HRC",
@@ -188,16 +218,26 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 4 me tối ưu tốc độ gia công, mang lại đường cắt hoàn hảo.",
-        "Giải pháp lý tưởng cho gia công nhôm, đồng với hiệu suất vượt trội."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 4 me tối ưu tốc độ gia công, mang lại đường cắt hoàn hảo.",
+            "Giải pháp lý tưởng cho gia công nhôm, đồng với hiệu suất vượt trội."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "四刃设计优化加工速度，带来完美切割效果。",
-        "加工铝材、铜材的理想解决方案，性能卓越。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "四刃设计优化加工速度，带来完美切割效果。",
+            "加工铝材、铜材的理想解决方案，性能卓越。"
+          ]
+        }
       ]
     },
     seri: "45HRC",
@@ -241,16 +281,26 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 2 me giúp tối ưu tốc độ gia công, đồng thời giữ đường cắt bóng đẹp.",
-        "Khoảng cách giữa 2 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 2 me giúp tối ưu tốc độ gia công, đồng thời giữ đường cắt bóng đẹp.",
+            "Khoảng cách giữa 2 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "双刃设计优化加工速度，同时保持切割面光滑。",
-        "两刃间距不均匀，有助于提高效率并降低切削阻力。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "双刃设计优化加工速度，同时保持切割面光滑。",
+            "两刃间距不均匀，有助于提高效率并降低切削阻力。"
+          ]
+        }
       ]
     },
     seri: "55HRC",
@@ -294,16 +344,26 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 4 me giúp dao cứng vững hơn, mang lại bề mặt cắt đẹp.",
-        "Khoảng cách giữa 4 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 4 me giúp dao cứng vững hơn, mang lại bề mặt cắt đẹp.",
+            "Khoảng cách giữa 4 lưỡi cắt không đều giúp tăng hiệu suất và giảm lực cắt."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "四刃设计使刀具更坚固，并带来光滑的切割表面。",
-        "四刃间距不均匀，有助于提高效率并降低切削阻力。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "四刃设计使刀具更坚固，并带来光滑的切割表面。",
+            "四刃间距不均匀，有助于提高效率并降低切削阻力。"
+          ]
+        }
       ]
     },
     seri: "55HRC",
@@ -347,16 +407,26 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Thiết kế 4 me giúp tối ưu tốc độ gia công, mang lại đường cắt đẹp và hiệu quả.",
-        "Giải pháp lý tưởng cho gia công inox với độ cứng cao và độ bền vượt trội."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Thiết kế 4 me giúp tối ưu tốc độ gia công, mang lại đường cắt đẹp và hiệu quả.",
+            "Giải pháp lý tưởng cho gia công inox với độ cứng cao và độ bền vượt trội."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "四刃设计优化加工速度，带来光滑的切割面和高效的加工。",
-        "理想的解决方案，用于不锈钢加工，具备较高的硬度和卓越的耐用性。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "四刃设计优化加工速度，带来光滑的切割面和高效的加工。",
+            "理想的解决方案，用于不锈钢加工，具备较高的硬度和卓越的耐用性。"
+          ]
+        }
       ]
     },
     seri: "60HRC",
@@ -400,11 +470,25 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Phủ Nano, tối ưu gia công thép sau nhiệt có độ cứng cao với giá thành hợp lý."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Phủ Nano, tối ưu gia công thép sau nhiệt có độ cứng cao với giá thành hợp lý."
+          ]
+        }
       ],
-      cn: ["精密机械加工工具，广泛用于数控铣床。", "进口材料，精细加工，确保高耐用性和高光洁度。", "纳米涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"]
+      cn: [
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "纳米涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"
+          ]
+        }
+      ]
     },
     seri: "65HRC",
     specs: "D1-D20",
@@ -447,14 +531,24 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
-        "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
-        "Phủ AlCrSiN, tối ưu gia công thép sau nhiệt có độ cứng cao với giá thành hợp lý."
+        {
+          title: "description",
+          data: [
+            "Dụng cụ gia công cơ khí chính xác, sử dụng phổ biến trên máy phay CNC.",
+            "Vật liệu nhập khẩu, gia công tỉ mỉ, đảm bảo độ bền và độ bóng cao.",
+            "Phủ AlCrSiN, tối ưu gia công thép sau nhiệt có độ cứng cao với giá thành hợp lý."
+          ]
+        }
       ],
       cn: [
-        "精密机械加工工具，广泛用于数控铣床。",
-        "进口材料，精细加工，确保高耐用性和高光洁度。",
-        "AlCrSiN涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"
+        {
+          title: "description",
+          data: [
+            "精密机械加工工具，广泛用于数控铣床。",
+            "进口材料，精细加工，确保高耐用性和高光洁度。",
+            "AlCrSiN涂层优化高硬度热处理钢材的加工，具备经济性和高效性。"
+          ]
+        }
       ]
     },
     seri: "65HRC",

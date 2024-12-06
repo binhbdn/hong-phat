@@ -25,10 +25,20 @@ const items = [
     },
     descriptions: {
       vi: [
-        "Thiết kế 4 me, dải kích thước đa dạng, hiệu suất tuyệt vời trong quá trình cắt tốc độ cao.",
-        "Vật liệu hợp kim nguyên khối, lớp phủ Titan Silic Nitride tăng độ cứng và giảm mài mòn."
+        {
+          title: "description",
+          data: [
+            "Thiết kế 4 me, dải kích thước đa dạng, hiệu suất tuyệt vời trong quá trình cắt tốc độ cao.",
+            "Vật liệu hợp kim nguyên khối, lớp phủ Titan Silic Nitride tăng độ cứng và giảm mài mòn."
+          ]
+        }
       ],
-      cn: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
+      cn: [
+        {
+          title: "description",
+          data: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料，钛硅氮化物涂层提高硬度并减少磨损。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "R0.5-R5",
@@ -71,8 +81,18 @@ const items = [
       cn: "高光泽，适合加工铝、塑料…"
     },
     descriptions: {
-      vi: ["Thiết kế 4 me, dải kích thước đa dạng, hiệu suất tuyệt vời trong quá trình cắt tốc độ cao.", "Vật liệu hợp kim nguyên khối."],
-      cn: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料。"]
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế 4 me, dải kích thước đa dạng, hiệu suất tuyệt vời trong quá trình cắt tốc độ cao.", "Vật liệu hợp kim nguyên khối."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["四刃设计，多种尺寸选择，在高速切割过程中提供卓越的性能。", "整体合金材料。"]
+        }
+      ]
     },
     seri: "55HRC",
     specs: "R0.5-R5",

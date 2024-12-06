@@ -37,6 +37,7 @@ export default {
   helixAngle: "螺旋角",
   noseAngle: "鼻角",
   specifications: "规格",
+  application: "应用",
   description: "描述",
   dimension: "方面",
   showSortBtns: "显示排序按钮",

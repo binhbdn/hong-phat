@@ -63,6 +63,6 @@ const formattedPrice = computed(() => {
       </div>
     </div>
 
-    <ProductDescription :descriptions="item.descriptions[current]" />
+    <ProductDescription v-if="item.descriptions" :descriptions="item.descriptions[current]" />
   </div>
 </template>

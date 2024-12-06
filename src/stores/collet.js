@@ -22,10 +22,7 @@ const items = [
       vi: "Description collet vi?",
       cn: "Description collet cn?"
     },
-    descriptions: {
-      vi: [],
-      cn: []
-    },
+    descriptions: null,
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
@@ -54,10 +51,7 @@ const items = [
       vi: "Description collet vi?",
       cn: "Description collet cn?"
     },
-    descriptions: {
-      vi: [],
-      cn: []
-    },
+    descriptions: null,
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",

@@ -22,10 +22,7 @@ const items = [
       vi: "Description vi?",
       cn: "Description cn?"
     },
-    descriptions: {
-      vi: [],
-      cn: []
-    },
+    descriptions: null,
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
@@ -52,10 +49,7 @@ const items = [
       vi: "Description vi?",
       cn: "Description cn?"
     },
-    descriptions: {
-      vi: [],
-      cn: []
-    },
+    descriptions: null,
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
