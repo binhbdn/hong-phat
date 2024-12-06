@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "GCL_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Gia công lỗ 1 vi?",
       cn: "Gia công lỗ 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "GCL_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Gia công lỗ 2 vi?",
       cn: "Gia công lỗ 2 cn?"

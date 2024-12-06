@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "TARO_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Taro 1 vi?",
       cn: "Taro 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "TARO_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Taro 2 vi?",
       cn: "Taro 2 cn?"

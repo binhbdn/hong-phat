@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "DCDL_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Dụng cụ đo lường Dasqua 1 vi?",
       cn: "Dụng cụ đo lường Dasqua 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "DCDL_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Dụng cụ đo lường Dasqua 2 vi?",
       cn: "Dụng cụ đo lường Dasqua 2 cn?"

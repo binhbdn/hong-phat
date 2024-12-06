@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "BCD_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Bộ căn đệm 1 vi?",
       cn: "Bộ căn đệm 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "BCD_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Bộ căn đệm 2 vi?",
       cn: "Bộ căn đệm 2 cn?"

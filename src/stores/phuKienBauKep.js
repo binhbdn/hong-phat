@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "PKBK_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Phụ kiện 1 vi?",
       cn: "Phụ kiện 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "PKBK_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Phụ kiện 2 vi?",
       cn: "Phụ kiện 2 cn?"

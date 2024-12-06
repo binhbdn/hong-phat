@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "CL_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Collet 1 vi?",
       cn: "Collet 1 cn?"
@@ -38,6 +39,7 @@ const items = [
     isTypical: false,
     code: "CL_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Collet 2 vi?",
       cn: "Collet 2 cn?"

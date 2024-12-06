@@ -10,6 +10,7 @@ const items = [
     isTypical: true,
     code: "DPRT_55HRC_4F",
     images: ["/dao_phay_r_trong/55HRC_4F.webp", "/dao_phay_r_trong/55hrc_4f/1.webp", "/dao_phay_r_trong/55hrc_4f/2.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay R trong 4F",
       cn: "55HRC - 内R铣刀 4F"
@@ -67,6 +68,7 @@ const items = [
     isTypical: false,
     code: "DPRT_55HRC_4F_Al",
     images: ["/dao_phay_r_trong/55HRC_4F_Al.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay R trong 4F - gia công nhôm",
       cn: "55HRC - 内R铣刀 4F - 铝加工"

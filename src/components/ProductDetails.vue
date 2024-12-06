@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n-lite";
 import { numberToVnd } from "@/library/helper";
 import ProductImages from "@/components/ProductImages.vue";
+import ProductExtraImages from "@/components/ProductExtraImages.vue";
 import ProductDescription from "@/components/ProductDescription.vue";
 
 const props = defineProps(["item"]);
@@ -64,5 +65,7 @@ const formattedPrice = computed(() => {
     </div>
 
     <ProductDescription v-if="item.descriptions" :descriptions="item.descriptions[current]" />
+
+    <ProductExtraImages v-if="item.extraImages" :images="item.extraImages" />
   </div>
 </template>

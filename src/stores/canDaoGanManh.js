@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "CDGM__1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Cán dao gắn mảnh 1 vi?",
       cn: "Cán dao gắn mảnh 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "CDGM__2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Cán dao gắn mảnh 2 vi?",
       cn: "Cán dao gắn mảnh 2 cn?"

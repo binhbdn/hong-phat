@@ -36,6 +36,12 @@ const items = [
       "/bau_kep_suken/bt50/3.webp",
       "/bau_kep_suken/bt50/4.webp"
     ],
+    extraImages: [
+      {
+        title: "specifications",
+        data: ["/bau_kep_suken/spec1.webp"]
+      }
+    ],
     name: {
       vi: "Bầu kẹp Suken BT50 loại ER16/20/25/32/40",
       cn: "刀柄 Suken BT50 ER16/20/25/32/40"
@@ -62,8 +68,7 @@ const items = [
     hardness: "58HRC-60HRC",
     runout: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "100, 150, 200",
-    specImages: ["/bau_kep_suken/spec1.webp"]
+    overallLength: "100, 150, 200"
   },
   {
     category: "pBauKep",
@@ -85,6 +90,12 @@ const items = [
       "/bau_kep_suken/bt40_er32/3.webp",
       "/bau_kep_suken/bt40_er32/4.webp",
       */
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        data: ["/bau_kep_suken/spec1.webp"]
+      }
     ],
     name: {
       vi: "Bầu kẹp Suken BT40 loại ER16/20/25/32",
@@ -112,8 +123,7 @@ const items = [
     hardness: "58HRC-60HRC",
     runout: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "70, 100, 150",
-    specImages: ["/bau_kep_suken/spec1.webp"]
+    overallLength: "70, 100, 150"
   },
   {
     category: "pBauKep",
@@ -131,6 +141,12 @@ const items = [
       "/bau_kep_suken/bt30/BT30_ER32_100L.webp",
       "/bau_kep_suken/bt30/BT30_ER32_100L_1.webp",
       "/bau_kep_suken/bt30/BT30_ER32_100L_2.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        data: ["/bau_kep_suken/spec1.webp"]
+      }
     ],
     name: {
       vi: "Bầu kẹp Suken BT30 loại ER16/20/25/32",
@@ -158,8 +174,7 @@ const items = [
     hardness: "58HRC-60HRC",
     runout: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "70, 100",
-    specImages: ["/bau_kep_suken/spec1.webp"]
+    overallLength: "70, 100"
   }
 ];
 

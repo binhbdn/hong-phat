@@ -10,6 +10,7 @@ const items = [
     isTypical: false,
     code: "DPPT_55HRC_3F",
     images: ["/dao_phay_pha_tho/55HRC_3F.webp", "/dao_phay_pha_tho/55hrc_3f/1.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay phá thô 3F - gia công nhôm",
       cn: "55HRC - 粗皮刀 3F - 铝加工"
@@ -63,6 +64,7 @@ const items = [
     isTypical: true,
     code: "DPPT_55HRC_4F",
     images: ["/dao_phay_pha_tho/55HRC_4F.webp", "/dao_phay_pha_tho/55hrc_4f/1.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay phá thô 4F",
       cn: "55HRC - 粗皮刀 4F"

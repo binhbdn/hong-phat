@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "DKR_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Dưỡng kiểm ren ngoài hệ met",
       cn: "外螺纹量规（公制）"
@@ -36,6 +37,7 @@ const items = [
     isTypical: true,
     code: "DKR_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Dưỡng kiểm ren trong",
       cn: "内螺纹量规"

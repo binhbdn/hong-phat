@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "ETO_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Ê tô 1 vi?",
       cn: "Ê tô 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: true,
     code: "ETO_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Ê tô 2 vi?",
       cn: "Ê tô 2 cn?"

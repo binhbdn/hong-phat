@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "GB_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Gọt bavia 1 vi?",
       cn: "Gọt bavia 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: true,
     code: "GB_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Gọt bavia 2 vi?",
       cn: "Gọt bavia 2 cn?"

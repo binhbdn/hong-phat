@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "MD_TBN_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao tạo bóng nhôm 1 vi?",
       cn: "Mảnh dao tạo bóng nhôm 1 cn?"

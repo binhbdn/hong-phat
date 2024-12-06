@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "DDTP_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Đầu dò tâm phôi 1 vi?",
       cn: "Đầu dò tâm phôi 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "DDTP_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Đầu dò tâm phôi 2 vi?",
       cn: "Đầu dò tâm phôi 2 cn?"

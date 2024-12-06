@@ -10,6 +10,7 @@ const items = [
     isTypical: false,
     code: "DPVM_55HRC_2F",
     images: ["/dao_phay_vat_mep/55HRC_2F.webp", "/dao_phay_vat_mep/55hrc_2f/1.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90°",
       cn: "55HRC - 倒角刀（定心钻）2F 90°"
@@ -64,6 +65,7 @@ const items = [
     isTypical: true,
     code: "DPVM_55HRC_3F",
     images: ["/dao_phay_vat_mep/55HRC_3F.webp", "/dao_phay_vat_mep/55hrc_3f/1.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90°",
       cn: "55HRC - 倒角刀（定心钻）3F 90°"
@@ -118,6 +120,7 @@ const items = [
     isTypical: true,
     code: "DPVM_55HRC_2F_Al",
     images: ["/dao_phay_vat_mep/55HRC_2F_Al.webp", "/dao_phay_vat_mep/55hrc_2f_al/1.webp", "/dao_phay_vat_mep/55hrc_2f_al/2.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 2F 90° - gia công nhôm",
       cn: "55HRC - 倒角刀（定心钻）2F 90° - 铝加工"
@@ -172,6 +175,7 @@ const items = [
     isTypical: false,
     code: "DPVM_55HRC_3F_Al",
     images: ["/dao_phay_vat_mep/55HRC_3F_Al.webp", "/dao_phay_vat_mep/55hrc_3f_al/1.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - gia công nhôm",
       cn: "55HRC - 倒角刀（定心钻）3F 90° - 铝加工"
@@ -226,6 +230,7 @@ const items = [
     isTypical: false,
     code: "DPVM_55HRC_1F_CS",
     images: ["/dao_phay_vat_mep/55HRC_1F_CS.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 1F 90° - hình nấm",
       cn: "55HRC - 倒角刀（定心钻）1F 90° - 蘑菇形状"
@@ -280,6 +285,7 @@ const items = [
     isTypical: false,
     code: "DPVM_55HRC_3F_CS",
     images: ["/dao_phay_vat_mep/55HRC_3F_CS.webp"],
+    extraImages: null,
     name: {
       vi: "55HRC - Dao phay vát mép 3F 90° - hình nấm",
       cn: "55HRC - 倒角刀（定心钻）3F 90° - 蘑菇形状"

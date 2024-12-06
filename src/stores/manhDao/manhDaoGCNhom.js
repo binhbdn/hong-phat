@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "MD_GCN_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao gia công nhôm 1 vi?",
       cn: "Mảnh dao gia công nhôm 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "MD_GCN_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao gia công nhôm 2 vi?",
       cn: "Mảnh dao gia công nhôm 2 cn?"

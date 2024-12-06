@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "DKLCC_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Đầu kẹp lắp chuôi côn 1 vi?",
       cn: "Đầu kẹp lắp chuôi côn 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: true,
     code: "DKLCC_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Đầu kẹp lắp chuôi côn 2 vi?",
       cn: "Đầu kẹp lắp chuôi côn 2 cn?"

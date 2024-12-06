@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "MD_TRR_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao tiện rãnh ren 1 vi?",
       cn: "Mảnh dao tiện rãnh ren 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "MD_TRR_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao tiện rãnh ren 2 vi?",
       cn: "Mảnh dao tiện rãnh ren 2 cn?"

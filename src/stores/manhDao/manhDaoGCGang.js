@@ -9,6 +9,7 @@ const items = [
     isTypical: true,
     code: "MD_GCG_1",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao gia công gang 1 vi?",
       cn: "Mảnh dao gia công gang 1 cn?"
@@ -36,6 +37,7 @@ const items = [
     isTypical: false,
     code: "MD_GCG_2",
     images: ["/img/logo.png"],
+    extraImages: null,
     name: {
       vi: "Mảnh dao gia công gang 2 vi?",
       cn: "Mảnh dao gia công gang 2 cn?"
