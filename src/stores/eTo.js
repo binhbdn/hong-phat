@@ -26,7 +26,7 @@ const eToDescriptions = {
   cn: [
     {
       title: "application",
-      data: ["用于高精度加工和夹持小型工件。", "主要用于磨床、电火花机床和铣床等。"]
+      data: ["用于高精度加工和夹持小型工件。", "主要用于磨床、电火花机床和铣床等…"]
     },
     {
       title: "description",
@@ -40,6 +40,8 @@ const eToDescriptions = {
   ]
 };
 
+const detailsView = [["specsList"]];
+
 const items = [
   {
     category: "pETo",
@@ -50,10 +52,7 @@ const items = [
     extraImages: [
       {
         title: "specifications",
-        subTitle: {
-          vi: "Mã sản phẩm: QGG50, QGG63, QGG73, QGG80, QGG88, QGG100, QGG125, QGG150",
-          cn: "产品代码: QGG50, QGG63, QGG73, QGG80, QGG88, QGG100, QGG125, QGG150"
-        },
+        subTitle: null,
         data: ["/e_to_mam_cap/ETO_QGG_spec.webp"]
       }
     ],
@@ -72,8 +71,10 @@ const items = [
     specs: "50-150",
     brand: "Vân Tập",
     origin: "cn",
-    listView: listViewCBO
+    listView: listViewCBO,
+    detailsView,
     // extra data
+    specsList: "QGG_50, QGG_63, QGG_73, QGG_80, QGG_88, QGG_100, QGG_125, QGG_150"
   },
   {
     category: "pETo",
@@ -84,10 +85,7 @@ const items = [
     extraImages: [
       {
         title: "specifications",
-        subTitle: {
-          vi: "Mã sản phẩm: QKG50, QKG63, QKG73, QKG80, QKG88, QKG100, QKG125, QKG150",
-          cn: "产品代码: QKG50, QKG63, QKG73, QKG80, QKG88, QKG100, QKG125, QKG150"
-        },
+        subTitle: null,
         data: ["/e_to_mam_cap/ETO_QKG_spec.webp"]
       }
     ],
@@ -106,8 +104,82 @@ const items = [
     specs: "50-150",
     brand: "Vân Tập",
     origin: "cn",
-    listView: listViewCBO
+    listView: listViewCBO,
+    detailsView,
     // extra data
+    specsList: "QKG_50, QKG_63, QKG_73, QKG_80, QKG_88, QKG_100, QKG_125, QKG_150"
+  },
+  {
+    category: "pETo",
+    routeName: "pEToCT",
+    isTypical: true,
+    code: "MC3C",
+    images: ["/e_to_mam_cap/mam_cap/1.webp", "/e_to_mam_cap/mam_cap/vt_spec.webp", "/e_to_mam_cap/mam_cap/vt_3.webp", "/e_to_mam_cap/mam_cap/vt_4.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/e_to_mam_cap/mam_cap/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Mâm cặp tự định tâm 3 chấu",
+      cn: "三爪自定心卡盘"
+    },
+    prices: {
+      current: 0,
+      min: 2010000,
+      max: 4440000
+    },
+    description: {
+      vi: "Dùng cho máy tiện",
+      cn: "用于车床"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "application",
+          data: [
+            "Dùng để kẹp phôi trụ hay phôi ống khi gia công sản phẩm trên máy tiện.",
+            "Có khả năng kẹp chặt sản phẩm khi gia công, độ đồng tâm cao giúp gia công sản phẩm chính xác."
+          ]
+        },
+        {
+          title: "description",
+          data: [
+            "Được làm từ thép hợp kim chất lượng cao, các bề mặt được mài nhẵn.",
+            "Cấu tạo gồm thân, vỏ ngoài, đai ốc và các chấu kẹp liên động với nhau.",
+            "Cơ cấu 3 chấu tự định tâm, điều khiển đơn giản bằng cách xoay vỏ ngoài.",
+            "Các chấu kẹp chuyển động đồng thời khi điều khiển, tạo lực kẹp đều.",
+            "Luôn được bảo quản trong môi trường có dầu để đảm bảo độ bền."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "application",
+          data: ["用于车床加工时夹持圆柱形或管状工件。", "具有高夹持力和高同心度，可实现精确加工。"]
+        },
+        {
+          title: "description",
+          data: [
+            "采用优质合金钢制造，表面经过精密研磨。",
+            "结构包括主体、外壳、螺母和联动夹爪。",
+            "三爪自定心机构，通过旋转外壳实现简单控制。",
+            "夹爪同步运动，提供均匀夹持力。",
+            "需在含油环境中保存以确保耐久性。"
+          ]
+        }
+      ]
+    },
+    seri: "MC3C",
+    specs: "125-250",
+    brand: "Vân Tập",
+    origin: "cn",
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: "MC3C_125, MC3C_160, MC3C_200, MC3C_250"
   }
 ];
 

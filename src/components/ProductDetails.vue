@@ -45,22 +45,24 @@ const formattedPrice = computed(() => {
 
         <slot name="extraRows" :data="item" />
 
-        <div v-for="(row, rIndex) in item.detailsView" :key="rIndex" class="hp-pagedetails-rows">
-          <div v-for="(prop, index) in row" :key="index" class="hp-pagedetails-row">
-            <template v-if="typeof prop === 'string'">
-              <span> {{ $t(prop) }}: </span>
-              <span class="hp-pagedetails-bold">
-                {{ item[prop] }}
-              </span>
-            </template>
-            <template v-else-if="prop.type === 'i18n'">
-              <span> {{ $t(prop.value) }}: </span>
-              <span class="hp-pagedetails-bold">
-                {{ $t(item[prop.value]) }}
-              </span>
-            </template>
+        <template v-if="item.detailsView">
+          <div v-for="(row, rIndex) in item.detailsView" :key="rIndex" class="hp-pagedetails-rows">
+            <div v-for="(prop, index) in row" :key="index" class="hp-pagedetails-row">
+              <template v-if="typeof prop === 'string'">
+                <span> {{ $t(prop) }}: </span>
+                <span class="hp-pagedetails-bold text-right">
+                  {{ item[prop] }}
+                </span>
+              </template>
+              <template v-else-if="prop.type === 'i18n'">
+                <span> {{ $t(prop.value) }}: </span>
+                <span class="hp-pagedetails-bold text-right">
+                  {{ $t(item[prop.value]) }}
+                </span>
+              </template>
+            </div>
           </div>
-        </div>
+        </template>
       </div>
     </div>
 

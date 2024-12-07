@@ -28,7 +28,8 @@ const items = [
     specs: "specs?",
     brand: "brand?",
     origin: "cn",
-    listView: listViewCBO
+    listView: listViewCBO,
+    detailsView: null
     // extra data
   }
 ];
