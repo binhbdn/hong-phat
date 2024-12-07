@@ -39,6 +39,7 @@ const items = [
     extraImages: [
       {
         title: "specifications",
+        subTitle: null,
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],
@@ -94,6 +95,7 @@ const items = [
     extraImages: [
       {
         title: "specifications",
+        subTitle: null,
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],
@@ -145,6 +147,7 @@ const items = [
     extraImages: [
       {
         title: "specifications",
+        subTitle: null,
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],
