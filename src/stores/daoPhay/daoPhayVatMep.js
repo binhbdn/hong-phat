@@ -41,7 +41,7 @@ const items = [
     seri: "55HRC",
     specs: "D1-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDLL,
     // extra data
@@ -96,7 +96,7 @@ const items = [
     seri: "55HRC",
     specs: "D3-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDLL,
     // extra data
@@ -151,7 +151,7 @@ const items = [
     seri: "55HRC",
     specs: "D1-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDLL,
     // extra data
@@ -206,7 +206,7 @@ const items = [
     seri: "55HRC",
     specs: "D3-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDLL,
     // extra data
@@ -261,7 +261,7 @@ const items = [
     seri: "55HRC",
     specs: "D8.3-D35",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDL,
     // extra data
@@ -316,7 +316,7 @@ const items = [
     seri: "55HRC",
     specs: "D8.3-D35",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAAvsDDL,
     // extra data

@@ -39,7 +39,7 @@ const formattedPrice = computed(() => {
           </div>
           <div v-if="item.origin" class="hp-pagedetails-row">
             <span> {{ $t("origin") }}: </span>
-            <span class="hp-pagedetails-bold"> {{ $t(item.origin) }} </span>
+            <span class="hp-pagedetails-bold"> {{ item.origin.map((o) => $t(o)).join(", ") }} </span>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const formattedPrice = computed(() => {
 
         <template v-if="item.detailsView">
           <div v-for="(row, rIndex) in item.detailsView" :key="rIndex" class="hp-pagedetails-rows">
-            <div v-for="(prop, index) in row" :key="index" class="hp-pagedetails-row">
+            <div v-for="(prop, pIndex) in row" :key="pIndex" class="hp-pagedetails-row">
               <template v-if="typeof prop === 'string'">
                 <span> {{ $t(prop) }}: </span>
                 <span class="hp-pagedetails-bold text-right">
@@ -57,8 +57,14 @@ const formattedPrice = computed(() => {
               <template v-else-if="prop.type === 'i18n'">
                 <span> {{ $t(prop.value) }}: </span>
                 <span class="hp-pagedetails-bold text-right">
-                  {{ $t(item[prop.value]) }}
+                  {{ typeof item[prop.value] === "string" ? $t(item[prop.value]) : item[prop.value].map((v) => $t(v)).join(", ") }}
                 </span>
+              </template>
+              <template v-else-if="prop.type === 'tag'">
+                <span> {{ $t(prop.value) }}: </span>
+                <div class="flex-wrap flex justify-end gap-1 py-1">
+                  <Tag v-for="(value, vIndex) in item[prop.value]" :key="vIndex" :value="value" severity="secondary" />
+                </div>
               </template>
             </div>
           </div>

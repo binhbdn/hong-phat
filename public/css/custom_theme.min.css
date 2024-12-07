@@ -5048,6 +5048,61 @@ input.p-dropdown-label {
     transform: scale(2.5);
   }
 }
+.p-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-tag-icon,
+.p-tag-value,
+.p-tag-icon.pi {
+  line-height: 1.5;
+}
+
+.p-tag.p-tag-rounded {
+  border-radius: 10rem;
+}
+
+.p-tag {
+  background: #FF3130;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.375rem;
+}
+.p-tag.p-tag-success {
+  background-color: #22C55E;
+  color: #ffffff;
+}
+.p-tag.p-tag-info {
+  background-color: #3B82F6;
+  color: #ffffff;
+}
+.p-tag.p-tag-warning {
+  background-color: #F59E0B;
+  color: #ffffff;
+}
+.p-tag.p-tag-danger {
+  background-color: #EF4444;
+  color: #ffffff;
+}
+.p-tag.p-tag-secondary {
+  background-color: #64748B;
+  color: #ffffff;
+}
+.p-tag .p-tag-icon {
+  font-size: 0.75rem;
+}
+.p-tag .p-tag-icon:not(:last-child) {
+  margin-right: 0.25rem;
+}
+.p-tag .p-tag-icon.p-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 /* Customizations to the designer theme should be defined here */
 @layer primevue {
   .p-inputtext, .p-togglebutton, .p-selectbutton, .p-inputgroup {

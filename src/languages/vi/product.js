@@ -38,6 +38,7 @@ export default {
   noseAngle: "Góc mũi",
   specifications: "Thông số kỹ thuật",
   specsList: "Quy cách",
+  options: "Tùy chọn",
   application: "Ứng dụng",
   description: "Mô tả",
   dimension: "Kích thước",

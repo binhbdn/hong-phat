@@ -40,7 +40,7 @@ const eToDescriptions = {
   ]
 };
 
-const detailsView = [["specsList"]];
+const detailsView = [[{ type: "tag", value: "specsList" }]];
 
 const items = [
   {
@@ -70,11 +70,11 @@ const items = [
     seri: "QGG",
     specs: "50-150",
     brand: "Vân Tập",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: "QGG_50, QGG_63, QGG_73, QGG_80, QGG_88, QGG_100, QGG_125, QGG_150"
+    specsList: ["QGG_50", "QGG_63", "QGG_73", "QGG_80", "QGG_88", "QGG_100", "QGG_125", "QGG_150"]
   },
   {
     category: "pETo",
@@ -103,11 +103,11 @@ const items = [
     seri: "QKG",
     specs: "50-150",
     brand: "Vân Tập",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: "QKG_50, QKG_63, QKG_73, QKG_80, QKG_88, QKG_100, QKG_125, QKG_150"
+    specsList: ["QKG_50", "QKG_63", "QKG_73", "QKG_80", "QKG_88", "QKG_100", "QKG_125", "QKG_150"]
   },
   {
     category: "pETo",
@@ -175,11 +175,11 @@ const items = [
     seri: "MC3C",
     specs: "125-250",
     brand: "Vân Tập",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: "MC3C_125, MC3C_160, MC3C_200, MC3C_250"
+    specsList: ["MC3C_125", "MC3C_160", "MC3C_200", "MC3C_250"]
   }
 ];
 

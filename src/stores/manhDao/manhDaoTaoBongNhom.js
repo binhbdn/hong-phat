@@ -27,7 +27,7 @@ const items = [
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
     // extra data

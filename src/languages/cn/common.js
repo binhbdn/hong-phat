@@ -11,6 +11,7 @@ export default {
   allProducts: "所有产品",
   allCategories: "所有类别",
   cn: "中国",
+  jp: "日本",
   viewAll: "查看全部",
   viewMore: "查看更多"
 };

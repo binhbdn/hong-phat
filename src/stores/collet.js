@@ -27,7 +27,7 @@ const items = [
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRMB,
     // extra data
     runout: "mm?",
@@ -57,7 +57,7 @@ const items = [
     seri: "seri?",
     specs: "specs?",
     brand: "brand?",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRMB,
     // extra data
     runout: "mm?",

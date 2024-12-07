@@ -44,7 +44,7 @@ const items = [
     seri: "55HRC",
     specs: "R0.5-R5",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRDL,
     detailsView: detailsViewHFAvsRDLL,
     // extra data
@@ -99,7 +99,7 @@ const items = [
     seri: "55HRC",
     specs: "R0.5-R5",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRDL,
     detailsView: detailsViewHFAvsRDLL,
     // extra data

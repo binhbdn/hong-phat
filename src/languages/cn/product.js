@@ -38,6 +38,7 @@ export default {
   noseAngle: "鼻角",
   specifications: "规格",
   specsList: "型号",
+  options: "选项",
   application: "应用",
   description: "描述",
   dimension: "方面",

@@ -97,7 +97,7 @@ const formattedPrice = computed(() => {
             <template v-else-if="prop.type === 'i18n'">
               {{ $t(prop.value) }}:
               <span class="font-medium text-gray-900">
-                {{ $t(item[prop.value]) }}
+                {{ typeof item[prop.value] === "string" ? $t(item[prop.value]) : item[prop.value].map((v) => $t(v)).join(", ") }}
               </span>
             </template>
           </div>

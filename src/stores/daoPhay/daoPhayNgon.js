@@ -53,7 +53,7 @@ const items = [
     seri: "45HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -119,7 +119,7 @@ const items = [
     seri: "55HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -183,7 +183,7 @@ const items = [
     seri: "45HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -247,7 +247,7 @@ const items = [
     seri: "45HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -311,7 +311,7 @@ const items = [
     seri: "55HRC",
     specs: "D0.1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -375,7 +375,7 @@ const items = [
     seri: "55HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -439,7 +439,7 @@ const items = [
     seri: "60HRC",
     specs: "D1-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -501,7 +501,7 @@ const items = [
     seri: "65HRC",
     specs: "D1-D20",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data
@@ -563,7 +563,7 @@ const items = [
     seri: "65HRC",
     specs: "D1-D12",
     brand: null,
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewDDL,
     detailsView: detailsViewHFAvsDDLL,
     // extra data

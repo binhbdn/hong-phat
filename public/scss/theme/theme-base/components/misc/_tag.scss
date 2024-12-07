@@ -46,12 +46,12 @@
         color: $dangerButtonTextColor;
     }
 
+    &.p-tag-secondary {
+        background-color: $secondaryButtonBg;
+        color: $secondaryButtonTextColor;
+    }
+
     @if variable-exists(secondaryMessageBg) {
-        &.p-tag-secondary {
-            background-color: $secondaryButtonBg;
-            color: $secondaryButtonTextColor;
-        }
-    
         &.p-tag-contrast {
             background-color: $contrastButtonBg;
             color: $contrastButtonTextColor;

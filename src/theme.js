@@ -138,7 +138,7 @@ import Image from "primevue/image";
 // import AnimateOnScroll from "primevue/animateonscroll";
 import Ripple from "primevue/ripple";
 // import StyleClass from "primevue/styleclass";
-// import Tag from "primevue/tag";
+import Tag from "primevue/tag";
 // import Terminal from "primevue/terminal";
 import ConfirmationService from "primevue/confirmationservice";
 
@@ -214,4 +214,5 @@ export const usePrimeVue = (app) => {
   /* Misc */
   // app.component("Avatar", Avatar);
   // app.component("AvatarGroup", AvatarGroup);
+  app.component("Tag", Tag);
 };

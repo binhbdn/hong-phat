@@ -60,7 +60,7 @@ const items = [
     seri: "BT50",
     specs: "ER16-40",
     brand: "Suken",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRMB,
     detailsView,
     // extra data
@@ -116,7 +116,7 @@ const items = [
     seri: "BT40",
     specs: "ER16-32",
     brand: "Suken",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRMB,
     detailsView,
     // extra data
@@ -168,7 +168,7 @@ const items = [
     seri: "BT30",
     specs: "ER16-32",
     brand: "Suken",
-    origin: "cn",
+    origin: ["cn"],
     listView: listViewRMB,
     detailsView,
     // extra data
