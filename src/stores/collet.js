@@ -7,61 +7,73 @@ const items = [
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: true,
-    code: "CL_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "ER11",
+    images: ["/collet/ER11/vt_1.webp", "/collet/ER11/vt_spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/collet/ER11/vt_spec.webp"]
+      }
+    ],
     name: {
-      vi: "Collet 1 vi?",
-      cn: "Collet 1 cn?"
+      vi: "Collet ER11 - Đầu kẹp dao máy CNC",
+      cn: "ER11筒夹 - 数控机床刀具夹头"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 58000,
+      max: 113000
     },
     description: {
-      vi: "Description collet vi?",
-      cn: "Description collet cn?"
+      vi: "Dùng cho đầu kẹp CNC ER11",
+      cn: "用于ER11数控夹头"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "ER11",
+    specs: "D2-D7",
+    brand: "KON",
     origin: ["cn"],
     listView: listViewRMB,
     // extra data
-    runout: "mm?",
-    maxRPM: "rpm?"
+    runout: "0.005mm/0.008mm",
+    maxRPM: ""
   },
   {
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: false,
-    code: "CL_2",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "ER16",
+    images: ["/collet/ER11/vt_1.webp", "/collet/ER16/vt_spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/collet/ER16/vt_spec.webp"]
+      }
+    ],
     name: {
-      vi: "Collet 2 vi?",
-      cn: "Collet 2 cn?"
+      vi: "Collet ER16 - Đầu kẹp dao máy CNC",
+      cn: "ER16筒夹 - 数控机床刀具夹头"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 58000,
+      max: 113000
     },
     description: {
-      vi: "Description collet vi?",
-      cn: "Description collet cn?"
+      vi: "Dùng cho đầu kẹp CNC ER16",
+      cn: "用于ER16数控夹头"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "ER16",
+    specs: "D3-D10",
+    brand: "KON",
     origin: ["cn"],
     listView: listViewRMB,
     // extra data
-    runout: "mm?",
-    maxRPM: "rpm?"
+    runout: "0.005mm/0.008mm",
+    maxRPM: ""
   }
 ];
 
