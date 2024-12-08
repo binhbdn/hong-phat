@@ -7,26 +7,32 @@ const items = [
     category: "pTaro",
     routeName: "pTaroCT",
     isTypical: true,
-    code: "TARO_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "TARO_BR",
+    images: ["/taro/ban_ren/1.webp", "/taro/ban_ren/2.webp", "/taro/ban_ren/spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/taro/ban_ren/spec.webp"]
+      }
+    ],
     name: {
-      vi: "Taro 1 vi?",
-      cn: "Taro 1 cn?"
+      vi: "Bàn ren taro",
+      cn: "攻丝板"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 47000,
+      max: 60000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Kích thước từ M3 đến M8",
+      cn: "尺寸从M3到M8"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "TARO_BR",
+    specs: "M3-M8",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,27 +42,33 @@ const items = [
     category: "pTaro",
     routeName: "pTaroCT",
     isTypical: false,
-    code: "TARO_2",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "TARO_MDD",
+    images: ["/taro/mui_dut_doan/vt_1a.webp", "/taro/mui_dut_doan/vt_2.webp", "/taro/mui_dut_doan/vt_spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/taro/mui_dut_doan/vt_spec.webp"]
+      }
+    ],
     name: {
-      vi: "Taro 2 vi?",
-      cn: "Taro 2 cn?"
+      vi: "Mũi taro đứt đoạn phủ titan",
+      cn: "钛涂层断屑丝锥"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 82000,
+      max: 190000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Kích thước từ M3 đến M8",
+      cn: "尺寸从M3到M8"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
-    origin: ["cn"],
+    seri: "TARO",
+    specs: "M3-M12",
+    brand: "Shaozi",
+    origin: ["tw"],
     listView: listViewCBO,
     detailsView: null
     // extra data

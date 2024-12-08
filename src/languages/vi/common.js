@@ -11,6 +11,7 @@ export default {
   allProducts: "Tất cả sản phẩm",
   allCategories: "Tất cả danh mục",
   cn: "Trung Quốc",
+  tw: "Đài Loan",
   jp: "Nhật Bản",
   viewAll: "Xem tất cả",
   viewMore: "Xem thêm"

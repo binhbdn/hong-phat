@@ -35,10 +35,7 @@ const items = [
       vi: [
         {
           title: "application",
-          data: [
-            "Dùng để mài những phần kim loại còn thừa, cạnh sắc…",
-            "Được sử dụng rộng rãi trong các xưởng sản xuất, công trình xây dựng…"
-          ]
+          data: ["Dùng để mài những phần kim loại còn thừa, cạnh sắc…", "Được sử dụng rộng rãi trong các xưởng sản xuất, công trình xây dựng…"]
         },
         {
           title: "description",
@@ -53,10 +50,7 @@ const items = [
       cn: [
         {
           title: "application",
-          data: [
-            "用于打磨多余的金属、锐边等…",
-            "广泛应用于生产车间、建筑工地等…"
-          ]
+          data: ["用于打磨多余的金属、锐边等…", "广泛应用于生产车间、建筑工地等…"]
         },
         {
           title: "description",
@@ -131,18 +125,11 @@ const items = [
       cn: [
         {
           title: "application",
-          data: [
-            "用于打磨冲压、切削加工中产生的多余金属和锐边。",
-            "处理冲压产品的毛刺，使表面平滑均匀。"
-          ]
+          data: ["用于打磨冲压、切削加工中产生的多余金属和锐边。", "处理冲压产品的毛刺，使表面平滑均匀。"]
         },
         {
           title: "description",
-          data: [
-            "采用现代化设计，具有高耐用性和优良的防腐性能。",
-            "刀片锋利，可快速高效地处理毛刺。",
-            "质量优良，价格合理，享有保修服务。"
-          ]
+          data: ["采用现代化设计，具有高耐用性和优良的防腐性能。", "刀片锋利，可快速高效地处理毛刺。", "质量优良，价格合理，享有保修服务。"]
         }
       ]
     },
