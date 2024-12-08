@@ -7,26 +7,32 @@ const items = [
     category: "pGiaCongLo",
     routeName: "pGiaCongLoCT",
     isTypical: true,
-    code: "GCL_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "MCTCD",
+    images: ["/gia_cong_lo/mui_chong_tam_co_dinh/vt_1.webp", "/gia_cong_lo/mui_chong_tam_co_dinh/vt_spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/gia_cong_lo/mui_chong_tam_co_dinh/vt_spec.webp"]
+      }
+    ],
     name: {
-      vi: "Gia công lỗ 1 vi?",
-      cn: "Gia công lỗ 1 cn?"
+      vi: "Mũi chống tâm cố định",
+      cn: "固定顶尖"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 231000,
+      max: 886000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng cho máy tiện",
+      cn: "用于车床"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "MCTCD",
+    specs: "T10-T18",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,26 +42,26 @@ const items = [
     category: "pGiaCongLo",
     routeName: "pGiaCongLoCT",
     isTypical: false,
-    code: "GCL_2",
-    images: ["/img/logo.png"],
+    code: "MCTQ",
+    images: ["/gia_cong_lo/mui_chong_tam_quay/vt_1.webp", "/gia_cong_lo/mui_chong_tam_quay/vt_2.webp"],
     extraImages: null,
     name: {
-      vi: "Gia công lỗ 2 vi?",
-      cn: "Gia công lỗ 2 cn?"
+      vi: "Mũi chống tâm quay",
+      cn: "旋转顶尖"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 1138000,
+      max: 1944000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Được dùng khi cắt với tốc độ cắt cao",
+      cn: "用于高速切削"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "MCTQ",
+    specs: "MT3-MT5",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
