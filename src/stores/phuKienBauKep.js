@@ -7,26 +7,32 @@ const items = [
     category: "pPhuKienBauKep",
     routeName: "pPhuKienBauKepCT",
     isTypical: true,
-    code: "PKBK_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "ABK",
+    images: ["/phu_kien_bau_kep/ao_collet/vt_1.webp", "/phu_kien_bau_kep/ao_collet/spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/phu_kien_bau_kep/ao_collet/spec.webp"]
+      }
+    ],
     name: {
-      vi: "Phụ kiện 1 vi?",
-      cn: "Phụ kiện 1 cn?"
+      vi: "Áo Collet cho đầu kẹp dao",
+      cn: "筒夹套筒（夹头套筒）"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 67000,
+      max: 170000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Là bộ phận chụp bên ngoài để giữ collet kẹp dao trên động cơ spindle",
+      cn: "是用于固定主轴电机上刀具夹头的外部套筒"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "ER A-UM",
+    specs: "ER16-ER40",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,26 +42,26 @@ const items = [
     category: "pPhuKienBauKep",
     routeName: "pPhuKienBauKepCT",
     isTypical: false,
-    code: "PKBK_2",
-    images: ["/img/logo.png"],
+    code: "CVM",
+    images: ["/phu_kien_bau_kep/chia_mo/vt_1.webp"],
     extraImages: null,
     name: {
-      vi: "Phụ kiện 2 vi?",
-      cn: "Phụ kiện 2 cn?"
+      vi: "Chìa vặn mở bầu kẹp collet",
+      cn: "筒夹扳手"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 67000,
+      max: 123000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng để tháo kẹp bầu kẹp collet ER11, ER16, ER20, ER25, ER32, APU ( C25), C32",
+      cn: "用于拆卸ER11、ER16、ER20、ER25、ER32、APU（C25）、C32筒夹"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "ER/APU/C32",
+    specs: "",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
