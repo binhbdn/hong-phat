@@ -7,26 +7,32 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
-    code: "CDGM__1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "MGEH",
+    images: ["/can_dao_gan_manh/tien_ranh/MGEH/vt_1.webp", "/can_dao_gan_manh/tien_ranh/MGEH/spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/can_dao_gan_manh/tien_ranh/MGEH/spec.webp"]
+      }
+    ],
     name: {
-      vi: "Cán dao gắn mảnh 1 vi?",
-      cn: "Cán dao gắn mảnh 1 cn?"
+      vi: "Cán dao cắt MGEH",
+      cn: "MGEH 车刀杆"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 164000,
+      max: 485000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Sử dụng cho gia công tiện rãnh bên ngoài chi tiết",
+      cn: "用于外圆沟槽车削加工"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "MGEH",
+    specs: "R/L 12-25",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,12 +42,18 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: false,
-    code: "CDGM__2",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "MCKN",
+    images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/can_dao_gan_manh/moc_lo/spec.webp"]
+      }
+    ],
     name: {
-      vi: "Cán dao gắn mảnh 2 vi?",
-      cn: "Cán dao gắn mảnh 2 cn?"
+      vi: "Cán dao móc lỗ MCKN",
+      cn: "MCKN 内孔车刀杆"
     },
     prices: {
       current: null,
@@ -49,12 +61,12 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng để cắt gọt kim loại, gia công lỗ, tiện ren",
+      cn: "用于金属切削、内孔加工和螺纹车削"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
+    seri: "MCKN",
+    specs: "R/L 20-40",
     brand: "brand?",
     origin: ["cn"],
     listView: listViewCBO,
