@@ -7,26 +7,26 @@ const items = [
     category: "pDauKepLapChuoiCon",
     routeName: "pDauKepLapChuoiConCT",
     isTypical: true,
-    code: "DKLCC_1",
-    images: ["/img/logo.png"],
+    code: "CCAC",
+    images: ["/dau_kep_lap_chuoi_con/chuoi_con_ao_con/vt_ao_con.webp"],
     extraImages: null,
     name: {
-      vi: "Đầu kẹp lắp chuôi côn 1 vi?",
-      cn: "Đầu kẹp lắp chuôi côn 1 cn?"
+      vi: "Chuôi côn, áo côn",
+      cn: "锥柄、锥套"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 98000,
+      max: 461000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng cho máy khoan bàn, máy khoan từ",
+      cn: "适用于台式钻床、磁力钻床"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "Chuôi côn - Áo côn",
+    specs: "",
+    brand: "KON",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,26 +36,26 @@ const items = [
     category: "pDauKepLapChuoiCon",
     routeName: "pDauKepLapChuoiConCT",
     isTypical: true,
-    code: "DKLCC_2",
-    images: ["/img/logo.png"],
+    code: "DKMK",
+    images: ["/dau_kep_lap_chuoi_con/dau_kep_mui_khoan/b16_18_22.webp"],
     extraImages: null,
     name: {
-      vi: "Đầu kẹp lắp chuôi côn 2 vi?",
-      cn: "Đầu kẹp lắp chuôi côn 2 cn?"
+      vi: "Đầu kẹp mũi khoan B16, B18, B22",
+      cn: "钻夹头 B16、B18、B22"
     },
     prices: {
-      current: null,
-      min: 0,
-      max: 0
+      current: 0,
+      min: 515000,
+      max: 958000
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Đầu măng ranh 3 chấu chất lượng cao",
+      cn: "高品质三爪卡盘"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "DKMK",
+    specs: "B16-B18-B22",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
