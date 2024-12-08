@@ -89,10 +89,12 @@ const formattedPrice = computed(() => {
           </div>
           <div v-for="(prop, index) in item.listView" :key="index" class="flex justify-between gap-x-1">
             <template v-if="typeof prop === 'string'">
-              {{ $t(prop) }}:
-              <span class="font-medium text-gray-900">
-                {{ item[prop] }}
-              </span>
+              <template v-if="item[prop]">
+                {{ $t(prop) }}:
+                <span class="font-medium text-gray-900">
+                  {{ item[prop] }}
+                </span>
+              </template>
             </template>
             <template v-else-if="prop.type === 'i18n'">
               {{ $t(prop.value) }}:
