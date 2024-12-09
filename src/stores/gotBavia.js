@@ -4,18 +4,22 @@ import { findItemByCode } from "@/stores/products";
 
 const detailsView = [[{ type: "tag", value: "options" }]];
 
+const extraImagesData1 = ["/bavia/can_dao/NB_1000.webp", "/bavia/can_dao/RB_1000.webp", "/bavia/can_dao/EO_2000.webp"];
+
+const extraImagesData2 = ["/bavia/luoi_dao/BS1010.webp", "/bavia/luoi_dao/BS1018.webp", "/bavia/luoi_dao/BS2010.webp", "/bavia/luoi_dao/BK3010.webp"];
+
 const items = [
   {
     category: "pGotBavia",
     routeName: "pGotBaviaCT",
     isTypical: true,
     code: "CD_BAVIA",
-    images: ["/bavia/vt_dao_va_can_dao.webp", "/bavia/can_dao/NB_1000.webp", "/bavia/can_dao/RB_1000.webp", "/bavia/can_dao/EO_2000.webp"],
+    images: ["/bavia/vt_dao_va_can_dao.webp", ...extraImagesData1],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: ["/bavia/can_dao/NB_1000.webp", "/bavia/can_dao/RB_1000.webp", "/bavia/can_dao/EO_2000.webp"]
+        data: extraImagesData1
       }
     ],
     name: {
@@ -77,18 +81,12 @@ const items = [
     routeName: "pGotBaviaCT",
     isTypical: true,
     code: "LD_BAVIA",
-    images: [
-      "/bavia/vt_dao_va_can_dao.webp",
-      "/bavia/luoi_dao/BS1010.webp",
-      "/bavia/luoi_dao/BS1018.webp",
-      "/bavia/luoi_dao/BS2010.webp",
-      "/bavia/luoi_dao/BK3010.webp"
-    ],
+    images: ["/bavia/vt_dao_va_can_dao.webp", ...extraImagesData2],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: ["/bavia/luoi_dao/BS1010.webp", "/bavia/luoi_dao/BS1018.webp", "/bavia/luoi_dao/BS2010.webp", "/bavia/luoi_dao/BK3010.webp"]
+        data: extraImagesData2
       }
     ],
     name: {

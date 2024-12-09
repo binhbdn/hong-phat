@@ -2,6 +2,8 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const extraImagesData1 = ["/manh_dao/tien_ranh_ren/16ER/spec_iso.webp", "/manh_dao/tien_ranh_ren/16ER/spec_ag.webp"];
+
 const description1 = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -37,15 +39,14 @@ const items = [
     images: [
       "/manh_dao/tien_ranh_ren/16ER/1_vt.webp",
       "/manh_dao/tien_ranh_ren/16ER/iso_vt.webp",
-      "/manh_dao/tien_ranh_ren/16ER/spec_iso.webp",
       "/manh_dao/tien_ranh_ren/16ER/ag_vt.webp",
-      "/manh_dao/tien_ranh_ren/16ER/spec_ag.webp"
+      ...extraImagesData1
     ],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: ["/manh_dao/tien_ranh_ren/16ER/spec_iso.webp", "/manh_dao/tien_ranh_ren/16ER/spec_ag.webp"]
+        data: extraImagesData1
       }
     ],
     name: {

@@ -2,6 +2,15 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const extraImagesData1 = [
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp",
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp",
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp",
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp",
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp",
+  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"
+];
+
 const description1 = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -33,28 +42,13 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCSauNhietCT",
     isTypical: true,
-    code: "CCMT_SN",
-    images: [
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/1_vt.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp",
-      "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"
-    ],
+    code: "CCMT_BLUE",
+    images: ["/manh_dao/gia_cong_sau_nhiet/CCMT/1_vt.webp", ...extraImagesData1],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: [
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp",
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp",
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp",
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp",
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp",
-          "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"
-        ]
+        data: extraImagesData1
       }
     ],
     name: {
@@ -81,7 +75,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCSauNhietCT",
     isTypical: false,
-    code: "CNMG_SN",
+    code: "CNMG_BLUE",
     images: ["/manh_dao/gia_cong_sau_nhiet/CNMG/1_vt.webp"],
     extraImages: null,
     name: {

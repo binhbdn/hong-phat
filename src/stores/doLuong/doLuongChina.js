@@ -2,18 +2,20 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const extraImagesData1 = ["/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"];
+
 const items = [
   {
     category: "pDoLuong",
     routeName: "pDoLuongChinaCT",
     isTypical: true,
     code: "DCD_1",
-    images: ["/do_luong/china/DCD_1_1.webp", "/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"],
+    images: ["/do_luong/china/DCD_1_1.webp", ...extraImagesData1],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: ["/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"]
+        data: extraImagesData1
       }
     ],
     name: {

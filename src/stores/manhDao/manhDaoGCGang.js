@@ -2,6 +2,14 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const extraImagesData1 = [
+  "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
+  "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
+  "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
+  "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
+  "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
+];
+
 const description1 = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -33,26 +41,13 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: true,
-    code: "CCMT_G",
-    images: [
-      "/manh_dao/gia_cong_gang/1/1_vt.webp",
-      "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
-      "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
-      "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
-      "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
-      "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
-    ],
+    code: "CCMT_2C",
+    images: ["/manh_dao/gia_cong_gang/1/1_vt.webp", ...extraImagesData1],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
-        data: [
-          "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
-          "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
-          "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
-          "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
-          "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
-        ]
+        data: extraImagesData1
       }
     ],
     name: {
@@ -79,7 +74,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: false,
-    code: "TNMG_G",
+    code: "TNMG_2C",
     images: ["/manh_dao/gia_cong_gang/2/1_vt.webp"],
     extraImages: null,
     name: {
