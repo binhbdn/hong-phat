@@ -7,26 +7,26 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoTaoBongNhomCT",
     isTypical: true,
-    code: "MD_TBN_1",
-    images: ["/img/logo.png"],
+    code: "PCD",
+    images: ["/manh_dao/tao_bong_nhom/PCD_1_vt.webp"],
     extraImages: null,
     name: {
-      vi: "Mảnh dao tạo bóng nhôm 1 vi?",
-      cn: "Mảnh dao tạo bóng nhôm 1 cn?"
+      vi: "Mảnh dao tiện PCD",
+      cn: "PCD车削刀片"
     },
     prices: {
-      current: null,
+      current: 135000,
       min: 0,
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng để tiện nhôm, kim loại màu với độ bóng và độ chính xác cao",
+      cn: "用于高精度和高光洁度铝材及有色金属车削加工"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "PCD",
+    specs: "",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
