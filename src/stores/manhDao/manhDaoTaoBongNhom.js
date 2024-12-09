@@ -2,6 +2,8 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const detailsView = [[{ type: "tag", value: "specsList" }]];
+
 const items = [
   {
     category: "pManhDao",
@@ -29,8 +31,29 @@ const items = [
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView,
     // extra data
+    specsList: [
+      "APKT 160404 PCD",
+      "APKT 1135 PCD",
+      "CCGT 09T308 PCD",
+      "CCGT 09T304 PCD",
+      "CCMT 09T304 PCD",
+      "CCMT 09T308 PCD",
+      "CNMG 120408 PCD",
+      "CNMG 120404 PCD",
+      "DCMT 11T308 PCD ",
+      "DCMT 11T304 PCD",
+      "DCGT 11T304",
+      "DCGT 11T308",
+      "TNMG 160404 PCD",
+      "TNMG 160408 PCD",
+      "VCMT 160408 PCD",
+      "VNMG 160404 PCD",
+      "VNMG 160408 PCD",
+      "WNMG 080404 PCD",
+      "WNMG 080408 PCD"
+    ]
   }
 ];
 

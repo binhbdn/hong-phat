@@ -49,7 +49,7 @@ const formattedPrice = computed(() => {
     <div class="flex gap-x-3">
       <div
         class="relative aspect-square bg-white border border-gray-400 rounded-t-md rounded-br-md"
-        :class="viewDetails ? 'w-[120px] h-[120px]' : 'w-full h-full sm:max-w-[200px]'"
+        :class="viewDetails ? 'w-[140px] h-[140px]' : 'w-full h-full sm:max-w-[200px]'"
       >
         <img :src="`${imgServer}${item.images[0]}?w=300&h=300`" width="100%" height="100%" class="rounded-t-md rounded-br-md" />
 
@@ -91,14 +91,14 @@ const formattedPrice = computed(() => {
             <template v-if="typeof prop === 'string'">
               <template v-if="item[prop]">
                 {{ $t(prop) }}:
-                <span class="font-medium text-gray-900">
+                <span class="font-medium text-right text-gray-900">
                   {{ item[prop] }}
                 </span>
               </template>
             </template>
             <template v-else-if="prop.type === 'i18n'">
               {{ $t(prop.value) }}:
-              <span class="font-medium text-gray-900">
+              <span class="font-medium text-right text-gray-900">
                 {{ typeof item[prop.value] === "string" ? $t(item[prop.value]) : item[prop.value].map((v) => $t(v)).join(", ") }}
               </span>
             </template>

@@ -2,64 +2,106 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const descriptions1 = {
+  vi: [
+    {
+      title: "description",
+      data: [
+        "Gia công bền bỉ với lượng cắt lớn và chịu được lực va đập lớn.",
+        "Kiểm soát phôi tốt khi gia công, chống mài mòn, kéo dài tuổi thọ dao tiện.",
+        "Có độ chính xác cao và cho bề mặt gia công bóng đẹp."
+      ]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["具有大切削量和高抗冲击力的持久加工能力。", "加工时具有良好的切屑控制，耐磨损，延长车刀使用寿命。", "具有高精度，可获得光滑美观的加工表面。"]
+    }
+  ]
+};
+
+const detailsView = [[{ type: "tag", value: "specsList" }]];
+
 const items = [
   {
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: true,
-    code: "MD_GCG_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "CCMT",
+    images: [
+      "/manh_dao/gia_cong_gang/1/1_vt.webp",
+      "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
+      "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
+      "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
+      "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
+      "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: [
+          "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
+          "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
+          "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
+          "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
+          "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
+        ]
+      }
+    ],
     name: {
-      vi: "Mảnh dao gia công gang 1 vi?",
-      cn: "Mảnh dao gia công gang 1 cn?"
+      vi: "Hộp 10 mảnh chip mã CCMT - hai màu",
+      cn: "10片装CCMT刀片 - 双色"
     },
     prices: {
-      current: null,
+      current: 470000,
       min: 0,
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
+      cn: "用于精车、粗车、半精车等车削加工"
     },
-    descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    descriptions: descriptions1,
+    seri: "CCMT",
+    specs: "09T3/1204/0602",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView,
     // extra data
+    specsList: ["CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408", "CCMT 060204"]
   },
   {
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: false,
-    code: "MD_GCG_2",
-    images: ["/img/logo.png"],
+    code: "TNMG",
+    images: ["/manh_dao/gia_cong_gang/2/1_vt.webp"],
     extraImages: null,
     name: {
-      vi: "Mảnh dao gia công gang 2 vi?",
-      cn: "Mảnh dao gia công gang 2 cn?"
+      vi: "Hộp 10 mảnh chip mã TNMG - hai màu",
+      cn: "10片装TNMG刀片 - 双色"
     },
     prices: {
-      current: null,
+      current: 480000,
       min: 0,
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
+      cn: "用于精车、粗车、半精车等车削加工"
     },
-    descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    descriptions: descriptions1,
+    seri: "TNMG",
+    specs: "1604",
+    brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView,
     // extra data
+    specsList: ["TNMG 160404", "TNMG 160408"]
   }
 ];
 

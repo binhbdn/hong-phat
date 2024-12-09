@@ -67,7 +67,7 @@ const items = [
     descriptions: null,
     seri: "MCKN",
     specs: "R/L 20-40",
-    brand: "brand?",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
