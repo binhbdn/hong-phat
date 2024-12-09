@@ -80,9 +80,12 @@
 }
 
 .ribbon {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  padding: 0 0.5em;
+  padding: 0 0.375em;
+  display: flex;
+  align-items: flex-end;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: -0.25px;

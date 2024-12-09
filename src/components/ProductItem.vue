@@ -57,7 +57,7 @@ const formattedPrice = computed(() => {
 
         <div class="ribbon">
           {{ item.seri }}
-          <span class="text-[10px]">
+          <span class="flex-grow text-center text-[10px]">
             {{ item.specs }}
           </span>
         </div>
