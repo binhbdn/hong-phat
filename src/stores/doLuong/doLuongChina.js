@@ -7,12 +7,18 @@ const items = [
     category: "pDoLuong",
     routeName: "pDoLuongChinaCT",
     isTypical: true,
-    code: "DCDL_1",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "DCD_1",
+    images: ["/do_luong/china/DCD_1_1.webp", "/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"]
+      }
+    ],
     name: {
-      vi: "Dụng cụ đo lường Trung Quốc 1 vi?",
-      cn: "Dụng cụ đo lường Trung Quốc 1 cn?"
+      vi: "Chân đế từ gắn đồng hồ so 150-390mm",
+      cn: "磁性表座 150-390mm"
     },
     prices: {
       current: null,
@@ -20,13 +26,13 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng để cố định vị trí đồng hồ so",
+      cn: "用于固定百分表位置"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "DCD_1",
+    specs: "150-390mm",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
@@ -36,12 +42,18 @@ const items = [
     category: "pDoLuong",
     routeName: "pDoLuongChinaCT",
     isTypical: false,
-    code: "DCDL_2",
-    images: ["/img/logo.png"],
-    extraImages: null,
+    code: "DCD_2",
+    images: ["/do_luong/china/DCD_2_1.webp", "/do_luong/china/DCD_2_2_vt.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        data: ["/do_luong/china/DCD_2_2_vt.webp"]
+      }
+    ],
     name: {
-      vi: "Dụng cụ đo lường Trung Quốc 2 vi?",
-      cn: "Dụng cụ đo lường Trung Quốc 2 cn?"
+      vi: "Đế từ gắn đồng hồ so 160mm",
+      cn: "磁性表座 160mm"
     },
     prices: {
       current: null,
@@ -49,13 +61,13 @@ const items = [
       max: 0
     },
     description: {
-      vi: "Description vi?",
-      cn: "Description cn?"
+      vi: "Dùng để cố định vị trí đồng hồ so",
+      cn: "用于固定百分表位置"
     },
     descriptions: null,
-    seri: "seri?",
-    specs: "specs?",
-    brand: "brand?",
+    seri: "DCD_2",
+    specs: "160mm",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
