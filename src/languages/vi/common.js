@@ -13,6 +13,7 @@ export default {
   cn: "Trung Quốc",
   tw: "Đài Loan",
   jp: "Nhật Bản",
+  it: "Ý",
   viewAll: "Xem tất cả",
   viewMore: "Xem thêm"
 };

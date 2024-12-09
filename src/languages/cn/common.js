@@ -13,6 +13,7 @@ export default {
   cn: "中国",
   tw: "台湾",
   jp: "日本",
+  it: "意大利",
   viewAll: "查看全部",
   viewMore: "查看更多"
 };
