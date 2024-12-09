@@ -2,6 +2,11 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const description1 = {
+  vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
+  cn: "用于精车、粗车、半精车等车削加工"
+};
+
 const descriptions1 = {
   vi: [
     {
@@ -28,7 +33,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: true,
-    code: "CCMT",
+    code: "CCMT_G",
     images: [
       "/manh_dao/gia_cong_gang/1/1_vt.webp",
       "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
@@ -59,10 +64,7 @@ const items = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
-      cn: "用于精车、粗车、半精车等车削加工"
-    },
+    description: description1,
     descriptions: descriptions1,
     seri: "CCMT",
     specs: "09T3/1204/0602",
@@ -71,13 +73,13 @@ const items = [
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: ["CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408", "CCMT 060204"]
+    specsList: ["CCMT 09T304-2", "CCMT 09T308-2", "CCMT 120404-2", "CCMT 120408-2", "CCMT 060204-2"]
   },
   {
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: false,
-    code: "TNMG",
+    code: "TNMG_G",
     images: ["/manh_dao/gia_cong_gang/2/1_vt.webp"],
     extraImages: null,
     name: {
@@ -89,10 +91,7 @@ const items = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
-      cn: "用于精车、粗车、半精车等车削加工"
-    },
+    description: description1,
     descriptions: descriptions1,
     seri: "TNMG",
     specs: "1604",
@@ -101,7 +100,7 @@ const items = [
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: ["TNMG 160404", "TNMG 160408"]
+    specsList: ["TNMG 160404-2", "TNMG 160408-2"]
   }
 ];
 
