@@ -23,7 +23,7 @@
     @apply flex gap-3 flex-wrap;
   }
   .hp-pagedetails-layout {
-    @apply xl:max-w-[88%] flex flex-col gap-y-3 sm:gap-y-5;
+    @apply 2xl:max-w-[85%] flex flex-col gap-y-3 sm:gap-y-5;
   }
   .hp-pagedetails-rows {
     @apply border-t border-dashed border-gray-400 pt-1 mt-1;

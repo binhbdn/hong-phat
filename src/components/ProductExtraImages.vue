@@ -15,6 +15,8 @@ defineProps({
       {{ typeof item.subTitle === "object" ? item.subTitle[current] : item.subTitle }}
     </div>
 
-    <Image v-for="(image, dIndex) in item.data" :key="dIndex" :src="`${imgServer}${image}`" preview class="mt-2" />
+    <div class="flex flex-col sm:flex-row sm:flex-wrap items-center sm:items-start gap-2 mt-2">
+      <Image v-for="(image, dIndex) in item.data" :key="dIndex" :src="`${imgServer}${image}${item.options}`" :preview="item.preview" />
+    </div>
   </div>
 </template>

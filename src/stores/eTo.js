@@ -53,6 +53,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/e_to_mam_cap/ETO_QGG_spec.webp"]
       }
     ],
@@ -86,6 +88,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/e_to_mam_cap/ETO_QKG_spec.webp"]
       }
     ],
@@ -119,6 +123,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/e_to_mam_cap/mam_cap/vt_spec.webp"]
       }
     ],

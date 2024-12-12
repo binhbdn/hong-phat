@@ -48,6 +48,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "?w=250",
         data: extraImagesData1
       }
     ],

@@ -15,6 +15,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "?w=400",
         data: extraImagesData1
       }
     ],
@@ -50,6 +52,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/do_luong/china/DCD_2_2_vt.webp"]
       }
     ],

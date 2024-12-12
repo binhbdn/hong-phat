@@ -13,6 +13,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/collet/ER11/vt_spec.webp"]
       }
     ],
@@ -49,6 +51,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/collet/ER16/vt_spec.webp"]
       }
     ],

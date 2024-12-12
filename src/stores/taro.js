@@ -13,6 +13,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/taro/ban_ren/spec.webp"]
       }
     ],
@@ -48,6 +50,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/taro/mui_dut_doan/vt_spec.webp"]
       }
     ],

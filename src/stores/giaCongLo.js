@@ -13,6 +13,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/gia_cong_lo/mui_chong_tam_co_dinh/vt_spec.webp"]
       }
     ],

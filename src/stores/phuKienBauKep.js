@@ -13,6 +13,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "",
         data: ["/phu_kien_bau_kep/ao_collet/spec.webp"]
       }
     ],

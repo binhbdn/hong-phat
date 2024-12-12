@@ -13,6 +13,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/can_dao_gan_manh/tien_ranh/MGEH/spec.webp"]
       }
     ],
@@ -48,6 +50,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/can_dao_gan_manh/moc_lo/spec.webp"]
       }
     ],

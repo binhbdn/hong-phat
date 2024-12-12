@@ -46,6 +46,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "?w=500",
         data: extraImagesData1
       }
     ],
@@ -78,6 +80,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "?w=500",
         data: ["/manh_dao/tien_ranh_ren/MGGN/spec.webp"]
       }
     ],

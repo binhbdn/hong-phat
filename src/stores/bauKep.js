@@ -40,6 +40,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],
@@ -96,6 +98,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],
@@ -148,6 +152,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "",
         data: ["/bau_kep_suken/spec1.webp"]
       }
     ],

@@ -19,6 +19,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: false,
+        options: "?w=350",
         data: extraImagesData1
       }
     ],
@@ -86,6 +88,8 @@ const items = [
       {
         title: "specifications",
         subTitle: null,
+        preview: true,
+        options: "?w=560",
         data: extraImagesData2
       }
     ],
