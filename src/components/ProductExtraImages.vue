@@ -9,9 +9,9 @@ defineProps({
 
 <template>
   <div v-for="(item, index) in images" :key="index">
-    <div class="hp-h1">{{ $t(item.title) }}</div>
+    <div v-if="item.title" class="hp-h1">{{ $t(item.title) }}</div>
 
-    <div v-if="item.subTitle" class="mt-1">
+    <div v-if="item.subTitle" class="font-semibold mt-1">
       {{ typeof item.subTitle === "object" ? item.subTitle[current] : item.subTitle }}
     </div>
 

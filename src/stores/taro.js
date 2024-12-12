@@ -94,7 +94,7 @@ const items = [
       vi: "Kích thước từ M3 đến M12",
       cn: "尺寸从M3到M12"
     },
-    descriptions: null,
+    descriptions: null, // checked
     seri: "TARO",
     specs: "M3-M12",
     brand: "Shaozi",

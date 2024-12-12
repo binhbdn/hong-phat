@@ -2,7 +2,7 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
-const detailsView = [[{ type: "tag", value: "options" }]];
+const detailsView = [[{ type: "tag", value: "specsList" }]];
 
 const extraImagesData1 = ["/bavia/can_dao/NB_1000.webp", "/bavia/can_dao/RB_1000.webp", "/bavia/can_dao/EO_2000.webp"];
 
@@ -76,7 +76,7 @@ const items = [
     listView: listViewCBO,
     detailsView,
     // extra data
-    options: ["VT_NB1000", "VT_RB1000", "NOGA_E02000", "NOGA_NB1000", "NOGA_RB1000"]
+    specsList: ["VT_NB1000", "VT_RB1000", "NOGA_E02000", "NOGA_NB1000", "NOGA_RB1000"]
   },
   {
     category: "pGotBavia",
@@ -142,7 +142,7 @@ const items = [
     listView: listViewCBO,
     detailsView,
     // extra data
-    options: [
+    specsList: [
       "VT_BS1010 x 10pcs",
       "VT_BS2010 x 10pcs",
       "VT_BK3010 x 10pcs",
