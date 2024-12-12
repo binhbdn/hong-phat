@@ -41,6 +41,7 @@ export default {
   options: "Tùy chọn",
   application: "Ứng dụng",
   description: "Mô tả",
+  operation: "Thao tác",
   dimension: "Kích thước",
   showSortBtns: "Hiển thị button sắp xếp",
   hideSortBtns: "Ẩn button sắp xếp",

@@ -41,6 +41,7 @@ export default {
   options: "选项",
   application: "应用",
   description: "描述",
+  operation: "操作",
   dimension: "方面",
   showSortBtns: "显示排序按钮",
   hideSortBtns: "隐藏排序按钮",
