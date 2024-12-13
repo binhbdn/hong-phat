@@ -2,7 +2,7 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
-const extraImagesData1 = ["/do_luong/china/DCD_1_2.webp", "/do_luong/china/DCD_1_3.webp"];
+const extraImagesData1 = ["/do_luong/china/01/DCD_1_2.webp", "/do_luong/china/01/DCD_1_3.webp"];
 
 const items = [
   {
@@ -10,7 +10,7 @@ const items = [
     routeName: "pDoLuongChinaCT",
     isTypical: true,
     code: "DCD_1",
-    images: ["/do_luong/china/DCD_1_1.webp", ...extraImagesData1],
+    images: ["/do_luong/china/01/DCD_1_1.webp", ...extraImagesData1],
     extraImages: [
       {
         title: "specifications",
@@ -33,7 +33,24 @@ const items = [
       vi: "Dùng để cố định vị trí đồng hồ so",
       cn: "用于固定百分表位置"
     },
-    descriptions: null,
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Có thể di chuyển lên xuống, xoay dễ dàng theo các trục X-Y",
+            "Có lực từ mạnh (ON/OFF), thuận tiện cho việc gá vào các vị trí trên thân máy",
+            "Có trợ lực để xiết cố định các trục (loại thủy lực)"
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF），便于在机身各位置安装", "具有液压辅助功能，可固定轴向"]
+        }
+      ]
+    },
     seri: "DCD_1",
     specs: "150-390mm",
     brand: "",
@@ -47,14 +64,14 @@ const items = [
     routeName: "pDoLuongChinaCT",
     isTypical: false,
     code: "DCD_2",
-    images: ["/do_luong/china/DCD_2_1.webp", "/do_luong/china/DCD_2_2_vt.webp"],
+    images: ["/do_luong/china/02/DCD_2_1.webp", "/do_luong/china/02/DCD_2_2_vt.webp"],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
         preview: false,
         options: "",
-        data: ["/do_luong/china/DCD_2_2_vt.webp"]
+        data: ["/do_luong/china/02/DCD_2_2_vt.webp"]
       }
     ],
     name: {
@@ -70,7 +87,20 @@ const items = [
       vi: "Dùng để cố định vị trí đồng hồ so",
       cn: "用于固定百分表位置"
     },
-    descriptions: null,
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Có thể di chuyển lên xuống, xoay dễ dàng theo các trục X-Y", "Có lực từ mạnh (ON/OFF), thuận tiện cho việc gá vào các vị trí trên thân máy"]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF），便于在机身各位置安装"]
+        }
+      ]
+    },
     seri: "DCD_2",
     specs: "160mm",
     brand: "",
