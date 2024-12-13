@@ -2,6 +2,23 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const descriptions1 = {
+  vi: [
+    {
+      title: "description",
+      data: ["Được làm từ thép hợp kim có độ cứng và độ bền cao.", "Tốc độ gia công hoàn hảo, dễ dàng thao tác trong quá trình sử dụng."]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["由高强度合金钢制成，具有出色的硬度和耐用性。", "加工速度完美，操作简单方便。"]
+    }
+  ]
+};
+
+const detailsView = [[{ type: "tag", value: "specsList" }]];
+
 const items = [
   {
     category: "pCanDaoGanManh",
@@ -31,14 +48,35 @@ const items = [
       vi: "Sử dụng cho gia công tiện rãnh bên ngoài chi tiết",
       cn: "用于外圆沟槽车削加工"
     },
-    descriptions: null,
+    descriptions: descriptions1,
     seri: "MGEH",
     specs: "R/L 12-25",
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView,
     // extra data
+    specsList: [
+      "MGEHR1212-3",
+      "MGEHR1212-4",
+      "MGEHL2020-3",
+      "MGEHR2020-4",
+      "MGEHR2020-5",
+      "MGEHL2525-3",
+      "MGEHR3232-3",
+      "MGEHR2020-4-300",
+      "MGEHR2525-3-300",
+      "MGEHR2525-4-300",
+      "MGEHR1616-3C",
+      "MGEHR1616-4C",
+      "MGEHR2020-3C",
+      "MGEHR2020-2C",
+      "MGEHR2525-3C",
+      "MGEHR1616-4",
+      "MGEHR3232-5",
+      "MGEHR2525-4-T30",
+      "MGEHR2525-3-T30"
+    ]
   },
   {
     category: "pCanDaoGanManh",
@@ -68,14 +106,15 @@ const items = [
       vi: "Dùng để cắt gọt kim loại, gia công lỗ, tiện ren",
       cn: "用于金属切削、内孔加工和螺纹车削"
     },
-    descriptions: null,
+    descriptions: descriptions1,
     seri: "MCKN",
     specs: "R/L 20-40",
     brand: "",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView,
     // extra data
+    specsList: ["S20R-MCKNR/L12", "S25S-MCKNR/L12", "S32T-MCKNR/L12", "S40T-MCKNR/L12"]
   }
 ];
 
