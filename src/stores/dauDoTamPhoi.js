@@ -1,6 +1,31 @@
-import { listViewCBO } from "@/stores/listViewOptions";
+import { listViewADL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
+
+const description1 = {
+  vi: "Đầu dò tâm cơ chống từ tính",
+  cn: "防磁机械式中心探针"
+};
+
+const descriptions1 = {
+  vi: [
+    {
+      title: "description",
+      data: ["Bề mặt phủ lớp titan kháng từ.", "Có thể xác định chính xác vị trí tâm của phôi đang được gia công.", "Lò xo có thể thay thế, chống mài mòn tốt."]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["表面涂有防磁钛层。", "可以精确定位加工工件的中心位置。", "弹簧可更换，具有良好的耐磨性。"]
+    }
+  ]
+};
+
+const detailsView = [
+  ["rpm", "accuracy"],
+  ["diameter", "length"]
+];
 
 const items = [
   {
@@ -9,7 +34,15 @@ const items = [
     isTypical: true,
     code: "DDTP_4_1",
     images: ["/dau_do_tam_phoi/4mm/vt_1.webp", "/dau_do_tam_phoi/4mm/2.webp", "/dau_do_tam_phoi/4mm/vt_3.webp"],
-    extraImages: null,
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/dau_do_tam_phoi/4mm/vt_3.webp"]
+      }
+    ],
     name: {
       vi: "Đầu dò tâm cơ 4mm",
       cn: "4mm机械式中心探针"
@@ -19,18 +52,19 @@ const items = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Dùng xác định gốc phôi gia công cho máy phay CNC hay máy phay cơ có lắp thước hiển thị số",
-      cn: "用于确定数控铣床或带数显尺的普通铣床的工件原点"
-    },
-    descriptions: null,
+    description: description1,
+    descriptions: descriptions1,
     seri: "4mm",
     specs: "",
     brand: "",
     origin: ["cn"],
-    listView: listViewCBO,
-    detailsView: null
+    listView: listViewADL,
+    detailsView,
     // extra data
+    rpm: "400-600rpm",
+    accuracy: "±0.005mm",
+    diameter: "10mm/4mm",
+    length: "90mm"
   },
   {
     category: "pDauDoTamPhoi",
@@ -48,18 +82,19 @@ const items = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Đầu dò tâm kim loại chống từ tính",
-      cn: "防磁金属中心探针"
-    },
-    descriptions: null,
+    description: description1,
+    descriptions: descriptions1,
     seri: "4mm",
     specs: "",
     brand: "",
     origin: ["cn"],
-    listView: listViewCBO,
-    detailsView: null
+    listView: listViewADL,
+    detailsView,
     // extra data
+    rpm: "400-600rpm",
+    accuracy: "0.01-0.03mm",
+    diameter: "10mm/4mm",
+    length: "87mm"
   }
 ];
 
