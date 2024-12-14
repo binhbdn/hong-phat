@@ -1,6 +1,8 @@
-import { listViewRMB } from "@/stores/listViewOptions";
+import { listViewAiDB } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
+
+const detailsView = [["accuracy", "colletInnerDiameter"], [{ type: "tag", value: "specsList" }]];
 
 const items = [
   {
@@ -8,7 +10,14 @@ const items = [
     routeName: "pColletCT",
     isTypical: true,
     code: "ER11",
-    images: ["/collet/ER11/vt_1.webp", "/collet/ER11/vt_spec.webp"],
+    images: [
+      "/collet/ER11/vt_1.webp",
+      "/collet/ER11/vt_spec.webp",
+      "/collet/ER11/vt_spec_1.webp",
+      "/collet/ER11/vt_spec_2.webp",
+      "/collet/ER11/vt_2.webp",
+      "/collet/ER11/vt_3.webp"
+    ],
     extraImages: [
       {
         title: "specifications",
@@ -33,20 +42,55 @@ const items = [
     },
     descriptions: null,
     seri: "ER11",
-    specs: "D2-D7",
+    specs: "D1-D7",
     brand: "KON",
     origin: ["cn"],
-    listView: listViewRMB,
+    listView: listViewAiDB,
     // extra data
-    runout: "0.005mm/0.008mm",
-    maxRPM: ""
+    detailsView,
+    accuracy: "0.005/0.008mm",
+    innerDiameter: "D1-D7",
+    colletInnerDiameter: "D1-D7",
+    specsList: [
+      "ER11-1±0.008mm",
+      "ER11-1.5±0.008mm",
+      "ER11-2±0.008mm",
+      "ER11-2.5±0.008mm",
+      "ER11-3±0.005mm",
+      "ER11-3±0.008mm",
+      "ER11-3.175±0.005mm",
+      "ER11-3.175±0.008mm",
+      "ER11-3.5±0.005mm",
+      "ER11-3.5±0.008mm",
+      "ER11-4±0.005mm",
+      "ER11-4±0.008mm",
+      "ER11-4.5±0.005mm",
+      "ER11-4.5±0.008mm",
+      "ER11-5±0.005mm",
+      "ER11-5±0.008mm",
+      "ER11-5.5±0.005mm",
+      "ER11-5.5±0.008mm",
+      "ER11-6±0.005mm",
+      "ER11-6±0.008mm",
+      "ER11-6.5±0.005mm",
+      "ER11-6.5±0.008mm",
+      "ER11-7±0.005mm",
+      "ER11-7±0.008mm"
+    ]
   },
   {
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: false,
     code: "ER16",
-    images: ["/collet/ER11/vt_1.webp", "/collet/ER16/vt_spec.webp"],
+    images: [
+      "/collet/ER16/vt_1.webp",
+      "/collet/ER16/vt_spec.webp",
+      "/collet/ER16/vt_spec_1.webp",
+      "/collet/ER16/vt_spec_2.webp",
+      "/collet/ER16/vt_2.webp",
+      "/collet/ER16/vt_3.webp"
+    ],
     extraImages: [
       {
         title: "specifications",
@@ -71,13 +115,41 @@ const items = [
     },
     descriptions: null,
     seri: "ER16",
-    specs: "D3-D10",
+    specs: "D1-D10",
     brand: "KON",
     origin: ["cn"],
-    listView: listViewRMB,
+    listView: listViewAiDB,
     // extra data
-    runout: "0.005mm/0.008mm",
-    maxRPM: ""
+    detailsView,
+    accuracy: "0.005/0.008mm",
+    innerDiameter: "D1-D10",
+    colletInnerDiameter: "D1-D10",
+    specsList: [
+      "ER16-1±0.008mm",
+      "ER16-1.5±0.008mm",
+      "ER16-2±0.008mm",
+      "ER16-2.5±0.008mm",
+      "ER16-3±0.005mm",
+      "ER16-3±0.008mm",
+      "ER16-3.175±0.005mm",
+      "ER16-3.175±0.008mm",
+      "ER16-3.5±0.005mm",
+      "ER16-3.5±0.008mm",
+      "ER16-4±0.005mm",
+      "ER16-4±0.008mm",
+      "ER16-5±0.005mm",
+      "ER16-5±0.008mm",
+      "ER16-6±0.005mm",
+      "ER16-6±0.008mm",
+      "ER16-7±0.005mm",
+      "ER16-7±0.008mm",
+      "ER16-8±0.005mm",
+      "ER16-8±0.008mm",
+      "ER16-9±0.005mm",
+      "ER16-9±0.008mm",
+      "ER16-10±0.005mm",
+      "ER16-10±0.008mm"
+    ]
   }
 ];
 

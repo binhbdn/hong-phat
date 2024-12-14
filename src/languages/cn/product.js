@@ -19,6 +19,8 @@ export default {
   Al: "铝",
   contactForQuote: "价格：联系报价",
   diameter: "直径",
+  innerDiameter: "内径",
+  colletInnerDiameter: "筒夹内孔直径",
   bladeDiameter: "刀片直径",
   bladeRadius: "刀片半径",
   handleDiameter: "手柄直径",

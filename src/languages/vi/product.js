@@ -19,6 +19,8 @@ export default {
   Al: "Nhôm",
   contactForQuote: "Giá bán: Liên hệ báo giá",
   diameter: "Đường kính",
+  innerDiameter: "Đường kính trong",
+  colletInnerDiameter: "Đường kính lỗ trong của collet",
   bladeDiameter: "Đường kính lưỡi",
   bladeRadius: "Bán kính lưỡi",
   handleDiameter: "Đường kính cán",
@@ -53,7 +55,7 @@ export default {
   dimension: "Kích thước",
   showSortBtns: "Hiển thị button sắp xếp",
   hideSortBtns: "Ẩn button sắp xếp",
-  enterProductNameOrProductCode: "Nhập tên hoặc mã sản phẩm",
+  enterProductNameOrProductCode: "Nhập tên hoặc m�� sản phẩm",
   searchResultsWithKeyword: "Kết quả tìm kiếm với từ khoá",
   noProductsFound: "Không tìm thấy sản phẩm nào",
   productDetails: "Chi tiết sản phẩm"
