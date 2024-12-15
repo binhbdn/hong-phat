@@ -23,7 +23,6 @@ export const allProducts = [
   ...canDaoGanManhItems,
   ...taroItems,
   ...duongKiemRenItems,
-  ...manhDaoItems,
   ...eToItems,
   ...giaCongLoItems,
   ...boCanDemItems,
@@ -54,3 +53,26 @@ allProducts.forEach((item) => {
 });
 
 export const mapProducts = mapAllProducts;
+
+/* Hàm kiểm tra code trùng lặp
+function checkDuplicateCode() {
+  const codeMap = new Map();
+  const duplicates = [];
+
+  allProducts.forEach((product) => {
+    if (codeMap.has(product.code)) {
+      duplicates.push(product.code);
+    } else {
+      codeMap.set(product.code, true);
+    }
+  });
+
+  if (duplicates.length > 0) {
+    window.console.log("Các code bị trùng:", duplicates);
+  } else {
+    window.console.log("Không có code trùng");
+  }
+}
+
+checkDuplicateCode();
+*/
