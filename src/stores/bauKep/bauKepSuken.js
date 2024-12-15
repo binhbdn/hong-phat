@@ -1,19 +1,9 @@
 import { listViewAMB } from "@/stores/listViewOptions";
-import { detailsViewBauKep } from "@/stores/bauKep/helper";
+import { descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
 
-const descriptions = {
-  vi: [
-    {
-      title: "description",
-      data: ["Được làm từ thép hợp kim có độ cứng và độ bền cao.", "Tốc độ gia công hoàn hảo, dễ dàng thao tác trong quá trình sử dụng."]
-    }
-  ],
-  cn: [
-    {
-      title: "description",
-      data: ["由高强度合金钢制成，具有出色的硬度和耐用性。", "加工速度完美，操作简单方便。"]
-    }
-  ]
+const description = {
+  vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
+  cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
 };
 
 const bauKepSukenItems = [
@@ -49,11 +39,8 @@ const bauKepSukenItems = [
       min: 1790000,
       max: 1872000
     },
-    description: {
-      vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-      cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
-    },
-    descriptions,
+    description,
+    descriptions: descriptionsBauKep,
     seri: "BT50",
     specs: "ER16/20/25/32/40",
     brand: "Suken",
@@ -108,11 +95,8 @@ const bauKepSukenItems = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-      cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
-    },
-    descriptions,
+    description,
+    descriptions: descriptionsBauKep,
     seri: "BT40",
     specs: "ER16/20/25/32",
     brand: "Suken",
@@ -163,11 +147,8 @@ const bauKepSukenItems = [
       min: 73000,
       max: 773000
     },
-    description: {
-      vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-      cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
-    },
-    descriptions,
+    description,
+    descriptions: descriptionsBauKep,
     seri: "BT30",
     specs: "ER16/20/25/32",
     brand: "Suken",
