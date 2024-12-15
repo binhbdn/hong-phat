@@ -1,10 +1,5 @@
 import { listViewAMB } from "@/stores/listViewOptions";
-import { descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
-
-const description = {
-  vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
-  cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
-};
+import { descriptionBauKepCommon, descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
 
 const bauKepSukenItems = [
   // 03 bầu kẹp Suken - Thứ tự theo mức độ phổ biến:
@@ -39,7 +34,7 @@ const bauKepSukenItems = [
       min: 1790000,
       max: 1872000
     },
-    description,
+    description: descriptionBauKepCommon,
     descriptions: descriptionsBauKep,
     seri: "BT50",
     specs: "ER16/20/25/32/40",
@@ -53,7 +48,24 @@ const bauKepSukenItems = [
     hardness: "58HRC-60HRC",
     accuracy: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "100, 150, 200"
+    overallLength: "100, 150, 200",
+    specsList: [
+      "BT50-ER16-100",
+      "BT50-ER16-150",
+      "BT50-ER16-200",
+      "BT50-ER20-100",
+      "BT50-ER20-150",
+      "BT50-ER20-200",
+      "BT50-ER25-100",
+      "BT50-ER25-150",
+      "BT50-ER25-200",
+      "BT50-ER32-100",
+      "BT50-ER32-150",
+      "BT50-ER32-200",
+      "BT50-ER40-100",
+      "BT50-ER40-150",
+      "BT50-ER40-200"
+    ]
   },
   {
     category: "pBauKep",
@@ -95,7 +107,7 @@ const bauKepSukenItems = [
       min: 0,
       max: 0
     },
-    description,
+    description: descriptionBauKepCommon,
     descriptions: descriptionsBauKep,
     seri: "BT40",
     specs: "ER16/20/25/32",
@@ -109,7 +121,24 @@ const bauKepSukenItems = [
     hardness: "58HRC-60HRC",
     accuracy: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "70, 100, 150"
+    overallLength: "70, 100, 150",
+    specsList: [
+      "BT40-ER16-70",
+      "BT40-ER16-100",
+      "BT40-ER16-150",
+      "BT40-ER20-70",
+      "BT40-ER20-100",
+      "BT40-ER20-150",
+      "BT40-ER25-70",
+      "BT40-ER25-100",
+      "BT40-ER25-150",
+      "BT40-ER32-70",
+      "BT40-ER32-100",
+      "BT40-ER32-150",
+      "BT40-ER40-70",
+      "BT40-ER40-100",
+      "BT40-ER40-150"
+    ]
   },
   {
     category: "pBauKep",
@@ -147,7 +176,7 @@ const bauKepSukenItems = [
       min: 73000,
       max: 773000
     },
-    description,
+    description: descriptionBauKepCommon,
     descriptions: descriptionsBauKep,
     seri: "BT30",
     specs: "ER16/20/25/32",
@@ -161,7 +190,8 @@ const bauKepSukenItems = [
     hardness: "58HRC-60HRC",
     accuracy: "0.003mm",
     maxRPM: "25.000rpm",
-    overallLength: "70, 100"
+    overallLength: "70, 100",
+    specsList: ["BT30-ER16-70", "BT30-ER16-100", "BT30-ER20-70", "BT30-ER20-100", "BT30-ER25-70", "BT30-ER25-100", "BT30-ER32-70", "BT30-ER32-100"]
   }
 ];
 

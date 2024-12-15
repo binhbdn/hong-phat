@@ -1,5 +1,5 @@
 import { listViewAMB } from "@/stores/listViewOptions";
-import { descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
+import { descriptionBauKepDaoPhayNgon, descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
 
 // 01 bầu kẹp CNC:
 const bauKepCNCItem = {
@@ -26,10 +26,7 @@ const bauKepCNCItem = {
     min: 0,
     max: 0
   },
-  description: {
-    vi: "Thường dùng để kẹp các loại dao phay ngón",
-    cn: "通常用于夹持各种立铣刀"
-  },
+  description: descriptionBauKepDaoPhayNgon,
   descriptions: descriptionsBauKep,
   seri: "BT30",
   specs: "ER25/32",
@@ -43,7 +40,8 @@ const bauKepCNCItem = {
   hardness: "56HRC-58HRC",
   accuracy: "0.003mm",
   maxRPM: "25.000rpm",
-  overallLength: "100"
+  overallLength: "100",
+  specsList: ["BT30-ER25-100", "BT30-ER32-100"]
 };
 
 export default bauKepCNCItem;

@@ -1,3 +1,13 @@
+export const descriptionBauKepCommon = {
+  vi: "Dùng kẹp các loại mũi khoan, mũi doa, dao phay ngón và tapping các chi tiết trên máy phay",
+  cn: "用于夹紧铣床上的钻头、铰刀、指铣刀和丝锥零件"
+};
+
+export const descriptionBauKepDaoPhayNgon = {
+  vi: "Thường dùng để kẹp các loại dao phay ngón",
+  cn: "通常用于夹持各种立铣刀"
+};
+
 export const descriptionsBauKep = {
   vi: [
     {
@@ -16,5 +26,6 @@ export const descriptionsBauKep = {
 export const detailsViewBauKep = [
   ["seri", "model"],
   [{ type: "i18n", value: "material" }, "hardness"],
-  ["accuracy", "maxRPM", "overallLength"]
+  ["accuracy", "maxRPM", "overallLength"],
+  [{ type: "tag", value: "specsList" }]
 ];
