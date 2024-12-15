@@ -1,12 +1,5 @@
-import { listViewRMB } from "@/stores/listViewOptions";
-import { mapSearchProps } from "@/stores/search";
-import { findItemByCode } from "@/stores/products";
-
-const detailsView = [
-  ["seri", "model"],
-  [{ type: "i18n", value: "material" }, "hardness"],
-  ["runout", "maxRPM", "overallLength"]
-];
+import { listViewAMB } from "@/stores/listViewOptions";
+import { detailsViewBauKep } from "@/stores/bauKep/helper";
 
 const descriptions = {
   vi: [
@@ -23,13 +16,15 @@ const descriptions = {
   ]
 };
 
-const items = [
+const bauKepSukenItems = [
+  // 03 bầu kẹp Suken - Thứ tự theo mức độ phổ biến:
   {
     category: "pBauKep",
     routeName: "pBauKepCT",
     isTypical: true,
     code: "BK_SUKEN_BT50_ER",
     images: [
+      "/bau_kep_suken/bt50/vt_0.webp",
       "/bau_kep_suken/BT50_ER40_100L.webp",
       "/bau_kep_suken/bt50/1.webp",
       "/bau_kep_suken/bt50/2.webp",
@@ -60,25 +55,26 @@ const items = [
     },
     descriptions,
     seri: "BT50",
-    specs: "ER16-40",
+    specs: "ER16/20/25/32/40",
     brand: "Suken",
     origin: ["cn"],
-    listView: listViewRMB,
-    detailsView,
+    listView: listViewAMB,
+    detailsView: detailsViewBauKep,
     // extra data
     model: "ER16/20/25/32/40",
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
-    runout: "0.003mm",
+    accuracy: "0.003mm",
     maxRPM: "25.000rpm",
     overallLength: "100, 150, 200"
   },
   {
     category: "pBauKep",
     routeName: "pBauKepCT",
-    isTypical: true,
+    isTypical: false,
     code: "BK_SUKEN_BT40_ER",
     images: [
+      "/bau_kep_suken/bt40/vt_0.webp",
       "/bau_kep_suken/BT40_ER16_70L.webp",
       "/bau_kep_suken/bt40/BT40_ER20_70L.webp",
       "/bau_kep_suken/bt40/BT40_ER20_70L_1.webp",
@@ -118,16 +114,16 @@ const items = [
     },
     descriptions,
     seri: "BT40",
-    specs: "ER16-32",
+    specs: "ER16/20/25/32",
     brand: "Suken",
     origin: ["cn"],
-    listView: listViewRMB,
-    detailsView,
+    listView: listViewAMB,
+    detailsView: detailsViewBauKep,
     // extra data
     model: "ER16/20/25/32",
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
-    runout: "0.003mm",
+    accuracy: "0.003mm",
     maxRPM: "25.000rpm",
     overallLength: "70, 100, 150"
   },
@@ -137,6 +133,7 @@ const items = [
     isTypical: false,
     code: "BK_SUKEN_BT30_ER",
     images: [
+      "/bau_kep_suken/bt30/vt_0.webp",
       "/bau_kep_suken/BT30_ER20_70L.webp",
       "/bau_kep_suken/bt30/BT30_ER16_100L.webp",
       "/bau_kep_suken/bt30/BT30_ER16_100L_1.webp",
@@ -172,23 +169,19 @@ const items = [
     },
     descriptions,
     seri: "BT30",
-    specs: "ER16-32",
+    specs: "ER16/20/25/32",
     brand: "Suken",
     origin: ["cn"],
-    listView: listViewRMB,
-    detailsView,
+    listView: listViewAMB,
+    detailsView: detailsViewBauKep,
     // extra data
     model: "ER16/20/25/32",
     material: "AlloySteel",
     hardness: "58HRC-60HRC",
-    runout: "0.003mm",
+    accuracy: "0.003mm",
     maxRPM: "25.000rpm",
     overallLength: "70, 100"
   }
 ];
 
-export default items;
-
-export const bauKepItems = mapSearchProps(items);
-
-export const getItemByCode = (code) => findItemByCode(items, code);
+export default bauKepSukenItems;
