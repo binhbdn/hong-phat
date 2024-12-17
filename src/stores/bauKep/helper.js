@@ -8,6 +8,11 @@ export const descriptionBauKepDaoPhayNgon = {
   cn: "通常用于夹持各种立铣刀"
 };
 
+export const descriptionBauKepDaoPhayNgonMuiKhoan = {
+  vi: "Thường dùng để kẹp các loại dao phay ngón, mũi khoan",
+  cn: "通常用于夹持各种立铣刀、钻头"
+};
+
 export const descriptionsBauKep = {
   vi: [
     {
