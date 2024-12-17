@@ -1,5 +1,5 @@
 import { listViewAMB } from "@/stores/listViewOptions";
-import { descriptionBauKepDaoPhayNgon, descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
+import { descriptionBKDPN, descriptionsBTER, detailsViewBauKep } from "@/stores/bauKep/helper";
 
 // 01 bầu kẹp CNC:
 const bauKepCNCItem = {
@@ -26,8 +26,8 @@ const bauKepCNCItem = {
     min: 0,
     max: 0
   },
-  description: descriptionBauKepDaoPhayNgon,
-  descriptions: descriptionsBauKep,
+  description: descriptionBKDPN,
+  descriptions: descriptionsBTER,
   seri: "BT30",
   specs: "ER25/32",
   brand: "CNC",

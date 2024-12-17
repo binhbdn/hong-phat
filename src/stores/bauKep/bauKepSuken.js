@@ -1,5 +1,5 @@
 import { listViewAMB } from "@/stores/listViewOptions";
-import { descriptionBauKepCommon, descriptionsBauKep, detailsViewBauKep } from "@/stores/bauKep/helper";
+import { descriptionSK, descriptionsBTER, detailsViewBauKep } from "@/stores/bauKep/helper";
 
 const bauKepSukenItems = [
   // 03 bầu kẹp Suken - Thứ tự theo mức độ phổ biến:
@@ -34,8 +34,8 @@ const bauKepSukenItems = [
       min: 1790000,
       max: 1872000
     },
-    description: descriptionBauKepCommon,
-    descriptions: descriptionsBauKep,
+    description: descriptionSK,
+    descriptions: descriptionsBTER,
     seri: "BT50",
     specs: "ER16/20/25/32/40",
     brand: "Suken",
@@ -107,8 +107,8 @@ const bauKepSukenItems = [
       min: 0,
       max: 0
     },
-    description: descriptionBauKepCommon,
-    descriptions: descriptionsBauKep,
+    description: descriptionSK,
+    descriptions: descriptionsBTER,
     seri: "BT40",
     specs: "ER16/20/25/32",
     brand: "Suken",
@@ -176,8 +176,8 @@ const bauKepSukenItems = [
       min: 73000,
       max: 773000
     },
-    description: descriptionBauKepCommon,
-    descriptions: descriptionsBauKep,
+    description: descriptionSK,
+    descriptions: descriptionsBTER,
     seri: "BT30",
     specs: "ER16/20/25/32",
     brand: "Suken",
