@@ -255,6 +255,87 @@ const items = [
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: false,
+    code: "ER20",
+    images: [
+      "/collet/ER20/vt_1.webp",
+      "/collet/ER20/vt_spec.webp",
+      "/collet/ER20/vt_spec_1.webp",
+      "/collet/ER20/vt_spec_2.webp",
+      "/collet/ER20/vt_2.webp",
+      "/collet/ER/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/ER20/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet ER20 - Đầu kẹp dao máy CNC",
+      cn: "ER20筒夹 - 数控机床刀具夹头"
+    },
+    prices: {
+      current: 0,
+      min: 58000,
+      max: 113000
+    },
+    description: {
+      vi: "Dùng cho đầu kẹp CNC ER20",
+      cn: "用于ER20数控夹头"
+    },
+    descriptions: null,
+    seri: "ER20",
+    specs: "D1-D13",
+    brand: "KON",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.005/0.008mm",
+    innerDiameter: "D1-D13",
+    colletInnerDiameter: "D1-D13",
+    specsList: [
+      "ER20-1±0.008mm",
+      "ER20-1.5±0.008mm",
+      "ER20-2±0.008mm",
+      "ER20-2.5±0.008mm",
+      "ER20-3±0.005mm",
+      "ER20-3±0.008mm",
+      "ER20-3.175±0.005mm",
+      "ER20-3.175±0.008mm",
+      "ER20-3.5±0.005mm",
+      "ER20-3.5±0.008mm",
+      "ER20-4±0.005mm",
+      "ER20-4±0.008mm",
+      "ER20-5±0.005mm",
+      "ER20-5±0.008mm",
+      "ER20-6±0.005mm",
+      "ER20-6±0.008mm",
+      "ER20-7±0.005mm",
+      "ER20-7±0.008mm",
+      "ER20-8±0.005mm",
+      "ER20-8±0.008mm",
+      "ER20-9±0.005mm",
+      "ER20-9±0.008mm",
+      "ER20-10±0.005mm",
+      "ER20-10±0.008mm",
+      "ER20-11±0.005mm",
+      "ER20-11±0.008mm",
+      "ER20-12±0.005mm",
+      "ER20-12±0.008mm",
+      "ER20-12.7±0.005mm",
+      "ER20-12.7±0.008mm",
+      "ER20-13±0.005mm",
+      "ER20-13±0.008mm"
+    ]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
+    isTypical: false,
     code: "ER16",
     images: [
       "/collet/ER16/vt_1.webp",
