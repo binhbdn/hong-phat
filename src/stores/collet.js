@@ -8,6 +8,72 @@ const items = [
   {
     category: "pCollet",
     routeName: "pColletCT",
+    isTypical: false,
+    code: "ER40",
+    images: ["/collet/ER40/vt_1.webp", "/collet/ER40/vt_spec.webp", "/collet/ER40/vt_spec_1.webp", "/collet/ER/vt_3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/ER40/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet ER40 - Đầu kẹp dao máy CNC",
+      cn: "ER40筒夹 - 数控机床刀具夹头"
+    },
+    prices: {
+      current: 134000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Dùng cho đầu kẹp CNC ER40",
+      cn: "用于ER40数控夹头"
+    },
+    descriptions: null,
+    seri: "ER40",
+    specs: "D3-D26",
+    brand: "KON",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.008mm",
+    innerDiameter: "D3-D26",
+    colletInnerDiameter: "D3-D26",
+    specsList: [
+      "ER40-3±0.008mm",
+      "ER40-4±0.008mm",
+      "ER40-5±0.008mm",
+      "ER40-6±0.008mm",
+      "ER40-7±0.008mm",
+      "ER40-8±0.008mm",
+      "ER40-9±0.008mm",
+      "ER40-10±0.008mm",
+      "ER40-11±0.008mm",
+      "ER40-12±0.008mm",
+      "ER40-13±0.008mm",
+      "ER40-14±0.008mm",
+      "ER40-15±0.008mm",
+      "ER40-16±0.008mm",
+      "ER40-17±0.008mm",
+      "ER40-18±0.008mm",
+      "ER40-19±0.008mm",
+      "ER40-20±0.008mm",
+      "ER40-21±0.008mm",
+      "ER40-22±0.008mm",
+      "ER40-23±0.008mm",
+      "ER40-24±0.008mm",
+      "ER40-25±0.008mm",
+      "ER40-26±0.008mm"
+    ]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
     isTypical: true,
     code: "ER32",
     images: [
