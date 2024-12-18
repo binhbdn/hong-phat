@@ -10,7 +10,7 @@ export const setHiddenLinkIds = (ids) => {
 };
 
 const findAndProcessLinks = () => {
-  const links = document.querySelectorAll(".hidden-a a");
+  const links = document.querySelectorAll(".Sirv a");
 
   if (links.length > 0) {
     const ids = [];
@@ -46,7 +46,7 @@ const startFindingLinks = () => {
 export const createStyleSheet = () => {
   const newStyleSheet = document.createElement("style");
   hiddenLinkIds.value.forEach((id) => {
-    newStyleSheet.textContent += `.hidden-a #${id} { display: none !important; }\n`;
+    newStyleSheet.textContent += `.smv-zoom-view #${id} { display: none !important; }\n`;
   });
   document.head.appendChild(newStyleSheet);
 
