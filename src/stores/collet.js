@@ -168,6 +168,93 @@ const items = [
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: false,
+    code: "ER25",
+    images: [
+      "/collet/ER25/vt_1.webp",
+      "/collet/ER25/vt_spec.webp",
+      "/collet/ER25/vt_spec_1.webp",
+      "/collet/ER25/vt_spec_2.webp",
+      "/collet/ER/vt_2.webp",
+      "/collet/ER/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/ER25/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet ER25 - Đầu kẹp dao máy CNC",
+      cn: "ER25筒夹 - 数控机床刀具夹头"
+    },
+    prices: {
+      current: 0,
+      min: 67000,
+      max: 127000
+    },
+    description: {
+      vi: "Dùng cho đầu kẹp CNC ER25",
+      cn: "用于ER25数控夹头"
+    },
+    descriptions: null,
+    seri: "ER25",
+    specs: "D1-D16",
+    brand: "KON",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.005/0.008mm",
+    innerDiameter: "D1-D16",
+    colletInnerDiameter: "D1-D16",
+    specsList: [
+      "ER25-1±0.008mm",
+      "ER25-1.5±0.008mm",
+      "ER25-2±0.008mm",
+      "ER25-2.5±0.008mm",
+      "ER25-3±0.005mm",
+      "ER25-3±0.008mm",
+      "ER25-3.175±0.005mm",
+      "ER25-3.175±0.008mm",
+      "ER25-3.5±0.005mm",
+      "ER25-3.5±0.008mm",
+      "ER25-4±0.005mm",
+      "ER25-4±0.008mm",
+      "ER25-5±0.005mm",
+      "ER25-5±0.008mm",
+      "ER25-6±0.005mm",
+      "ER25-6±0.008mm",
+      "ER25-7±0.005mm",
+      "ER25-7±0.008mm",
+      "ER25-8±0.005mm",
+      "ER25-8±0.008mm",
+      "ER25-9±0.005mm",
+      "ER25-9±0.008mm",
+      "ER25-10±0.005mm",
+      "ER25-10±0.008mm",
+      "ER25-11±0.005mm",
+      "ER25-11±0.008mm",
+      "ER25-12±0.005mm",
+      "ER25-12±0.008mm",
+      "ER25-12.7±0.005mm",
+      "ER25-12.7±0.008mm",
+      "ER25-13±0.005mm",
+      "ER25-13±0.008mm",
+      "ER25-14±0.005mm",
+      "ER25-14±0.008mm",
+      "ER25-15±0.005mm",
+      "ER25-15±0.008mm",
+      "ER25-16±0.005mm",
+      "ER25-16±0.008mm"
+    ]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
+    isTypical: false,
     code: "ER16",
     images: [
       "/collet/ER16/vt_1.webp",
