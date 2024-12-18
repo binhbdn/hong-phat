@@ -477,6 +477,84 @@ const items = [
       "ER11-7±0.005mm",
       "ER11-7±0.008mm"
     ]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
+    isTypical: true,
+    code: "SC32",
+    images: ["/collet/SC32/vt_1.webp", "/collet/SC32/vt_spec.webp", "/collet/SC32/vt_spec_1.webp", "/collet/SC32/vt_2.webp", "/collet/SC32/3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/SC32/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet trụ SC32 dùng cho bầu kẹp BT30-40-50 SC32",
+      cn: "SC32筒夹 适用于BT30-40-50 SC32刀柄"
+    },
+    prices: {
+      current: 110000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Collet thẳng, hàng chất lượng cao",
+      cn: "直筒夹，高品质产品"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Là loại collet thẳng (kẹp lò xo) rất phổ biến, được đa số nhà sản xuất tin dùng.", "Hiệu suất ổn định, độ chính xác cao."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["这是一种广泛使用的直筒夹（弹簧夹），深受大多数制造商信赖。", "性能稳定，精度高。"]
+        }
+      ]
+    },
+    seri: "SC32",
+    specs: "D3-D25",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.01mm",
+    innerDiameter: "D3-D25",
+    colletInnerDiameter: "D3-D25",
+    specsList: [
+      "SC32-3±0.01mm",
+      "SC32-4±0.01mm",
+      "SC32-5±0.01mm",
+      "SC32-6±0.01mm",
+      "SC32-7±0.01mm",
+      "SC32-8±0.01mm",
+      "SC32-9±0.01mm",
+      "SC32-10±0.01mm",
+      "SC32-11±0.01mm",
+      "SC32-12±0.01mm",
+      "SC32-13±0.01mm",
+      "SC32-14±0.01mm",
+      "SC32-15±0.01mm",
+      "SC32-16±0.01mm",
+      "SC32-17±0.01mm",
+      "SC32-18±0.01mm",
+      "SC32-19±0.01mm",
+      "SC32-20±0.01mm",
+      "SC32-21±0.01mm",
+      "SC32-22±0.01mm",
+      "SC32-23±0.01mm",
+      "SC32-24±0.01mm",
+      "SC32-25±0.01mm"
+    ]
   }
 ];
 
