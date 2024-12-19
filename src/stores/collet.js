@@ -14,14 +14,14 @@ const descriptionsSK = {
       data: [
         "Collet SK có lực kẹp lớn hơn collet ER rất nhiều.",
         "Được chế tạo từ thép hợp kim đặc biệt, qua xử lý nhiệt và mài chính xác, đảm bảo độ cứng và độ bền cao.",
-        "Thiết kế tối ưu cho phép thay dao nhanh chóng và an toàn"
+        "Thiết kế tối ưu cho phép thay dao nhanh chóng và an toàn."
       ]
     }
   ],
   cn: [
     {
       title: "description",
-      data: ["SK筒夹的夹持力比ER筒夹大得多。", "采用特殊合金钢制造，经过热处理和精密磨削，确保高硬度和耐久性。", "优化设计，可快速安全更换刀具"]
+      data: ["SK筒夹的夹持力比ER筒夹大得多。", "采用特殊合金钢制造，经过热处理和精密磨削，确保高硬度和耐久性。", "优化设计，可快速安全更换刀具。"]
     }
   ]
 };
@@ -506,6 +506,70 @@ const items = [
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: true,
+    code: "R8",
+    images: ["/collet/R8/vt_1.webp", "/collet/R8/vt_spec_1.webp", "/collet/R8/vt_2.webp", "/collet/R8/3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/R8/vt_spec_1.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet R8 - Thương hiệu Vân Tập",
+      cn: "R8筒夹 - Vân Tập品牌"
+    },
+    prices: {
+      current: 147000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Thường dùng cho các loại máy gia công lỗ",
+      cn: "通常用于各类孔加工机床"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Không có đầu kẹp riêng vì có thể được lắp trực tiếp vào côn của máy.",
+            "Thường được dùng để kẹp dao phay, mũi khoan, mũi doa, mũi taro.",
+            "Hạn chế sự rung lắc khi gia công và đảm bảo độ chính xác sản phẩm.",
+            "Thiết kế tối ưu cho phép thay dao nhanh chóng và an toàn."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "无需单独的夹头，可直接安装在机器锥度上。",
+            "通常用于夹持铣刀、钻头、铰刀和丝锥。",
+            "减少加工时的振动，确保产品精度。",
+            "优化设计，实现快速安全的刀具更换。"
+          ]
+        }
+      ]
+    },
+    seri: "R8",
+    specs: "D0.5-D20",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.02mm",
+    innerDiameter: "D0.5-D20",
+    colletInnerDiameter: "D0.5-D20",
+    specsList: ["R8-0.5", "R8-3", "R8-4", "R8-5", "R8-6", "R8-8", "R8-10", "R8-12", "R8-14", "R8-16", "R8-18", "R8-20"]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
+    isTypical: true,
     code: "SK16",
     images: ["/collet/SK16/vt_1.webp", "/collet/SK/spec.webp", "/collet/SK/vt_spec_1.webp", "/collet/SK/vt_2.webp", "/collet/SK/3.webp"],
     extraImages: [
@@ -531,7 +595,7 @@ const items = [
     seri: "SK16",
     specs: "D3-D16",
     brand: "SUKEN, Vân Tập",
-    origin: ["tw"],
+    origin: ["tw", "cn"],
     listView: listViewAiDB,
     // extra data
     detailsView,
