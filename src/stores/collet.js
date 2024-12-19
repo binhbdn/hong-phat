@@ -506,6 +506,70 @@ const items = [
     category: "pCollet",
     routeName: "pColletCT",
     isTypical: true,
+    code: "CMT",
+    images: [
+      "/collet/CMT/vt_1.webp",
+      "/collet/CMT/vt_spec.webp",
+      "/collet/CMT/vt_2.webp",
+      "/collet/CMT/vt_3.webp",
+      "/collet/CMT/vt_4.webp",
+      "/collet/CMT/vt_5.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/collet/CMT/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Collet kẹp máy tiện D20/D25/D32/D40",
+      cn: "车床筒夹 D20/D25/D32/D40"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Là dụng cụ xoay giảm tốc CNC",
+      cn: "是CNC减速旋转工具"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Lắp với các dụng cụ cán thẳng như thanh dụng cụ, tiện đường kính trong, mũi khoan xoắn, mũi khoan chữ U và thanh nối dài.",
+            "Tăng độ ổn định, tăng tốc độ nạp và số lượng cắt."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["适用于直柄工具、如刀具杆、内径车刀、麻花钻、U型钻和延长杆。", "提高稳定性，提高进给速度和切削量。"]
+        }
+      ]
+    },
+    seri: "CMT",
+    specs: "D20/D25/D32/D40",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewAiDB,
+    // extra data
+    detailsView,
+    accuracy: "0.02mm",
+    innerDiameter: "D20/D25/D32/D40",
+    colletInnerDiameter: "D20/D25/D32/D40",
+    specsList: ["D20-T16", "D25-T16", "D25-T20", "D32-T16", "D32-T20", "D32-T25", "D40-T20", "D40-T25", "D40-T32"]
+  },
+  {
+    category: "pCollet",
+    routeName: "pColletCT",
+    isTypical: true,
     code: "R8",
     images: ["/collet/R8/vt_1.webp", "/collet/R8/vt_spec_1.webp", "/collet/R8/vt_2.webp", "/collet/R8/3.webp"],
     extraImages: [
