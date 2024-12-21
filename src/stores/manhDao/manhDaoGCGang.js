@@ -2,20 +2,26 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
-const extraImagesData1 = [
-  "/manh_dao/gia_cong_gang/1/CCMT_09T304.webp",
-  "/manh_dao/gia_cong_gang/1/CCMT_09T308.webp",
-  "/manh_dao/gia_cong_gang/1/CCMT_120404.webp",
-  "/manh_dao/gia_cong_gang/1/CCMT_120408.webp",
-  "/manh_dao/gia_cong_gang/1/CCMT_060204.webp"
+const extraImagesDataWNMG = [
+  "/manh_dao/gia_cong_gang/WNMG/WNMG_080404.webp",
+  "/manh_dao/gia_cong_gang/WNMG/WNMG_080408.webp",
+  "/manh_dao/gia_cong_gang/WNMG/WNMG_080412.webp"
 ];
 
-const description1 = {
+const extraImagesDataCCMT = [
+  "/manh_dao/gia_cong_gang/CCMT/CCMT_09T304.webp",
+  "/manh_dao/gia_cong_gang/CCMT/CCMT_09T308.webp",
+  "/manh_dao/gia_cong_gang/CCMT/CCMT_120404.webp",
+  "/manh_dao/gia_cong_gang/CCMT/CCMT_120408.webp",
+  "/manh_dao/gia_cong_gang/CCMT/CCMT_060204.webp"
+];
+
+const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
 };
 
-const descriptions1 = {
+const descriptions = {
   vi: [
     {
       title: "description",
@@ -41,15 +47,50 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCGangCT",
     isTypical: true,
-    code: "CCMT_2C",
-    images: ["/manh_dao/gia_cong_gang/1/1_vt.webp", ...extraImagesData1],
+    code: "WNMG",
+    images: ["/manh_dao/gia_cong_gang/WNMG/vt_1.webp", ...extraImagesDataWNMG],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
         preview: false,
         options: "?w=250",
-        data: extraImagesData1
+        data: extraImagesDataWNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip CNC mã WNMG - MA/hai màu",
+      cn: "10片装WNMG - MA系列CNC刀片 - 双色"
+    },
+    prices: {
+      current: 0,
+      min: 480000,
+      max: 520000
+    },
+    description,
+    descriptions,
+    seri: "WNMG",
+    specs: "0804",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["WNMG 080404-MA", "WNMG 080408-MA", "WNMG 080404-2", "WNMG 080408-2", "WNMG 080412-2"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCGangCT",
+    isTypical: true,
+    code: "CCMT_2C",
+    images: ["/manh_dao/gia_cong_gang/CCMT/1_vt.webp", ...extraImagesDataCCMT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCMT
       }
     ],
     name: {
@@ -61,8 +102,8 @@ const items = [
       min: 0,
       max: 0
     },
-    description: description1,
-    descriptions: descriptions1,
+    description,
+    descriptions,
     seri: "CCMT",
     specs: "09T3/1204/0602",
     brand: "Vân Tập",
@@ -77,7 +118,7 @@ const items = [
     routeName: "pManhDaoGCGangCT",
     isTypical: false,
     code: "TNMG_2C",
-    images: ["/manh_dao/gia_cong_gang/2/1_vt.webp"],
+    images: ["/manh_dao/gia_cong_gang/TNMG/1_vt.webp"],
     extraImages: null,
     name: {
       vi: "Hộp 10 mảnh chip mã TNMG - hai màu",
@@ -88,8 +129,8 @@ const items = [
       min: 0,
       max: 0
     },
-    description: description1,
-    descriptions: descriptions1,
+    description,
+    descriptions,
     seri: "TNMG",
     specs: "1604",
     brand: "Vân Tập",
