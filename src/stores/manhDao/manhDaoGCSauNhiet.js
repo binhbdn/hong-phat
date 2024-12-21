@@ -140,6 +140,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["CCMT 09T304-BLUE", "CCMT 09T308-BLUE", "CCMT 120404-BLUE", "CCMT 120408-BLUE", "CCMT 060204-BLUE", "CCMT 060208-BLUE"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSauNhietCT",
+    isTypical: false,
+    code: "RPMW_BLUE",
+    images: ["/manh_dao/gia_cong_sau_nhiet/RPMW/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip mã RPMW - màu xanh",
+      cn: "10片装RPMW刀片 - 蓝色"
+    },
+    prices: {
+      current: 260000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "RPMW",
+    specs: "1003",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["RPMW 1003-BLUE"]
   }
 ];
 
