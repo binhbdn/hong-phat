@@ -167,6 +167,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["RPMW 1003-BLUE"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSauNhietCT",
+    isTypical: false,
+    code: "RPMT_BLUE",
+    images: ["/manh_dao/gia_cong_sau_nhiet/RPMT/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip mã RPMT - màu xanh",
+      cn: "10片装RPMT刀片 - 蓝色"
+    },
+    prices: {
+      current: 310000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "RPMT",
+    specs: "08T2",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["RPMT 08T2-BLUE"]
   }
 ];
 
