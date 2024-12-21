@@ -3,6 +3,25 @@ import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
 const detailsView = [[{ type: "tag", value: "specsList" }]];
+const detailsViewBAS = [["bevelAngle", "accuracy"], [{ type: "tag", value: "specsList" }]];
+
+const descriptionsDCVR = {
+  vi: [
+    {
+      title: "description",
+      data: [
+        "Được làm từ thép hợp kim có độ bền cao, bề mặt được nhiệt luyện và mài bóng.",
+        "Có các vít rút với lỗ khoan thông dọc trục, dùng khi gia công tưới nguội từ phía trong dụng cụ ra."
+      ]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["采用高强度合金钢制成，表面经过热处理和抛光。", "带有纵向通孔的拉钉，适用于工具内部冷却加工。"]
+    }
+  ]
+};
 
 const items = [
   {
@@ -47,6 +66,92 @@ const items = [
     detailsView,
     // extra data
     specsList: ["ER11A", "ER16A", "ER20A", "ER25UM", "ER32UM", "C25", "C32"]
+  },
+  {
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
+    isTypical: true,
+    code: "DCVR1",
+    images: ["/phu_kien_bau_kep/vit_rut/1/vt_1.webp", "/phu_kien_bau_kep/vit_rut/1/vt_spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/phu_kien_bau_kep/vit_rut/1/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Đuôi chuột vít rút BT50-90°",
+      cn: "BT50-90°螺旋尾夹"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Sử dụng cho bầu kẹp BT50",
+      cn: "适用于BT50夹头"
+    },
+    descriptions: descriptionsDCVR,
+    seri: "DCVR1",
+    specs: "BT50-90°",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: detailsViewBAS,
+    // extra data
+    bevelAngle: "90°",
+    accuracy: "0.005mm",
+    specsList: ["BT50-90°"]
+  },
+  {
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
+    isTypical: false,
+    code: "DCVR2",
+    images: [
+      "/phu_kien_bau_kep/vit_rut/2/vt_1.webp",
+      "/phu_kien_bau_kep/vit_rut/2/spec.webp",
+      "/phu_kien_bau_kep/vit_rut/2/spec_2.webp",
+      "/phu_kien_bau_kep/vit_rut/2/spec_3.webp",
+      "/phu_kien_bau_kep/vit_rut/2/BT50-45.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "",
+        data: ["/phu_kien_bau_kep/vit_rut/2/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Đuôi chuột vít rút BT30-45°, BT40-45°, BT50-45°",
+      cn: "BT30-45°、BT40-45°、BT50-45°螺旋尾夹"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Sử dụng cho bầu kẹp BT30, BT40, BT50",
+      cn: "适用于BT30、BT40、BT50夹头"
+    },
+    descriptions: descriptionsDCVR,
+    seri: "DCVR2",
+    specs: "BT30/40/50-45°",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: detailsViewBAS,
+    // extra data
+    bevelAngle: "45°",
+    accuracy: "0.005mm",
+    specsList: ["BT30-45°", "BT40-45°", "BT50-45°"]
   },
   {
     category: "pPhuKienBauKep",

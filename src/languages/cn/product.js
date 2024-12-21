@@ -46,6 +46,7 @@ export default {
   cutStyle: "剪裁风格",
   helixAngle: "螺旋角",
   noseAngle: "鼻角",
+  bevelAngle: "坡口角度",
   specifications: "规格",
   specsList: "型号",
   options: "选项",

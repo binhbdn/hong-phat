@@ -46,6 +46,7 @@ export default {
   cutStyle: "Kiểu cắt",
   helixAngle: "Góc xoắn ốc",
   noseAngle: "Góc mũi",
+  bevelAngle: "Góc vát",
   specifications: "Thông số kỹ thuật",
   specsList: "Quy cách",
   options: "Tùy chọn",
