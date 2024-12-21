@@ -9,6 +9,49 @@ const items = [
     category: "pPhuKienBauKep",
     routeName: "pPhuKienBauKepCT",
     isTypical: true,
+    code: "CVM",
+    images: ["/phu_kien_bau_kep/chia_mo/vt_1.webp", "/phu_kien_bau_kep/chia_mo/vt_2.webp"],
+    extraImages: null,
+    name: {
+      vi: "Chìa vặn mở bầu kẹp collet",
+      cn: "筒夹扳手"
+    },
+    prices: {
+      current: 0,
+      min: 67000,
+      max: 123000
+    },
+    description: {
+      vi: "Dùng để tháo kẹp bầu kẹp collet ER11, ER16, ER20, ER25, ER32, APU (C25), C32",
+      cn: "用于拆卸ER11、ER16、ER20、ER25、ER32、APU（C25）、C32筒夹"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Thiết kế theo tiêu chuẩn DIN 6499.", "Cần chọn chìa vặn phù hợp với kích thước của collet ER."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["按DIN 6499标准设计。", "需要选择与ER筒夹尺寸相匹配的扳手。"]
+        }
+      ]
+    },
+    seri: "CVM",
+    specs: "ER/APU/C",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["ER11A", "ER16A", "ER20A", "ER25UM", "ER32UM", "C25", "C32"]
+  },
+  {
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
+    isTypical: true,
     code: "ACL",
     images: [
       "/phu_kien_bau_kep/ao_collet/vt_ER-A-UM.webp",
@@ -67,49 +110,6 @@ const items = [
     detailsView,
     // extra data
     specsList: ["ER11A", "ER11M", "ER16A", "ER16M", "ER20A", "ER20M", "ER25UM", "ER32UM", "ER40UM"]
-  },
-  {
-    category: "pPhuKienBauKep",
-    routeName: "pPhuKienBauKepCT",
-    isTypical: false,
-    code: "CVM",
-    images: ["/phu_kien_bau_kep/chia_mo/vt_1.webp", "/phu_kien_bau_kep/chia_mo/vt_2.webp"],
-    extraImages: null,
-    name: {
-      vi: "Chìa vặn mở bầu kẹp collet",
-      cn: "筒夹扳手"
-    },
-    prices: {
-      current: 0,
-      min: 67000,
-      max: 123000
-    },
-    description: {
-      vi: "Dùng để tháo kẹp bầu kẹp collet ER11, ER16, ER20, ER25, ER32, APU (C25), C32",
-      cn: "用于拆卸ER11、ER16、ER20、ER25、ER32、APU（C25）、C32筒夹"
-    },
-    descriptions: {
-      vi: [
-        {
-          title: "description",
-          data: ["Thiết kế theo tiêu chuẩn DIN 6499.", "Cần chọn chìa vặn phù hợp với kích thước của collet ER."]
-        }
-      ],
-      cn: [
-        {
-          title: "description",
-          data: ["按DIN 6499标准设计。", "需要选择与ER筒夹尺寸相匹配的扳手。"]
-        }
-      ]
-    },
-    seri: "CVM",
-    specs: "ER/APU/C",
-    brand: "Vân Tập",
-    origin: ["cn"],
-    listView: listViewCBO,
-    detailsView,
-    // extra data
-    specsList: ["ER11A", "ER16A", "ER20A", "ER25UM", "ER32UM", "C25", "C32"]
   }
 ];
 
