@@ -215,6 +215,53 @@ const items = [
     detailsView,
     // extra data
     specsList: ["ER11A", "ER11M", "ER16A", "ER16M", "ER20A", "ER20M", "ER25UM", "ER32UM", "ER40UM"]
+  },
+  {
+    category: "pPhuKienBauKep",
+    routeName: "pPhuKienBauKepCT",
+    isTypical: true,
+    code: "TMBK",
+    images: ["/phu_kien_bau_kep/ga_thao_lap/vt_1.webp", "/phu_kien_bau_kep/ga_thao_lap/2.jpg"],
+    extraImages: null,
+    name: {
+      vi: "Đồ gá tháo lắp bầu kẹp BT30-BT40-BT50, đầu kẹp dao BT, HSK",
+      cn: "BT30-BT40-BT50刀柄夹头拆装夹具、适用于BT和HSK刀柄"
+    },
+    prices: {
+      current: 0,
+      min: 1107000,
+      max: 2214000
+    },
+    description: {
+      vi: "Dùng để tháo, lắp đài dao hoặc vít rút với bầu kẹp dao kiểu chuôi BT, HSK",
+      cn: "用于拆装BT和HSK刀柄的刀座或拉钉"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Đồ gá hỗ trợ kẹp chặt dụng cụ và đài dao vào bầu kẹp.",
+            "Giúp vặn chặt vít rút, đảm bảo an toàn và độ chính xác lâu dài.",
+            "Hoạt động độc lập, nhanh chóng, phù hợp cho trung tâm gia công."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["该工具夹具帮助将工具和刀座牢固地夹入刀柄。", "有助于紧固拉钉、确保安全性和长时间的精确度。", "独立操作、快速高效、适用于加工中心。"]
+        }
+      ]
+    },
+    seri: "TMBK",
+    specs: "BT30-BT40-BT50",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["BT30", "BT40", "BT50"]
   }
 ];
 
