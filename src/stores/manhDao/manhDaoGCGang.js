@@ -8,6 +8,12 @@ const extraImagesDataWNMG = [
   "/manh_dao/gia_cong_gang/WNMG/WNMG_080412.webp"
 ];
 
+const extraImagesDataCNMG = [
+  "/manh_dao/gia_cong_gang/CNMG/CNMG_120404.webp",
+  "/manh_dao/gia_cong_gang/CNMG/CNMG_120408.webp",
+  "/manh_dao/gia_cong_gang/CNMG/CNMG_120412.webp"
+];
+
 const extraImagesDataSNMG = ["/manh_dao/gia_cong_gang/SNMG/SNMG_120404.webp", "/manh_dao/gia_cong_gang/SNMG/SNMG_120408.webp"];
 
 const extraImagesDataCCMT = [
@@ -79,6 +85,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["WNMG 080404-MA", "WNMG 080408-MA", "WNMG 080404-2", "WNMG 080408-2", "WNMG 080412-2"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCGangCT",
+    isTypical: false,
+    code: "CNMG",
+    images: ["/manh_dao/gia_cong_gang/CNMG/vt_1.webp", ...extraImagesDataCNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip CNC mã CNMG - MA/hai màu",
+      cn: "10片装CNMG - MA系列CNC刀片 - 双色"
+    },
+    prices: {
+      current: 0,
+      min: 480000,
+      max: 520000
+    },
+    description,
+    descriptions,
+    seri: "CNMG",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["CNMG 120404-MA", "CNMG 120408-MA", "CNMG 120404-2", "CNMG 120408-2", "CNMG 120412-2"]
   },
   {
     category: "pManhDao",
