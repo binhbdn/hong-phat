@@ -33,7 +33,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCNhomCT",
     isTypical: true,
-    code: "SNMG",
+    code: "SNMG2",
     images: [
       "/manh_dao/gia_cong_nhom/SNMG/1_vt.webp",
       "/manh_dao/gia_cong_nhom/SNMG/SNMG_120402.webp",

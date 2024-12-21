@@ -8,6 +8,8 @@ const extraImagesDataWNMG = [
   "/manh_dao/gia_cong_gang/WNMG/WNMG_080412.webp"
 ];
 
+const extraImagesDataSNMG = ["/manh_dao/gia_cong_gang/SNMG/SNMG_120404.webp", "/manh_dao/gia_cong_gang/SNMG/SNMG_120408.webp"];
+
 const extraImagesDataCCMT = [
   "/manh_dao/gia_cong_gang/CCMT/CCMT_09T304.webp",
   "/manh_dao/gia_cong_gang/CCMT/CCMT_09T308.webp",
@@ -77,6 +79,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["WNMG 080404-MA", "WNMG 080408-MA", "WNMG 080404-2", "WNMG 080408-2", "WNMG 080412-2"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCGangCT",
+    isTypical: false,
+    code: "SNMG1",
+    images: ["/manh_dao/gia_cong_gang/SNMG/vt_1.webp", ...extraImagesDataSNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataSNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip CNC mã SNMG",
+      cn: "10片装SNMG系列CNC刀片"
+    },
+    prices: {
+      current: 520000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "SNMG",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SNMG 120404", "SNMG 120408"]
   },
   {
     category: "pManhDao",
