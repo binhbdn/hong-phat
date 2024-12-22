@@ -329,6 +329,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SNMG 120402", "SNMG 120404", "SNMG 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
+    code: "SEHT",
+    images: ["/manh_dao/gia_cong_nhom/SEHT/vt_1.webp", "/manh_dao/gia_cong_nhom/SEHT/SEHT_1204.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip mã SEHT",
+      cn: "10片装SEHT刀片"
+    },
+    prices: {
+      current: 290000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "SEHT",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SEHT 1204"]
   }
 ];
 
