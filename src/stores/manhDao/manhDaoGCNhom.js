@@ -2,12 +2,18 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
-const description1 = {
+const extraImagesDataWNMG = [
+  "/manh_dao/gia_cong_nhom/WNMG/WNMG_080404.webp",
+  "/manh_dao/gia_cong_nhom/WNMG/WNMG_080408.webp",
+  "/manh_dao/gia_cong_nhom/WNMG/WNMG_080412.webp"
+];
+
+const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
-  cn: ""
+  cn: "专用于加工铝，具有高光洁度和高精度。"
 };
 
-const descriptions1 = {
+const descriptions = {
   vi: [
     {
       title: "description",
@@ -33,6 +39,41 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCNhomCT",
     isTypical: true,
+    code: "WNMG2",
+    images: ["/manh_dao/gia_cong_nhom/WNMG/vt_1.webp", ...extraImagesDataWNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataWNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã WNMG",
+      cn: "10片装WNMG刀片"
+    },
+    prices: {
+      current: 480000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "WNMG",
+    specs: "0804",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["WNMG 080404", "WNMG 080408", "WNMG 080412"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
     code: "SNMG2",
     images: [
       "/manh_dao/gia_cong_nhom/SNMG/1_vt.webp",
@@ -43,15 +84,15 @@ const items = [
     extraImages: null,
     name: {
       vi: "Hộp 10 mảnh chip mã SNMG",
-      cn: ""
+      cn: "10片装SNMG刀片"
     },
     prices: {
       current: 440000,
       min: 0,
       max: 0
     },
-    description: description1,
-    descriptions: descriptions1,
+    description,
+    descriptions,
     seri: "SNMG",
     specs: "1204",
     brand: "Vân Tập",
@@ -69,16 +110,16 @@ const items = [
     images: ["/manh_dao/gia_cong_nhom/SPGT/1_vt.webp"],
     extraImages: null,
     name: {
-      vi: "Hộp 10 mảnh chip tiện mã SPGT",
-      cn: ""
+      vi: "Hộp 10 mảnh chip mã SPGT",
+      cn: "10片装SPGT刀片"
     },
     prices: {
       current: 0,
       min: 300000,
       max: 460000
     },
-    description: description1,
-    descriptions: descriptions1,
+    description,
+    descriptions,
     seri: "SPGT",
     specs: "05/06/07/09/11/14",
     brand: "Vân Tập",
