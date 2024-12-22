@@ -25,6 +25,14 @@ const extraImagesDataTCGT3 = [
 ];
 const extraImagesDataTCGT = [...extraImagesDataTCGT1, ...extraImagesDataTCGT2, ...extraImagesDataTCGT3];
 
+const extraImagesDataWCKT = [
+  "/manh_dao/gia_cong_nhom/WCKT/WCKT_030208.webp",
+  "/manh_dao/gia_cong_nhom/WCKT/WCKT_040208.webp",
+  "/manh_dao/gia_cong_nhom/WCKT/WCKT_050208.webp",
+  "/manh_dao/gia_cong_nhom/WCKT/WCKT_06T308.webp",
+  "/manh_dao/gia_cong_nhom/WCKT/WCKT_080412.webp"
+];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -135,6 +143,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["TCGT 090202", "TCGT 090204", "TCGT 090208", "TCGT 110202", "TCGT 110204", "TCGT 110208", "TCGT 16T302", "TCGT 16T304", "TCGT 16T308"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: true,
+    code: "WCKT",
+    images: ["/manh_dao/gia_cong_nhom/WCKT/vt_1.webp", ...extraImagesDataWCKT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataWCKT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã WCKT",
+      cn: "10片装WCKT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 330000,
+      max: 570000
+    },
+    description,
+    descriptions,
+    seri: "WCKT",
+    specs: "03/04/05/06/08",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["WCKT 030208", "WCKT 040208", "WCKT 050208", "WCKT 06T308", "WCKT 080412"]
   },
   {
     category: "pManhDao",
