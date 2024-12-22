@@ -8,6 +8,23 @@ const extraImagesDataWNMG = [
   "/manh_dao/gia_cong_nhom/WNMG/WNMG_080412.webp"
 ];
 
+const extraImagesDataTCGT1 = [
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_090202.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_090204.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_090208.webp"
+];
+const extraImagesDataTCGT2 = [
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_110202.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_110204.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_110208.webp"
+];
+const extraImagesDataTCGT3 = [
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_16T302.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_16T304.webp",
+  "/manh_dao/gia_cong_nhom/TCGT/TCGT_16T308.webp"
+];
+const extraImagesDataTCGT = [...extraImagesDataTCGT1, ...extraImagesDataTCGT2, ...extraImagesDataTCGT3];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -69,6 +86,55 @@ const items = [
     detailsView,
     // extra data
     specsList: ["WNMG 080404", "WNMG 080408", "WNMG 080412"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: true,
+    code: "TCGT",
+    images: ["/manh_dao/gia_cong_nhom/TCGT/vt_1.webp", ...extraImagesDataTCGT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "TCGT 0902",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTCGT1
+      },
+      {
+        title: null,
+        subTitle: "TCGT 1102",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTCGT2
+      },
+      {
+        title: null,
+        subTitle: "TCGT 16T3",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTCGT3
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã TCGT",
+      cn: "10片装TCGT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 200000,
+      max: 290000
+    },
+    description,
+    descriptions,
+    seri: "TCGT",
+    specs: "0902/1102/16T3",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TCGT 090202", "TCGT 090204", "TCGT 090208", "TCGT 110202", "TCGT 110204", "TCGT 110208", "TCGT 16T302", "TCGT 16T304", "TCGT 16T308"]
   },
   {
     category: "pManhDao",

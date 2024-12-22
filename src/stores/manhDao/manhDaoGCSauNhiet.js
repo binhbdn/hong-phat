@@ -8,14 +8,10 @@ const extraImagesDataWNMG = [
   "/manh_dao/gia_cong_sau_nhiet/WNMG/WNMG_080412.webp"
 ];
 
-const extraImagesDataCCMT = [
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp",
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp",
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp",
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp",
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp",
-  "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"
-];
+const extraImagesDataCCMT1 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp"];
+const extraImagesDataCCMT2 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp"];
+const extraImagesDataCCMT3 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"];
+const extraImagesDataCCMT = [...extraImagesDataCCMT1, ...extraImagesDataCCMT2, ...extraImagesDataCCMT3];
 
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
@@ -115,10 +111,24 @@ const items = [
     extraImages: [
       {
         title: "specifications",
-        subTitle: null,
+        subTitle: "CCMT 09T3",
         preview: false,
         options: "?w=250",
-        data: extraImagesDataCCMT
+        data: extraImagesDataCCMT1
+      },
+      {
+        title: null,
+        subTitle: "CCMT 1204",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCMT2
+      },
+      {
+        title: null,
+        subTitle: "CCMT 0602",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCMT3
       }
     ],
     name: {
