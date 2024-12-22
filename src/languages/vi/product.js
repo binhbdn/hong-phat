@@ -34,6 +34,7 @@ export default {
   origin: "Xuất xứ",
   brand: "Thương hiệu",
   seri: "Seri",
+  seriList: "Seri",
   model: "Model",
   accuracy: "Độ chính xác",
   runout: "Độ đảo",

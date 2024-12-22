@@ -34,6 +34,7 @@ export default {
   origin: "起源",
   brand: "品牌",
   seri: "塞里",
+  seriList: "塞里",
   model: "型号",
   accuracy: "精度",
   runout: "跳动",

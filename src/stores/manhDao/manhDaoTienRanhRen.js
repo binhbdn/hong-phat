@@ -9,6 +9,11 @@ const description1 = {
   cn: "用于精车、粗车、半精车等车削加工"
 };
 
+const description2 = {
+  vi: "Được sử dụng để tiện rãnh, tiện cắt đứt… trên máy tiện",
+  cn: "用于车床上的切槽和切断加工"
+};
+
 const descriptions1 = {
   vi: [
     {
@@ -28,7 +33,47 @@ const descriptions1 = {
   ]
 };
 
-const detailsView = [[{ type: "tag", value: "specsList" }]];
+const descriptions2 = {
+  vi: [
+    {
+      title: "description",
+      data: ["Được làm từ thép hợp kim, cạnh lưỡi sắc bén, sử dụng được 2 đầu.", "Có độ bền cao và cho bề mặt gia công bóng đẹp."]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["由合金钢制成，刀刃锋利，可双端使用。", "具有高耐用性，可获得光滑美观的加工表面。"]
+    }
+  ]
+};
+
+const descriptions3 = {
+  vi: [
+    {
+      title: "application",
+      data: [
+        "MGMN-H01: phù hợp gia công nhôm.",
+        "MGMN-PC9030: phù hợp gia công vật liệu có độ cứng ≤ 30-45HRC.",
+        "MGMN-NC3030: phù hợp gia công vật liệu có độ cứng ≤ 45HRC."
+      ]
+    },
+    ...descriptions2.vi
+  ],
+  cn: [
+    {
+      title: "application",
+      data: ["MGMN-H01: 适用于加工铝。", "MGMN-PC9030: 适用于加工硬度≤30-45HRC的材料。", "MGMN-NC3030: 适用于加工硬度≤45HRC的材料。"]
+    },
+    ...descriptions2.cn
+  ]
+};
+
+const detailsView1 = [["dimension", "thickness"], [{ type: "tag", value: "seriList" }], [{ type: "tag", value: "specsList" }]];
+
+const detailsView2 = [["thickness"], [{ type: "tag", value: "specsList" }]];
+
+const detailsView3 = [["thickness"], [{ type: "tag", value: "seriList" }], [{ type: "tag", value: "specsList" }]];
 
 const items = [
   {
@@ -67,15 +112,19 @@ const items = [
     brand: "",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView: null
+    detailsView: detailsView1,
     // extra data
+    dimension: "16mm*16mm",
+    thickness: "4mm",
+    seriList: ["16ER-ISO", "16ER-AG55", "16ER-AG60"],
+    specsList: ["16ER 0.5", "16ER 1.0", "16ER 1.5", "16ER 2.0", "16ER 3.0"]
   },
   {
     category: "pManhDao",
     routeName: "pManhDaoTienRanhRenCT",
-    isTypical: false,
+    isTypical: true,
     code: "MGGN",
-    images: ["/manh_dao/tien_ranh_ren/MGGN/1_vt.webp", "/manh_dao/tien_ranh_ren/MGGN/spec.webp"],
+    images: ["/manh_dao/tien_ranh_ren/MGGN/1_vt.webp", "/manh_dao/tien_ranh_ren/MGGN/spec.webp", "/manh_dao/tien_ranh_ren/MGMN/vt_spec_2.webp"],
     extraImages: [
       {
         title: "specifications",
@@ -86,40 +135,70 @@ const items = [
       }
     ],
     name: {
-      vi: "Hộp 10 mảnh dao tiện cắt đứt mã MGGN",
-      cn: "10片装MGGN型切断切槽刀片"
+      vi: "Hộp 10 mảnh dao tiện cắt đứt mã MGGN R/L",
+      cn: "10片装MGGN R/L型切断切槽刀片"
     },
     prices: {
       current: 0,
       min: 340000,
       max: 380000
     },
-    description: {
-      vi: "Được sử dụng để tiện rãnh, tiện cắt đứt… trên máy tiện",
-      cn: "用于车床上的切槽和切断加工"
-    },
-    descriptions: {
-      vi: [
-        {
-          title: "description",
-          data: ["Được làm từ thép hợp kim, cạnh lưỡi sắc bén, sử dụng được 2 đầu.", "Có độ bền cao và cho bề mặt gia công bóng đẹp."]
-        }
-      ],
-      cn: [
-        {
-          title: "description",
-          data: ["由合金钢制成，刀刃锋利，可双端使用。", "具有高耐用性，可获得光滑美观的加工表面。"]
-        }
-      ]
-    },
+    description: description2,
+    descriptions: descriptions2,
     seri: "MGGN",
-    specs: "R/L 2/3/4mm",
+    specs: "R/L 2-4mm",
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
-    detailsView,
+    detailsView: detailsView2,
     // extra data
-    specsList: ["MGGN200", "MGGN300", "MGGN400"]
+    thickness: "2/3/4mm",
+    specsList: ["MGGN200-R", "MGGN200-L", "MGGN300-R", "MGGN300-L", "MGGN400-R", "MGGN400-L"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoTienRanhRenCT",
+    isTypical: true,
+    code: "MGMN",
+    images: [
+      "/manh_dao/tien_ranh_ren/MGMN/vt_1.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/spec.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/vt_spec_1.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/vt_spec_2.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/vt_H01.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/vt_PC9030.webp",
+      "/manh_dao/tien_ranh_ren/MGMN/vt_NC3030.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=500",
+        data: ["/manh_dao/tien_ranh_ren/MGMN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh dao tiện cắt đứt mã MGMN G/M",
+      cn: "10片装MGMN G/M型切断切槽刀片"
+    },
+    prices: {
+      current: 0,
+      min: 41000,
+      max: 700000
+    },
+    description: description2,
+    descriptions: descriptions3,
+    seri: "MGMN",
+    specs: "G/M 1.5-5mm",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: detailsView3,
+    // extra data
+    thickness: "1.5/2/2.5/3/4/5mm",
+    seriList: ["MGMN-H01", "MGMN-PC9030", "MGMN-NC3030"],
+    specsList: ["MGMN150-G", "MGMN200-G", "MGMN250-G", "MGMN300-M", "MGMN400-M", "MGMN500-M"]
   }
 ];
 

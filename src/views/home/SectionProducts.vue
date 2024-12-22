@@ -123,7 +123,7 @@ const categoriesTreeViews = [
       {
         key: "pManhDaoTienRanhRen",
         isChild: true,
-        listAll: false,
+        listAll: true,
         listComponent: ManhDaoTienRanhRenList
       },
       {
