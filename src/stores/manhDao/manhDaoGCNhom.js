@@ -275,6 +275,33 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCNhomCT",
     isTypical: false,
+    code: "SPGT",
+    images: ["/manh_dao/gia_cong_nhom/SPGT/1_vt.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip mã SPGT",
+      cn: "10片装SPGT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 300000,
+      max: 460000
+    },
+    description,
+    descriptions,
+    seri: "SPGT",
+    specs: "05/06/07/09/11/14",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SPGT 050204", "SPGT 060204", "SPGT 07T308", "SPGT 090408", "SPGT 110408", "SPGT 140512"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
     code: "SNMG2",
     images: [
       "/manh_dao/gia_cong_nhom/SNMG/1_vt.webp",
@@ -302,33 +329,6 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SNMG 120402", "SNMG 120404", "SNMG 120408"]
-  },
-  {
-    category: "pManhDao",
-    routeName: "pManhDaoGCNhomCT",
-    isTypical: false,
-    code: "SPGT",
-    images: ["/manh_dao/gia_cong_nhom/SPGT/1_vt.webp"],
-    extraImages: null,
-    name: {
-      vi: "Hộp 10 mảnh chip mã SPGT",
-      cn: "10片装SPGT刀片"
-    },
-    prices: {
-      current: 0,
-      min: 300000,
-      max: 460000
-    },
-    description,
-    descriptions,
-    seri: "SPGT",
-    specs: "05/06/07/09/11/14",
-    brand: "Vân Tập",
-    origin: ["cn"],
-    listView: listViewCBO,
-    detailsView,
-    // extra data
-    specsList: ["SPGT 050204", "SPGT 060204", "SPGT 07T308", "SPGT 090408", "SPGT 110408", "SPGT 140512"]
   }
 ];
 
