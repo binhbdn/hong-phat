@@ -33,6 +33,19 @@ const extraImagesDataWCKT = [
   "/manh_dao/gia_cong_nhom/WCKT/WCKT_080412.webp"
 ];
 
+const extraImagesDataVCGT1 = [
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_110302.webp",
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_110304.webp",
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_110308.webp"
+];
+const extraImagesDataVCGT2 = [
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_160402.webp",
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_160404.webp",
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_160408.webp",
+  "/manh_dao/gia_cong_nhom/VCGT/VCGT_160412.webp"
+];
+const extraImagesDataVCGT = [...extraImagesDataVCGT1, ...extraImagesDataVCGT2];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -178,6 +191,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["WCKT 030208", "WCKT 040208", "WCKT 050208", "WCKT 06T308", "WCKT 080412"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: true,
+    code: "VCGT",
+    images: ["/manh_dao/gia_cong_nhom/VCGT/vt_1.webp", ...extraImagesDataVCGT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "VCGT 1103",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataVCGT1
+      },
+      {
+        title: null,
+        subTitle: "VCGT 1604",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataVCGT2
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã VCGT",
+      cn: "10片装VCGT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 220000,
+      max: 340000
+    },
+    description,
+    descriptions,
+    seri: "VCGT",
+    specs: "1103/1604",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["VCGT 110302", "VCGT 110304", "VCGT 110308", "VCGT 160402", "VCGT 160404", "VCGT 160408", "VCGT 160412"]
   },
   {
     category: "pManhDao",
