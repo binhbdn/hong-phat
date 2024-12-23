@@ -109,7 +109,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
     isTypical: true,
-    code: "TPGH",
+    code: "TPGH1",
     images: ["/manh_dao/gia_cong_sat_thep_inox/TPGH/vt_1.webp", ...extraImagesDataTPGH],
     extraImages: [
       {
@@ -286,6 +286,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["TPGT 060102", "TPGT 060104", "TPGT 080202", "TPGT 080204", "TPGT 090202", "TPGT 090204", "TPGT 110302", "TPGT 110304"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TPGH2",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TPGH2/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TPGH - gốm sứ",
+      cn: "10片装TPGH车削刀片 - 陶瓷"
+    },
+    prices: {
+      current: 400000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TPGH",
+    specs: "08/09/11",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TPGH 080202", "TPGH 080204", "TPGH 090202", "TPGH 090204", "TPGH 110304"]
   },
   // TODO: add more items
   {

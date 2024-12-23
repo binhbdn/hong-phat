@@ -604,7 +604,7 @@ const items = [
   {
     category: "pManhDao",
     routeName: "pManhDaoGCNhomCT",
-    isTypical: true,
+    isTypical: false,
     code: "CCGT",
     images: ["/manh_dao/gia_cong_nhom/CCGT/vt_1.webp", ...extraImagesDataCCGT],
     extraImages: [
