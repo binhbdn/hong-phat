@@ -37,6 +37,12 @@ const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_140512.webp"
 ];
 
+const extraImagesDataSNMG = [
+  "/manh_dao/gia_cong_sat_thep_inox/SNMG/SNMG_120404.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/SNMG/SNMG_120408.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/SNMG/SNMG_120412.webp"
+];
+
 const extraImagesDataCCMT = [
   "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T304.webp",
   "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T308.webp",
@@ -422,7 +428,41 @@ const items = [
     // extra data
     specsList: ["SPMG 050204", "SPMG 060204", "SPMG 07T308", "SPMG 090408", "SPMG 110408", "SPMG 140512"]
   },
-  // TODO: add more items
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "SNMG",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/SNMG/vt_1.webp", ...extraImagesDataSNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataSNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã SNMG - màu tím",
+      cn: "10片装SNMG车削刀片 - 紫色"
+    },
+    prices: {
+      current: 480000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "SNMG",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SNMG 120404", "SNMG 120408", "SNMG 120412"]
+  },
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
@@ -464,6 +504,7 @@ const items = [
     // extra data
     specsList: ["CCMT 060204", "CCMT 060208", "CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408"]
   }
+  // TODO: add more items
 ];
 
 export default items;
