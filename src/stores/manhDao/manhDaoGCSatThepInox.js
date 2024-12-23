@@ -4,6 +4,12 @@ import { findItemByCode } from "@/stores/products";
 
 const extraImagesDataSEEN = ["/manh_dao/gia_cong_sat_thep_inox/SEEN/SEEN_1203.webp"];
 
+const extraImagesDataTPGH1 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_060102.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_060104.webp"];
+const extraImagesDataTPGH2 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_080202.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_080204.webp"];
+const extraImagesDataTPGH3 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_090202.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_090204.webp"];
+const extraImagesDataTPGH4 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_110302.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_110304.webp"];
+const extraImagesDataTPGH = [...extraImagesDataTPGH1, ...extraImagesDataTPGH2, ...extraImagesDataTPGH3, ...extraImagesDataTPGH4];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -84,6 +90,62 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SEEN 1203"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "TPGH",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TPGH/vt_1.webp", ...extraImagesDataTPGH],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "TPGH 0601",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGH1
+      },
+      {
+        title: null,
+        subTitle: "TPGH 0802",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGH2
+      },
+      {
+        title: null,
+        subTitle: "TPGH 0902",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGH3
+      },
+      {
+        title: null,
+        subTitle: "TPGH 1103",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGH4
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TPGH - hợp kim",
+      cn: "10片装TPGH车削刀片 - 合金"
+    },
+    prices: {
+      current: 360000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TPGH",
+    specs: "06/08/09/11",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TPGH 060102", "TPGH 060104", "TPGH 080202", "TPGH 080204", "TPGH 090202", "TPGH 090204", "TPGH 110302", "TPGH 110304"]
   },
   {
     category: "pManhDao",
