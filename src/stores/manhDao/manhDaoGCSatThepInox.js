@@ -2,6 +2,8 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const extraImagesDataSEEN = ["/manh_dao/gia_cong_sat_thep_inox/SEEN/SEEN_1203.webp"];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -45,6 +47,44 @@ const descriptions = {
 const detailsView = [[{ type: "tag", value: "specsList" }]];
 
 const items = [
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "SEEN",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/SEEN/vt_1.webp", ...extraImagesDataSEEN],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataSEEN
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã SEEN - gốm sứ",
+      cn: "10片装SEEN车削刀片 - 陶瓷"
+    },
+    prices: {
+      current: 270000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Chuyên dùng để gia công vật liệu thép khuôn",
+      cn: "专用于加工模具钢材料"
+    },
+    descriptions,
+    seri: "SEEN",
+    specs: "1203",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SEEN 1203"]
+  },
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
