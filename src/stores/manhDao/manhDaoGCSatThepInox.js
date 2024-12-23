@@ -10,6 +10,8 @@ const extraImagesDataTPGH3 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_090202
 const extraImagesDataTPGH4 = ["/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_110302.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGH/TPGH_110304.webp"];
 const extraImagesDataTPGH = [...extraImagesDataTPGH1, ...extraImagesDataTPGH2, ...extraImagesDataTPGH3, ...extraImagesDataTPGH4];
 
+const extraImagesDataAPMT = ["/manh_dao/gia_cong_sat_thep_inox/APMT/APMT_1135.webp", "/manh_dao/gia_cong_sat_thep_inox/APMT/APMT_1604.webp"];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -146,6 +148,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["TPGH 060102", "TPGH 060104", "TPGH 080202", "TPGH 080204", "TPGH 090202", "TPGH 090204", "TPGH 110302", "TPGH 110304"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "APMT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/APMT/vt_1.webp", ...extraImagesDataAPMT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataAPMT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã APMT - màu đồng",
+      cn: "10片装APMT车削刀片 - 金铜色"
+    },
+    prices: {
+      current: 0,
+      min: 380000,
+      max: 530000
+    },
+    description,
+    descriptions,
+    seri: "APMT",
+    specs: "1135/1604",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["APMT 1135", "APMT 1604"]
   },
   {
     category: "pManhDao",
