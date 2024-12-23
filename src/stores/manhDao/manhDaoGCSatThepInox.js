@@ -2,14 +2,7 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
-const extraImagesData1 = [
-  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T304.webp",
-  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T308.webp",
-  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120404.webp",
-  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120408.webp"
-];
-
-const extraImagesData2 = [
+const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_07T308.webp",
@@ -18,12 +11,19 @@ const extraImagesData2 = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_140512.webp"
 ];
 
-const description1 = {
+const extraImagesDataCCMT = [
+  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T304.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T308.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120404.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120408.webp"
+];
+
+const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
 };
 
-const descriptions1 = {
+const descriptions = {
   vi: [
     {
       title: "description",
@@ -48,57 +48,16 @@ const items = [
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
-    isTypical: true,
-    code: "CCMT_PC",
-    images: [
-      "/manh_dao/gia_cong_sat_thep_inox/CCMT/1_vt.webp",
-      ...extraImagesData1,
-      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T304_08.webp",
-      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120404_08.webp",
-      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_060204_08.webp"
-    ],
-    extraImages: [
-      {
-        title: "specifications",
-        subTitle: null,
-        preview: false,
-        options: "?w=250",
-        data: extraImagesData1
-      }
-    ],
-    name: {
-      vi: "Hộp 10 mảnh chip mã CCMT - màu tím",
-      cn: "10片装CCMT刀片 - 紫色"
-    },
-    prices: {
-      current: 0,
-      min: 270000,
-      max: 480000
-    },
-    description: description1,
-    descriptions: descriptions1,
-    seri: "CCMT",
-    specs: "09T3/1204/0602",
-    brand: "Vân Tập",
-    origin: ["cn"],
-    listView: listViewCBO,
-    detailsView,
-    // extra data
-    specsList: ["CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408", "CCMT 060204", "CCMT 060208"]
-  },
-  {
-    category: "pManhDao",
-    routeName: "pManhDaoGCSatThepInoxCT",
     isTypical: false,
     code: "SPMG",
-    images: ["/manh_dao/gia_cong_sat_thep_inox/SPMG/1_vt.webp", ...extraImagesData2],
+    images: ["/manh_dao/gia_cong_sat_thep_inox/SPMG/1_vt.webp", ...extraImagesDataSPMG],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
         preview: false,
         options: "?w=250",
-        data: extraImagesData2
+        data: extraImagesDataSPMG
       }
     ],
     name: {
@@ -110,8 +69,8 @@ const items = [
       min: 330000,
       max: 680000
     },
-    description: description1,
-    descriptions: descriptions1,
+    description,
+    descriptions,
     seri: "SPMG",
     specs: "05/06/07/09/11/14",
     brand: "Vân Tập",
@@ -120,6 +79,47 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SPMG 050204", "SPMG 060204", "SPMG 07T308", "SPMG 090408", "SPMG 110408", "SPMG 140512"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "CCMT_PC",
+    images: [
+      "/manh_dao/gia_cong_sat_thep_inox/CCMT/1_vt.webp",
+      ...extraImagesDataCCMT,
+      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_09T304_08.webp",
+      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120404_08.webp",
+      "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_060204_08.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCMT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã CCMT - màu tím",
+      cn: "10片装CCMT刀片 - 紫色"
+    },
+    prices: {
+      current: 0,
+      min: 270000,
+      max: 480000
+    },
+    description,
+    descriptions,
+    seri: "CCMT",
+    specs: "0602/09T3/1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["CCMT 060204", "CCMT 060208", "CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408"]
   }
 ];
 

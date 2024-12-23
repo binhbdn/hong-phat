@@ -8,9 +8,9 @@ const extraImagesDataWNMG = [
   "/manh_dao/gia_cong_sau_nhiet/WNMG/WNMG_080412.webp"
 ];
 
-const extraImagesDataCCMT1 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp"];
-const extraImagesDataCCMT2 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp"];
-const extraImagesDataCCMT3 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"];
+const extraImagesDataCCMT1 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060204.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_060208.webp"];
+const extraImagesDataCCMT2 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T304.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_09T308.webp"];
+const extraImagesDataCCMT3 = ["/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120404.webp", "/manh_dao/gia_cong_sau_nhiet/CCMT/CCMT_120408.webp"];
 const extraImagesDataCCMT = [...extraImagesDataCCMT1, ...extraImagesDataCCMT2, ...extraImagesDataCCMT3];
 
 const description = {
@@ -111,21 +111,21 @@ const items = [
     extraImages: [
       {
         title: "specifications",
-        subTitle: "CCMT 09T3",
+        subTitle: "CCMT 0602",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT1
       },
       {
         title: null,
-        subTitle: "CCMT 1204",
+        subTitle: "CCMT 09T3",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT2
       },
       {
         title: null,
-        subTitle: "CCMT 0602",
+        subTitle: "CCMT 1204",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT3
@@ -143,13 +143,13 @@ const items = [
     description,
     descriptions,
     seri: "CCMT",
-    specs: "09T3/1204/0602",
+    specs: "0602/09T3/1204",
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: ["CCMT 09T304-BLUE", "CCMT 09T308-BLUE", "CCMT 120404-BLUE", "CCMT 120408-BLUE", "CCMT 060204-BLUE", "CCMT 060208-BLUE"]
+    specsList: ["CCMT 060204-BLUE", "CCMT 060208-BLUE", "CCMT 09T304-BLUE", "CCMT 09T308-BLUE", "CCMT 120404-BLUE", "CCMT 120408-BLUE"]
   },
   {
     category: "pManhDao",

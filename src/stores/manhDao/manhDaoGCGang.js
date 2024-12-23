@@ -16,9 +16,9 @@ const extraImagesDataCNMG = [
 
 const extraImagesDataSNMG = ["/manh_dao/gia_cong_gang/SNMG/SNMG_120404.webp", "/manh_dao/gia_cong_gang/SNMG/SNMG_120408.webp"];
 
-const extraImagesDataCCMT1 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_09T304.webp", "/manh_dao/gia_cong_gang/CCMT/CCMT_09T308.webp"];
-const extraImagesDataCCMT2 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_120404.webp", "/manh_dao/gia_cong_gang/CCMT/CCMT_120408.webp"];
-const extraImagesDataCCMT3 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_060204.webp"];
+const extraImagesDataCCMT1 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_060204.webp"];
+const extraImagesDataCCMT2 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_09T304.webp", "/manh_dao/gia_cong_gang/CCMT/CCMT_09T308.webp"];
+const extraImagesDataCCMT3 = ["/manh_dao/gia_cong_gang/CCMT/CCMT_120404.webp", "/manh_dao/gia_cong_gang/CCMT/CCMT_120408.webp"];
 const extraImagesDataCCMT = [...extraImagesDataCCMT1, ...extraImagesDataCCMT2, ...extraImagesDataCCMT3];
 
 const description = {
@@ -162,21 +162,21 @@ const items = [
     extraImages: [
       {
         title: "specifications",
-        subTitle: "CCMT 09T3",
+        subTitle: "CCMT 0602",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT1
       },
       {
         title: null,
-        subTitle: "CCMT 1204",
+        subTitle: "CCMT 09T3",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT2
       },
       {
         title: null,
-        subTitle: "CCMT 0602",
+        subTitle: "CCMT 1204",
         preview: false,
         options: "?w=250",
         data: extraImagesDataCCMT3
@@ -194,13 +194,13 @@ const items = [
     description,
     descriptions,
     seri: "CCMT",
-    specs: "09T3/1204/0602",
+    specs: "0602/09T3/1204",
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
-    specsList: ["CCMT 09T304-2", "CCMT 09T308-2", "CCMT 120404-2", "CCMT 120408-2", "CCMT 060204-2"]
+    specsList: ["CCMT 060204-2", "CCMT 09T304-2", "CCMT 09T308-2", "CCMT 120404-2", "CCMT 120408-2"]
   },
   {
     category: "pManhDao",
