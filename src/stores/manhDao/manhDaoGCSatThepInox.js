@@ -314,6 +314,33 @@ const items = [
     // extra data
     specsList: ["TPGH 080202", "TPGH 080204", "TPGH 090202", "TPGH 090204", "TPGH 110304"]
   },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TNMG2",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TNMG2/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TNMG - gốm sứ",
+      cn: "10片装TNMG车削刀片 - 陶瓷"
+    },
+    prices: {
+      current: 380000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TNMG",
+    specs: "1604 - R/L",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TNMG 160402R-2G", "TNMG 160402L-2G", "TNMG 160404R-2G", "TNMG 160404L-2G"]
+  },
   // TODO: add more items
   {
     category: "pManhDao",
