@@ -78,6 +78,12 @@ const extraImagesDataDCGT2 = [
 ];
 const extraImagesDataDCGT = [...extraImagesDataDCGT1, ...extraImagesDataDCGT2];
 
+const extraImagesDataCNMG = [
+  "/manh_dao/gia_cong_nhom/CNMG/CNMG_120402.webp",
+  "/manh_dao/gia_cong_nhom/CNMG/CNMG_120404.webp",
+  "/manh_dao/gia_cong_nhom/CNMG/CNMG_120408.webp"
+];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -505,6 +511,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["DCGT 070202", "DCGT 070204", "DCGT 070208", "DCGT 11T302", "DCGT 11T304", "DCGT 11T308"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
+    code: "CNMG2",
+    images: ["/manh_dao/gia_cong_nhom/CNMG/vt_1.webp", ...extraImagesDataCNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã CNMG",
+      cn: "10片装CNMG刀片"
+    },
+    prices: {
+      current: 380000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "CNMG",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["CNMG 120402", "CNMG 120404", "CNMG 120408"]
   }
 ];
 
