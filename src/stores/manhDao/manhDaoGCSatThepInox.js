@@ -24,6 +24,10 @@ const extraImagesDataTPGT3 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_090202
 const extraImagesDataTPGT4 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_110302.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_110304.webp"];
 const extraImagesDataTPGT = [...extraImagesDataTPGT1, ...extraImagesDataTPGT2, ...extraImagesDataTPGT3, ...extraImagesDataTPGT4];
 
+const extraImagesDataTCMT1 = ["/manh_dao/gia_cong_sat_thep_inox/TCMT/TCMT_110204.webp", "/manh_dao/gia_cong_sat_thep_inox/TCMT/TCMT_110208.webp"];
+const extraImagesDataTCMT2 = ["/manh_dao/gia_cong_sat_thep_inox/TCMT/TCMT_16T304.webp", "/manh_dao/gia_cong_sat_thep_inox/TCMT/TCMT_16T308.webp"];
+const extraImagesDataTCMT = [...extraImagesDataTCMT1, ...extraImagesDataTCMT2];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -341,7 +345,48 @@ const items = [
     // extra data
     specsList: ["TNMG 160402R-2G", "TNMG 160402L-2G", "TNMG 160404R-2G", "TNMG 160404L-2G"]
   },
-  // TODO: add more items
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TCMT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TCMT/vt_1.webp", ...extraImagesDataTCMT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "TCMT 1102",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTCMT1
+      },
+      {
+        title: null,
+        subTitle: "TCMT 16T3",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTCMT2
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TCMT",
+      cn: "10片装TCMT车削刀片"
+    },
+    prices: {
+      current: 0,
+      min: 270000,
+      max: 430000
+    },
+    description,
+    descriptions,
+    seri: "TCMT",
+    specs: "1102/16T3",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TCMT 110204", "TCMT 110208", "TCMT 16T304", "TCMT 16T308"]
+  },
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
@@ -377,6 +422,7 @@ const items = [
     // extra data
     specsList: ["SPMG 050204", "SPMG 060204", "SPMG 07T308", "SPMG 090408", "SPMG 110408", "SPMG 140512"]
   },
+  // TODO: add more items
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
