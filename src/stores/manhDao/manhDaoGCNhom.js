@@ -649,6 +649,46 @@ const items = [
     detailsView,
     // extra data
     specsList: ["CCGT 060202", "CCGT 060204", "CCGT 09T302", "CCGT 09T304", "CCGT 09T308", "CCGT 120402", "CCGT 120404", "CCGT 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
+    code: "APKT",
+    images: [
+      "/manh_dao/gia_cong_nhom/APKT/vt_1.webp",
+      "/manh_dao/gia_cong_nhom/APKT/spec.webp",
+      "/manh_dao/gia_cong_nhom/APKT/vt_2.webp",
+      "/manh_dao/gia_cong_nhom/APKT/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=500",
+        data: ["/manh_dao/gia_cong_nhom/APKT/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã APKT",
+      cn: "10片装APKT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 210000,
+      max: 310000
+    },
+    description,
+    descriptions,
+    seri: "APKT",
+    specs: "1135/1604",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["APKT 1135-G2", "APKT 1604-G2", "APKT 1604-MA", "APKT 1604-MA3"]
   }
 ];
 
