@@ -84,6 +84,12 @@ const extraImagesDataCNMG = [
   "/manh_dao/gia_cong_nhom/CNMG/CNMG_120408.webp"
 ];
 
+const extraImagesDataVNMG = [
+  "/manh_dao/gia_cong_nhom/VNMG/VNMG_160402.webp",
+  "/manh_dao/gia_cong_nhom/VNMG/VNMG_160404.webp",
+  "/manh_dao/gia_cong_nhom/VNMG/VNMG_160408.webp"
+];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -546,6 +552,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["CNMG 120402", "CNMG 120404", "CNMG 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
+    code: "VNMG",
+    images: ["/manh_dao/gia_cong_nhom/VNMG/vt_1.webp", ...extraImagesDataVNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataVNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã VNMG",
+      cn: "10片装VNMG刀片"
+    },
+    prices: {
+      current: 530000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "VNMG",
+    specs: "1604",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["VNMG 160402", "VNMG 160404", "VNMG 160408"]
   }
 ];
 
