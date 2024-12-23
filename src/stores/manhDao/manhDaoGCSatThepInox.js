@@ -12,6 +12,12 @@ const extraImagesDataTPGH = [...extraImagesDataTPGH1, ...extraImagesDataTPGH2, .
 
 const extraImagesDataAPMT = ["/manh_dao/gia_cong_sat_thep_inox/APMT/APMT_1135.webp", "/manh_dao/gia_cong_sat_thep_inox/APMT/APMT_1604.webp"];
 
+const extraImagesDataVCMT = [
+  "/manh_dao/gia_cong_sat_thep_inox/VCMT/VCMT_110304.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/VCMT/VCMT_160404.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/VCMT/VCMT_160408.webp"
+];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -183,6 +189,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["APMT 1135", "APMT 1604"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "VCMT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/VCMT/vt_1.webp", ...extraImagesDataVCMT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataVCMT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã VCMT - màu tím",
+      cn: "10片装VCMT车削刀片 - 紫色"
+    },
+    prices: {
+      current: 0,
+      min: 220000,
+      max: 340000
+    },
+    description,
+    descriptions,
+    seri: "VCMT",
+    specs: "1103/1604",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["VCMT 110302", "VCMT 110304", "VCMT 110308", "VCMT 160402", "VCMT 160404", "VCMT 160408"]
   },
   {
     category: "pManhDao",
