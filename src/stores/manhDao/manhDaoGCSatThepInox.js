@@ -18,6 +18,12 @@ const extraImagesDataVCMT = [
   "/manh_dao/gia_cong_sat_thep_inox/VCMT/VCMT_160408.webp"
 ];
 
+const extraImagesDataTPGT1 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_060102.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_060104.webp"];
+const extraImagesDataTPGT2 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_080202.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_080204.webp"];
+const extraImagesDataTPGT3 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_090202.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_090204.webp"];
+const extraImagesDataTPGT4 = ["/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_110302.webp", "/manh_dao/gia_cong_sat_thep_inox/TPGT/TPGT_110304.webp"];
+const extraImagesDataTPGT = [...extraImagesDataTPGT1, ...extraImagesDataTPGT2, ...extraImagesDataTPGT3, ...extraImagesDataTPGT4];
+
 const extraImagesDataSPMG = [
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_050204.webp",
   "/manh_dao/gia_cong_sat_thep_inox/SPMG/SPMG_060204.webp",
@@ -225,6 +231,63 @@ const items = [
     // extra data
     specsList: ["VCMT 110302", "VCMT 110304", "VCMT 110308", "VCMT 160402", "VCMT 160404", "VCMT 160408"]
   },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "TPGT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TPGT/vt_1.webp", ...extraImagesDataTPGT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "TPGT 0601",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGT1
+      },
+      {
+        title: null,
+        subTitle: "TPGT 0802",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGT2
+      },
+      {
+        title: null,
+        subTitle: "TPGT 0902",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGT3
+      },
+      {
+        title: null,
+        subTitle: "TPGT 1103",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataTPGT4
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TPGT - gốm sứ",
+      cn: "10片装TPGT车削刀片 - 陶瓷"
+    },
+    prices: {
+      current: 460000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TPGT",
+    specs: "06/08/09/11",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TPGT 060102", "TPGT 060104", "TPGT 080202", "TPGT 080204", "TPGT 090202", "TPGT 090204", "TPGT 110302", "TPGT 110304"]
+  },
+  // TODO: add more items
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
