@@ -60,6 +60,12 @@ const extraImagesDataSCGT2 = [
 ];
 const extraImagesDataSCGT = [...extraImagesDataSCGT1, ...extraImagesDataSCGT2];
 
+const extraImagesDataRCGT = [
+  "/manh_dao/gia_cong_nhom/RCGT/RCGT_08T2.webp",
+  "/manh_dao/gia_cong_nhom/RCGT/RCGT_10T3.webp",
+  "/manh_dao/gia_cong_nhom/RCGT/RCGT_1204.webp"
+];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -410,6 +416,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SCGT 09T302", "SCGT 09T304", "SCGT 09T308", "SCGT 120402", "SCGT 120404", "SCGT 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: false,
+    code: "RCGT",
+    images: ["/manh_dao/gia_cong_nhom/RCGT/vt_1.webp", ...extraImagesDataRCGT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataRCGT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã RCGT",
+      cn: "10片装RCGT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 280000,
+      max: 320000
+    },
+    description,
+    descriptions,
+    seri: "RCGT",
+    specs: "08T2/10T3/1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["RCGT 08T2", "RCGT 10T3", "RCGT 1204"]
   }
 ];
 
