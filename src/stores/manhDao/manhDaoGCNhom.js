@@ -90,6 +90,19 @@ const extraImagesDataVNMG = [
   "/manh_dao/gia_cong_nhom/VNMG/VNMG_160408.webp"
 ];
 
+const extraImagesDataCCGT1 = ["/manh_dao/gia_cong_nhom/CCGT/CCGT_060202.webp", "/manh_dao/gia_cong_nhom/CCGT/CCGT_060204.webp"];
+const extraImagesDataCCGT2 = [
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_09T302.webp",
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_09T304.webp",
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_09T308.webp"
+];
+const extraImagesDataCCGT3 = [
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_120402.webp",
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_120404.webp",
+  "/manh_dao/gia_cong_nhom/CCGT/CCGT_120408.webp"
+];
+const extraImagesDataCCGT = [...extraImagesDataCCGT1, ...extraImagesDataCCGT2, ...extraImagesDataCCGT3];
+
 const description = {
   vi: "Chuyên gia công nhôm với độ bóng và độ chính xác cao",
   cn: "专用于加工铝，具有高光洁度和高精度。"
@@ -587,6 +600,55 @@ const items = [
     detailsView,
     // extra data
     specsList: ["VNMG 160402", "VNMG 160404", "VNMG 160408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCNhomCT",
+    isTypical: true,
+    code: "CCGT",
+    images: ["/manh_dao/gia_cong_nhom/CCGT/vt_1.webp", ...extraImagesDataCCGT],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: "CCGT 0602",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCGT1
+      },
+      {
+        title: null,
+        subTitle: "CCGT 09T3",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCGT2
+      },
+      {
+        title: null,
+        subTitle: "CCGT 1204",
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCCGT3
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip mã CCGT",
+      cn: "10片装CCGT刀片"
+    },
+    prices: {
+      current: 0,
+      min: 200000,
+      max: 340000
+    },
+    description,
+    descriptions,
+    seri: "CCGT",
+    specs: "0602/09T3/1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["CCGT 060202", "CCGT 060204", "CCGT 09T302", "CCGT 09T304", "CCGT 09T308", "CCGT 120402", "CCGT 120404", "CCGT 120408"]
   }
 ];
 
