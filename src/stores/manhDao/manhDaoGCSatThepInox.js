@@ -693,6 +693,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["DCMT 070204", "DCMT 11T304", "DCMT 11T308"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "RPMT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/RPMT/vt_1.webp", "/manh_dao/gia_cong_sat_thep_inox/RPMT/2.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã RPMT",
+      cn: "10片装RPMT车削刀片"
+    },
+    prices: {
+      current: 0,
+      min: 340000,
+      max: 380000
+    },
+    description,
+    descriptions,
+    seri: "RPMT",
+    specs: "10T3/1204",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["RPMT 10T3", "RPMT 1204"]
   }
   // TODO: add more items
 ];
