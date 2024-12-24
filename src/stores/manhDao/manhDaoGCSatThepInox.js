@@ -538,6 +538,33 @@ const items = [
       "TNGG 160402 L-S PR930",
       "TNGG 160404 L-S PR930"
     ]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TNMG3",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TNMG3/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TNMG - cắt lỗ hợp kim",
+      cn: "10片装TNMG车削刀片 - 切孔合金"
+    },
+    prices: {
+      current: 460000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TNMG",
+    specs: "1604-R/L-C",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TNMG 160402R-C", "TNMG 160402L-C", "TNMG 160404L-C", "TNMG 160404R-C"]
   }
   // TODO: add more items
 ];
