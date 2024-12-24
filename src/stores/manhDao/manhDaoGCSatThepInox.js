@@ -639,6 +639,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["CNMG 120404", "CNMG 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TNMG",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TNMG/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TNMG - màu tím",
+      cn: "10片装TNMG车削刀片 - 紫色"
+    },
+    prices: {
+      current: 430000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "TNMG",
+    specs: "1604",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TNMG 160404", "TNMG 160408"]
   }
   // TODO: add more items
 ];
