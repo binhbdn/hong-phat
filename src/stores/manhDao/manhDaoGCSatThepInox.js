@@ -666,6 +666,33 @@ const items = [
     detailsView,
     // extra data
     specsList: ["TNMG 160404", "TNMG 160408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "DCMT",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/DCMT/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã DCMT",
+      cn: "10片装DCMT车削刀片"
+    },
+    prices: {
+      current: 0,
+      min: 270000,
+      max: 440000
+    },
+    description,
+    descriptions,
+    seri: "DCMT",
+    specs: "0702/11T3",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["DCMT 070204", "DCMT 11T304", "DCMT 11T308"]
   }
   // TODO: add more items
 ];
