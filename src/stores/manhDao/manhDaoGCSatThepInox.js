@@ -343,7 +343,7 @@ const items = [
     description,
     descriptions,
     seri: "TNMG",
-    specs: "1604 - R/L",
+    specs: "1604-R/L",
     brand: "Vân Tập",
     origin: ["cn"],
     listView: listViewCBO,
@@ -503,6 +503,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["CCMT 060204", "CCMT 060208", "CCMT 09T304", "CCMT 09T308", "CCMT 120404", "CCMT 120408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "TNGG",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/TNGG/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã TNGG - gốm sứ",
+      cn: "10片装TNGG车削刀片 - 陶瓷"
+    },
+    prices: {
+      current: 0,
+      min: 420000,
+      max: 460000
+    },
+    description,
+    descriptions,
+    seri: "TNGG",
+    specs: "1604-R/L-F/S",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: [
+      "TNGG 160402 L-F",
+      "TNGG 160402 R-F",
+      "TNGG 160404 L-F",
+      "TNGG 160404 R-F",
+      "TNGG 160402 R-S PR930",
+      "TNGG 160402 L-S PR930",
+      "TNGG 160404 L-S PR930"
+    ]
   }
   // TODO: add more items
 ];
