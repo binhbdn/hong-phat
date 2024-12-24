@@ -570,7 +570,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCNhomCT",
     isTypical: false,
-    code: "VNMG",
+    code: "VNMG1",
     images: ["/manh_dao/gia_cong_nhom/VNMG/vt_1.webp", ...extraImagesDataVNMG],
     extraImages: [
       {

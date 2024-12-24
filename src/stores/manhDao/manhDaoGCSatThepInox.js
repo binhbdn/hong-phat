@@ -50,6 +50,8 @@ const extraImagesDataCCMT = [
   "/manh_dao/gia_cong_sat_thep_inox/CCMT/CCMT_120408.webp"
 ];
 
+const extraImagesDataVNMG = ["/manh_dao/gia_cong_sat_thep_inox/VNMG/VNMG_160404.webp", "/manh_dao/gia_cong_sat_thep_inox/VNMG/VNMG_160408.webp"];
+
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -431,7 +433,7 @@ const items = [
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
-    isTypical: true,
+    isTypical: false,
     code: "SNMG",
     images: ["/manh_dao/gia_cong_sat_thep_inox/SNMG/vt_1.webp", ...extraImagesDataSNMG],
     extraImages: [
@@ -565,6 +567,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["TNMG 160402R-C", "TNMG 160402L-C", "TNMG 160404L-C", "TNMG 160404R-C"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "VNMG2",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/VNMG/vt_1.webp", ...extraImagesDataVNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataVNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã VNMG",
+      cn: "10片装VNMG车削刀片"
+    },
+    prices: {
+      current: 530000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "VNMG",
+    specs: "1604",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["VNMG 160404", "VNMG 160408"]
   }
   // TODO: add more items
 ];
