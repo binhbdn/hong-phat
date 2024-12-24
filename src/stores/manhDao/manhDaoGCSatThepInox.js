@@ -52,6 +52,8 @@ const extraImagesDataCCMT = [
 
 const extraImagesDataVNMG = ["/manh_dao/gia_cong_sat_thep_inox/VNMG/VNMG_160404.webp", "/manh_dao/gia_cong_sat_thep_inox/VNMG/VNMG_160408.webp"];
 
+const extraImagesDataCNMG = ["/manh_dao/gia_cong_sat_thep_inox/CNMG/CNMG_120404.webp", "/manh_dao/gia_cong_sat_thep_inox/CNMG/CNMG_120408.webp"];
+
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -602,6 +604,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["VNMG 160404", "VNMG 160408"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "CNMG",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/CNMG/vt_1.webp", ...extraImagesDataCNMG],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataCNMG
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã CNMG",
+      cn: "10片装CNMG车削刀片"
+    },
+    prices: {
+      current: 480000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "CNMG",
+    specs: "1204",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["CNMG 120404", "CNMG 120408"]
   }
   // TODO: add more items
 ];
