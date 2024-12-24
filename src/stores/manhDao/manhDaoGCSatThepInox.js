@@ -54,6 +54,13 @@ const extraImagesDataVNMG = ["/manh_dao/gia_cong_sat_thep_inox/VNMG/VNMG_160404.
 
 const extraImagesDataCNMG = ["/manh_dao/gia_cong_sat_thep_inox/CNMG/CNMG_120404.webp", "/manh_dao/gia_cong_sat_thep_inox/CNMG/CNMG_120408.webp"];
 
+const extraImagesDataAPMT02 = [
+  "/manh_dao/gia_cong_sat_thep_inox/APMT2/APMT_1135_M2.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/APMT2/APMT_1135_H2.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/APMT2/APMT_1604_M2.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/APMT2/APMT_1604_H2.webp"
+];
+
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -179,7 +186,7 @@ const items = [
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
     isTypical: true,
-    code: "APMT",
+    code: "APMT1",
     images: ["/manh_dao/gia_cong_sat_thep_inox/APMT/vt_1.webp", ...extraImagesDataAPMT],
     extraImages: [
       {
@@ -720,6 +727,41 @@ const items = [
     detailsView,
     // extra data
     specsList: ["RPMT 10T3", "RPMT 1204"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: true,
+    code: "APMT2",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/APMT2/vt_1.webp", ...extraImagesDataAPMT02],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataAPMT02
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã APMT",
+      cn: "10片装APMT车削刀片"
+    },
+    prices: {
+      current: 0,
+      min: 310000,
+      max: 400000
+    },
+    description,
+    descriptions,
+    seri: "APMT",
+    specs: "1135/1604",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["APMT 1135 M2", "APMT 1135 H2", "APMT 1604 M2", "APMT 1604 H2"]
   }
   // TODO: add more items
 ];
