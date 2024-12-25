@@ -61,6 +61,12 @@ const extraImagesDataAPMT02 = [
   "/manh_dao/gia_cong_sat_thep_inox/APMT2/APMT_1604_H2.webp"
 ];
 
+const extraImagesDataWCMT = [
+  "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_050308.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_06T308.webp",
+  "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_080412.webp"
+];
+
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -731,7 +737,7 @@ const items = [
   {
     category: "pManhDao",
     routeName: "pManhDaoGCSatThepInoxCT",
-    isTypical: true,
+    isTypical: false,
     code: "APMT2",
     images: ["/manh_dao/gia_cong_sat_thep_inox/APMT2/vt_1.webp", ...extraImagesDataAPMT02],
     extraImages: [
@@ -762,6 +768,46 @@ const items = [
     detailsView,
     // extra data
     specsList: ["APMT 1135 M2", "APMT 1135 H2", "APMT 1604 M2", "APMT 1604 H2"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "WCMT",
+    images: [
+      "/manh_dao/gia_cong_sat_thep_inox/WCMT/vt_1.webp",
+      ...extraImagesDataWCMT,
+      "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_050308_1.webp",
+      "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_050308_2.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataWCMT
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã WCMT",
+      cn: "10片装WCMT车削刀片"
+    },
+    prices: {
+      current: 0,
+      min: 340000,
+      max: 470000
+    },
+    description,
+    descriptions,
+    seri: "WCMT",
+    specs: "05/06/08",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["WCMT 050308-TC", "WCMT 06T308-TC", "WCMT 080412-TC"]
   }
   // TODO: add more items
 ];
