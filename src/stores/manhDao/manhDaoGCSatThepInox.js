@@ -67,6 +67,8 @@ const extraImagesDataWCMT = [
   "/manh_dao/gia_cong_sat_thep_inox/WCMT/WCMT_080412.webp"
 ];
 
+const extraImagesDataWCMX = ["/manh_dao/gia_cong_sat_thep_inox/WCMX/WCMX_030208.webp", "/manh_dao/gia_cong_sat_thep_inox/WCMX/WCMX_040208.webp"];
+
 const description = {
   vi: "Sử dụng cho gia công tiện chạy tinh, tiện chạy thô, tiện chạy phá…",
   cn: "用于精车、粗车、半精车等车削加工"
@@ -808,8 +810,42 @@ const items = [
     detailsView,
     // extra data
     specsList: ["WCMT 050308-TC", "WCMT 06T308-TC", "WCMT 080412-TC"]
+  },
+  {
+    category: "pManhDao",
+    routeName: "pManhDaoGCSatThepInoxCT",
+    isTypical: false,
+    code: "WCMX",
+    images: ["/manh_dao/gia_cong_sat_thep_inox/WCMX/vt_1.webp", ...extraImagesDataWCMX],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=250",
+        data: extraImagesDataWCMX
+      }
+    ],
+    name: {
+      vi: "Hộp 10 mảnh chip tiện mã WCMX",
+      cn: "10片装WCMX车削刀片"
+    },
+    prices: {
+      current: 310000,
+      min: 0,
+      max: 0
+    },
+    description,
+    descriptions,
+    seri: "WCMX",
+    specs: "0302/0402",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["WCMX 030208", "WCMX 040208"]
   }
-  // TODO: add more items
 ];
 
 export default items;
