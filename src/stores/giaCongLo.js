@@ -105,6 +105,7 @@ const items = [
     // extra data
     specsList: ["MT3", "MT4", "MT5"]
   }
+  // TODO: add more 5 items
 ];
 
 export default items;

@@ -94,6 +94,7 @@ const items = [
     overallDimension: "290*228*80",
     weight: "5.8Kg"
   }
+  // TODO: add more 4 items
 ];
 
 export default items;

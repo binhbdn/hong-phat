@@ -116,6 +116,7 @@ const items = [
     // extra data
     specsList: ["S20R-MCKNR/L12", "S25S-MCKNR/L12", "S32T-MCKNR/L12", "S40T-MCKNR/L12"]
   }
+  // TODO: add more 17 items
 ];
 
 export default items;

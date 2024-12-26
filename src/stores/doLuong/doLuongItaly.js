@@ -113,6 +113,7 @@ const items = [
     detailsView: null
     // extra data
   }
+  // TODO: add more 29 items
 ];
 
 export default items;

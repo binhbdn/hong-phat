@@ -96,6 +96,7 @@ const items = [
     diameter: "10mm/4mm",
     length: "87mm"
   }
+  // TODO: add more 3 items
 ];
 
 export default items;

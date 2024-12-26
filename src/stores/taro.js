@@ -104,6 +104,7 @@ const items = [
     // extra data
     specsList: ["M6*1.0-OH3-HSSE", "M8*1.25-OH3-HSSE", "M10*1.5-H2-HSS", "M12*1.75-H2-HSS", "M3*0.5-H2-HSS", "M4*0.7-H2-HSS", "M5*0.8-H2-HSS"]
   }
+  // TODO: add more 4 items
 ];
 
 export default items;
