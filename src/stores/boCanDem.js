@@ -93,8 +93,39 @@ const items = [
     thickness: 10,
     overallDimension: "290*228*80",
     weight: "5.8Kg"
+  },
+  {
+    category: "pBoCanDem",
+    routeName: "pBoCanDemCT",
+    isTypical: false,
+    code: "BCD10_28",
+    images: ["/bo_can_dem_can_mau_ga_kep/bo_can_dem_100_28.webp"],
+    extraImages: null,
+    name: {
+      vi: "Bộ căn đệm song song 28 chi tiết - chiều dày 10mm",
+      cn: "平行垫片套装28件 - 厚度10mm"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "10mm",
+    specs: "(28 chi tiết)",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCTL,
+    detailsView: detailsView1,
+    // extra data
+    hardness: "48HRC-53HRC",
+    material: "S45C",
+    length: 150,
+    width: "14-50",
+    thickness: 10
   }
-  // TODO: add more 4 items
+  // TODO: add more 3 items
 ];
 
 export default items;
