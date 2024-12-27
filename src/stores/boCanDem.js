@@ -1,10 +1,15 @@
-import { listViewCTL } from "@/stores/listViewOptions";
+import { listViewCBO, listViewCTL } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
 const description1 = {
   vi: "Dùng để đệm, căn chỉnh phôi",
   cn: "用于垫片和工件对准"
+};
+
+const description2 = {
+  vi: "Áp dụng cho các phép đo có chiều dài khác nhau; hiệu chuẩn các máy đo, dụng cụ đo có độ chính xác cao",
+  cn: "适用于不同长度的测量；校准高精度测量仪器和工具"
 };
 
 const descriptions1 = {
@@ -18,6 +23,27 @@ const descriptions1 = {
     {
       title: "description",
       data: ["两个平行边之间的间隙公差：0.005mm。", "边缘经过仔细倒角，表面经过精密磨削。"]
+    }
+  ]
+};
+
+const descriptions2 = {
+  vi: [
+    {
+      title: "description",
+      data: [
+        "Đáp ứng theo tiêu chuẩn ISO 3650.",
+        "Có 3 cấp độ:",
+        "Cấp 0 sử dụng cho các trung tâm kiểm định.",
+        "Cấp 1 sử dụng cho các phòng QC, kiểm định của các công ty.",
+        "Cấp 2 sử dụng cho các việc kiểm chuẩn cho các xưởng cơ khí."
+      ]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["符合ISO 3650标准。", "分为3个等级：", "0级适用于检验中心。", "1级适用于公司QC和检验部门。", "2级适用于机械加工车间的校准工作。"]
     }
   ]
 };
@@ -124,8 +150,48 @@ const items = [
     length: 150,
     width: "14-50",
     thickness: 10
+  },
+  {
+    category: "pBoCanDem",
+    routeName: "pBoCanDemCT",
+    isTypical: true,
+    code: "BCM_103",
+    images: [
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_103.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec_2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Bộ căn mẫu 103 chi tiết",
+      cn: "103件量块套装"
+    },
+    prices: {
+      current: 9502000,
+      min: 0,
+      max: 0
+    },
+    description: description2,
+    descriptions: descriptions2,
+    seri: "BCM",
+    specs: "(103 chi tiết)",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 3 items
+  // TODO: add more 2 items
 ];
 
 export default items;
