@@ -69,7 +69,58 @@ const items = [
   {
     category: "pTaro",
     routeName: "pTaroCT",
-    isTypical: false,
+    isTypical: true,
+    code: "TARO_H2_HSS",
+    images: ["/taro/H2_HSS/vt_1.webp", "/taro/H2_HSS/vt_spec.webp", "/taro/H2_HSS/vt_2.webp", "/taro/H2_HSS/vt_3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/taro/H2_HSS/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Mũi taro thẳng màu trắng H2 HSS",
+      cn: "白色直槽丝锥 H2 HSS"
+    },
+    prices: {
+      current: 0,
+      min: 43000,
+      max: 511000
+    },
+    description: {
+      vi: "Kích thước từ M3 đến M30",
+      cn: "尺寸从M3到M30"
+    },
+    descriptions: null, // checked
+    seri: "TARO",
+    specs: "M3-M30",
+    brand: "Shaozi",
+    origin: ["tw"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: [
+      "M3-H2-HSS",
+      "M8-H2-HSS",
+      "M10-H2-HSS",
+      "M12-H2-HSS",
+      "M14-H2-HSS",
+      "M16-H2-HSS",
+      "M18-H2-HSS",
+      "M20-H2-HSS",
+      "M22-H2-HSS",
+      "M24-H2-HSS",
+      "M27-H2-HSS",
+      "M30-H2-HSS"
+    ]
+  },
+  {
+    category: "pTaro",
+    routeName: "pTaroCT",
+    isTypical: true,
     code: "TARO_MDD",
     images: ["/taro/mui_dut_doan/vt_1a.webp", "/taro/mui_dut_doan/vt_2.webp", "/taro/mui_dut_doan/vt_spec.webp"],
     extraImages: [
@@ -104,7 +155,7 @@ const items = [
     // extra data
     specsList: ["M6*1.0-OH3-HSSE", "M8*1.25-OH3-HSSE", "M10*1.5-H2-HSS", "M12*1.75-H2-HSS", "M3*0.5-H2-HSS", "M4*0.7-H2-HSS", "M5*0.8-H2-HSS"]
   }
-  // TODO: add more 4 items
+  // TODO: add more 3 items
 ];
 
 export default items;
