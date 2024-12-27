@@ -230,8 +230,69 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pBoCanDem",
+    routeName: "pBoCanDemCT",
+    isTypical: true,
+    code: "BGK_58",
+    images: [
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_1.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_1a.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_spec.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_spec_2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_3.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_4.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_5.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/bo_can_dem_can_mau_ga_kep/bo_ga_kep/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Bộ gá kẹp 58 chi tiết",
+      cn: "58件夹具套装"
+    },
+    prices: {
+      current: 0,
+      min: 1050000,
+      max: 1850000
+    },
+    description: {
+      vi: "Dùng để kẹp chặt chi tiết gia công trên bàn máy",
+      cn: "用于在工作台上夹紧工件"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Với nhiều loại bu lông có chiều dài khác nhau, đai ốc di chuyển linh hoạt nên có thể kẹp chặt đa dạng nhiều loại chi tiết lớn nhỏ.",
+            "Các chi tiết được ô xi hóa màu đen, chịu được lực gia công lớn."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["具有不同长度的螺栓，螺母灵活移动，可夹紧各种大小的工件。", "部件经过黑色氧化处理，可承受较大的加工力。"]
+        }
+      ]
+    },
+    seri: "BGK",
+    specs: "(58 chi tiết)",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 1 items
 ];
 
 export default items;
