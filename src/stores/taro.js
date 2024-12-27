@@ -257,8 +257,45 @@ const items = [
       "M10*1.5-OH2-HSS",
       "M12*1.75-OH2-HSS"
     ]
+  },
+  {
+    category: "pTaro",
+    routeName: "pTaroCT",
+    isTypical: false,
+    code: "TARO_MX",
+    images: ["/taro/mui_xoan/vt_1.webp", "/taro/mui_xoan/vt_spec.webp", "/taro/mui_xoan/vt_2.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/taro/mui_xoan/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Mũi taro xoắn",
+      cn: "螺旋丝锥"
+    },
+    prices: {
+      current: 0,
+      min: 65000,
+      max: 217000
+    },
+    description: {
+      vi: "Kích thước từ M3 đến M16",
+      cn: "尺寸从M3到M16"
+    },
+    descriptions: null, // checked
+    seri: "TARO",
+    specs: "M3-M16",
+    brand: "Shaozi",
+    origin: ["tw"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["M3 H2", "M4 H2", "M5 H2", "M6 H2", "M8 H2", "M10 H2", "M12 H2", "M14 H2", "M16 H3"]
   }
-  // TODO: add more 1 items
 ];
 
 export default items;
