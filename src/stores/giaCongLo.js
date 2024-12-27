@@ -3,6 +3,7 @@ import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
 const detailsView = [[{ type: "tag", value: "specsList" }]];
+const detailsView1 = [["bladeDiameter","length"],[{ type: "tag", value: "specsList" }]];
 
 const items = [
   {
@@ -159,8 +160,74 @@ const items = [
     detailsView,
     // extra data
     specsList: ["3H7", "4H7", "5H7", "6H7", "7H7", "8H7", "9H7", "10H7"]
+  },
+  {
+    category: "pGiaCongLo",
+    routeName: "pGiaCongLoCT",
+    isTypical: true,
+    code: "MKT",
+    images: [
+      "/gia_cong_lo/mui_khoan_trang/vt_1.webp",
+      "/gia_cong_lo/mui_khoan_trang/vt_spec.webp",
+      "/gia_cong_lo/mui_khoan_trang/vt_2.webp",
+      "/gia_cong_lo/mui_khoan_trang/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/gia_cong_lo/mui_khoan_trang/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Mũi khoan bo mạch CNC hãng Union Tool",
+      cn: "Union Tool品牌CNC电路板钻头"
+    },
+    prices: {
+      current: 0,
+      min: 280000,
+      max: 730000
+    },
+    description: {
+      vi: "Quy cách đóng gói: 10 mũi/1 hộp",
+      cn: "包装规格：10支/盒"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Lưỡi cắt phủ hợp kim.",
+            "Khoan sắc, nhanh, mịn, độ bền cao.",
+            "Cứng, giòn nên dễ gãy nếu khoan không cẩn thận, đúng cách.",
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "刀刃涂有合金。",
+            "钻头锋利、快速、光滑，且耐用性高。",
+            "材质硬且脆，如不小心或操作不当易折断。",
+          ]
+        }
+      ]
+    },
+    seri: "MKT",
+    specs: "D0.2-D6.0",
+    brand: "Union Tool",
+    origin: ["jp"],
+    listView: listViewCBO,
+    detailsView: detailsView1,
+    // extra data
+    bladeDiameter: "0.2-6.0mm",
+    length: "38mm",
+    specsList: ["D0.2-D0.9", "D1.0-D1.9", "D2.0-D2.9", "D3.0-D3.9", "D4.0-D4.9", "D5.0-D5.9", "D6.0"]
   }
-  // TODO: add more 4 items
+  // TODO: add more 3 items
 ];
 
 export default items;
