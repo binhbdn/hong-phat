@@ -16,7 +16,7 @@ const items = [
         title: "specifications",
         subTitle: null,
         preview: false,
-        options: "",
+        options: "?w=450",
         data: ["/taro/ban_ren/spec.webp"]
       }
     ],
@@ -173,13 +173,13 @@ const items = [
     routeName: "pTaroCT",
     isTypical: true,
     code: "TARO_MDD",
-    images: ["/taro/mui_dut_doan/vt_1a.webp", "/taro/mui_dut_doan/vt_2.webp", "/taro/mui_dut_doan/vt_spec.webp"],
+    images: ["/taro/mui_dut_doan/vt_1.webp", "/taro/mui_dut_doan/vt_spec.webp", "/taro/mui_dut_doan/vt_2.webp"],
     extraImages: [
       {
         title: "specifications",
         subTitle: null,
         preview: false,
-        options: "",
+        options: "?w=450",
         data: ["/taro/mui_dut_doan/vt_spec.webp"]
       }
     ],
@@ -205,8 +205,60 @@ const items = [
     detailsView,
     // extra data
     specsList: ["M6*1.0-OH3-HSSE", "M8*1.25-OH3-HSSE", "M10*1.5-H2-HSS", "M12*1.75-H2-HSS", "M3*0.5-H2-HSS", "M4*0.7-H2-HSS", "M5*0.8-H2-HSS"]
+  },
+  {
+    category: "pTaro",
+    routeName: "pTaroCT",
+    isTypical: true,
+    code: "TARO_MXT",
+    images: ["/taro/mui_xoan_titan/vt_1.webp", "/taro/mui_xoan_titan/vt_spec.webp", "/taro/mui_xoan_titan/vt_2.webp", "/taro/mui_xoan_titan/vt_3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/taro/mui_xoan_titan/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Mũi taro xoắn phủ titan",
+      cn: "钛涂层螺旋丝锥"
+    },
+    prices: {
+      current: 0,
+      min: 82000,
+      max: 190000
+    },
+    description: {
+      vi: "Kích thước từ M3 đến M12",
+      cn: "尺寸从M3到M12"
+    },
+    descriptions: null, // checked
+    seri: "TARO",
+    specs: "M3-M12",
+    brand: "Shaozi",
+    origin: ["tw"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: [
+      "M3*0.5-HSS",
+      "M4*0.7-HSS",
+      "M5*0.8-HSS",
+      "M6*1-HSS",
+      "M8*1.25-HSS",
+      "M10*1.5-HSS",
+      "M12*1.75-HSS",
+      "M4*0.7-OH2-HSS",
+      "M5*0.8-OH2-HSS",
+      "M6*1-OH2-HSS",
+      "M8*1.25-OH2-HSS",
+      "M10*1.5-OH2-HSS",
+      "M12*1.75-OH2-HSS"
+    ]
   }
-  // TODO: add more 3 items
+  // TODO: add more 1 items
 ];
 
 export default items;
