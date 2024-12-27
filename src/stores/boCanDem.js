@@ -190,8 +190,48 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pBoCanDem",
+    routeName: "pBoCanDemCT",
+    isTypical: false,
+    code: "BCM_47",
+    images: [
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_47.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec_2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_2.webp",
+      "/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: false,
+        options: "?w=450",
+        data: ["/bo_can_dem_can_mau_ga_kep/bo_can_mau/vt_spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Bộ căn mẫu 47 chi tiết",
+      cn: "47件量块套装"
+    },
+    prices: {
+      current: 5047000,
+      min: 0,
+      max: 0
+    },
+    description: description2,
+    descriptions: descriptions2,
+    seri: "BCM",
+    specs: "(47 chi tiết)",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 2 items
+  // TODO: add more 1 items
 ];
 
 export default items;
