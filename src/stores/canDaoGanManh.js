@@ -728,8 +728,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MSKN R1616H12", "MSKN R2525M12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MSSN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MSSN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MSSN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MSSN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MSSN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MSSN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MSSN",
+      cn: "MSSN 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 194000,
+      max: 248000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MSSN",
+    specs: "R/L 16/20/25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MSSN R1616H12", "MSSN R2020K12", "MSSN L2020K12", "MSSN L2525M12"]
   }
-  // TODO: add more 3 items
+  // TODO: add more 2 items
 ];
 
 export default items;
