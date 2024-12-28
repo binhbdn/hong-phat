@@ -285,8 +285,51 @@ const items = [
       "MGIVR 3732-4",
       "MGIVR 3732-5"
     ]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
+    code: "SER_SEL",
+    images: [
+      "/can_dao_gan_manh/tien_ren/SE/vt_1.webp",
+      "/can_dao_gan_manh/tien_ren/SE/spec.webp",
+      "/can_dao_gan_manh/tien_ren/SE/2.webp",
+      "/can_dao_gan_manh/tien_ren/SE/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_ren/SE/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện rãnh SER/SEL",
+      cn: "SER/SEL 沟槽车削刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 194000,
+      max: 270000
+    },
+    description: {
+      vi: "Sử dụng cho gia công tiện rãnh bên ngoài chi tiết",
+      cn: "用于外圆沟槽车削加工"
+    },
+    descriptions: descriptions1,
+    seri: "SER/SEL",
+    specs: "12-25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SER 1212K11", "SER 1212H16", "SER 2020K16", "SER 2525M16", "SEL 1616H16", "SEL 2020K16", "SEL 2525M16"]
   }
-  // TODO: add more 14 items
+  // TODO: add more 13 items
 ];
 
 export default items;
