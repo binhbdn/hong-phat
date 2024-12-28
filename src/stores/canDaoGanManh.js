@@ -78,7 +78,7 @@ const items = [
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
     code: "MCKN",
-    images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp"],
+    images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp", "/can_dao_gan_manh/moc_lo/2.webp", "/can_dao_gan_manh/moc_lo/3.webp"],
     extraImages: [
       {
         title: "specifications",
