@@ -366,8 +366,51 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SNR 0008K08", "SNR 0010K11", "SNR 0014M16"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
+    code: "SCLC",
+    images: [
+      "/can_dao_gan_manh/tien_tron/vt_1.webp",
+      "/can_dao_gan_manh/tien_tron/spec.webp",
+      "/can_dao_gan_manh/tien_tron/2.webp",
+      "/can_dao_gan_manh/tien_tron/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_tron/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện SCLC góc 95°",
+      cn: "SCLC 95° 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 161000,
+      max: 172000
+    },
+    description: {
+      vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
+      cn: "通常用于外圆的粗车、半精车和精车加工"
+    },
+    descriptions: descriptions1,
+    seri: "SCLC",
+    specs: "R/L 16/20",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SCLC R1616H06", "SCLC R1616H09", "SCLC L1616H09", "SCLC R2020K09", "SCLC L2020K09"]
   }
-  // TODO: add more 12 items
+  // TODO: add more 11 items
 ];
 
 export default items;
