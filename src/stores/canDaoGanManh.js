@@ -85,7 +85,7 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
-    code: "MCKN",
+    code: "MCKN1",
     images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp", "/can_dao_gan_manh/moc_lo/2.webp", "/can_dao_gan_manh/moc_lo/3.webp"],
     extraImages: [
       {
@@ -448,8 +448,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MDQN R2020K15", "MDQN L2020K15"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MCKN2",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MCKN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MCKN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MCKN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MCKN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MCKN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MCKN",
+      cn: "MCKN 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 194000,
+      max: 248000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MCKN",
+    specs: "R/L 16/20/25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MCKN R1616H12", "MCKN L1616H12", "MCKN R2020K12", "MCKN L2020K12", "MCKN L2525M12"]
   }
-  // TODO: add more 10 items
+  // TODO: add more 9 items
 ];
 
 export default items;
