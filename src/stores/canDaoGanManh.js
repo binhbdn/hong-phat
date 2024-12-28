@@ -12,7 +12,25 @@ const descriptions1 = {
   cn: [
     {
       title: "description",
-      data: ["由高强度合金钢制成，具有出色的硬度和耐用性。", "加工速度完美，操作简单方便。"]
+      data: ["由高强度合金钢制成具有出色的硬度和耐用性。", "加工速度完美、操作简单方便。"]
+    }
+  ]
+};
+
+const descriptions2 = {
+  vi: [
+    {
+      title: "description",
+      data: [
+        "Được làm từ thép hợp kim có độ cứng và độ bền cao",
+        "Tốc độ cắt hoàn hảo, dễ dàng thao tác tháo lắp, có tích hợp vít giữ giúp siết chặt mảnh chip khi gia công."
+      ]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["由高强度合金钢制成具有高硬度和耐用性。", "切削速度完美、易于拆装、集成固定螺丝帮助在加工时紧固刀片。"]
     }
   ]
 };
@@ -56,10 +74,10 @@ const items = [
         {
           title: "description",
           data: [
-            "刀具的刀刃位于端面，刀轴垂直于加工表面。",
-            "配备可更换的合金刀片，磨损时可更换。",
-            "由高强度合金钢制成，具有高硬度和耐用性。",
-            "切削速度完美，易于拆装，集成固定螺丝帮助在加工时紧固刀片。"
+            "刀具的刀刃位于端面刀轴垂直于加工表面。",
+            "配备可更换的合金刀片磨损时可更换。",
+            "由高强度合金钢制成具有高硬度和耐用性。",
+            "切削速度完美、易于拆装、集成固定螺丝帮助在加工时紧固刀片。"
           ]
         }
       ]
@@ -110,6 +128,62 @@ const items = [
     detailsView,
     // extra data
     specsList: ["S20R-MCKNR/L12", "S25S-MCKNR/L12", "S32T-MCKNR/L12", "S40T-MCKNR/L12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
+    code: "EMR",
+    images: [
+      "/can_dao_gan_manh/tien_lo/vt_1.webp",
+      "/can_dao_gan_manh/tien_lo/spec.webp",
+      "/can_dao_gan_manh/tien_lo/2.webp",
+      "/can_dao_gan_manh/tien_lo/3.webp",
+      "/can_dao_gan_manh/tien_lo/4.webp",
+      "/can_dao_gan_manh/tien_lo/5.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_lo/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện lỗ hợp kim EMR",
+      cn: "EMR 合金内孔车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 468000,
+      max: 895000
+    },
+    description: {
+      vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
+      cn: "通常用于外圆的粗车、半精车和精车加工"
+    },
+    descriptions: descriptions2,
+    seri: "EMR",
+    specs: "4/5/6R-C15/C32",
+    brand: "Suken",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: [
+      "EMR 4R16-15-200L",
+      "EMR 4R17-C16-200L",
+      "EMR 4R21-C20-160L",
+      "EMR 5R50-22",
+      "EMR 5R63-22",
+      "EMR 6R50-22",
+      "EMR 6R63-22",
+      "EMRT 5R25-24-160L",
+      "EMRT 5R25-C25-160L",
+      "EMR 5R30-C25-250L"
+    ]
   },
   {
     category: "pCanDaoGanManh",
@@ -169,7 +243,7 @@ const items = [
       "MGEHR2525-3-T30"
     ]
   }
-  // TODO: add more 16 items
+  // TODO: add more 15 items
 ];
 
 export default items;
