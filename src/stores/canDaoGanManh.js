@@ -568,8 +568,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["EMR 6R30-25-160L", "EMR 6R30-25-200L", "EMR 6R32-32-160L"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MDJN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MDJN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MDJN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MDJN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MDJN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MDJN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MDJN",
+      cn: "MDJN 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 221000,
+      max: 282000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MDJN",
+    specs: "R/L 20/25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MDJN R2020K15", "MDJN L2020K15", "MDJN R2525M15", "MDJN L2525M15"]
   }
-  // TODO: add more 7 items
+  // TODO: add more 6 items
 ];
 
 export default items;
