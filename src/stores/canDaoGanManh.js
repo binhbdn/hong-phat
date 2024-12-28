@@ -6,21 +6,6 @@ const descriptions1 = {
   vi: [
     {
       title: "description",
-      data: ["Được làm từ thép hợp kim có độ cứng và độ bền cao.", "Tốc độ gia công hoàn hảo, dễ dàng thao tác trong quá trình sử dụng."]
-    }
-  ],
-  cn: [
-    {
-      title: "description",
-      data: ["由高强度合金钢制成具有出色的硬度和耐用性。", "加工速度完美、操作简单方便。"]
-    }
-  ]
-};
-
-const descriptions2 = {
-  vi: [
-    {
-      title: "description",
       data: [
         "Được làm từ thép hợp kim có độ cứng và độ bền cao",
         "Tốc độ cắt hoàn hảo, dễ dàng thao tác tháo lắp, có tích hợp vít giữ giúp siết chặt mảnh chip khi gia công."
@@ -164,7 +149,7 @@ const items = [
       vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
       cn: "通常用于外圆的粗车、半精车和精车加工"
     },
-    descriptions: descriptions2,
+    descriptions: descriptions1,
     seri: "EMR",
     specs: "4/5/6R-C15/C32",
     brand: "Suken",
@@ -247,8 +232,61 @@ const items = [
       "MGEHR2525-4-T30",
       "MGEHR2525-3-T30"
     ]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MGIVR",
+    images: [
+      "/can_dao_gan_manh/tien_ranh/MGIVR/vt_1.webp",
+      "/can_dao_gan_manh/tien_ranh/MGIVR/spec.webp",
+      "/can_dao_gan_manh/tien_ranh/MGIVR/2.webp",
+      "/can_dao_gan_manh/tien_ranh/MGIVR/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_ranh/MGIVR/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao móc lỗ MGIVR",
+      cn: "MGIVR 内孔车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 227000,
+      max: 754000
+    },
+    description: {
+      vi: "Sử dụng cho gia công tiện rãnh bên trong chi tiết",
+      cn: "用于内圆沟槽车削加工"
+    },
+    descriptions: descriptions1,
+    seri: "MGIVR",
+    specs: "R/L 20-37",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: [
+      "MGIVR 2016-2",
+      "MGIVR 2016-3",
+      "MGIVR 2520-2",
+      "MGIVR 2520-3",
+      "MGIVR 2520-4",
+      "MGIVR 3125-3T7",
+      "MGIVR 3125-4T7",
+      "MGIVR 3732-4",
+      "MGIVR 3732-5"
+    ]
   }
-  // TODO: add more 15 items
+  // TODO: add more 14 items
 ];
 
 export default items;
