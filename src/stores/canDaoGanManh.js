@@ -24,6 +24,44 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
+    code: "MCKN",
+    images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/moc_lo/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao móc lỗ MCKN",
+      cn: "MCKN 内孔车刀杆"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Dùng để cắt gọt kim loại, gia công lỗ, tiện ren",
+      cn: "用于金属切削、内孔加工和螺纹车削"
+    },
+    descriptions: descriptions1,
+    seri: "MCKN",
+    specs: "R/L 20-40",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["S20R-MCKNR/L12", "S25S-MCKNR/L12", "S32T-MCKNR/L12", "S40T-MCKNR/L12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
     code: "MGEH",
     images: ["/can_dao_gan_manh/tien_ranh/MGEH/vt_1.webp", "/can_dao_gan_manh/tien_ranh/MGEH/spec.webp"],
     extraImages: [
@@ -77,44 +115,6 @@ const items = [
       "MGEHR2525-4-T30",
       "MGEHR2525-3-T30"
     ]
-  },
-  {
-    category: "pCanDaoGanManh",
-    routeName: "pCanDaoGanManhCT",
-    isTypical: false,
-    code: "MCKN",
-    images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp"],
-    extraImages: [
-      {
-        title: "specifications",
-        subTitle: null,
-        preview: true,
-        options: "",
-        data: ["/can_dao_gan_manh/moc_lo/spec.webp"]
-      }
-    ],
-    name: {
-      vi: "Cán dao móc lỗ MCKN",
-      cn: "MCKN 内孔车刀杆"
-    },
-    prices: {
-      current: null,
-      min: 0,
-      max: 0
-    },
-    description: {
-      vi: "Dùng để cắt gọt kim loại, gia công lỗ, tiện ren",
-      cn: "用于金属切削、内孔加工和螺纹车削"
-    },
-    descriptions: descriptions1,
-    seri: "MCKN",
-    specs: "R/L 20-40",
-    brand: "",
-    origin: ["cn"],
-    listView: listViewCBO,
-    detailsView,
-    // extra data
-    specsList: ["S20R-MCKNR/L12", "S25S-MCKNR/L12", "S32T-MCKNR/L12", "S40T-MCKNR/L12"]
   }
   // TODO: add more 17 items
 ];
