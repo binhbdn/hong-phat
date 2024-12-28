@@ -2,6 +2,11 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const description1 = {
+  vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
+  cn: "通常用于外圆的粗车、半精车和精车加工"
+};
+
 const descriptions1 = {
   vi: [
     {
@@ -145,10 +150,7 @@ const items = [
       min: 468000,
       max: 895000
     },
-    description: {
-      vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
-      cn: "通常用于外圆的粗车、半精车和精车加工"
-    },
+    description: description1,
     descriptions: descriptions1,
     seri: "EMR",
     specs: "4/5/6R-C15/C32",
@@ -396,10 +398,7 @@ const items = [
       min: 161000,
       max: 172000
     },
-    description: {
-      vi: "Thường sử dụng để tiện thô, bán thô và tinh bên ngoài chi tiết",
-      cn: "通常用于外圆的粗车、半精车和精车加工"
-    },
+    description: description1,
     descriptions: descriptions1,
     seri: "SCLC",
     specs: "R/L 16/20",
@@ -409,8 +408,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SCLC R1616H06", "SCLC R1616H09", "SCLC L1616H09", "SCLC R2020K09", "SCLC L2020K09"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
+    code: "MDQN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MDQN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MDQN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MDQN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MDQN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MDQN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MDQN",
+      cn: "MDQN 车刀杆"
+    },
+    prices: {
+      current: 221000,
+      min: 0,
+      max: 0
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MDQN",
+    specs: "R/L 2020K15",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MDQN R2020K15", "MDQN L2020K15"]
   }
-  // TODO: add more 11 items
+  // TODO: add more 10 items
 ];
 
 export default items;
