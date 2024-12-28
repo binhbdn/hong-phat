@@ -24,6 +24,59 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
+    code: "TAP_BAP",
+    images: ["/can_dao_gan_manh/dai_phay/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Đài phay TAP/BAP 400R gắn mảnh chip 1604",
+      cn: "TAP/BAP 400R铣床配1604刀片"
+    },
+    prices: {
+      current: 0,
+      min: 505000,
+      max: 720000
+    },
+    description: {
+      vi: "Thường được dùng để gia công thô, gia công mặt phẳng",
+      cn: "通常用于粗加工和平面加工"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Là loại dao có lưỡi nằm ở mặt đầu và trục dao vuông góc với bề mặt gia công.",
+            "Được gắn mảnh hợp kim và có thể thay thế khi bị hao mòn.",
+            "Được làm từ thép hợp kim có độ cứng và độ bền cao",
+            "Tốc độ cắt hoàn hảo, dễ dàng thao tác tháo lắp, có tích hợp vít giữ giúp siết chặt mảnh chip khi gia công."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "刀具的刀刃位于端面，刀轴垂直于加工表面。",
+            "配备可更换的合金刀片，磨损时可更换。",
+            "由高强度合金钢制成，具有高硬度和耐用性。",
+            "切削速度完美，易于拆装，集成固定螺丝帮助在加工时紧固刀片。"
+          ]
+        }
+      ]
+    },
+    seri: "TAP/BAP",
+    specs: "400R",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["TAP 400R-63-22-4T", "BAP 400R-80-22-6T", "BAP 400R-80-27-6T"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: true,
     code: "MCKN",
     images: ["/can_dao_gan_manh/moc_lo/vt_1.webp", "/can_dao_gan_manh/moc_lo/spec.webp"],
     extraImages: [
@@ -116,7 +169,7 @@ const items = [
       "MGEHR2525-3-T30"
     ]
   }
-  // TODO: add more 17 items
+  // TODO: add more 16 items
 ];
 
 export default items;
