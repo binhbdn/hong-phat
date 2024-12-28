@@ -608,8 +608,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MDJN R2020K15", "MDJN L2020K15", "MDJN R2525M15", "MDJN L2525M15"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MSBN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MSBN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MSBN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MSBN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MSBN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MSBN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MSBN",
+      cn: "MSBN 车刀杆"
+    },
+    prices: {
+      current: 194000,
+      min: 0,
+      max: 0
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MSBN",
+    specs: "R/L 16/20",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MSBN R1616H12", "MSBN L1616H12", "MSBN L2020K12"]
   }
-  // TODO: add more 6 items
+  // TODO: add more 5 items
 ];
 
 export default items;
