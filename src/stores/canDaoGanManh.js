@@ -190,7 +190,12 @@ const items = [
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
     code: "MGEH",
-    images: ["/can_dao_gan_manh/tien_ranh/MGEH/vt_1.webp", "/can_dao_gan_manh/tien_ranh/MGEH/spec.webp"],
+    images: [
+      "/can_dao_gan_manh/tien_ranh/MGEH/vt_1.webp",
+      "/can_dao_gan_manh/tien_ranh/MGEH/spec.webp",
+      "/can_dao_gan_manh/tien_ranh/MGEH/2.webp",
+      "/can_dao_gan_manh/tien_ranh/MGEH/3.webp"
+    ],
     extraImages: [
       {
         title: "specifications",
