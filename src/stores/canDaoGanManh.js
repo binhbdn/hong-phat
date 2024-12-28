@@ -328,8 +328,46 @@ const items = [
     detailsView,
     // extra data
     specsList: ["SER 1212K11", "SER 1212H16", "SER 2020K16", "SER 2525M16", "SEL 1616H16", "SEL 2020K16", "SEL 2525M16"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "SNR",
+    images: ["/can_dao_gan_manh/tien_ren/SNR/vt_1.webp", "/can_dao_gan_manh/tien_ren/SNR/spec.webp", "/can_dao_gan_manh/tien_ren/SNR/2.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_ren/SNR/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện ren trong SNR",
+      cn: "SNR 内螺纹车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 151000,
+      max: 194000
+    },
+    description: {
+      vi: "Sử dụng cho gia công thô, tiện, gọt khoét",
+      cn: "用于粗加工、车削、镗削加工"
+    },
+    descriptions: descriptions1,
+    seri: "SNR",
+    specs: "08-14",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["SNR 0008K08", "SNR 0010K11", "SNR 0014M16"]
   }
-  // TODO: add more 13 items
+  // TODO: add more 12 items
 ];
 
 export default items;
