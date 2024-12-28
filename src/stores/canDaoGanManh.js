@@ -482,14 +482,54 @@ const items = [
     descriptions: descriptions1,
     seri: "MCKN",
     specs: "R/L 16/20/25",
-    brand: "Vân Tập",
+    brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView,
     // extra data
     specsList: ["MCKN R1616H12", "MCKN L1616H12", "MCKN R2020K12", "MCKN L2020K12", "MCKN L2525M12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MCGN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MCGN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MCGN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MCGN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MCGN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MCGN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MCGN",
+      cn: "MCGN 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 194000,
+      max: 248000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MCGN",
+    specs: "R/L 20/25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MCGN R2020K12", "MCGN R2525M12"]
   }
-  // TODO: add more 9 items
+  // TODO: add more 8 items
 ];
 
 export default items;
