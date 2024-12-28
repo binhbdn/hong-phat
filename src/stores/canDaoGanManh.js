@@ -123,7 +123,7 @@ const items = [
     category: "pCanDaoGanManh",
     routeName: "pCanDaoGanManhCT",
     isTypical: true,
-    code: "EMR",
+    code: "EMR1",
     images: [
       "/can_dao_gan_manh/tien_lo/vt_1.webp",
       "/can_dao_gan_manh/tien_lo/spec.webp",
@@ -142,8 +142,8 @@ const items = [
       }
     ],
     name: {
-      vi: "Cán dao tiện lỗ hợp kim EMR",
-      cn: "EMR 合金内孔车刀杆"
+      vi: "Cán dao tiện lỗ hợp kim EMR - Hãng Suken",
+      cn: "速肯EMR系列合金内孔车刀杆"
     },
     prices: {
       current: 0,
@@ -528,8 +528,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MCGN R2020K12", "MCGN R2525M12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "EMR2",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/EMR/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/EMR/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/EMR/2.webp",
+      "/can_dao_gan_manh/tien_vuong/EMR/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/EMR/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện lỗ hợp kim EMR - Hãng Vân Tập",
+      cn: "Vân Tập EMR系列合金内孔车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 691000,
+      max: 957000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "EMR",
+    specs: "4/5/6R-C15/C32",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["EMR 6R30-25-160L", "EMR 6R30-25-200L", "EMR 6R32-32-160L"]
   }
-  // TODO: add more 8 items
+  // TODO: add more 7 items
 ];
 
 export default items;
