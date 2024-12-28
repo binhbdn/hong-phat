@@ -808,8 +808,47 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MTQN R1616H16", "MTQN R2020K16", "MTQN L2020K16", "MTQN R2525M16", "MTQN L2525M16"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MTFN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MTFN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MTFN/spec.webp",
+      // "/can_dao_gan_manh/tien_vuong/MTFN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MTFN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MTFN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MTFN",
+      cn: "MTFN 车刀杆"
+    },
+    prices: {
+      current: 0,
+      min: 194000,
+      max: 248000
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MTFN",
+    specs: "R/L 16/20/25",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MTFN R1616H16", "MTFN L1616H16", "MTFN R2020K16", "MTFN R2525M16", "MTFN L2525M16"]
   }
-  // TODO: add more 1 items
 ];
 
 export default items;
