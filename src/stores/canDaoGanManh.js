@@ -648,8 +648,48 @@ const items = [
     detailsView,
     // extra data
     specsList: ["MSBN R1616H12", "MSBN L1616H12", "MSBN L2020K12"]
+  },
+  {
+    category: "pCanDaoGanManh",
+    routeName: "pCanDaoGanManhCT",
+    isTypical: false,
+    code: "MSDN",
+    images: [
+      "/can_dao_gan_manh/tien_vuong/MSDNN/vt_1.webp",
+      "/can_dao_gan_manh/tien_vuong/MSDNN/spec.webp",
+      "/can_dao_gan_manh/tien_vuong/MSDNN/2.webp",
+      "/can_dao_gan_manh/tien_vuong/MSDNN/3.webp"
+    ],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/can_dao_gan_manh/tien_vuong/MSDNN/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Cán dao tiện MSDNN",
+      cn: "MSDNN 车刀杆"
+    },
+    prices: {
+      current: 194000,
+      min: 0,
+      max: 0
+    },
+    description: description1,
+    descriptions: descriptions1,
+    seri: "MSDN",
+    specs: "N1616-45°",
+    brand: "Vân Tập",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["MSDNN 1616H12"]
   }
-  // TODO: add more 5 items
+  // TODO: add more 4 items
 ];
 
 export default items;
