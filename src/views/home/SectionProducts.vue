@@ -173,7 +173,7 @@ const categoriesTreeViews = [
   {
     key: "pGiaCongLo",
     isChild: true,
-    listAll: false,
+    listAll: true,
     listComponent: GiaCongLoList
   },
   {
