@@ -4,6 +4,29 @@ import { findItemByCode } from "@/stores/products";
 
 const extraImagesData1 = ["/do_luong/china/01/DCD_1_2.webp", "/do_luong/china/01/DCD_1_3.webp"];
 
+const descriptionPanme = {
+  vi: "Dùng đo đường kính ngoài các đường dây kim loại, bề dày các tấm kim loại",
+  cn: "用于测量金属线的外径和金属板的厚度"
+};
+const descriptionsPanmeVi = [
+  "Thiết kế chuẩn, gọn nhẹ, dễ sử dụng.",
+  "Trước khi đo cần kiểm tra xem panme có chính xác không.",
+  "Không được dùng panme để đo khi vật đang quay.",
+  "Không đo các mặt thô, bẩn. Phải lau sạch vật đo trước khi đo",
+  "Không vặn trực tiếp ống vặn thước phụ để mỏ đo ép vào vật đo.",
+  "Cần hạn chế việc lấy Panme ra khỏi vị trí đo mới đọc kích thước",
+  "Cần tránh va chạm làm biến dạng mỏ neo."
+];
+const descriptionsPanmeCn = [
+  "标准设计，轻巧方便使用。",
+  "测量前需检查千分尺的准确性。",
+  "不得在工件旋转时使用千分尺测量。",
+  "不要测量粗糙、脏污的表面。测量前必须清洁工件。",
+  "不要直接旋转副尺筒使测量头压在工件上。",
+  "应避免从测量位置取下千分尺后再读取尺寸。",
+  "需避免碰撞导致测量头变形。"
+];
+
 const items = [
   {
     category: "pDoLuong",
@@ -212,21 +235,18 @@ const items = [
       min: 0,
       max: 0
     },
-    description: {
-      vi: "Dùng đo đường kính ngoài các đường dây kim loại, bề dày các tấm kim loại",
-      cn: "用于测量金属线的外径和金属板的厚度"
-    },
+    description: descriptionPanme,
     descriptions: {
       vi: [
         {
           title: "description",
-          data: ["Khoảng đo 0-25mm, độ chia 0.01mm.", "Thiết kế chuẩn, gọn nhẹ, dễ sử dụng."]
+          data: ["Khoảng đo 0-25mm, độ chia 0.01mm.", ...descriptionsPanmeVi]
         }
       ],
       cn: [
         {
           title: "description",
-          data: ["测量范围0-25mm、分度值0.01mm。", "标准设计，轻巧方便使用。"]
+          data: ["测量范围0-25mm、分度值0.01mm。", ...descriptionsPanmeCn]
         }
       ]
     },
@@ -237,8 +257,47 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: false,
+    code: "DCD_6",
+    images: ["/do_luong/china/06/1.webp", "/do_luong/china/06/2.webp"],
+    extraImages: null,
+    name: {
+      vi: "Panme 75-100mm, 100-125mm",
+      cn: "外径千分尺 75-100mm, 100-125mm"
+    },
+    prices: {
+      current: 1328000,
+      min: 0,
+      max: 0
+    },
+    description: descriptionPanme,
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Khoảng đo 5-100mm, 100-125mm, độ chia 0.01mm.", ...descriptionsPanmeVi]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["测量范围75-100mm、100-125mm、分度值0.01mm。", ...descriptionsPanmeCn]
+        }
+      ]
+    },
+    seri: "PANME",
+    specs: "75-100/100-125mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 7 items
+  // TODO: add more 6 items
 ];
 
 export default items;
