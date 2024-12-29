@@ -346,8 +346,55 @@ const items = [
     detailsView,
     // extra data
     specsList: ["0-150", "0-200", "0-300"]
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_8",
+    images: ["/do_luong/china/08/vt_1.webp", "/do_luong/china/08/2.webp", "/do_luong/china/08/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Thước cặp điện tử",
+      cn: "数显卡尺"
+    },
+    prices: {
+      current: 0,
+      min: 999000,
+      max: 1535000
+    },
+    description: {
+      vi: "Kích thước 0-150mm, 0-200mm, 0-300mm",
+      cn: "尺寸范围 0-150mm、0-200mm、0-300mm"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Chất liệu bằng thép hợp kim không gỉ, cho khả năng cầm nắm chắc chắn và độ bền cao.",
+            "Màn hình LCD lớn sắc nét cho khả năng dễ đọc, tiết kiệm pin.",
+            "Khả năng đo chính xác."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["采用不锈合金钢材质、具有坚固的握持感和高耐用性。", "大尺寸LCD显示屏清晰易读、省电。", "测量精确。"]
+        }
+      ]
+    },
+    seri: "DCD_8",
+    specs: "0-150/200/300",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["0-150", "0-200", "0-300"]
   }
-  // TODO: add more 5 items
+  // TODO: add more 4 items
 ];
 
 export default items;
