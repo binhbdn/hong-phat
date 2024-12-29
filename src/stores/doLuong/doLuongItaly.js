@@ -2,6 +2,29 @@ import { listViewCBO } from "@/stores/listViewOptions";
 import { mapSearchProps } from "@/stores/search";
 import { findItemByCode } from "@/stores/products";
 
+const descriptionDH = {
+  vi: "Phụ kiện tùy chọn: ốp lưng",
+  cn: "可选配件：后盖"
+};
+const descriptionsDH = {
+  vi: [
+    {
+      title: "description",
+      data: [
+        "Sản phẩm thực hiện nghiêm ngặt tiêu chuẩn ISO 463 (DIN878), có chứng chỉ kiểm tra.",
+        "Đường kính gờ: 58mm. Đường kính que đo: 8mm.",
+        "Vòng bi làm bằng đá quý, có chỉ báo dung sai."
+      ]
+    }
+  ],
+  cn: [
+    {
+      title: "description",
+      data: ["严格执行ISO 463（DIN878）标准、具有检验证书。", "表圈直径：58mm。测量杆直径：8mm。", "宝石轴承、带公差指示。"]
+    }
+  ]
+};
+
 const items = [
   {
     category: "pDoLuong",
@@ -159,8 +182,34 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongItalyCT",
+    isTypical: true,
+    code: "DSQ_5121-2201",
+    images: ["/do_luong/dasqua/04/1.webp", "/do_luong/dasqua/04/2.webp", "/do_luong/dasqua/04/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Chỉ báo quay số chính xác 0,001mm có tai",
+      cn: "0.001mm带耳百分表"
+    },
+    prices: {
+      current: 1466000,
+      min: 0,
+      max: 0
+    },
+    description: descriptionDH,
+    descriptions: descriptionsDH,
+    seri: "DSQ",
+    specs: "5121-2201",
+    brand: "Dasqua",
+    origin: ["it"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 28 items
+  // TODO: add more 27 items
 ];
 
 export default items;
