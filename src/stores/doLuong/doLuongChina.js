@@ -537,8 +537,59 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: false,
+    code: "DCD_12",
+    images: ["/do_luong/china/12/1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Vòi tưới nguội làm mát",
+      cn: "冷却喷嘴"
+    },
+    prices: {
+      current: 0,
+      min: 84000,
+      max: 736000
+    },
+    description: {
+      vi: "Chuyên dùng cho máy cắt CNC với hai đường vào dầu và khí độc lập, đáp ứng chế độ tưới dạng xối và phun sương.",
+      cn: "专用于CNC切削机床、具有独立的油路和气路、可满足喷淋和喷雾冷却模式。"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Công dụng: dòng nước tưới nguội làm hạ nhiệt độ phôi và lưỡi cắt sinh ra trong quá trình gia công, giúp cho dao và phôi được làm mát kịp thời tránh gây hư hỏng.",
+            "Vòi làm bằng nhựa, dài 300mm, đường kính trong của đầu vòi là 2mm.",
+            "Có 2 đầu nối nhanh: cấp khí (D8mm) và cấp dầu (D4mm).",
+            "Có 2 van tiết lưu: 1 van điều chỉnh lượng dầu phun và 1 van điều chỉnh tốc độ phun."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "用途：冷却液流可降低加工过程中工件和刀具产生的温度、及时冷却刀具和工件、避免损坏。",
+            "喷嘴采用塑料材质、长300mm、喷嘴内径2mm。",
+            "配备2个快速接头：供气（D8mm）和供油（D4mm）。",
+            "配备2个节流阀：1个用于调节喷油量、1个用于调节喷射速度。"
+          ]
+        }
+      ]
+    },
+    seri: "DCD_12",
+    specs: "12.7mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 1 item
 ];
 
 export default items;
