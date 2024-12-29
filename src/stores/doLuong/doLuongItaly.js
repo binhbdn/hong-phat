@@ -208,8 +208,34 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongItalyCT",
+    isTypical: false,
+    code: "DSQ_5121-1205",
+    images: ["/do_luong/dasqua/05/vt_1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Chỉ báo quay số chống va đập 0-10mm*0.01mm/Lug back",
+      cn: "防震百分表0-10mm*0.01mm/Lug back"
+    },
+    prices: {
+      current: 959000,
+      min: 0,
+      max: 0
+    },
+    description: descriptionDH,
+    descriptions: descriptionsDH,
+    seri: "DSQ",
+    specs: "5121-1205",
+    brand: "Dasqua",
+    origin: ["it"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 27 items
+  // TODO: add more 26 items
 ];
 
 export default items;
