@@ -477,8 +477,68 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_11",
+    images: ["/do_luong/china/11/1.webp", "/do_luong/china/11/2.webp"],
+    extraImages: null,
+    name: {
+      vi: "Vòi tưới nguội gắn đế từ 12.7mm",
+      cn: "磁性底座冷却喷嘴 12.7mm"
+    },
+    prices: {
+      current: 736000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Chuyên dùng cho máy cắt CNC với hai đường vào dầu và khí độc lập, đáp ứng chế độ tưới dạng xối và phun sương.",
+      cn: "专用于CNC切削机床、具有独立的油路和气路、可满足喷淋和喷雾冷却模式。"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Công dụng: dòng nước tưới nguội làm hạ nhiệt độ phôi và lưỡi cắt sinh ra trong quá trình gia công, giúp cho dao và phôi được làm mát kịp thời tránh gây hư hỏng.",
+            "Chiều dài ống tưới nguội 200mm.",
+            "Có van gạt khóa đường hơi.",
+            "Sử dụng với nước, hơi nước hoặc chất làm mát khác.",
+            "Áp suất hoạt động khí: thường nhỏ hơn 8 Bar",
+            "Áp suất tối đa: thường nhỏ hơn 12 Bar",
+            "Nhiệt độ hoạt động: 20-60°C",
+            "Nhiệt độ tối đa: 100°C"
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "用途：冷却液流可降低加工过程中工件和刀具产生的温度、及时冷却刀具和工件、避免损坏。",
+            "冷却管长度200mm。",
+            "配备气路控制阀。",
+            "可使用水、蒸汽或其他冷却剂。",
+            "气压工作压力：通常小于8巴",
+            "最大压力：通常小于12巴",
+            "工作温度：20-60°C",
+            "最高温度：100°C"
+          ]
+        }
+      ]
+    },
+    seri: "DCD_11",
+    specs: "12.7mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 2 items
+  // TODO: add more 1 item
 ];
 
 export default items;
