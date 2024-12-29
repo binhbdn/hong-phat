@@ -27,6 +27,8 @@ const descriptionsPanmeCn = [
   "需避免碰撞导致测量头变形。"
 ];
 
+const detailsView = [[{ type: "tag", value: "specsList" }]];
+
 const items = [
   {
     category: "pDoLuong",
@@ -290,14 +292,62 @@ const items = [
       ]
     },
     seri: "PANME",
-    specs: "75-100/100-125mm",
+    specs: "75-100/100-125",
     brand: "",
     origin: ["cn"],
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_7",
+    images: ["/do_luong/china/07/vt_1.webp", "/do_luong/china/07/2.webp", "/do_luong/china/07/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Thước cặp cơ bằng thép",
+      cn: "机械游标卡尺"
+    },
+    prices: {
+      current: 0,
+      min: 549000,
+      max: 1116000
+    },
+    description: {
+      vi: "Kích thước 0-150mm, 0-200mm, 0-300mm",
+      cn: "尺寸范围 0-150mm、0-200mm、0-300mm"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Dùng đo đường kính ngoài, đường kính trong, độ sâu, chiều dài, chiều rộng và chiều cao.",
+            "Chất liệu bằng thép không gỉ, được sản xuất phù hợp với tiêu chuẩn DIN862.",
+            "Đo nhanh chóng, dễ thao tác và cho độ chính xác cao.",
+            "Có thể đọc theo đơn vị mm hoặc inch."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["用于测量外径、内径、深度、长度、宽度和高度。", "采用不锈钢材质、按DIN862标准生产。", "测量快速、操作简便、精度高。", "可以用毫米或英寸读数。"]
+        }
+      ]
+    },
+    seri: "DCD_7",
+    specs: "0-150/200/300",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView,
+    // extra data
+    specsList: ["0-150", "0-200", "0-300"]
   }
-  // TODO: add more 6 items
+  // TODO: add more 5 items
 ];
 
 export default items;
