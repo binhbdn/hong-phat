@@ -195,8 +195,50 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_5",
+    images: ["/do_luong/china/05/vt_1.webp", "/do_luong/china/05/2.webp", "/do_luong/china/05/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Panme 0-25 0.01mm",
+      cn: "外径千分尺 0-25 0.01mm"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Dùng đo đường kính ngoài các đường dây kim loại, bề dày các tấm kim loại",
+      cn: "用于测量金属线的外径和金属板的厚度"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Khoảng đo 0-25mm, độ chia 0.01mm.", "Thiết kế chuẩn, gọn nhẹ, dễ sử dụng."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["测量范围0-25mm、分度值0.01mm。", "标准设计，轻巧方便使用。"]
+        }
+      ]
+    },
+    seri: "PANME",
+    specs: "0-25 0.01mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 8 items
+  // TODO: add more 7 items
 ];
 
 export default items;
