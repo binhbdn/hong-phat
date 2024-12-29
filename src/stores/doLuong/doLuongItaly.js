@@ -41,7 +41,7 @@ const items = [
       cn: [
         {
           title: "description",
-          data: ["隔热防滑手柄，镀铬测量杆。", "碳化物测头，测量范围宽，易读。"]
+          data: ["隔热防滑手柄、镀铬测量杆。", "碳化物测头、测量范围宽、易读。"]
         }
       ]
     },
@@ -56,7 +56,7 @@ const items = [
   {
     category: "pDoLuong",
     routeName: "pDoLuongItalyCT",
-    isTypical: false,
+    isTypical: true,
     code: "DSQ_4411-3210",
     images: ["/do_luong/dasqua/02/4411_3210_1_vt.webp"],
     extraImages: [
@@ -98,9 +98,9 @@ const items = [
           title: "description",
           data: [
             "符合ISO 3611（DIN863）标准。",
-            "硬铬电镀，配备校正环量规。",
-            "测量杆经过热处理，已接地。",
-            "测量范围大，通过连接延长杆和探头与差分头来扩展测量范围。"
+            "硬铬电镀、配备校正环量规。",
+            "测量杆经过热处理、已接地。",
+            "测量范围大、通过连接延长杆和探头与差分头来扩展测量范围。"
           ]
         }
       ]
@@ -112,8 +112,55 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongItalyCT",
+    isTypical: true,
+    code: "DSQ_7122-0004",
+    images: ["/do_luong/dasqua/03/1.webp"],
+    extraImages: null,
+    name: {
+      vi: "Chân đế từ tính 60Kg",
+      cn: "60公斤磁性表座"
+    },
+    prices: {
+      current: 387000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Thích hợp cho đồng hồ so, đồng hồ so kỹ thuật số và đồng hồ so đòn bẩy",
+      cn: "适用于百分表、数显百分表和杠杆百分表"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Thiết kế rãnh chữ V ở dưới cùng của ghế đồng hồ thuận tiện cho việc lắp đặt trên các bộ phận cột.",
+            "Có thể được định vị theo chiều ngang hoặc chiều dọc.",
+            "Công tắc bật/tắt mượt mà và dễ sử dụng.",
+            "Mạ crom, sử dụng nam châm chất lượng cao"
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["表座底部的V形槽便于安装在柱形部件上。", "可水平或垂直定位。", "开关平滑易用。", "镀铬处理、采用高品质磁铁"]
+        }
+      ]
+    },
+    seri: "DSQ",
+    specs: "7122-0004",
+    brand: "Dasqua",
+    origin: ["it"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 29 items
+  // TODO: add more 28 items
 ];
 
 export default items;
