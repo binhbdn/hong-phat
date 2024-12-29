@@ -133,13 +133,13 @@ const items = [
       vi: [
         {
           title: "description",
-          data: ["Độ chia 0.002mm", "Tất cả các chi tiết của đồng hồ được sản xuất phù hợp với tiêu chuẩn DIN 878 và tiêu chuẩn DIN EN ISO 463."]
+          data: ["Độ chia 0.002mm.", "Tất cả các chi tiết của đồng hồ được sản xuất phù hợp với tiêu chuẩn DIN 878 và tiêu chuẩn DIN EN ISO 463."]
         }
       ],
       cn: [
         {
           title: "description",
-          data: ["分度值0.002mm", "所有表件均按DIN 878和DIN EN ISO 463标准生产。"]
+          data: ["分度值0.002mm。", "所有表件均按DIN 878和DIN EN ISO 463标准生产。"]
         }
       ]
     },
@@ -150,8 +150,53 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: false,
+    code: "DCD_4",
+    images: ["/do_luong/china/04/vt_1.webp", "/do_luong/china/04/2.webp", "/do_luong/china/04/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Đồng hồ cơ tiêu chuẩn 0-1mm*0.001mm",
+      cn: "标准机械表 0-1mm*0.001mm"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Thiết kế độc đáo, trục chính và thân được làm từ thép không rỉ",
+      cn: "独特设计、主轴和机身采用不锈钢制造"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Khoảng đo 0-1mm, độ chia 0.001mm.",
+            "Tất cả các chi tiết của đồng hồ được sản xuất phù hợp với tiêu chuẩn DIN 878 và tiêu chuẩn DIN EN ISO 463."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["测量范围0-1mm、分度值0.001mm。", "所有表件均按DIN 878和DIN EN ISO 463标准生产。"]
+        }
+      ]
+    },
+    seri: "DCD_4",
+    specs: "0.001mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 9 items
+  // TODO: add more 8 items
 ];
 
 export default items;
