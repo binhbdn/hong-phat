@@ -18,7 +18,7 @@ const descriptionsPanmeVi = [
   "Cần tránh va chạm làm biến dạng mỏ neo."
 ];
 const descriptionsPanmeCn = [
-  "标准设计，轻巧方便使用。",
+  "标准设计、轻巧方便使用。",
   "测量前需检查千分尺的准确性。",
   "不得在工件旋转时使用千分尺测量。",
   "不要测量粗糙、脏污的表面。测量前必须清洁工件。",
@@ -91,7 +91,7 @@ const items = [
       cn: [
         {
           title: "description",
-          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF），便于在机身各位置安装", "具有液压辅助功能，可固定轴向"]
+          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF）、便于在机身各位置安装", "具有液压辅助功能、可固定轴向"]
         }
       ]
     },
@@ -141,7 +141,7 @@ const items = [
       cn: [
         {
           title: "description",
-          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF），便于在机身各位置安装"]
+          data: ["可沿X-Y轴方向上下移动和旋转", "具有强大的磁力（ON/OFF）、便于在机身各位置安装"]
         }
       ]
     },
@@ -425,8 +425,60 @@ const items = [
     detailsView,
     // extra data
     specsList: ["0-200", "0-300"]
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_10",
+    images: ["/do_luong/china/10/vt_1.webp", "/do_luong/china/10/2.webp"],
+    extraImages: null,
+    name: {
+      vi: "Thước đo góc 0-180°",
+      cn: "量角器 0-180°"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Phù hợp đo độ nghiêng, đo độ dốc",
+      cn: "适用于测量倾斜角度和坡度"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: [
+            "Thước được chế tạo bằng thép hợp kim cứng, có độ bền và tuổi thọ cao.",
+            "Thước được gia công tỉ mỉ để giảm thiểu dung sai khi đo.",
+            "Ốc cố định được thiết kế để không gây lồi ở mặt sau.",
+            "Thước có kích thước nhỏ gọn, thuận tiện thao tác, dễ dàng mang theo và cất giữ."
+          ]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: [
+            "采用硬合金钢制造、具有高耐用性和长使用寿命。",
+            "精密加工以最小化测量误差。",
+            "固定螺丝设计不会在背面突出。",
+            "尺寸小巧、操作方便、易于携带和存放。"
+          ]
+        }
+      ]
+    },
+    seri: "DCD_10",
+    specs: "0-180°",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 3 items
+  // TODO: add more 2 items
 ];
 
 export default items;
