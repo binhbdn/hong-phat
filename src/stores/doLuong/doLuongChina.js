@@ -108,8 +108,50 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongChinaCT",
+    isTypical: true,
+    code: "DCD_3",
+    images: ["/do_luong/china/03/vt_1.webp", "/do_luong/china/03/2.webp", "/do_luong/china/03/3.webp"],
+    extraImages: null,
+    name: {
+      vi: "Đồng hồ cơ chống sốc 0.002mm",
+      cn: "防震机械表 0.002mm"
+    },
+    prices: {
+      current: null,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Thiết kế độc đáo, trục chính và thân được làm từ thép không rỉ",
+      cn: "独特设计、主轴和机身采用不锈钢制造"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Độ chia 0.002mm", "Tất cả các chi tiết của đồng hồ được sản xuất phù hợp với tiêu chuẩn DIN 878 và tiêu chuẩn DIN EN ISO 463."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["分度值0.002mm", "所有表件均按DIN 878和DIN EN ISO 463标准生产。"]
+        }
+      ]
+    },
+    seri: "DCD_3",
+    specs: "0.002mm",
+    brand: "",
+    origin: ["cn"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 10 items
+  // TODO: add more 9 items
 ];
 
 export default items;
