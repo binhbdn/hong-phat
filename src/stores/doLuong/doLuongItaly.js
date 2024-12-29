@@ -234,8 +234,58 @@ const items = [
     listView: listViewCBO,
     detailsView: null
     // extra data
+  },
+  {
+    category: "pDoLuong",
+    routeName: "pDoLuongItalyCT",
+    isTypical: false,
+    code: "DSQ_5221-1140",
+    images: ["/do_luong/dasqua/06/vt_1.webp", "/do_luong/dasqua/06/spec.webp", "/do_luong/dasqua/06/2.webp", "/do_luong/dasqua/06/3.webp"],
+    extraImages: [
+      {
+        title: "specifications",
+        subTitle: null,
+        preview: true,
+        options: "",
+        data: ["/do_luong/dasqua/06/spec.webp"]
+      }
+    ],
+    name: {
+      vi: "Chỉ báo quay số đòn bẩy 0.8mm*0.01mm*40mm",
+      cn: "杠杆百分表0.8mm*0.01mm*40mm"
+    },
+    prices: {
+      current: 1025000,
+      min: 0,
+      max: 0
+    },
+    description: {
+      vi: "Vỏ mạ crom siêu bền",
+      cn: "超耐用镀铬外壳"
+    },
+    descriptions: {
+      vi: [
+        {
+          title: "description",
+          data: ["Dễ đọc, bộ truyền động thanh đo thông qua cấu trúc ổ bi.", "Đường kính tay cầm kẹp: 8mm. Chiều dài bút: 13,5mm", "6 vòng bi làm bằng đá quý."]
+        }
+      ],
+      cn: [
+        {
+          title: "description",
+          data: ["易读、通过轴承结构传动测量杆。", "夹持手柄直径：8mm。笔长：13.5mm", "6个宝石轴承。"]
+        }
+      ]
+    },
+    seri: "DSQ",
+    specs: "5221-1140",
+    brand: "Dasqua",
+    origin: ["it"],
+    listView: listViewCBO,
+    detailsView: null
+    // extra data
   }
-  // TODO: add more 26 items
+  // TODO: add more 25 items
 ];
 
 export default items;
