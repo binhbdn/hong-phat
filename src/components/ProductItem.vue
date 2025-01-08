@@ -62,6 +62,7 @@ const formattedPrice = computed(() => {
           </span>
         </div>
 
+        <!--
         <div class="absolute top-2 right-2 flex flex-col items-end gap-y-3">
           <div class="w-6 h-6 flex justify-center items-center bg-white hover:bg-gray-200 text-primary border border-gray-500 rounded-full" @click.stop="null">
             <i class="pi pi-plus text-[10px]" />
@@ -76,6 +77,7 @@ const formattedPrice = computed(() => {
             </div>
           </template>
         </div>
+        -->
       </div>
 
       <div class="w-0 flex-grow flex-col leading-4 xl:leading-5" :class="viewDetails ? 'flex' : 'hidden'">
